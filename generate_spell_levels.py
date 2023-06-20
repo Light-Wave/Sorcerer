@@ -93,10 +93,11 @@ def read_spell_data(path):
             if isinstance(jo, dict) and "id" in jo and "name" in jo and "description" in jo:
                 difficulty = int(jo["difficulty"] if "difficulty" in jo else 0)
                 new_spell_data = {
-                  "id": jo["id"],
+                  "id": str(jo["id"]),
+                  "safe_id": str(jo["id"]).replace("-", "_"),
                   "level": -1,
-                  "name": jo["name"],
-                  "description": jo["description"]
+                  "name": str(jo["name"]),
+                  "description": str(jo["description"])
                 }
                 for spell_name in tier_0_spell_list:
                     if (
@@ -145,7 +146,7 @@ def write_learn_spell(level):
     main_topic = {
         "type": "talk_topic",
         "id": "TALK_SORCERER_LEARN_SPELL_" + str( level ),
-        "dynamic_line": "<u_val:u_sorcerer_level_" + str( level ) + "_spells_known> / <u_val:u_sorcerer_level_" + str( level ) + "_spells_known_slots> level " + str( level ) + " spells known.",
+        "dynamic_line": "<u_val:sorcerer_level_" + str( level ) + "_spells_known> / <u_val:sorcerer_level_" + str( level ) + "_spells_known_slots> level " + str( level ) + " spells known.",
         "speaker_effect": { "effect": { "math": [ "curent_spell_slot", "=", str( level ) ] } },
         "responses": [
             { "text": "Go Back.", "topic": "TALK_SORCERER_MENU_MAIN" },
@@ -156,22 +157,22 @@ def write_learn_spell(level):
     for spell in spell_data:
         if int(spell["level"]) <= level:
             response = {
-            "condition": { "math": [ "u_used_spell_slot_for_"+str(spell["id"]), "==", "0" ] },
-            "text": "Learn " + str(spell["name"]) + " ( level "+str( spell["level"] )+" )",
-            "topic": "TALK_SORCERER_LEARN_SPELL_" + str(spell["id"]) + "_at_level_" + str( level )
+            "condition": { "math": [ "u_used_spell_slot_for_" + spell["safe_id"], "==", "0" ] },
+            "text": "Learn " + spell["name"] + " ( level "+ str(spell["level"]) + " )",
+            "topic": "TALK_SORCERER_LEARN_SPELL_" + spell["id"] + "_at_level_" + str( level )
             }
             main_topic["responses"].append(response)
             new_other_topic = {
                 "type": "talk_topic",
-                "id": "TALK_SORCERER_LEARN_SPELL_" + str(spell["id"]) + "_at_level_" + str( level ),
-                "dynamic_line": str(spell["name"]) + ": " + str(spell["description"]),
+                "id": "TALK_SORCERER_LEARN_SPELL_" + spell["id"] + "_at_level_" + str( level ),
+                "dynamic_line": spell["name"] + ": " + spell["description"],
                 "responses": [
                   {
                     "text": "Select Spell.",
                     "topic": "TALK_SORCERER_MENU_MAIN",
                     "effect": [
-                      { "math": [ "u_val('spell_level', 'spell: " + str(spell["name"]) + "')", "=", "u_current_sorcerer_level" ] },
-                      { "math": [ "u_used_spell_slot_for_"+str(spell["id"]), "=", str( max( level, 0.5 ) ) ] },
+                      { "math": [ "u_val('spell_level', 'spell: " + spell["id"] + "')", "=", "u_current_sorcerer_level" ] },
+                      { "math": [ "u_used_spell_slot_for_"+spell["safe_id"], "=", str( max( level, 0.5 ) ) ] },
                       { "math": [ "u_sorcerer_level_"+str(level)+"_spells_known", "++" ] },
                     ]
                   },
@@ -185,7 +186,37 @@ def write_learn_spell(level):
     isExist = os.path.exists(path)
     if not isExist:
         os.makedirs(path)
-    with open(path + "/_learn_spells_level_" + str( level ) + ".json", mode="wt") as f:
+    with open(path + "/learn_spells_level_" + str( level ) + ".json", mode="wt") as f:
+        f.write(json.dumps(all_topics, indent=2))
+
+def write_forget_spell():
+    main_topic = {
+        "type": "talk_topic",
+        "id": "TALK_SORCERER_FORGET_SPELL",
+        "dynamic_line": "Pick a spell to forget",
+        "responses": [
+            { "text": "Go Back.", "topic": "TALK_SORCERER_MENU_MAIN" },
+            { "text": "Quit.", "topic": "TALK_DONE" }
+            ]
+        }
+    for spell in spell_data:
+        response = {
+            "condition": { "math": [ "u_used_spell_slot_for_"+spell["safe_id"], ">", "0" ] },
+            "text": "Forget " + spell["name"] + " ( level <u_val:used_spell_slot_for_" + spell["safe_id"] + "> )",
+            "topic": "TALK_SORCERER_MENU_MAIN",
+            "effect": [
+                { "math": [ "u_val('spell_level', 'spell: " + spell["id"] + "')", "=", "-1" ] },
+                { "math": [ "u_used_spell_slot_for_"+spell["safe_id"], "=", "0" ] },
+                { "math": [ "u_sorcerer_level_"+str(level)+"_spells_known", "--" ] },
+            ]
+        }
+        main_topic["responses"].append(response)
+    all_topics.append(main_topic)
+    path = "generated_code/"
+    isExist = os.path.exists(path)
+    if not isExist:
+        os.makedirs(path)
+    with open(path + "/forget_spells.json", mode="wt") as f:
         f.write(json.dumps(all_topics, indent=2))
 
 read_item_group("../../data/mods/Magiclysm/itemgroups/spellbooks.json")
@@ -203,5 +234,6 @@ spell_data = sorted(spell_data, key=lambda x: x["level"], reverse = True)
 for number in range(0,10):
     write_learn_spell(number)
 
+write_forget_spell()
 
 input(".")

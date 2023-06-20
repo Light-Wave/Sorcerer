@@ -8,6 +8,8 @@
     "starting_trait": false,
     "purifiable": false,
     "valid": false,
-    "cancels": [ "ANIMIST", "MAGUS", "KELVINIST", "STORMSHAPER", "EARTHSHAPER", "TECHNOMANCER", "DRUID", "BIOMANCER" ]
+    "cancels": [ "ANIMIST", "MAGUS", "KELVINIST", "STORMSHAPER", "EARTHSHAPER", "TECHNOMANCER", "DRUID", "BIOMANCER" ],
+    "active": true,
+    "activated_eocs": [ "EOC_open_sorcerer_menu" ]
   }
 ]

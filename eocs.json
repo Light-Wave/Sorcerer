@@ -6,13 +6,21 @@
   },
   {
     "type": "effect_on_condition",
-    "id": "EOC_level_up_sorcerer",
+    "id": "EOC_perk_caster_level_up_sorcerer",
+    "eoc_type": "EVENT",
+    "required_event": "opens_spellbook",
+    "condition": { "u_has_trait": "SORCERER" },
+    "effect": { "math": [ "u_val('spell_level_adjustment')", "=", "floor( u_val('intelligence') / 2 )" ] }
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_check_level_up_sorcerer",
     "condition": { "math": [ "u_available_exp_sorcerer", ">", "u_exp_to_sorcerer_level" ] },
     "effect": [
-      { "run_eocs": "EOC_level_up_sorcerer" },
       { "math": [ "u_used_exp_sorcerer", "+=", "u_exp_to_perk_sorcerer" ] },
       { "math": [ "u_available_exp_sorcerer", "=", "u_val('exp') - u_used_exp_sorcerer" ] },
-      { "math": [ "u_exp_to_sorcerer_level", "+=", "u_exp_per_sorcerer_level" ] }
+      { "math": [ "u_exp_to_sorcerer_level", "+=", "u_exp_per_sorcerer_level" ] },
+      { "run_eocs": "EOC_level_up_sorcerer" }
     ]
   },
   {
@@ -22,7 +30,7 @@
     "required_event": "character_kills_monster",
     "effect": [
       { "math": [ "u_available_exp_sorcerer", "=", "u_val('exp') - u_used_exp_sorcerer" ] },
-      { "run_eocs": "EOC_level_up_sorcerer" }
+      { "run_eocs": "EOC_check_level_up_sorcerer" }
     ]
   },
   {
@@ -36,7 +44,8 @@
       { "math": [ "u_exp_per_sorcerer_level", "=", "300" ] },
       { "math": [ "u_available_exp_sorcerer", "=", "0" ] },
       { "math": [ "u_current_sorcerer_level", "=", "0" ] },
-      { "u_add_trait": "SORCERER" }
+      { "u_add_trait": "SORCERER" },
+      { "run_eocs": "EOC_level_up_sorcerer" }
     ]
   },
   {
@@ -45,23 +54,33 @@
     "effect": [
       { "math": [ "u_current_sorcerer_level", "++" ] },
       {
-        "run_eocs":
-          {
-            "id": "sorcerer_grant_forget_spell_charge",
-            "condition": { "math": [ "u_current_sorcerer_level", ">", "1" ] },
-            "effect": [
-              { "math": [ "u_sorcerer_forget_spell_charge", "=", "1" ] }
-            ]
-          }
+        "run_eocs": {
+          "id": "sorcerer_grant_forget_spell_charge",
+          "condition": { "math": [ "u_current_sorcerer_level", ">", "1" ] },
+          "effect": [ { "math": [ "u_sorcerer_forget_spell_charge", "=", "1" ] } ]
+        }
       },
-      { "run_eocs": "EOC_level_up_sorcerer_spell_slots_known" }
+      { "run_eocs": "EOC_level_up_sorcerer_spell_slots_known" },
+      { "run_eocs": "EOC_open_sorcerer_menu" }
+    ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_sorcerer_forget_spell_refund_slots",
+    "effect": [
+      {
+        "run_eocs": {
+          "id": "sorcerer_refund_level_0_slot",
+          "condition": { "math": [ "u_current_sorcerer_level", ">", "1" ] },
+          "effect": [ { "math": [ "u_sorcerer_forget_spell_charge", "=", "1" ] } ]
+        }
+      }
     ]
   },
   {
     "type": "effect_on_condition",
     "id": "EOC_level_up_sorcerer_spell_slots_known",
     "effect": [
-      { "math": [ "u_current_sorcerer_level", "++" ] },
       {
         "run_eocs": [
           {

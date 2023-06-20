@@ -2,7 +2,7 @@
   {
     "type": "talk_topic",
     "id": "TALK_SORCERER_MENU_MAIN",
-    "dynamic_line": "Level <u_val:u_current_sorcerer_level> Sorcerer.\nCurrent EXP: <u_val:u_available_exp_sorcerer>.\nEXP to next level: <u_val:u_exp_to_sorcerer_level>.",
+    "dynamic_line": "Level <u_val:current_sorcerer_level> Sorcerer.\nCurrent EXP: <u_val:available_exp_sorcerer>.\nEXP to next level: <u_val:exp_to_sorcerer_level>.",
     "responses": [
       {
         "condition": { "math": [ "u_sorcerer_forget_spell_charge", ">=", "1" ] },
