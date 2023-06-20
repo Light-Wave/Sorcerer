@@ -1,0 +1,11 @@
+[
+  {
+    "type": "MOD_INFO",
+    "id": "sorcerer",
+    "name": "Sorcerer",
+    "authors": [ "Lightwave" ],
+    "description": "A different way to play Magiclysm",
+    "category": "misc_additions",
+    "dependencies": [ "dda", "magiclysm" ]
+  }
+]

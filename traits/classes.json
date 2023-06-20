@@ -1,0 +1,13 @@
+[
+  {
+    "type": "mutation",
+    "id": "SORCERER",
+    "name": "Sorcerer",
+    "points": 0,
+    "description": "Your magical power comes from your inner strength, rather than booklearning.",
+    "starting_trait": false,
+    "purifiable": false,
+    "valid": false,
+    "cancels": [ "ANIMIST", "MAGUS", "KELVINIST", "STORMSHAPER", "EARTHSHAPER", "TECHNOMANCER", "DRUID", "BIOMANCER" ]
+  }
+]
