@@ -206,18 +206,18 @@ def write_forget_spell():
             "topic": "TALK_SORCERER_MENU_MAIN",
             "effect": [
                 { "math": [ "u_val('spell_level', 'spell: " + spell["id"] + "')", "=", "-1" ] },
+                { "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots", "variables": { "forgotten_spell_level": { "u_val": "used_spell_slot_for_"+spell["safe_id"] } } },
                 { "math": [ "u_used_spell_slot_for_"+spell["safe_id"], "=", "0" ] },
-                { "math": [ "u_sorcerer_level_"+str(level)+"_spells_known", "--" ] },
+                { "math": [ "u_sorcerer_forget_spell_charge", "--" ] }
             ]
         }
         main_topic["responses"].append(response)
-    all_topics.append(main_topic)
     path = "generated_code/"
     isExist = os.path.exists(path)
     if not isExist:
         os.makedirs(path)
     with open(path + "/forget_spells.json", mode="wt") as f:
-        f.write(json.dumps(all_topics, indent=2))
+        f.write(json.dumps(main_topic, indent=2))
 
 read_item_group("../../data/mods/Magiclysm/itemgroups/spellbooks.json")
 read_spell_scrolls("../../data/mods/Magiclysm/items/spell_scrolls.json")

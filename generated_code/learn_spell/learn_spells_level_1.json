@@ -1,0 +1,1638 @@
+[
+  {
+    "type": "talk_topic",
+    "id": "TALK_SORCERER_LEARN_SPELL_summon_undead_at_level_1",
+    "dynamic_line": "Summon Undead: An ethereal-looking undead rises from the depths of the earth to fight for you.  You may be able to summon the stronger ones with a higher level in this spell.",
+    "responses": [
+      {
+        "text": "Select Spell.",
+        "topic": "TALK_SORCERER_MENU_MAIN",
+        "effect": [
+          {
+            "math": [
+              "u_val('spell_level', 'spell: summon_undead')",
+              "=",
+              "u_current_sorcerer_level"
+            ]
+          },
+          {
+            "math": [
+              "u_used_spell_slot_for_summon_undead",
+              "=",
+              "1"
+            ]
+          },
+          {
+            "math": [
+              "u_sorcerer_level_1_spells_known",
+              "++"
+            ]
+          }
+        ]
+      },
+      {
+        "text": "Go Back.",
+        "topic": "TALK_SORCERER_MENU_MAIN"
+      },
+      {
+        "text": "Quit.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_SORCERER_LEARN_SPELL_necrotic_gaze_at_level_1",
+    "dynamic_line": "Necrotic Gaze: You use the power of your own blood, concentrated in rune, to imbue necrotic energy into your gaze, damaging the target you look at.",
+    "responses": [
+      {
+        "text": "Select Spell.",
+        "topic": "TALK_SORCERER_MENU_MAIN",
+        "effect": [
+          {
+            "math": [
+              "u_val('spell_level', 'spell: necrotic_gaze')",
+              "=",
+              "u_current_sorcerer_level"
+            ]
+          },
+          {
+            "math": [
+              "u_used_spell_slot_for_necrotic_gaze",
+              "=",
+              "1"
+            ]
+          },
+          {
+            "math": [
+              "u_sorcerer_level_1_spells_known",
+              "++"
+            ]
+          }
+        ]
+      },
+      {
+        "text": "Go Back.",
+        "topic": "TALK_SORCERER_MENU_MAIN"
+      },
+      {
+        "text": "Quit.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_SORCERER_LEARN_SPELL_disruption_bolt_at_level_1",
+    "dynamic_line": "Disruption Bolt: Release a resonant bolt of spiritual energy at a nearby target.  It will disrupt the natural link between matter and animus, causing heavy but never lethal damage.",
+    "responses": [
+      {
+        "text": "Select Spell.",
+        "topic": "TALK_SORCERER_MENU_MAIN",
+        "effect": [
+          {
+            "math": [
+              "u_val('spell_level', 'spell: disruption_bolt')",
+              "=",
+              "u_current_sorcerer_level"
+            ]
+          },
+          {
+            "math": [
+              "u_used_spell_slot_for_disruption_bolt",
+              "=",
+              "1"
+            ]
+          },
+          {
+            "math": [
+              "u_sorcerer_level_1_spells_known",
+              "++"
+            ]
+          }
+        ]
+      },
+      {
+        "text": "Go Back.",
+        "topic": "TALK_SORCERER_MENU_MAIN"
+      },
+      {
+        "text": "Quit.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_SORCERER_LEARN_SPELL_summon_wisps_at_level_1",
+    "dynamic_line": "Ignus Fatuus: Summons ghostly foxfire worked from living marsh vapor, to lead your enemies astray.  With more experience, this spell can conjure multiple ghost lights.",
+    "responses": [
+      {
+        "text": "Select Spell.",
+        "topic": "TALK_SORCERER_MENU_MAIN",
+        "effect": [
+          {
+            "math": [
+              "u_val('spell_level', 'spell: summon_wisps')",
+              "=",
+              "u_current_sorcerer_level"
+            ]
+          },
+          {
+            "math": [
+              "u_used_spell_slot_for_summon_wisps",
+              "=",
+              "1"
+            ]
+          },
+          {
+            "math": [
+              "u_sorcerer_level_1_spells_known",
+              "++"
+            ]
+          }
+        ]
+      },
+      {
+        "text": "Go Back.",
+        "topic": "TALK_SORCERER_MENU_MAIN"
+      },
+      {
+        "text": "Quit.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_SORCERER_LEARN_SPELL_bleed_at_level_1",
+    "dynamic_line": "Bleed: With a shout and a gesture, the target starts bleeding from old wounds.",
+    "responses": [
+      {
+        "text": "Select Spell.",
+        "topic": "TALK_SORCERER_MENU_MAIN",
+        "effect": [
+          {
+            "math": [
+              "u_val('spell_level', 'spell: bleed')",
+              "=",
+              "u_current_sorcerer_level"
+            ]
+          },
+          {
+            "math": [
+              "u_used_spell_slot_for_bleed",
+              "=",
+              "1"
+            ]
+          },
+          {
+            "math": [
+              "u_sorcerer_level_1_spells_known",
+              "++"
+            ]
+          }
+        ]
+      },
+      {
+        "text": "Go Back.",
+        "topic": "TALK_SORCERER_MENU_MAIN"
+      },
+      {
+        "text": "Quit.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_SORCERER_LEARN_SPELL_light_healing_at_level_1",
+    "dynamic_line": "Cure Light Wounds: Heals a little bit of damage on the target.",
+    "responses": [
+      {
+        "text": "Select Spell.",
+        "topic": "TALK_SORCERER_MENU_MAIN",
+        "effect": [
+          {
+            "math": [
+              "u_val('spell_level', 'spell: light_healing')",
+              "=",
+              "u_current_sorcerer_level"
+            ]
+          },
+          {
+            "math": [
+              "u_used_spell_slot_for_light_healing",
+              "=",
+              "1"
+            ]
+          },
+          {
+            "math": [
+              "u_sorcerer_level_1_spells_known",
+              "++"
+            ]
+          }
+        ]
+      },
+      {
+        "text": "Go Back.",
+        "topic": "TALK_SORCERER_MENU_MAIN"
+      },
+      {
+        "text": "Quit.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_SORCERER_LEARN_SPELL_bio_acidicspray_at_level_1",
+    "dynamic_line": "{'str': 'Acidic Spray'}: When cast, the mage opens his mouth and sprays acid in a wide cone to dissolve his foes into goo.  Just imagine what he'll do with the goo.",
+    "responses": [
+      {
+        "text": "Select Spell.",
+        "topic": "TALK_SORCERER_MENU_MAIN",
+        "effect": [
+          {
+            "math": [
+              "u_val('spell_level', 'spell: bio_acidicspray')",
+              "=",
+              "u_current_sorcerer_level"
+            ]
+          },
+          {
+            "math": [
+              "u_used_spell_slot_for_bio_acidicspray",
+              "=",
+              "1"
+            ]
+          },
+          {
+            "math": [
+              "u_sorcerer_level_1_spells_known",
+              "++"
+            ]
+          }
+        ]
+      },
+      {
+        "text": "Go Back.",
+        "topic": "TALK_SORCERER_MENU_MAIN"
+      },
+      {
+        "text": "Quit.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_SORCERER_LEARN_SPELL_biomancer_paralytic_dart_at_level_1",
+    "dynamic_line": "Paralytic Dart: Spits a warped needle of sinew and bone, carrying with it a sting that slows your victim.",
+    "responses": [
+      {
+        "text": "Select Spell.",
+        "topic": "TALK_SORCERER_MENU_MAIN",
+        "effect": [
+          {
+            "math": [
+              "u_val('spell_level', 'spell: biomancer_paralytic_dart')",
+              "=",
+              "u_current_sorcerer_level"
+            ]
+          },
+          {
+            "math": [
+              "u_used_spell_slot_for_biomancer_paralytic_dart",
+              "=",
+              "1"
+            ]
+          },
+          {
+            "math": [
+              "u_sorcerer_level_1_spells_known",
+              "++"
+            ]
+          }
+        ]
+      },
+      {
+        "text": "Go Back.",
+        "topic": "TALK_SORCERER_MENU_MAIN"
+      },
+      {
+        "text": "Quit.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_SORCERER_LEARN_SPELL_biomancer_visceral_projection_at_level_1",
+    "dynamic_line": "Visceral Projection: Projects a spray of acrid blood and gore all around you, growing to ensnare your prey in a field of twitching poisonous tendrils.",
+    "responses": [
+      {
+        "text": "Select Spell.",
+        "topic": "TALK_SORCERER_MENU_MAIN",
+        "effect": [
+          {
+            "math": [
+              "u_val('spell_level', 'spell: biomancer_visceral_projection')",
+              "=",
+              "u_current_sorcerer_level"
+            ]
+          },
+          {
+            "math": [
+              "u_used_spell_slot_for_biomancer_visceral_projection",
+              "=",
+              "1"
+            ]
+          },
+          {
+            "math": [
+              "u_sorcerer_level_1_spells_known",
+              "++"
+            ]
+          }
+        ]
+      },
+      {
+        "text": "Go Back.",
+        "topic": "TALK_SORCERER_MENU_MAIN"
+      },
+      {
+        "text": "Quit.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_SORCERER_LEARN_SPELL_blinding_flash_at_level_1",
+    "dynamic_line": "{'str': 'Blinding Flash'}: Blind enemies for a short time with a sudden, dazzling light.  Higher levels deal slightly higher damage.",
+    "responses": [
+      {
+        "text": "Select Spell.",
+        "topic": "TALK_SORCERER_MENU_MAIN",
+        "effect": [
+          {
+            "math": [
+              "u_val('spell_level', 'spell: blinding_flash')",
+              "=",
+              "u_current_sorcerer_level"
+            ]
+          },
+          {
+            "math": [
+              "u_used_spell_slot_for_blinding_flash",
+              "=",
+              "1"
+            ]
+          },
+          {
+            "math": [
+              "u_sorcerer_level_1_spells_known",
+              "++"
+            ]
+          }
+        ]
+      },
+      {
+        "text": "Go Back.",
+        "topic": "TALK_SORCERER_MENU_MAIN"
+      },
+      {
+        "text": "Quit.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_SORCERER_LEARN_SPELL_ethereal_grasp_at_level_1",
+    "dynamic_line": "Ethereal Grasp: A mass of spectral hands emerge from the ground, slowing everything in range.  Higher levels allow a bigger AoE, and longer effect.",
+    "responses": [
+      {
+        "text": "Select Spell.",
+        "topic": "TALK_SORCERER_MENU_MAIN",
+        "effect": [
+          {
+            "math": [
+              "u_val('spell_level', 'spell: ethereal_grasp')",
+              "=",
+              "u_current_sorcerer_level"
+            ]
+          },
+          {
+            "math": [
+              "u_used_spell_slot_for_ethereal_grasp",
+              "=",
+              "1"
+            ]
+          },
+          {
+            "math": [
+              "u_sorcerer_level_1_spells_known",
+              "++"
+            ]
+          }
+        ]
+      },
+      {
+        "text": "Go Back.",
+        "topic": "TALK_SORCERER_MENU_MAIN"
+      },
+      {
+        "text": "Quit.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_SORCERER_LEARN_SPELL_druid_tornskin_at_level_1",
+    "dynamic_line": "Tornskin: This spell, which resembles Thornskin through the sap & needles covering the page, seemed to involve thorns and bleeding wounds.  The marred words may have altered the function.",
+    "responses": [
+      {
+        "text": "Select Spell.",
+        "topic": "TALK_SORCERER_MENU_MAIN",
+        "effect": [
+          {
+            "math": [
+              "u_val('spell_level', 'spell: druid_tornskin')",
+              "=",
+              "u_current_sorcerer_level"
+            ]
+          },
+          {
+            "math": [
+              "u_used_spell_slot_for_druid_tornskin",
+              "=",
+              "1"
+            ]
+          },
+          {
+            "math": [
+              "u_sorcerer_level_1_spells_known",
+              "++"
+            ]
+          }
+        ]
+      },
+      {
+        "text": "Go Back.",
+        "topic": "TALK_SORCERER_MENU_MAIN"
+      },
+      {
+        "text": "Quit.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_SORCERER_LEARN_SPELL_druid_growth_at_level_1",
+    "dynamic_line": "Seed of Growth: Offer some of your life in a ritual to get tokens of growth in return.",
+    "responses": [
+      {
+        "text": "Select Spell.",
+        "topic": "TALK_SORCERER_MENU_MAIN",
+        "effect": [
+          {
+            "math": [
+              "u_val('spell_level', 'spell: druid_growth')",
+              "=",
+              "u_current_sorcerer_level"
+            ]
+          },
+          {
+            "math": [
+              "u_used_spell_slot_for_druid_growth",
+              "=",
+              "1"
+            ]
+          },
+          {
+            "math": [
+              "u_sorcerer_level_1_spells_known",
+              "++"
+            ]
+          }
+        ]
+      },
+      {
+        "text": "Go Back.",
+        "topic": "TALK_SORCERER_MENU_MAIN"
+      },
+      {
+        "text": "Quit.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_SORCERER_LEARN_SPELL_stonefist_at_level_1",
+    "dynamic_line": "Stonefist: Encases your arms and hands in a sheath of magical stone, you can punch and defend yourself with it in melee combat.",
+    "responses": [
+      {
+        "text": "Select Spell.",
+        "topic": "TALK_SORCERER_MENU_MAIN",
+        "effect": [
+          {
+            "math": [
+              "u_val('spell_level', 'spell: stonefist')",
+              "=",
+              "u_current_sorcerer_level"
+            ]
+          },
+          {
+            "math": [
+              "u_used_spell_slot_for_stonefist",
+              "=",
+              "1"
+            ]
+          },
+          {
+            "math": [
+              "u_sorcerer_level_1_spells_known",
+              "++"
+            ]
+          }
+        ]
+      },
+      {
+        "text": "Go Back.",
+        "topic": "TALK_SORCERER_MENU_MAIN"
+      },
+      {
+        "text": "Quit.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_SORCERER_LEARN_SPELL_eshaper_piercing_bolt_at_level_1",
+    "dynamic_line": "Piercing Bolt: This spell projects a piercing rod of conjured iron at those that dare oppose you.",
+    "responses": [
+      {
+        "text": "Select Spell.",
+        "topic": "TALK_SORCERER_MENU_MAIN",
+        "effect": [
+          {
+            "math": [
+              "u_val('spell_level', 'spell: eshaper_piercing_bolt')",
+              "=",
+              "u_current_sorcerer_level"
+            ]
+          },
+          {
+            "math": [
+              "u_used_spell_slot_for_eshaper_piercing_bolt",
+              "=",
+              "1"
+            ]
+          },
+          {
+            "math": [
+              "u_sorcerer_level_1_spells_known",
+              "++"
+            ]
+          }
+        ]
+      },
+      {
+        "text": "Go Back.",
+        "topic": "TALK_SORCERER_MENU_MAIN"
+      },
+      {
+        "text": "Quit.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_SORCERER_LEARN_SPELL_earthshaper_boulder_at_level_1",
+    "dynamic_line": "Summon Boulder: Pull the smooth rock underground, using your forces of earth shaping.  You can use it as a table, or as a primitive anvil.",
+    "responses": [
+      {
+        "text": "Select Spell.",
+        "topic": "TALK_SORCERER_MENU_MAIN",
+        "effect": [
+          {
+            "math": [
+              "u_val('spell_level', 'spell: earthshaper_boulder')",
+              "=",
+              "u_current_sorcerer_level"
+            ]
+          },
+          {
+            "math": [
+              "u_used_spell_slot_for_earthshaper_boulder",
+              "=",
+              "1"
+            ]
+          },
+          {
+            "math": [
+              "u_sorcerer_level_1_spells_known",
+              "++"
+            ]
+          }
+        ]
+      },
+      {
+        "text": "Go Back.",
+        "topic": "TALK_SORCERER_MENU_MAIN"
+      },
+      {
+        "text": "Quit.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_SORCERER_LEARN_SPELL_stormshaper_wall_of_fog_at_level_1",
+    "dynamic_line": "Wall of Fog: Draws forth a broad wall of thick fog.  While the sudden force of air pressure will floor any enemies caught in it, the conjuration is otherwise harmless.",
+    "responses": [
+      {
+        "text": "Select Spell.",
+        "topic": "TALK_SORCERER_MENU_MAIN",
+        "effect": [
+          {
+            "math": [
+              "u_val('spell_level', 'spell: stormshaper_wall_of_fog')",
+              "=",
+              "u_current_sorcerer_level"
+            ]
+          },
+          {
+            "math": [
+              "u_used_spell_slot_for_stormshaper_wall_of_fog",
+              "=",
+              "1"
+            ]
+          },
+          {
+            "math": [
+              "u_sorcerer_level_1_spells_known",
+              "++"
+            ]
+          }
+        ]
+      },
+      {
+        "text": "Go Back.",
+        "topic": "TALK_SORCERER_MENU_MAIN"
+      },
+      {
+        "text": "Quit.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_SORCERER_LEARN_SPELL_create_atomic_lamp_at_level_1",
+    "dynamic_line": "Lamp: Creates a magical lamp.",
+    "responses": [
+      {
+        "text": "Select Spell.",
+        "topic": "TALK_SORCERER_MENU_MAIN",
+        "effect": [
+          {
+            "math": [
+              "u_val('spell_level', 'spell: create_atomic_lamp')",
+              "=",
+              "u_current_sorcerer_level"
+            ]
+          },
+          {
+            "math": [
+              "u_used_spell_slot_for_create_atomic_lamp",
+              "=",
+              "1"
+            ]
+          },
+          {
+            "math": [
+              "u_sorcerer_level_1_spells_known",
+              "++"
+            ]
+          }
+        ]
+      },
+      {
+        "text": "Go Back.",
+        "topic": "TALK_SORCERER_MENU_MAIN"
+      },
+      {
+        "text": "Quit.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_SORCERER_LEARN_SPELL_laze_at_level_1",
+    "dynamic_line": "Laze: You concentrate and release a focused beam of photons at a target, also known as a laser.",
+    "responses": [
+      {
+        "text": "Select Spell.",
+        "topic": "TALK_SORCERER_MENU_MAIN",
+        "effect": [
+          {
+            "math": [
+              "u_val('spell_level', 'spell: laze')",
+              "=",
+              "u_current_sorcerer_level"
+            ]
+          },
+          {
+            "math": [
+              "u_used_spell_slot_for_laze",
+              "=",
+              "1"
+            ]
+          },
+          {
+            "math": [
+              "u_sorcerer_level_1_spells_known",
+              "++"
+            ]
+          }
+        ]
+      },
+      {
+        "text": "Go Back.",
+        "topic": "TALK_SORCERER_MENU_MAIN"
+      },
+      {
+        "text": "Quit.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_SORCERER_LEARN_SPELL_create_atomic_light_at_level_1",
+    "dynamic_line": "Magical Light: Creates a magical light.",
+    "responses": [
+      {
+        "text": "Select Spell.",
+        "topic": "TALK_SORCERER_MENU_MAIN",
+        "effect": [
+          {
+            "math": [
+              "u_val('spell_level', 'spell: create_atomic_light')",
+              "=",
+              "u_current_sorcerer_level"
+            ]
+          },
+          {
+            "math": [
+              "u_used_spell_slot_for_create_atomic_light",
+              "=",
+              "1"
+            ]
+          },
+          {
+            "math": [
+              "u_sorcerer_level_1_spells_known",
+              "++"
+            ]
+          }
+        ]
+      },
+      {
+        "text": "Go Back.",
+        "topic": "TALK_SORCERER_MENU_MAIN"
+      },
+      {
+        "text": "Quit.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_SORCERER_LEARN_SPELL_druid_woodshaft_at_level_1",
+    "dynamic_line": "Wooden Shaft: This spell creates a projectile of hardwood that shoots forth from the caster's hand at high speed to stab into an enemy.",
+    "responses": [
+      {
+        "text": "Select Spell.",
+        "topic": "TALK_SORCERER_MENU_MAIN",
+        "effect": [
+          {
+            "math": [
+              "u_val('spell_level', 'spell: druid_woodshaft')",
+              "=",
+              "u_current_sorcerer_level"
+            ]
+          },
+          {
+            "math": [
+              "u_used_spell_slot_for_druid_woodshaft",
+              "=",
+              "1"
+            ]
+          },
+          {
+            "math": [
+              "u_sorcerer_level_1_spells_known",
+              "++"
+            ]
+          }
+        ]
+      },
+      {
+        "text": "Go Back.",
+        "topic": "TALK_SORCERER_MENU_MAIN"
+      },
+      {
+        "text": "Quit.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_SORCERER_LEARN_SPELL_summon_cats_at_level_1",
+    "dynamic_line": "{'str': 'Bag of Cats'}: Are you the crazy cat lady?",
+    "responses": [
+      {
+        "text": "Select Spell.",
+        "topic": "TALK_SORCERER_MENU_MAIN",
+        "effect": [
+          {
+            "math": [
+              "u_val('spell_level', 'spell: summon_cats')",
+              "=",
+              "u_current_sorcerer_level"
+            ]
+          },
+          {
+            "math": [
+              "u_used_spell_slot_for_summon_cats",
+              "=",
+              "1"
+            ]
+          },
+          {
+            "math": [
+              "u_sorcerer_level_1_spells_known",
+              "++"
+            ]
+          }
+        ]
+      },
+      {
+        "text": "Go Back.",
+        "topic": "TALK_SORCERER_MENU_MAIN"
+      },
+      {
+        "text": "Quit.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_SORCERER_LEARN_SPELL_eshaper_rockbolt_at_level_1",
+    "dynamic_line": "Rockbolt: Fires a conjured stone projectile at high velocity.",
+    "responses": [
+      {
+        "text": "Select Spell.",
+        "topic": "TALK_SORCERER_MENU_MAIN",
+        "effect": [
+          {
+            "math": [
+              "u_val('spell_level', 'spell: eshaper_rockbolt')",
+              "=",
+              "u_current_sorcerer_level"
+            ]
+          },
+          {
+            "math": [
+              "u_used_spell_slot_for_eshaper_rockbolt",
+              "=",
+              "1"
+            ]
+          },
+          {
+            "math": [
+              "u_sorcerer_level_1_spells_known",
+              "++"
+            ]
+          }
+        ]
+      },
+      {
+        "text": "Go Back.",
+        "topic": "TALK_SORCERER_MENU_MAIN"
+      },
+      {
+        "text": "Quit.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_SORCERER_LEARN_SPELL_create_lighter_at_level_1",
+    "dynamic_line": "Finger Firelighter: Summons a small flame that does not burn you, but you can use it to light things on fire.  It seems to need you to have some intent to light things on fire, because you are able to put it in your pocket with no issue.",
+    "responses": [
+      {
+        "text": "Select Spell.",
+        "topic": "TALK_SORCERER_MENU_MAIN",
+        "effect": [
+          {
+            "math": [
+              "u_val('spell_level', 'spell: create_lighter')",
+              "=",
+              "u_current_sorcerer_level"
+            ]
+          },
+          {
+            "math": [
+              "u_used_spell_slot_for_create_lighter",
+              "=",
+              "1"
+            ]
+          },
+          {
+            "math": [
+              "u_sorcerer_level_1_spells_known",
+              "++"
+            ]
+          }
+        ]
+      },
+      {
+        "text": "Go Back.",
+        "topic": "TALK_SORCERER_MENU_MAIN"
+      },
+      {
+        "text": "Quit.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_SORCERER_LEARN_SPELL_chilling_touch_at_level_1",
+    "dynamic_line": "Chilling Touch: Freezes the touched target with intense cold.",
+    "responses": [
+      {
+        "text": "Select Spell.",
+        "topic": "TALK_SORCERER_MENU_MAIN",
+        "effect": [
+          {
+            "math": [
+              "u_val('spell_level', 'spell: chilling_touch')",
+              "=",
+              "u_current_sorcerer_level"
+            ]
+          },
+          {
+            "math": [
+              "u_used_spell_slot_for_chilling_touch",
+              "=",
+              "1"
+            ]
+          },
+          {
+            "math": [
+              "u_sorcerer_level_1_spells_known",
+              "++"
+            ]
+          }
+        ]
+      },
+      {
+        "text": "Go Back.",
+        "topic": "TALK_SORCERER_MENU_MAIN"
+      },
+      {
+        "text": "Quit.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_SORCERER_LEARN_SPELL_shadow_field_at_level_1",
+    "dynamic_line": "Shadow Field: Cast a field of intense shadows.",
+    "responses": [
+      {
+        "text": "Select Spell.",
+        "topic": "TALK_SORCERER_MENU_MAIN",
+        "effect": [
+          {
+            "math": [
+              "u_val('spell_level', 'spell: shadow_field')",
+              "=",
+              "u_current_sorcerer_level"
+            ]
+          },
+          {
+            "math": [
+              "u_used_spell_slot_for_shadow_field",
+              "=",
+              "1"
+            ]
+          },
+          {
+            "math": [
+              "u_sorcerer_level_1_spells_known",
+              "++"
+            ]
+          }
+        ]
+      },
+      {
+        "text": "Go Back.",
+        "topic": "TALK_SORCERER_MENU_MAIN"
+      },
+      {
+        "text": "Quit.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_SORCERER_LEARN_SPELL_magic_missile_at_level_1",
+    "dynamic_line": "Magic Missile: I cast Magic Missile at the darkness!",
+    "responses": [
+      {
+        "text": "Select Spell.",
+        "topic": "TALK_SORCERER_MENU_MAIN",
+        "effect": [
+          {
+            "math": [
+              "u_val('spell_level', 'spell: magic_missile')",
+              "=",
+              "u_current_sorcerer_level"
+            ]
+          },
+          {
+            "math": [
+              "u_used_spell_slot_for_magic_missile",
+              "=",
+              "1"
+            ]
+          },
+          {
+            "math": [
+              "u_sorcerer_level_1_spells_known",
+              "++"
+            ]
+          }
+        ]
+      },
+      {
+        "text": "Go Back.",
+        "topic": "TALK_SORCERER_MENU_MAIN"
+      },
+      {
+        "text": "Quit.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_SORCERER_LEARN_SPELL_shocking_lash_at_level_1",
+    "dynamic_line": "Shocking Lash: A quick burst of electricity strikes a target and possibly one other nearby.",
+    "responses": [
+      {
+        "text": "Select Spell.",
+        "topic": "TALK_SORCERER_MENU_MAIN",
+        "effect": [
+          {
+            "math": [
+              "u_val('spell_level', 'spell: shocking_lash')",
+              "=",
+              "u_current_sorcerer_level"
+            ]
+          },
+          {
+            "math": [
+              "u_used_spell_slot_for_shocking_lash",
+              "=",
+              "1"
+            ]
+          },
+          {
+            "math": [
+              "u_sorcerer_level_1_spells_known",
+              "++"
+            ]
+          }
+        ]
+      },
+      {
+        "text": "Go Back.",
+        "topic": "TALK_SORCERER_MENU_MAIN"
+      },
+      {
+        "text": "Quit.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_SORCERER_LEARN_SPELL_create_electric_lighter_at_level_1",
+    "dynamic_line": "Fire Spark: Summons a small electric spark, that doesn't harm anything.  You can use it to ignite something flammable.",
+    "responses": [
+      {
+        "text": "Select Spell.",
+        "topic": "TALK_SORCERER_MENU_MAIN",
+        "effect": [
+          {
+            "math": [
+              "u_val('spell_level', 'spell: create_electric_lighter')",
+              "=",
+              "u_current_sorcerer_level"
+            ]
+          },
+          {
+            "math": [
+              "u_used_spell_slot_for_create_electric_lighter",
+              "=",
+              "1"
+            ]
+          },
+          {
+            "math": [
+              "u_sorcerer_level_1_spells_known",
+              "++"
+            ]
+          }
+        ]
+      },
+      {
+        "text": "Go Back.",
+        "topic": "TALK_SORCERER_MENU_MAIN"
+      },
+      {
+        "text": "Quit.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_SORCERER_LEARN_SPELL_electric_arts_at_level_1",
+    "dynamic_line": "Electric Arts: This spell were designed for scholars, that just started to learn stormshaping.  It allows them to use their abilities, when their magic control is weak, and they can injure themselves with electricity.",
+    "responses": [
+      {
+        "text": "Select Spell.",
+        "topic": "TALK_SORCERER_MENU_MAIN",
+        "effect": [
+          {
+            "math": [
+              "u_val('spell_level', 'spell: electric_arts')",
+              "=",
+              "u_current_sorcerer_level"
+            ]
+          },
+          {
+            "math": [
+              "u_used_spell_slot_for_electric_arts",
+              "=",
+              "1"
+            ]
+          },
+          {
+            "math": [
+              "u_sorcerer_level_1_spells_known",
+              "++"
+            ]
+          }
+        ]
+      },
+      {
+        "text": "Go Back.",
+        "topic": "TALK_SORCERER_MENU_MAIN"
+      },
+      {
+        "text": "Quit.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_SORCERER_LEARN_SPELL_taze_at_level_1",
+    "dynamic_line": "Taze: This spell creates a very short range bolt of electricity to shock your foes.",
+    "responses": [
+      {
+        "text": "Select Spell.",
+        "topic": "TALK_SORCERER_MENU_MAIN",
+        "effect": [
+          {
+            "math": [
+              "u_val('spell_level', 'spell: taze')",
+              "=",
+              "u_current_sorcerer_level"
+            ]
+          },
+          {
+            "math": [
+              "u_used_spell_slot_for_taze",
+              "=",
+              "1"
+            ]
+          },
+          {
+            "math": [
+              "u_sorcerer_level_1_spells_known",
+              "++"
+            ]
+          }
+        ]
+      },
+      {
+        "text": "Go Back.",
+        "topic": "TALK_SORCERER_MENU_MAIN"
+      },
+      {
+        "text": "Quit.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_SORCERER_LEARN_SPELL_1",
+    "dynamic_line": "<u_val:sorcerer_level_1_spells_known> / <u_val:sorcerer_level_1_spells_known_slots> level 1 spells known.",
+    "speaker_effect": {
+      "effect": {
+        "math": [
+          "curent_spell_slot",
+          "=",
+          "1"
+        ]
+      }
+    },
+    "responses": [
+      {
+        "text": "Go Back.",
+        "topic": "TALK_SORCERER_MENU_MAIN"
+      },
+      {
+        "text": "Quit.",
+        "topic": "TALK_DONE"
+      },
+      {
+        "condition": {
+          "math": [
+            "u_used_spell_slot_for_summon_undead",
+            "==",
+            "0"
+          ]
+        },
+        "text": "Learn Summon Undead ( level 1 )",
+        "topic": "TALK_SORCERER_LEARN_SPELL_summon_undead_at_level_1"
+      },
+      {
+        "condition": {
+          "math": [
+            "u_used_spell_slot_for_necrotic_gaze",
+            "==",
+            "0"
+          ]
+        },
+        "text": "Learn Necrotic Gaze ( level 1 )",
+        "topic": "TALK_SORCERER_LEARN_SPELL_necrotic_gaze_at_level_1"
+      },
+      {
+        "condition": {
+          "math": [
+            "u_used_spell_slot_for_disruption_bolt",
+            "==",
+            "0"
+          ]
+        },
+        "text": "Learn Disruption Bolt ( level 1 )",
+        "topic": "TALK_SORCERER_LEARN_SPELL_disruption_bolt_at_level_1"
+      },
+      {
+        "condition": {
+          "math": [
+            "u_used_spell_slot_for_summon_wisps",
+            "==",
+            "0"
+          ]
+        },
+        "text": "Learn Ignus Fatuus ( level 1 )",
+        "topic": "TALK_SORCERER_LEARN_SPELL_summon_wisps_at_level_1"
+      },
+      {
+        "condition": {
+          "math": [
+            "u_used_spell_slot_for_bleed",
+            "==",
+            "0"
+          ]
+        },
+        "text": "Learn Bleed ( level 1 )",
+        "topic": "TALK_SORCERER_LEARN_SPELL_bleed_at_level_1"
+      },
+      {
+        "condition": {
+          "math": [
+            "u_used_spell_slot_for_light_healing",
+            "==",
+            "0"
+          ]
+        },
+        "text": "Learn Cure Light Wounds ( level 1 )",
+        "topic": "TALK_SORCERER_LEARN_SPELL_light_healing_at_level_1"
+      },
+      {
+        "condition": {
+          "math": [
+            "u_used_spell_slot_for_bio_acidicspray",
+            "==",
+            "0"
+          ]
+        },
+        "text": "Learn {'str': 'Acidic Spray'} ( level 1 )",
+        "topic": "TALK_SORCERER_LEARN_SPELL_bio_acidicspray_at_level_1"
+      },
+      {
+        "condition": {
+          "math": [
+            "u_used_spell_slot_for_biomancer_paralytic_dart",
+            "==",
+            "0"
+          ]
+        },
+        "text": "Learn Paralytic Dart ( level 1 )",
+        "topic": "TALK_SORCERER_LEARN_SPELL_biomancer_paralytic_dart_at_level_1"
+      },
+      {
+        "condition": {
+          "math": [
+            "u_used_spell_slot_for_biomancer_visceral_projection",
+            "==",
+            "0"
+          ]
+        },
+        "text": "Learn Visceral Projection ( level 1 )",
+        "topic": "TALK_SORCERER_LEARN_SPELL_biomancer_visceral_projection_at_level_1"
+      },
+      {
+        "condition": {
+          "math": [
+            "u_used_spell_slot_for_blinding_flash",
+            "==",
+            "0"
+          ]
+        },
+        "text": "Learn {'str': 'Blinding Flash'} ( level 1 )",
+        "topic": "TALK_SORCERER_LEARN_SPELL_blinding_flash_at_level_1"
+      },
+      {
+        "condition": {
+          "math": [
+            "u_used_spell_slot_for_ethereal_grasp",
+            "==",
+            "0"
+          ]
+        },
+        "text": "Learn Ethereal Grasp ( level 1 )",
+        "topic": "TALK_SORCERER_LEARN_SPELL_ethereal_grasp_at_level_1"
+      },
+      {
+        "condition": {
+          "math": [
+            "u_used_spell_slot_for_druid_tornskin",
+            "==",
+            "0"
+          ]
+        },
+        "text": "Learn Tornskin ( level 1 )",
+        "topic": "TALK_SORCERER_LEARN_SPELL_druid_tornskin_at_level_1"
+      },
+      {
+        "condition": {
+          "math": [
+            "u_used_spell_slot_for_druid_growth",
+            "==",
+            "0"
+          ]
+        },
+        "text": "Learn Seed of Growth ( level 1 )",
+        "topic": "TALK_SORCERER_LEARN_SPELL_druid_growth_at_level_1"
+      },
+      {
+        "condition": {
+          "math": [
+            "u_used_spell_slot_for_stonefist",
+            "==",
+            "0"
+          ]
+        },
+        "text": "Learn Stonefist ( level 1 )",
+        "topic": "TALK_SORCERER_LEARN_SPELL_stonefist_at_level_1"
+      },
+      {
+        "condition": {
+          "math": [
+            "u_used_spell_slot_for_eshaper_piercing_bolt",
+            "==",
+            "0"
+          ]
+        },
+        "text": "Learn Piercing Bolt ( level 1 )",
+        "topic": "TALK_SORCERER_LEARN_SPELL_eshaper_piercing_bolt_at_level_1"
+      },
+      {
+        "condition": {
+          "math": [
+            "u_used_spell_slot_for_earthshaper_boulder",
+            "==",
+            "0"
+          ]
+        },
+        "text": "Learn Summon Boulder ( level 1 )",
+        "topic": "TALK_SORCERER_LEARN_SPELL_earthshaper_boulder_at_level_1"
+      },
+      {
+        "condition": {
+          "math": [
+            "u_used_spell_slot_for_stormshaper_wall_of_fog",
+            "==",
+            "0"
+          ]
+        },
+        "text": "Learn Wall of Fog ( level 1 )",
+        "topic": "TALK_SORCERER_LEARN_SPELL_stormshaper_wall_of_fog_at_level_1"
+      },
+      {
+        "condition": {
+          "math": [
+            "u_used_spell_slot_for_create_atomic_lamp",
+            "==",
+            "0"
+          ]
+        },
+        "text": "Learn Lamp ( level 1 )",
+        "topic": "TALK_SORCERER_LEARN_SPELL_create_atomic_lamp_at_level_1"
+      },
+      {
+        "condition": {
+          "math": [
+            "u_used_spell_slot_for_laze",
+            "==",
+            "0"
+          ]
+        },
+        "text": "Learn Laze ( level 1 )",
+        "topic": "TALK_SORCERER_LEARN_SPELL_laze_at_level_1"
+      },
+      {
+        "condition": {
+          "math": [
+            "u_used_spell_slot_for_create_atomic_light",
+            "==",
+            "0"
+          ]
+        },
+        "text": "Learn Magical Light ( level 0 )",
+        "topic": "TALK_SORCERER_LEARN_SPELL_create_atomic_light_at_level_1"
+      },
+      {
+        "condition": {
+          "math": [
+            "u_used_spell_slot_for_druid_woodshaft",
+            "==",
+            "0"
+          ]
+        },
+        "text": "Learn Wooden Shaft ( level 0 )",
+        "topic": "TALK_SORCERER_LEARN_SPELL_druid_woodshaft_at_level_1"
+      },
+      {
+        "condition": {
+          "math": [
+            "u_used_spell_slot_for_summon_cats",
+            "==",
+            "0"
+          ]
+        },
+        "text": "Learn {'str': 'Bag of Cats'} ( level 0 )",
+        "topic": "TALK_SORCERER_LEARN_SPELL_summon_cats_at_level_1"
+      },
+      {
+        "condition": {
+          "math": [
+            "u_used_spell_slot_for_eshaper_rockbolt",
+            "==",
+            "0"
+          ]
+        },
+        "text": "Learn Rockbolt ( level 0 )",
+        "topic": "TALK_SORCERER_LEARN_SPELL_eshaper_rockbolt_at_level_1"
+      },
+      {
+        "condition": {
+          "math": [
+            "u_used_spell_slot_for_create_lighter",
+            "==",
+            "0"
+          ]
+        },
+        "text": "Learn Finger Firelighter ( level 0 )",
+        "topic": "TALK_SORCERER_LEARN_SPELL_create_lighter_at_level_1"
+      },
+      {
+        "condition": {
+          "math": [
+            "u_used_spell_slot_for_chilling_touch",
+            "==",
+            "0"
+          ]
+        },
+        "text": "Learn Chilling Touch ( level 0 )",
+        "topic": "TALK_SORCERER_LEARN_SPELL_chilling_touch_at_level_1"
+      },
+      {
+        "condition": {
+          "math": [
+            "u_used_spell_slot_for_shadow_field",
+            "==",
+            "0"
+          ]
+        },
+        "text": "Learn Shadow Field ( level 0 )",
+        "topic": "TALK_SORCERER_LEARN_SPELL_shadow_field_at_level_1"
+      },
+      {
+        "condition": {
+          "math": [
+            "u_used_spell_slot_for_magic_missile",
+            "==",
+            "0"
+          ]
+        },
+        "text": "Learn Magic Missile ( level 0 )",
+        "topic": "TALK_SORCERER_LEARN_SPELL_magic_missile_at_level_1"
+      },
+      {
+        "condition": {
+          "math": [
+            "u_used_spell_slot_for_shocking_lash",
+            "==",
+            "0"
+          ]
+        },
+        "text": "Learn Shocking Lash ( level 0 )",
+        "topic": "TALK_SORCERER_LEARN_SPELL_shocking_lash_at_level_1"
+      },
+      {
+        "condition": {
+          "math": [
+            "u_used_spell_slot_for_create_electric_lighter",
+            "==",
+            "0"
+          ]
+        },
+        "text": "Learn Fire Spark ( level 0 )",
+        "topic": "TALK_SORCERER_LEARN_SPELL_create_electric_lighter_at_level_1"
+      },
+      {
+        "condition": {
+          "math": [
+            "u_used_spell_slot_for_electric_arts",
+            "==",
+            "0"
+          ]
+        },
+        "text": "Learn Electric Arts ( level 0 )",
+        "topic": "TALK_SORCERER_LEARN_SPELL_electric_arts_at_level_1"
+      },
+      {
+        "condition": {
+          "math": [
+            "u_used_spell_slot_for_taze",
+            "==",
+            "0"
+          ]
+        },
+        "text": "Learn Taze ( level 0 )",
+        "topic": "TALK_SORCERER_LEARN_SPELL_taze_at_level_1"
+      }
+    ]
+  }
+]
