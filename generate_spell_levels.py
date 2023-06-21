@@ -11,6 +11,21 @@ tier_2_spell_list = []
 tier_3_spell_list = []
 spell_data = []
 
+def scroll_not_yet_read(scroll_name):
+    for scroll in tier_0_scroll_list:
+        if scroll_name == scroll:
+            return False
+    for scroll in tier_1_scroll_list:
+        if scroll_name == scroll:
+            return False
+    for scroll in tier_2_scroll_list:
+        if scroll_name == scroll:
+            return False
+    for scroll in tier_3_scroll_list:
+        if scroll_name == scroll:
+            return False
+    return True
+
 def read_item_group(path):
     change = False
     with open(path, "r", encoding="utf-8") as json_file:
@@ -23,26 +38,22 @@ def read_item_group(path):
             return None
         for jo in json_data:
             if isinstance(jo, dict):
-                if (
-                    jo["id"] == "spell_scroll_tier_0"
-                ):
+                if ( jo["id"] == "spell_scroll_tier_0" ):
                     for scroll in jo["items"]:
-                        tier_0_scroll_list.append(scroll[0])
-                if (
-                    jo["id"] == "spell_scroll_tier_1"
-                ):
+                        if scroll_not_yet_read(scroll[0]):
+                            tier_0_scroll_list.append(scroll[0])
+                if ( jo["id"] == "spell_scroll_tier_1" ):
                     for scroll in jo["items"]:
-                        tier_1_scroll_list.append(scroll[0])
-                if (
-                    jo["id"] == "spell_scroll_tier_2"
-                ):
+                        if scroll_not_yet_read(scroll[0]):
+                            tier_1_scroll_list.append(scroll[0])
+                if ( jo["id"] == "spell_scroll_tier_2" ):
                     for scroll in jo["items"]:
-                        tier_2_scroll_list.append(scroll[0])
-                if (
-                    jo["id"] == "spell_scroll_tier_3"
-                ):
+                        if scroll_not_yet_read(scroll[0]):
+                            tier_2_scroll_list.append(scroll[0])
+                if ( jo["id"] == "spell_scroll_tier_3" ):
                     for scroll in jo["items"]:
-                        tier_3_scroll_list.append(scroll[0])
+                        if scroll_not_yet_read(scroll[0]):
+                            tier_3_scroll_list.append(scroll[0])
     return
 
 def read_spell_scrolls(path):
@@ -223,7 +234,6 @@ def write_level_up_spells():
     main_topic = {
         "type": "effect_on_condition",
         "id": "EOC_level_up_sorcerer_spells",
-        "dynamic_line": "Pick a spell to forget",
         "effect": []
         }
     for spell in spell_data:

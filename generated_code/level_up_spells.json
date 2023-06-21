@@ -1,7 +1,6 @@
 {
   "type": "effect_on_condition",
   "id": "EOC_level_up_sorcerer_spells",
-  "dynamic_line": "Pick a spell to forget",
   "effect": [
     {
       "run_eocs": {
@@ -1811,48 +1810,6 @@
     },
     {
       "run_eocs": {
-        "id": "sorcerer_level_up_crystallize_mana",
-        "condition": {
-          "math": [
-            "u_used_spell_slot_for_crystallize_mana",
-            ">",
-            "0"
-          ]
-        },
-        "effect": [
-          {
-            "math": [
-              "u_val('spell_level', 'spell: crystallize_mana')",
-              "=",
-              "max(u_current_sorcerer_level, u_val('spell_level', 'spell: crystallize_mana') )"
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "run_eocs": {
-        "id": "sorcerer_level_up_crystallize_mana",
-        "condition": {
-          "math": [
-            "u_used_spell_slot_for_crystallize_mana",
-            ">",
-            "0"
-          ]
-        },
-        "effect": [
-          {
-            "math": [
-              "u_val('spell_level', 'spell: crystallize_mana')",
-              "=",
-              "max(u_current_sorcerer_level, u_val('spell_level', 'spell: crystallize_mana') )"
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "run_eocs": {
         "id": "sorcerer_level_up_protection_aura",
         "condition": {
           "math": [
@@ -2749,6 +2706,27 @@
               "u_val('spell_level', 'spell: biomancer_visceral_projection')",
               "=",
               "max(u_current_sorcerer_level, u_val('spell_level', 'spell: biomancer_visceral_projection') )"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "run_eocs": {
+        "id": "sorcerer_level_up_crystallize_mana",
+        "condition": {
+          "math": [
+            "u_used_spell_slot_for_crystallize_mana",
+            ">",
+            "0"
+          ]
+        },
+        "effect": [
+          {
+            "math": [
+              "u_val('spell_level', 'spell: crystallize_mana')",
+              "=",
+              "max(u_current_sorcerer_level, u_val('spell_level', 'spell: crystallize_mana') )"
             ]
           }
         ]

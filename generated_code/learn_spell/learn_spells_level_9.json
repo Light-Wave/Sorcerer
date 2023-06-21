@@ -3527,88 +3527,6 @@
   },
   {
     "type": "talk_topic",
-    "id": "TALK_SORCERER_LEARN_SPELL_crystallize_mana_at_level_9",
-    "dynamic_line": "Crystallize Mana: Crystallizes mana into solid form.",
-    "responses": [
-      {
-        "text": "Select Spell.",
-        "topic": "TALK_SORCERER_MENU_MAIN",
-        "effect": [
-          {
-            "math": [
-              "u_val('spell_level', 'spell: crystallize_mana')",
-              "=",
-              "u_current_sorcerer_level"
-            ]
-          },
-          {
-            "math": [
-              "u_used_spell_slot_for_crystallize_mana",
-              "=",
-              "9"
-            ]
-          },
-          {
-            "math": [
-              "u_sorcerer_level_9_spells_known",
-              "++"
-            ]
-          }
-        ]
-      },
-      {
-        "text": "Go Back.",
-        "topic": "TALK_SORCERER_MENU_MAIN"
-      },
-      {
-        "text": "Quit.",
-        "topic": "TALK_DONE"
-      }
-    ]
-  },
-  {
-    "type": "talk_topic",
-    "id": "TALK_SORCERER_LEARN_SPELL_crystallize_mana_at_level_9",
-    "dynamic_line": "Crystallize Mana: Crystallizes mana into solid form.",
-    "responses": [
-      {
-        "text": "Select Spell.",
-        "topic": "TALK_SORCERER_MENU_MAIN",
-        "effect": [
-          {
-            "math": [
-              "u_val('spell_level', 'spell: crystallize_mana')",
-              "=",
-              "u_current_sorcerer_level"
-            ]
-          },
-          {
-            "math": [
-              "u_used_spell_slot_for_crystallize_mana",
-              "=",
-              "9"
-            ]
-          },
-          {
-            "math": [
-              "u_sorcerer_level_9_spells_known",
-              "++"
-            ]
-          }
-        ]
-      },
-      {
-        "text": "Go Back.",
-        "topic": "TALK_SORCERER_MENU_MAIN"
-      },
-      {
-        "text": "Quit.",
-        "topic": "TALK_DONE"
-      }
-    ]
-  },
-  {
-    "type": "talk_topic",
     "id": "TALK_SORCERER_LEARN_SPELL_protection_aura_at_level_9",
     "dynamic_line": "{'str': 'Aura of Protection'}: Encases your whole body in a magical aura that protects you from the environment.",
     "responses": [
@@ -5348,6 +5266,47 @@
           {
             "math": [
               "u_used_spell_slot_for_biomancer_visceral_projection",
+              "=",
+              "9"
+            ]
+          },
+          {
+            "math": [
+              "u_sorcerer_level_9_spells_known",
+              "++"
+            ]
+          }
+        ]
+      },
+      {
+        "text": "Go Back.",
+        "topic": "TALK_SORCERER_MENU_MAIN"
+      },
+      {
+        "text": "Quit.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_SORCERER_LEARN_SPELL_crystallize_mana_at_level_9",
+    "dynamic_line": "Crystallize Mana: Crystallizes mana into solid form.",
+    "responses": [
+      {
+        "text": "Select Spell.",
+        "topic": "TALK_SORCERER_MENU_MAIN",
+        "effect": [
+          {
+            "math": [
+              "u_val('spell_level', 'spell: crystallize_mana')",
+              "=",
+              "u_current_sorcerer_level"
+            ]
+          },
+          {
+            "math": [
+              "u_used_spell_slot_for_crystallize_mana",
               "=",
               "9"
             ]
@@ -7243,28 +7202,6 @@
       {
         "condition": {
           "math": [
-            "u_used_spell_slot_for_crystallize_mana",
-            "==",
-            "0"
-          ]
-        },
-        "text": "Learn Crystallize Mana ( level 3 )",
-        "topic": "TALK_SORCERER_LEARN_SPELL_crystallize_mana_at_level_9"
-      },
-      {
-        "condition": {
-          "math": [
-            "u_used_spell_slot_for_crystallize_mana",
-            "==",
-            "0"
-          ]
-        },
-        "text": "Learn Crystallize Mana ( level 3 )",
-        "topic": "TALK_SORCERER_LEARN_SPELL_crystallize_mana_at_level_9"
-      },
-      {
-        "condition": {
-          "math": [
             "u_used_spell_slot_for_protection_aura",
             "==",
             "0"
@@ -7734,6 +7671,17 @@
         },
         "text": "Learn Visceral Projection ( level 1 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_biomancer_visceral_projection_at_level_9"
+      },
+      {
+        "condition": {
+          "math": [
+            "u_used_spell_slot_for_crystallize_mana",
+            "==",
+            "0"
+          ]
+        },
+        "text": "Learn Crystallize Mana ( level 1 )",
+        "topic": "TALK_SORCERER_LEARN_SPELL_crystallize_mana_at_level_9"
       },
       {
         "condition": {

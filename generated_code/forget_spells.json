@@ -3540,88 +3540,6 @@
     {
       "condition": {
         "math": [
-          "u_used_spell_slot_for_crystallize_mana",
-          ">",
-          "0"
-        ]
-      },
-      "text": "Forget Crystallize Mana ( level <u_val:used_spell_slot_for_crystallize_mana> )",
-      "topic": "TALK_SORCERER_MENU_MAIN",
-      "effect": [
-        {
-          "math": [
-            "u_val('spell_level', 'spell: crystallize_mana')",
-            "=",
-            "-1"
-          ]
-        },
-        {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
-          "variables": {
-            "forgotten_spell_level": {
-              "u_val": "used_spell_slot_for_crystallize_mana"
-            }
-          }
-        },
-        {
-          "math": [
-            "u_used_spell_slot_for_crystallize_mana",
-            "=",
-            "0"
-          ]
-        },
-        {
-          "math": [
-            "u_sorcerer_forget_spell_charge",
-            "--"
-          ]
-        }
-      ]
-    },
-    {
-      "condition": {
-        "math": [
-          "u_used_spell_slot_for_crystallize_mana",
-          ">",
-          "0"
-        ]
-      },
-      "text": "Forget Crystallize Mana ( level <u_val:used_spell_slot_for_crystallize_mana> )",
-      "topic": "TALK_SORCERER_MENU_MAIN",
-      "effect": [
-        {
-          "math": [
-            "u_val('spell_level', 'spell: crystallize_mana')",
-            "=",
-            "-1"
-          ]
-        },
-        {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
-          "variables": {
-            "forgotten_spell_level": {
-              "u_val": "used_spell_slot_for_crystallize_mana"
-            }
-          }
-        },
-        {
-          "math": [
-            "u_used_spell_slot_for_crystallize_mana",
-            "=",
-            "0"
-          ]
-        },
-        {
-          "math": [
-            "u_sorcerer_forget_spell_charge",
-            "--"
-          ]
-        }
-      ]
-    },
-    {
-      "condition": {
-        "math": [
           "u_used_spell_slot_for_protection_aura",
           ">",
           "0"
@@ -5370,6 +5288,47 @@
         {
           "math": [
             "u_used_spell_slot_for_biomancer_visceral_projection",
+            "=",
+            "0"
+          ]
+        },
+        {
+          "math": [
+            "u_sorcerer_forget_spell_charge",
+            "--"
+          ]
+        }
+      ]
+    },
+    {
+      "condition": {
+        "math": [
+          "u_used_spell_slot_for_crystallize_mana",
+          ">",
+          "0"
+        ]
+      },
+      "text": "Forget Crystallize Mana ( level <u_val:used_spell_slot_for_crystallize_mana> )",
+      "topic": "TALK_SORCERER_MENU_MAIN",
+      "effect": [
+        {
+          "math": [
+            "u_val('spell_level', 'spell: crystallize_mana')",
+            "=",
+            "-1"
+          ]
+        },
+        {
+          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "variables": {
+            "forgotten_spell_level": {
+              "u_val": "used_spell_slot_for_crystallize_mana"
+            }
+          }
+        },
+        {
+          "math": [
+            "u_used_spell_slot_for_crystallize_mana",
             "=",
             "0"
           ]
