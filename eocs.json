@@ -61,7 +61,9 @@
         }
       },
       { "run_eocs": "EOC_level_up_sorcerer_spell_slots_known" },
-      { "run_eocs": "EOC_open_sorcerer_menu" }
+      { "run_eocs": "EOC_level_up_sorcerer_spells" },
+      { "run_eocs": "EOC_open_sorcerer_menu" },
+      { "math": [ "u_skill('spellcraft')", "=", "max(u_skill('spellcraft'), u_current_sorcerer_level)" ] }
     ]
   },
   {

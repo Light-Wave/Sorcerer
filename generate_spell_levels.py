@@ -219,6 +219,29 @@ def write_forget_spell():
     with open(path + "/forget_spells.json", mode="wt") as f:
         f.write(json.dumps(main_topic, indent=2))
 
+def write_level_up_spells():
+    main_topic = {
+        "type": "effect_on_condition",
+        "id": "EOC_level_up_sorcerer_spells",
+        "dynamic_line": "Pick a spell to forget",
+        "effect": []
+        }
+    for spell in spell_data:
+        effect = {
+            "run_eocs": {
+              "id": "sorcerer_level_up_"+spell["safe_id"],
+              "condition": { "math": [ "u_used_spell_slot_for_"+spell["safe_id"], ">", "0" ] },
+              "effect": [ { "math": [ "u_val('spell_level', 'spell: " + spell["id"] + "')", "=", "max(u_current_sorcerer_level, u_val('spell_level', 'spell: " + spell["id"] + "') )" ] } ]
+            }
+        }
+        main_topic["effect"].append(effect)
+    path = "generated_code/"
+    isExist = os.path.exists(path)
+    if not isExist:
+        os.makedirs(path)
+    with open(path + "/level_up_spells.json", mode="wt") as f:
+        f.write(json.dumps(main_topic, indent=2))
+
 read_item_group("../../data/mods/Magiclysm/itemgroups/spellbooks.json")
 read_spell_scrolls("../../data/mods/Magiclysm/items/spell_scrolls.json")
 
@@ -235,5 +258,6 @@ for number in range(0,10):
     write_learn_spell(number)
 
 write_forget_spell()
+write_level_up_spells()
 
 input(".")
