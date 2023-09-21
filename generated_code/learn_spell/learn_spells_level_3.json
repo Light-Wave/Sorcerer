@@ -166,7 +166,7 @@
   {
     "type": "talk_topic",
     "id": "TALK_SORCERER_LEARN_SPELL_protection_aura_at_level_3",
-    "dynamic_line": "{'str': 'Aura of Protection'}: Encases your whole body in a magical aura that protects you from the environment.",
+    "dynamic_line": "Aura of Protection: Encases your whole body in a magical aura that protects you from the environment.",
     "responses": [
       {
         "text": "Select Spell.",
@@ -658,7 +658,7 @@
   {
     "type": "talk_topic",
     "id": "TALK_SORCERER_LEARN_SPELL_burning_hands_at_level_3",
-    "dynamic_line": "{'str': 'Burning Hands'}: You're pretty sure you saw this in a game somewhere.  You fire a short-range cone of fire.",
+    "dynamic_line": "Burning Hands: You're pretty sure you saw this in a game somewhere.  You fire a short-range cone of fire.",
     "responses": [
       {
         "text": "Select Spell.",
@@ -904,7 +904,7 @@
   {
     "type": "talk_topic",
     "id": "TALK_SORCERER_LEARN_SPELL_magus_force_jar_at_level_3",
-    "dynamic_line": "{'str': 'Jar of Force'}: Summon a jar of force in which you can store liquids.",
+    "dynamic_line": "Jar of Force: Summon a jar of force in which you can store liquids.",
     "responses": [
       {
         "text": "Select Spell.",
@@ -945,7 +945,7 @@
   {
     "type": "talk_topic",
     "id": "TALK_SORCERER_LEARN_SPELL_magus_summon_impact_sling_at_level_3",
-    "dynamic_line": "{'str': 'Impact Sling'}: This spell infuses a sling with tremendous force, delivering devastating pebble shots until the energy tears it apart.",
+    "dynamic_line": "Impact Sling: This spell infuses a sling with tremendous force, delivering devastating pebble shots until the energy tears it apart.",
     "responses": [
       {
         "text": "Select Spell.",
@@ -1478,7 +1478,7 @@
   {
     "type": "talk_topic",
     "id": "TALK_SORCERER_LEARN_SPELL_bless_at_level_3",
-    "dynamic_line": "{'str': 'Bless'}: A spell of blessing that gives you energy and boosts your abilities.",
+    "dynamic_line": "Bless: A spell of blessing that gives you energy and boosts your abilities.",
     "responses": [
       {
         "text": "Select Spell.",
@@ -1806,7 +1806,7 @@
   {
     "type": "talk_topic",
     "id": "TALK_SORCERER_LEARN_SPELL_bio_acidicspray_at_level_3",
-    "dynamic_line": "{'str': 'Acidic Spray'}: When cast, the mage opens his mouth and sprays acid in a wide cone to dissolve his foes into goo.  Just imagine what he'll do with the goo.",
+    "dynamic_line": "Acidic Spray: When cast, the mage opens his mouth and sprays acid in a wide cone to dissolve his foes into goo.  Just imagine what he'll do with the goo.",
     "responses": [
       {
         "text": "Select Spell.",
@@ -1970,7 +1970,7 @@
   {
     "type": "talk_topic",
     "id": "TALK_SORCERER_LEARN_SPELL_blinding_flash_at_level_3",
-    "dynamic_line": "{'str': 'Blinding Flash'}: Blind enemies for a short time with a sudden, dazzling light.  Higher levels deal slightly higher damage.",
+    "dynamic_line": "Blinding Flash: Blind enemies for a short time with a sudden, dazzling light.  Higher levels deal slightly higher damage.",
     "responses": [
       {
         "text": "Select Spell.",
@@ -2462,7 +2462,7 @@
   {
     "type": "talk_topic",
     "id": "TALK_SORCERER_LEARN_SPELL_summon_cats_at_level_3",
-    "dynamic_line": "{'str': 'Bag of Cats'}: Are you the crazy cat lady?",
+    "dynamic_line": "Bag of Cats: Are you the crazy cat lady?",
     "responses": [
       {
         "text": "Select Spell.",
@@ -2748,47 +2748,6 @@
   },
   {
     "type": "talk_topic",
-    "id": "TALK_SORCERER_LEARN_SPELL_create_electric_lighter_at_level_3",
-    "dynamic_line": "Fire Spark: Summons a small electric spark, that doesn't harm anything.  You can use it to ignite something flammable.",
-    "responses": [
-      {
-        "text": "Select Spell.",
-        "topic": "TALK_SORCERER_MENU_MAIN",
-        "effect": [
-          {
-            "math": [
-              "u_val('spell_level', 'spell: create_electric_lighter')",
-              "=",
-              "u_current_sorcerer_level"
-            ]
-          },
-          {
-            "math": [
-              "u_used_spell_slot_for_create_electric_lighter",
-              "=",
-              "3"
-            ]
-          },
-          {
-            "math": [
-              "u_sorcerer_level_3_spells_known",
-              "++"
-            ]
-          }
-        ]
-      },
-      {
-        "text": "Go Back.",
-        "topic": "TALK_SORCERER_MENU_MAIN"
-      },
-      {
-        "text": "Quit.",
-        "topic": "TALK_DONE"
-      }
-    ]
-  },
-  {
-    "type": "talk_topic",
     "id": "TALK_SORCERER_LEARN_SPELL_electric_arts_at_level_3",
     "dynamic_line": "Electric Arts: This spell were designed for scholars, that just started to learn stormshaping.  It allows them to use their abilities, when their magic control is weak, and they can injure themselves with electricity.",
     "responses": [
@@ -2847,6 +2806,47 @@
           {
             "math": [
               "u_used_spell_slot_for_taze",
+              "=",
+              "3"
+            ]
+          },
+          {
+            "math": [
+              "u_sorcerer_level_3_spells_known",
+              "++"
+            ]
+          }
+        ]
+      },
+      {
+        "text": "Go Back.",
+        "topic": "TALK_SORCERER_MENU_MAIN"
+      },
+      {
+        "text": "Quit.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_SORCERER_LEARN_SPELL_create_rune_sorcerer_at_level_3",
+    "dynamic_line": "Counterfeit Rune: This ritual creates a small pebble infused with a sorcerer's power.  It can trick spells that require runes to cast to think that you have the rune required.",
+    "responses": [
+      {
+        "text": "Select Spell.",
+        "topic": "TALK_SORCERER_MENU_MAIN",
+        "effect": [
+          {
+            "math": [
+              "u_val('spell_level', 'spell: create_rune_sorcerer')",
+              "=",
+              "u_current_sorcerer_level"
+            ]
+          },
+          {
+            "math": [
+              "u_used_spell_slot_for_create_rune_sorcerer",
               "=",
               "3"
             ]
@@ -2943,7 +2943,7 @@
             "0"
           ]
         },
-        "text": "Learn {'str': 'Aura of Protection'} ( level 3 )",
+        "text": "Learn Aura of Protection ( level 3 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_protection_aura_at_level_3"
       },
       {
@@ -3075,7 +3075,7 @@
             "0"
           ]
         },
-        "text": "Learn {'str': 'Burning Hands'} ( level 3 )",
+        "text": "Learn Burning Hands ( level 3 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_burning_hands_at_level_3"
       },
       {
@@ -3141,7 +3141,7 @@
             "0"
           ]
         },
-        "text": "Learn {'str': 'Jar of Force'} ( level 3 )",
+        "text": "Learn Jar of Force ( level 3 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_magus_force_jar_at_level_3"
       },
       {
@@ -3152,7 +3152,7 @@
             "0"
           ]
         },
-        "text": "Learn {'str': 'Impact Sling'} ( level 3 )",
+        "text": "Learn Impact Sling ( level 3 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_magus_summon_impact_sling_at_level_3"
       },
       {
@@ -3295,7 +3295,7 @@
             "0"
           ]
         },
-        "text": "Learn {'str': 'Bless'} ( level 2 )",
+        "text": "Learn Bless ( level 2 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_bless_at_level_3"
       },
       {
@@ -3383,7 +3383,7 @@
             "0"
           ]
         },
-        "text": "Learn {'str': 'Acidic Spray'} ( level 1 )",
+        "text": "Learn Acidic Spray ( level 1 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_bio_acidicspray_at_level_3"
       },
       {
@@ -3427,7 +3427,7 @@
             "0"
           ]
         },
-        "text": "Learn {'str': 'Blinding Flash'} ( level 1 )",
+        "text": "Learn Blinding Flash ( level 1 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_blinding_flash_at_level_3"
       },
       {
@@ -3559,7 +3559,7 @@
             "0"
           ]
         },
-        "text": "Learn {'str': 'Bag of Cats'} ( level 0 )",
+        "text": "Learn Bag of Cats ( level 0 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_summon_cats_at_level_3"
       },
       {
@@ -3631,17 +3631,6 @@
       {
         "condition": {
           "math": [
-            "u_used_spell_slot_for_create_electric_lighter",
-            "==",
-            "0"
-          ]
-        },
-        "text": "Learn Fire Spark ( level 0 )",
-        "topic": "TALK_SORCERER_LEARN_SPELL_create_electric_lighter_at_level_3"
-      },
-      {
-        "condition": {
-          "math": [
             "u_used_spell_slot_for_electric_arts",
             "==",
             "0"
@@ -3660,6 +3649,17 @@
         },
         "text": "Learn Taze ( level 0 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_taze_at_level_3"
+      },
+      {
+        "condition": {
+          "math": [
+            "u_used_spell_slot_for_create_rune_sorcerer",
+            "==",
+            "0"
+          ]
+        },
+        "text": "Learn Counterfeit Rune ( level 0 )",
+        "topic": "TALK_SORCERER_LEARN_SPELL_create_rune_sorcerer_at_level_3"
       }
     ]
   }

@@ -84,7 +84,7 @@
   {
     "type": "talk_topic",
     "id": "TALK_SORCERER_LEARN_SPELL_summon_cats_at_level_0",
-    "dynamic_line": "{'str': 'Bag of Cats'}: Are you the crazy cat lady?",
+    "dynamic_line": "Bag of Cats: Are you the crazy cat lady?",
     "responses": [
       {
         "text": "Select Spell.",
@@ -370,47 +370,6 @@
   },
   {
     "type": "talk_topic",
-    "id": "TALK_SORCERER_LEARN_SPELL_create_electric_lighter_at_level_0",
-    "dynamic_line": "Fire Spark: Summons a small electric spark, that doesn't harm anything.  You can use it to ignite something flammable.",
-    "responses": [
-      {
-        "text": "Select Spell.",
-        "topic": "TALK_SORCERER_MENU_MAIN",
-        "effect": [
-          {
-            "math": [
-              "u_val('spell_level', 'spell: create_electric_lighter')",
-              "=",
-              "u_current_sorcerer_level"
-            ]
-          },
-          {
-            "math": [
-              "u_used_spell_slot_for_create_electric_lighter",
-              "=",
-              "0.5"
-            ]
-          },
-          {
-            "math": [
-              "u_sorcerer_level_0_spells_known",
-              "++"
-            ]
-          }
-        ]
-      },
-      {
-        "text": "Go Back.",
-        "topic": "TALK_SORCERER_MENU_MAIN"
-      },
-      {
-        "text": "Quit.",
-        "topic": "TALK_DONE"
-      }
-    ]
-  },
-  {
-    "type": "talk_topic",
     "id": "TALK_SORCERER_LEARN_SPELL_electric_arts_at_level_0",
     "dynamic_line": "Electric Arts: This spell were designed for scholars, that just started to learn stormshaping.  It allows them to use their abilities, when their magic control is weak, and they can injure themselves with electricity.",
     "responses": [
@@ -493,6 +452,47 @@
   },
   {
     "type": "talk_topic",
+    "id": "TALK_SORCERER_LEARN_SPELL_create_rune_sorcerer_at_level_0",
+    "dynamic_line": "Counterfeit Rune: This ritual creates a small pebble infused with a sorcerer's power.  It can trick spells that require runes to cast to think that you have the rune required.",
+    "responses": [
+      {
+        "text": "Select Spell.",
+        "topic": "TALK_SORCERER_MENU_MAIN",
+        "effect": [
+          {
+            "math": [
+              "u_val('spell_level', 'spell: create_rune_sorcerer')",
+              "=",
+              "u_current_sorcerer_level"
+            ]
+          },
+          {
+            "math": [
+              "u_used_spell_slot_for_create_rune_sorcerer",
+              "=",
+              "0.5"
+            ]
+          },
+          {
+            "math": [
+              "u_sorcerer_level_0_spells_known",
+              "++"
+            ]
+          }
+        ]
+      },
+      {
+        "text": "Go Back.",
+        "topic": "TALK_SORCERER_MENU_MAIN"
+      },
+      {
+        "text": "Quit.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "type": "talk_topic",
     "id": "TALK_SORCERER_LEARN_SPELL_0",
     "dynamic_line": "<u_val:sorcerer_level_0_spells_known> / <u_val:sorcerer_level_0_spells_known_slots> level 0 spells known.",
     "speaker_effect": {
@@ -543,7 +543,7 @@
             "0"
           ]
         },
-        "text": "Learn {'str': 'Bag of Cats'} ( level 0 )",
+        "text": "Learn Bag of Cats ( level 0 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_summon_cats_at_level_0"
       },
       {
@@ -615,17 +615,6 @@
       {
         "condition": {
           "math": [
-            "u_used_spell_slot_for_create_electric_lighter",
-            "==",
-            "0"
-          ]
-        },
-        "text": "Learn Fire Spark ( level 0 )",
-        "topic": "TALK_SORCERER_LEARN_SPELL_create_electric_lighter_at_level_0"
-      },
-      {
-        "condition": {
-          "math": [
             "u_used_spell_slot_for_electric_arts",
             "==",
             "0"
@@ -644,6 +633,17 @@
         },
         "text": "Learn Taze ( level 0 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_taze_at_level_0"
+      },
+      {
+        "condition": {
+          "math": [
+            "u_used_spell_slot_for_create_rune_sorcerer",
+            "==",
+            "0"
+          ]
+        },
+        "text": "Learn Counterfeit Rune ( level 0 )",
+        "topic": "TALK_SORCERER_LEARN_SPELL_create_rune_sorcerer_at_level_0"
       }
     ]
   }

@@ -165,47 +165,6 @@
   },
   {
     "type": "talk_topic",
-    "id": "TALK_SORCERER_LEARN_SPELL_convert_at_level_5",
-    "dynamic_line": "Convert: Kill an ally creature, converting its life energy into compact rune, that you can use afterwards.",
-    "responses": [
-      {
-        "text": "Select Spell.",
-        "topic": "TALK_SORCERER_MENU_MAIN",
-        "effect": [
-          {
-            "math": [
-              "u_val('spell_level', 'spell: convert')",
-              "=",
-              "u_current_sorcerer_level"
-            ]
-          },
-          {
-            "math": [
-              "u_used_spell_slot_for_convert",
-              "=",
-              "5"
-            ]
-          },
-          {
-            "math": [
-              "u_sorcerer_level_5_spells_known",
-              "++"
-            ]
-          }
-        ]
-      },
-      {
-        "text": "Go Back.",
-        "topic": "TALK_SORCERER_MENU_MAIN"
-      },
-      {
-        "text": "Quit.",
-        "topic": "TALK_DONE"
-      }
-    ]
-  },
-  {
-    "type": "talk_topic",
     "id": "TALK_SORCERER_LEARN_SPELL_recover_fatigue_at_level_5",
     "dynamic_line": "Nature's Trance: Your connection to living things allows you to go into a magical trance.  This allows you to recover fatigue quickly in exchange for mana.",
     "responses": [
@@ -1272,8 +1231,49 @@
   },
   {
     "type": "talk_topic",
+    "id": "TALK_SORCERER_LEARN_SPELL_convert_sorcerer_at_level_5",
+    "dynamic_line": "Convert: Kill an ally creature, converting its life energy into compact rune, that you can use afterwards.",
+    "responses": [
+      {
+        "text": "Select Spell.",
+        "topic": "TALK_SORCERER_MENU_MAIN",
+        "effect": [
+          {
+            "math": [
+              "u_val('spell_level', 'spell: convert_sorcerer')",
+              "=",
+              "u_current_sorcerer_level"
+            ]
+          },
+          {
+            "math": [
+              "u_used_spell_slot_for_convert_sorcerer",
+              "=",
+              "5"
+            ]
+          },
+          {
+            "math": [
+              "u_sorcerer_level_5_spells_known",
+              "++"
+            ]
+          }
+        ]
+      },
+      {
+        "text": "Go Back.",
+        "topic": "TALK_SORCERER_MENU_MAIN"
+      },
+      {
+        "text": "Quit.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "type": "talk_topic",
     "id": "TALK_SORCERER_LEARN_SPELL_animist_summon_decaying_boneclub_at_level_5",
-    "dynamic_line": "{'str': 'Decaying Boneclub'}: This spell links your live blood to the dead blood & bones, creating a club hungry for the flesh of the living.",
+    "dynamic_line": "Decaying Boneclub: This spell links your live blood to the dead blood & bones, creating a club hungry for the flesh of the living.",
     "responses": [
       {
         "text": "Select Spell.",
@@ -1642,7 +1642,7 @@
   {
     "type": "talk_topic",
     "id": "TALK_SORCERER_LEARN_SPELL_kelvinist_flamebreath_at_level_5",
-    "dynamic_line": "{'str': 'Flamebreath'}: This spell ignites dust scattered in the air, creating a cone of flame.  The hot ashes can cling to targets, causing additional burns over time.",
+    "dynamic_line": "Flamebreath: This spell ignites dust scattered in the air, creating a cone of flame.  The hot ashes can cling to targets, causing additional burns over time.",
     "responses": [
       {
         "text": "Select Spell.",
@@ -2011,7 +2011,7 @@
   {
     "type": "talk_topic",
     "id": "TALK_SORCERER_LEARN_SPELL_protection_aura_at_level_5",
-    "dynamic_line": "{'str': 'Aura of Protection'}: Encases your whole body in a magical aura that protects you from the environment.",
+    "dynamic_line": "Aura of Protection: Encases your whole body in a magical aura that protects you from the environment.",
     "responses": [
       {
         "text": "Select Spell.",
@@ -2503,7 +2503,7 @@
   {
     "type": "talk_topic",
     "id": "TALK_SORCERER_LEARN_SPELL_burning_hands_at_level_5",
-    "dynamic_line": "{'str': 'Burning Hands'}: You're pretty sure you saw this in a game somewhere.  You fire a short-range cone of fire.",
+    "dynamic_line": "Burning Hands: You're pretty sure you saw this in a game somewhere.  You fire a short-range cone of fire.",
     "responses": [
       {
         "text": "Select Spell.",
@@ -2749,7 +2749,7 @@
   {
     "type": "talk_topic",
     "id": "TALK_SORCERER_LEARN_SPELL_magus_force_jar_at_level_5",
-    "dynamic_line": "{'str': 'Jar of Force'}: Summon a jar of force in which you can store liquids.",
+    "dynamic_line": "Jar of Force: Summon a jar of force in which you can store liquids.",
     "responses": [
       {
         "text": "Select Spell.",
@@ -2790,7 +2790,7 @@
   {
     "type": "talk_topic",
     "id": "TALK_SORCERER_LEARN_SPELL_magus_summon_impact_sling_at_level_5",
-    "dynamic_line": "{'str': 'Impact Sling'}: This spell infuses a sling with tremendous force, delivering devastating pebble shots until the energy tears it apart.",
+    "dynamic_line": "Impact Sling: This spell infuses a sling with tremendous force, delivering devastating pebble shots until the energy tears it apart.",
     "responses": [
       {
         "text": "Select Spell.",
@@ -3323,7 +3323,7 @@
   {
     "type": "talk_topic",
     "id": "TALK_SORCERER_LEARN_SPELL_bless_at_level_5",
-    "dynamic_line": "{'str': 'Bless'}: A spell of blessing that gives you energy and boosts your abilities.",
+    "dynamic_line": "Bless: A spell of blessing that gives you energy and boosts your abilities.",
     "responses": [
       {
         "text": "Select Spell.",
@@ -3651,7 +3651,7 @@
   {
     "type": "talk_topic",
     "id": "TALK_SORCERER_LEARN_SPELL_bio_acidicspray_at_level_5",
-    "dynamic_line": "{'str': 'Acidic Spray'}: When cast, the mage opens his mouth and sprays acid in a wide cone to dissolve his foes into goo.  Just imagine what he'll do with the goo.",
+    "dynamic_line": "Acidic Spray: When cast, the mage opens his mouth and sprays acid in a wide cone to dissolve his foes into goo.  Just imagine what he'll do with the goo.",
     "responses": [
       {
         "text": "Select Spell.",
@@ -3815,7 +3815,7 @@
   {
     "type": "talk_topic",
     "id": "TALK_SORCERER_LEARN_SPELL_blinding_flash_at_level_5",
-    "dynamic_line": "{'str': 'Blinding Flash'}: Blind enemies for a short time with a sudden, dazzling light.  Higher levels deal slightly higher damage.",
+    "dynamic_line": "Blinding Flash: Blind enemies for a short time with a sudden, dazzling light.  Higher levels deal slightly higher damage.",
     "responses": [
       {
         "text": "Select Spell.",
@@ -4307,7 +4307,7 @@
   {
     "type": "talk_topic",
     "id": "TALK_SORCERER_LEARN_SPELL_summon_cats_at_level_5",
-    "dynamic_line": "{'str': 'Bag of Cats'}: Are you the crazy cat lady?",
+    "dynamic_line": "Bag of Cats: Are you the crazy cat lady?",
     "responses": [
       {
         "text": "Select Spell.",
@@ -4593,47 +4593,6 @@
   },
   {
     "type": "talk_topic",
-    "id": "TALK_SORCERER_LEARN_SPELL_create_electric_lighter_at_level_5",
-    "dynamic_line": "Fire Spark: Summons a small electric spark, that doesn't harm anything.  You can use it to ignite something flammable.",
-    "responses": [
-      {
-        "text": "Select Spell.",
-        "topic": "TALK_SORCERER_MENU_MAIN",
-        "effect": [
-          {
-            "math": [
-              "u_val('spell_level', 'spell: create_electric_lighter')",
-              "=",
-              "u_current_sorcerer_level"
-            ]
-          },
-          {
-            "math": [
-              "u_used_spell_slot_for_create_electric_lighter",
-              "=",
-              "5"
-            ]
-          },
-          {
-            "math": [
-              "u_sorcerer_level_5_spells_known",
-              "++"
-            ]
-          }
-        ]
-      },
-      {
-        "text": "Go Back.",
-        "topic": "TALK_SORCERER_MENU_MAIN"
-      },
-      {
-        "text": "Quit.",
-        "topic": "TALK_DONE"
-      }
-    ]
-  },
-  {
-    "type": "talk_topic",
     "id": "TALK_SORCERER_LEARN_SPELL_electric_arts_at_level_5",
     "dynamic_line": "Electric Arts: This spell were designed for scholars, that just started to learn stormshaping.  It allows them to use their abilities, when their magic control is weak, and they can injure themselves with electricity.",
     "responses": [
@@ -4692,6 +4651,47 @@
           {
             "math": [
               "u_used_spell_slot_for_taze",
+              "=",
+              "5"
+            ]
+          },
+          {
+            "math": [
+              "u_sorcerer_level_5_spells_known",
+              "++"
+            ]
+          }
+        ]
+      },
+      {
+        "text": "Go Back.",
+        "topic": "TALK_SORCERER_MENU_MAIN"
+      },
+      {
+        "text": "Quit.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_SORCERER_LEARN_SPELL_create_rune_sorcerer_at_level_5",
+    "dynamic_line": "Counterfeit Rune: This ritual creates a small pebble infused with a sorcerer's power.  It can trick spells that require runes to cast to think that you have the rune required.",
+    "responses": [
+      {
+        "text": "Select Spell.",
+        "topic": "TALK_SORCERER_MENU_MAIN",
+        "effect": [
+          {
+            "math": [
+              "u_val('spell_level', 'spell: create_rune_sorcerer')",
+              "=",
+              "u_current_sorcerer_level"
+            ]
+          },
+          {
+            "math": [
+              "u_used_spell_slot_for_create_rune_sorcerer",
               "=",
               "5"
             ]
@@ -4779,17 +4779,6 @@
         },
         "text": "Learn Life Detonation ( level 5 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_life_detonation_at_level_5"
-      },
-      {
-        "condition": {
-          "math": [
-            "u_used_spell_slot_for_convert",
-            "==",
-            "0"
-          ]
-        },
-        "text": "Learn Convert ( level 5 )",
-        "topic": "TALK_SORCERER_LEARN_SPELL_convert_at_level_5"
       },
       {
         "condition": {
@@ -5080,12 +5069,23 @@
       {
         "condition": {
           "math": [
+            "u_used_spell_slot_for_convert_sorcerer",
+            "==",
+            "0"
+          ]
+        },
+        "text": "Learn Convert ( level 5 )",
+        "topic": "TALK_SORCERER_LEARN_SPELL_convert_sorcerer_at_level_5"
+      },
+      {
+        "condition": {
+          "math": [
             "u_used_spell_slot_for_animist_summon_decaying_boneclub",
             "==",
             "0"
           ]
         },
-        "text": "Learn {'str': 'Decaying Boneclub'} ( level 4 )",
+        "text": "Learn Decaying Boneclub ( level 4 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_animist_summon_decaying_boneclub_at_level_5"
       },
       {
@@ -5184,7 +5184,7 @@
             "0"
           ]
         },
-        "text": "Learn {'str': 'Flamebreath'} ( level 4 )",
+        "text": "Learn Flamebreath ( level 4 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_kelvinist_flamebreath_at_level_5"
       },
       {
@@ -5283,7 +5283,7 @@
             "0"
           ]
         },
-        "text": "Learn {'str': 'Aura of Protection'} ( level 3 )",
+        "text": "Learn Aura of Protection ( level 3 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_protection_aura_at_level_5"
       },
       {
@@ -5415,7 +5415,7 @@
             "0"
           ]
         },
-        "text": "Learn {'str': 'Burning Hands'} ( level 3 )",
+        "text": "Learn Burning Hands ( level 3 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_burning_hands_at_level_5"
       },
       {
@@ -5481,7 +5481,7 @@
             "0"
           ]
         },
-        "text": "Learn {'str': 'Jar of Force'} ( level 3 )",
+        "text": "Learn Jar of Force ( level 3 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_magus_force_jar_at_level_5"
       },
       {
@@ -5492,7 +5492,7 @@
             "0"
           ]
         },
-        "text": "Learn {'str': 'Impact Sling'} ( level 3 )",
+        "text": "Learn Impact Sling ( level 3 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_magus_summon_impact_sling_at_level_5"
       },
       {
@@ -5635,7 +5635,7 @@
             "0"
           ]
         },
-        "text": "Learn {'str': 'Bless'} ( level 2 )",
+        "text": "Learn Bless ( level 2 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_bless_at_level_5"
       },
       {
@@ -5723,7 +5723,7 @@
             "0"
           ]
         },
-        "text": "Learn {'str': 'Acidic Spray'} ( level 1 )",
+        "text": "Learn Acidic Spray ( level 1 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_bio_acidicspray_at_level_5"
       },
       {
@@ -5767,7 +5767,7 @@
             "0"
           ]
         },
-        "text": "Learn {'str': 'Blinding Flash'} ( level 1 )",
+        "text": "Learn Blinding Flash ( level 1 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_blinding_flash_at_level_5"
       },
       {
@@ -5899,7 +5899,7 @@
             "0"
           ]
         },
-        "text": "Learn {'str': 'Bag of Cats'} ( level 0 )",
+        "text": "Learn Bag of Cats ( level 0 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_summon_cats_at_level_5"
       },
       {
@@ -5971,17 +5971,6 @@
       {
         "condition": {
           "math": [
-            "u_used_spell_slot_for_create_electric_lighter",
-            "==",
-            "0"
-          ]
-        },
-        "text": "Learn Fire Spark ( level 0 )",
-        "topic": "TALK_SORCERER_LEARN_SPELL_create_electric_lighter_at_level_5"
-      },
-      {
-        "condition": {
-          "math": [
             "u_used_spell_slot_for_electric_arts",
             "==",
             "0"
@@ -6000,6 +5989,17 @@
         },
         "text": "Learn Taze ( level 0 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_taze_at_level_5"
+      },
+      {
+        "condition": {
+          "math": [
+            "u_used_spell_slot_for_create_rune_sorcerer",
+            "==",
+            "0"
+          ]
+        },
+        "text": "Learn Counterfeit Rune ( level 0 )",
+        "topic": "TALK_SORCERER_LEARN_SPELL_create_rune_sorcerer_at_level_5"
       }
     ]
   }

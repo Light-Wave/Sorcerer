@@ -865,27 +865,6 @@
     },
     {
       "run_eocs": {
-        "id": "sorcerer_level_up_convert",
-        "condition": {
-          "math": [
-            "u_used_spell_slot_for_convert",
-            ">",
-            "0"
-          ]
-        },
-        "effect": [
-          {
-            "math": [
-              "u_val('spell_level', 'spell: convert')",
-              "=",
-              "max(u_current_sorcerer_level, u_val('spell_level', 'spell: convert') )"
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "run_eocs": {
         "id": "sorcerer_level_up_recover_fatigue",
         "condition": {
           "math": [
@@ -1425,6 +1404,27 @@
               "u_val('spell_level', 'spell: technomancer_knifeshot')",
               "=",
               "max(u_current_sorcerer_level, u_val('spell_level', 'spell: technomancer_knifeshot') )"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "run_eocs": {
+        "id": "sorcerer_level_up_convert_sorcerer",
+        "condition": {
+          "math": [
+            "u_used_spell_slot_for_convert_sorcerer",
+            ">",
+            "0"
+          ]
+        },
+        "effect": [
+          {
+            "math": [
+              "u_val('spell_level', 'spell: convert_sorcerer')",
+              "=",
+              "max(u_current_sorcerer_level, u_val('spell_level', 'spell: convert_sorcerer') )"
             ]
           }
         ]
@@ -3133,27 +3133,6 @@
     },
     {
       "run_eocs": {
-        "id": "sorcerer_level_up_create_electric_lighter",
-        "condition": {
-          "math": [
-            "u_used_spell_slot_for_create_electric_lighter",
-            ">",
-            "0"
-          ]
-        },
-        "effect": [
-          {
-            "math": [
-              "u_val('spell_level', 'spell: create_electric_lighter')",
-              "=",
-              "max(u_current_sorcerer_level, u_val('spell_level', 'spell: create_electric_lighter') )"
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "run_eocs": {
         "id": "sorcerer_level_up_electric_arts",
         "condition": {
           "math": [
@@ -3189,6 +3168,27 @@
               "u_val('spell_level', 'spell: taze')",
               "=",
               "max(u_current_sorcerer_level, u_val('spell_level', 'spell: taze') )"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "run_eocs": {
+        "id": "sorcerer_level_up_create_rune_sorcerer",
+        "condition": {
+          "math": [
+            "u_used_spell_slot_for_create_rune_sorcerer",
+            ">",
+            "0"
+          ]
+        },
+        "effect": [
+          {
+            "math": [
+              "u_val('spell_level', 'spell: create_rune_sorcerer')",
+              "=",
+              "max(u_current_sorcerer_level, u_val('spell_level', 'spell: create_rune_sorcerer') )"
             ]
           }
         ]

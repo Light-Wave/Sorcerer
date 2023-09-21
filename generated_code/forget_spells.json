@@ -347,7 +347,7 @@
           "0"
         ]
       },
-      "text": "Forget {'ctxt': 'spell', 'str': 'Lightning Storm'} ( level <u_val:used_spell_slot_for_lightning_storm> )",
+      "text": "Forget Lightning Storm ( level <u_val:used_spell_slot_for_lightning_storm> )",
       "topic": "TALK_SORCERER_MENU_MAIN",
       "effect": [
         {
@@ -1290,7 +1290,7 @@
           "0"
         ]
       },
-      "text": "Forget {'str': 'Shipwrecker'} ( level <u_val:used_spell_slot_for_storm_shipwrecker> )",
+      "text": "Forget Shipwrecker ( level <u_val:used_spell_slot_for_storm_shipwrecker> )",
       "topic": "TALK_SORCERER_MENU_MAIN",
       "effect": [
         {
@@ -1331,7 +1331,7 @@
           "0"
         ]
       },
-      "text": "Forget {'str': 'Superconductor'} ( level <u_val:used_spell_slot_for_storm_superconductor> )",
+      "text": "Forget Superconductor ( level <u_val:used_spell_slot_for_storm_superconductor> )",
       "topic": "TALK_SORCERER_MENU_MAIN",
       "effect": [
         {
@@ -1454,7 +1454,7 @@
           "0"
         ]
       },
-      "text": "Forget {'str': 'Animated Blade'} ( level <u_val:used_spell_slot_for_animated_blade> )",
+      "text": "Forget Animated Blade ( level <u_val:used_spell_slot_for_animated_blade> )",
       "topic": "TALK_SORCERER_MENU_MAIN",
       "effect": [
         {
@@ -1680,47 +1680,6 @@
         {
           "math": [
             "u_used_spell_slot_for_life_detonation",
-            "=",
-            "0"
-          ]
-        },
-        {
-          "math": [
-            "u_sorcerer_forget_spell_charge",
-            "--"
-          ]
-        }
-      ]
-    },
-    {
-      "condition": {
-        "math": [
-          "u_used_spell_slot_for_convert",
-          ">",
-          "0"
-        ]
-      },
-      "text": "Forget Convert ( level <u_val:used_spell_slot_for_convert> )",
-      "topic": "TALK_SORCERER_MENU_MAIN",
-      "effect": [
-        {
-          "math": [
-            "u_val('spell_level', 'spell: convert')",
-            "=",
-            "-1"
-          ]
-        },
-        {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
-          "variables": {
-            "forgotten_spell_level": {
-              "u_val": "used_spell_slot_for_convert"
-            }
-          }
-        },
-        {
-          "math": [
-            "u_used_spell_slot_for_convert",
             "=",
             "0"
           ]
@@ -2802,12 +2761,53 @@
     {
       "condition": {
         "math": [
+          "u_used_spell_slot_for_convert_sorcerer",
+          ">",
+          "0"
+        ]
+      },
+      "text": "Forget Convert ( level <u_val:used_spell_slot_for_convert_sorcerer> )",
+      "topic": "TALK_SORCERER_MENU_MAIN",
+      "effect": [
+        {
+          "math": [
+            "u_val('spell_level', 'spell: convert_sorcerer')",
+            "=",
+            "-1"
+          ]
+        },
+        {
+          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "variables": {
+            "forgotten_spell_level": {
+              "u_val": "used_spell_slot_for_convert_sorcerer"
+            }
+          }
+        },
+        {
+          "math": [
+            "u_used_spell_slot_for_convert_sorcerer",
+            "=",
+            "0"
+          ]
+        },
+        {
+          "math": [
+            "u_sorcerer_forget_spell_charge",
+            "--"
+          ]
+        }
+      ]
+    },
+    {
+      "condition": {
+        "math": [
           "u_used_spell_slot_for_animist_summon_decaying_boneclub",
           ">",
           "0"
         ]
       },
-      "text": "Forget {'str': 'Decaying Boneclub'} ( level <u_val:used_spell_slot_for_animist_summon_decaying_boneclub> )",
+      "text": "Forget Decaying Boneclub ( level <u_val:used_spell_slot_for_animist_summon_decaying_boneclub> )",
       "topic": "TALK_SORCERER_MENU_MAIN",
       "effect": [
         {
@@ -3176,7 +3176,7 @@
           "0"
         ]
       },
-      "text": "Forget {'str': 'Flamebreath'} ( level <u_val:used_spell_slot_for_kelvinist_flamebreath> )",
+      "text": "Forget Flamebreath ( level <u_val:used_spell_slot_for_kelvinist_flamebreath> )",
       "topic": "TALK_SORCERER_MENU_MAIN",
       "effect": [
         {
@@ -3545,7 +3545,7 @@
           "0"
         ]
       },
-      "text": "Forget {'str': 'Aura of Protection'} ( level <u_val:used_spell_slot_for_protection_aura> )",
+      "text": "Forget Aura of Protection ( level <u_val:used_spell_slot_for_protection_aura> )",
       "topic": "TALK_SORCERER_MENU_MAIN",
       "effect": [
         {
@@ -4037,7 +4037,7 @@
           "0"
         ]
       },
-      "text": "Forget {'str': 'Burning Hands'} ( level <u_val:used_spell_slot_for_burning_hands> )",
+      "text": "Forget Burning Hands ( level <u_val:used_spell_slot_for_burning_hands> )",
       "topic": "TALK_SORCERER_MENU_MAIN",
       "effect": [
         {
@@ -4283,7 +4283,7 @@
           "0"
         ]
       },
-      "text": "Forget {'str': 'Jar of Force'} ( level <u_val:used_spell_slot_for_magus_force_jar> )",
+      "text": "Forget Jar of Force ( level <u_val:used_spell_slot_for_magus_force_jar> )",
       "topic": "TALK_SORCERER_MENU_MAIN",
       "effect": [
         {
@@ -4324,7 +4324,7 @@
           "0"
         ]
       },
-      "text": "Forget {'str': 'Impact Sling'} ( level <u_val:used_spell_slot_for_magus_summon_impact_sling> )",
+      "text": "Forget Impact Sling ( level <u_val:used_spell_slot_for_magus_summon_impact_sling> )",
       "topic": "TALK_SORCERER_MENU_MAIN",
       "effect": [
         {
@@ -4857,7 +4857,7 @@
           "0"
         ]
       },
-      "text": "Forget {'str': 'Bless'} ( level <u_val:used_spell_slot_for_bless> )",
+      "text": "Forget Bless ( level <u_val:used_spell_slot_for_bless> )",
       "topic": "TALK_SORCERER_MENU_MAIN",
       "effect": [
         {
@@ -5185,7 +5185,7 @@
           "0"
         ]
       },
-      "text": "Forget {'str': 'Acidic Spray'} ( level <u_val:used_spell_slot_for_bio_acidicspray> )",
+      "text": "Forget Acidic Spray ( level <u_val:used_spell_slot_for_bio_acidicspray> )",
       "topic": "TALK_SORCERER_MENU_MAIN",
       "effect": [
         {
@@ -5349,7 +5349,7 @@
           "0"
         ]
       },
-      "text": "Forget {'str': 'Blinding Flash'} ( level <u_val:used_spell_slot_for_blinding_flash> )",
+      "text": "Forget Blinding Flash ( level <u_val:used_spell_slot_for_blinding_flash> )",
       "topic": "TALK_SORCERER_MENU_MAIN",
       "effect": [
         {
@@ -5841,7 +5841,7 @@
           "0"
         ]
       },
-      "text": "Forget {'str': 'Bag of Cats'} ( level <u_val:used_spell_slot_for_summon_cats> )",
+      "text": "Forget Bag of Cats ( level <u_val:used_spell_slot_for_summon_cats> )",
       "topic": "TALK_SORCERER_MENU_MAIN",
       "effect": [
         {
@@ -6123,47 +6123,6 @@
     {
       "condition": {
         "math": [
-          "u_used_spell_slot_for_create_electric_lighter",
-          ">",
-          "0"
-        ]
-      },
-      "text": "Forget Fire Spark ( level <u_val:used_spell_slot_for_create_electric_lighter> )",
-      "topic": "TALK_SORCERER_MENU_MAIN",
-      "effect": [
-        {
-          "math": [
-            "u_val('spell_level', 'spell: create_electric_lighter')",
-            "=",
-            "-1"
-          ]
-        },
-        {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
-          "variables": {
-            "forgotten_spell_level": {
-              "u_val": "used_spell_slot_for_create_electric_lighter"
-            }
-          }
-        },
-        {
-          "math": [
-            "u_used_spell_slot_for_create_electric_lighter",
-            "=",
-            "0"
-          ]
-        },
-        {
-          "math": [
-            "u_sorcerer_forget_spell_charge",
-            "--"
-          ]
-        }
-      ]
-    },
-    {
-      "condition": {
-        "math": [
           "u_used_spell_slot_for_electric_arts",
           ">",
           "0"
@@ -6231,6 +6190,47 @@
         {
           "math": [
             "u_used_spell_slot_for_taze",
+            "=",
+            "0"
+          ]
+        },
+        {
+          "math": [
+            "u_sorcerer_forget_spell_charge",
+            "--"
+          ]
+        }
+      ]
+    },
+    {
+      "condition": {
+        "math": [
+          "u_used_spell_slot_for_create_rune_sorcerer",
+          ">",
+          "0"
+        ]
+      },
+      "text": "Forget Counterfeit Rune ( level <u_val:used_spell_slot_for_create_rune_sorcerer> )",
+      "topic": "TALK_SORCERER_MENU_MAIN",
+      "effect": [
+        {
+          "math": [
+            "u_val('spell_level', 'spell: create_rune_sorcerer')",
+            "=",
+            "-1"
+          ]
+        },
+        {
+          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "variables": {
+            "forgotten_spell_level": {
+              "u_val": "used_spell_slot_for_create_rune_sorcerer"
+            }
+          }
+        },
+        {
+          "math": [
+            "u_used_spell_slot_for_create_rune_sorcerer",
             "=",
             "0"
           ]

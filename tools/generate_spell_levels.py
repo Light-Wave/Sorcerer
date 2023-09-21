@@ -1,6 +1,9 @@
 import os
 import json
 
+# If you want to run this script you will likely need to edit this path
+Magiclysm_path ="../../../../game0/data/mods/Magiclysm"
+
 tier_0_scroll_list = []
 tier_1_scroll_list = []
 tier_2_scroll_list = []
@@ -10,7 +13,9 @@ tier_1_spell_list = []
 tier_2_spell_list = []
 tier_3_spell_list = []
 spell_data = []
+custom_spell_data = []
 
+# Helper function to make sure we don't read a spell twice
 def scroll_not_yet_read(scroll_name):
     for scroll in tier_0_scroll_list:
         if scroll_name == scroll:
@@ -26,8 +31,15 @@ def scroll_not_yet_read(scroll_name):
             return False
     return True
 
+# Don't load data we want to overwrite
+def should_read_spell(spell_id):
+    for spell in custom_spell_data:
+        if spell_id == spell["id"]:
+            return False
+    return True
+
+# Reads what scrolls exists in Magiclysm and what tier they are
 def read_item_group(path):
-    change = False
     with open(path, "r", encoding="utf-8") as json_file:
         try:
             json_data = json.load(json_file)
@@ -56,8 +68,8 @@ def read_item_group(path):
                             tier_3_scroll_list.append(scroll[0])
     return
 
+# Reads which spell is written on the scrolls we read earlier
 def read_spell_scrolls(path):
-    change = False
     with open(path, "r", encoding="utf-8") as json_file:
         try:
             json_data = json.load(json_file)
@@ -90,8 +102,22 @@ def read_spell_scrolls(path):
                         tier_3_spell_list.append(jo["use_action"]["spells"][0])
     return
 
+# Reads custom spell data from ./spell_data.txt
+# Allows us to disable spells that should not be given,
+# Add spells from our own mod,
+# Or overwrite the default values to instead be whatever we want them to be
+def read_custom_spell_data(path):
+    with open(path, "r", encoding="utf-8") as json_file:
+        json_data = json.load(json_file)
+        for jo in json_data:
+            custom_spell_data.append(jo)
+    return
+
+
+# Loops through all Magiclysm spells (except attunement spells)
+# If their scroll exists in the loot groups, we save data about them
+# We use their tier and difficulty to calculate a 'spell level' for the spells as well
 def read_spell_data(path):
-    change = False
     with open(path, "r", encoding="utf-8") as json_file:
         try:
             json_data = json.load(json_file)
@@ -101,7 +127,7 @@ def read_spell_data(path):
             )
             return None
         for jo in json_data:
-            if isinstance(jo, dict) and "id" in jo and "name" in jo and "description" in jo:
+            if isinstance(jo, dict) and "id" in jo and "name" in jo and "description" in jo and should_read_spell(jo["id"]):
                 difficulty = int(jo["difficulty"] if "difficulty" in jo else 0)
                 new_spell_data = {
                   "id": str(jo["id"]),
@@ -110,6 +136,8 @@ def read_spell_data(path):
                   "name": str(jo["name"]),
                   "description": str(jo["description"])
                 }
+                if "str" in jo["name"] and new_spell_data["id"] != "windstrike" and new_spell_data["id"] != "demon_possession_aura":
+                    new_spell_data["name"] = str(jo["name"]["str"]) 
                 for spell_name in tier_0_spell_list:
                     if (
                         jo["id"] == spell_name
@@ -153,6 +181,18 @@ def read_spell_data(path):
                         spell_data.append(new_spell_data)
     return
 
+# Merges spell_data and custom_spell_data
+# Does not merge spells that are disabled
+def merge_spell_data():
+    for spell in custom_spell_data:
+        if "disabled" in spell and spell["disabled"] == True:
+            continue
+        else:
+            spell_data.append(spell)
+    return
+
+
+# Writes the dialogue used to select spells to learn
 def write_learn_spell(level):
     main_topic = {
         "type": "talk_topic",
@@ -193,13 +233,14 @@ def write_learn_spell(level):
             }
             all_topics.append(new_other_topic)
     all_topics.append(main_topic)
-    path = "generated_code/learn_spell"
+    path = "../generated_code/learn_spell"
     isExist = os.path.exists(path)
     if not isExist:
         os.makedirs(path)
     with open(path + "/learn_spells_level_" + str( level ) + ".json", mode="wt") as f:
         f.write(json.dumps(all_topics, indent=2))
 
+# Writes dialogue options to forget a spell known
 def write_forget_spell():
     main_topic = {
         "type": "talk_topic",
@@ -223,13 +264,14 @@ def write_forget_spell():
             ]
         }
         main_topic["responses"].append(response)
-    path = "generated_code/"
+    path = "../generated_code/"
     isExist = os.path.exists(path)
     if not isExist:
         os.makedirs(path)
     with open(path + "/forget_spells.json", mode="wt") as f:
         f.write(json.dumps(main_topic, indent=2))
 
+# Writes the EOCs that deals with keeping known spells atleast at the same level as your sorcerer level
 def write_level_up_spells():
     main_topic = {
         "type": "effect_on_condition",
@@ -245,24 +287,31 @@ def write_level_up_spells():
             }
         }
         main_topic["effect"].append(effect)
-    path = "generated_code/"
+    path = "../generated_code/"
     isExist = os.path.exists(path)
     if not isExist:
         os.makedirs(path)
     with open(path + "/level_up_spells.json", mode="wt") as f:
         f.write(json.dumps(main_topic, indent=2))
 
-read_item_group("../../data/mods/Magiclysm/itemgroups/spellbooks.json")
-read_spell_scrolls("../../data/mods/Magiclysm/items/spell_scrolls.json")
 
-for root, directories, filenames in os.walk("../../data/mods/Magiclysm/Spells"):
+# Starts calling functions
+read_item_group(Magiclysm_path + "/itemgroups/spellbooks.json")
+read_spell_scrolls(Magiclysm_path + "/items/spell_scrolls.json")
+read_custom_spell_data("spell_data.txt")
+
+for root, directories, filenames in os.walk(Magiclysm_path + "/Spells"):
     for filename in filenames:
         path = os.path.join(root, filename)
         if path.endswith(".json"):
             read_spell_data(path)
 
-            
+
+merge_spell_data()
+# Sort our spell data with higher leveled spells first
+# This is to make sure that when you want to learn a high level spell slot, higher leveld spells are shown first            
 spell_data = sorted(spell_data, key=lambda x: x["level"], reverse = True)
+
 
 for number in range(0,10):
     write_learn_spell(number)
@@ -270,4 +319,12 @@ for number in range(0,10):
 write_forget_spell()
 write_level_up_spells()
 
-input(".")
+# Writes out the generated spell data for debugging purposes
+path = "../generated_code/"
+isExist = os.path.exists(path)
+if not isExist:
+    os.makedirs(path)
+with open(path + "/spell_data_dump.txt", mode="wt") as f:
+    f.write(json.dumps(spell_data, indent=2))
+
+input("Generation successfull. Press enter to continue.")

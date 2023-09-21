@@ -1,0 +1,1181 @@
+[
+  {
+    "id": "banishment_lesser",
+    "safe_id": "banishment_lesser",
+    "level": 8,
+    "name": "Lesser Banishment",
+    "description": "Banish a monster to the lesser-known nether dimension.  If a monster is more powerful than you can handle, the spell drains your life force to make up the difference.",
+    "tier": 3
+  },
+  {
+    "id": "cause_rot",
+    "safe_id": "cause_rot",
+    "level": 8,
+    "name": "Cause Rot",
+    "description": "A spell from a darker sect of druidry, created to forcibly begin the circle of life anew.  For without rot, you cannot have growth.  Affects a huge area, but is indiscriminate; even rusting machines into nothing but dust and slow both in casting and effect.  Once lost entirely to the passage of time, this spell was thought to be no more than a myth, the stuff of fairy tales, albeit grim ones.",
+    "tier": 3
+  },
+  {
+    "id": "shape_of_dust",
+    "safe_id": "shape_of_dust",
+    "level": 8,
+    "name": "Shape of Dust",
+    "description": "Hide yourself between the sand gust.  It's harder to hit you, and monster's can't spot you.",
+    "tier": 3
+  },
+  {
+    "id": "summon_eshaper_golem",
+    "safe_id": "summon_eshaper_golem",
+    "level": 8,
+    "name": "Summon Earthshaper's Golem",
+    "description": "Shape a strong golem out of stone.  It may help for a while, but you haven't enough energy to support it forever.",
+    "tier": 3
+  },
+  {
+    "id": "earthshaper_reveal_world_map",
+    "safe_id": "earthshaper_reveal_world_map",
+    "level": 8,
+    "name": "Reading the Earthbones",
+    "description": "You extend your senses into the ground, becoming aware of every hill and valley within a large area.  It will only work when in contact with the earth.",
+    "tier": 3
+  },
+  {
+    "id": "nova_flare",
+    "safe_id": "nova_flare",
+    "level": 8,
+    "name": "Nova Flare",
+    "description": "Causes an intense heat at the location, greatly damaging the target.",
+    "tier": 3
+  },
+  {
+    "id": "freezing_touch",
+    "safe_id": "freezing_touch",
+    "level": 8,
+    "name": "Freezing Touch",
+    "description": "Your hands freeze anything they touch at temperatures so cold it slows down your foes.",
+    "tier": 3
+  },
+  {
+    "id": "focused_bolt",
+    "safe_id": "focused_bolt",
+    "level": 8,
+    "name": "Focused Bolt",
+    "description": "You focus your mana into a microscopically thin pulsed beam of pure energy, capable of extreme range and precision; as well as unparalleled penetration, provided proper skill.  Once the invention of a notorious assassin, this spell has slain many a king and noble.  Passed on only through direct descendants over the ages, though occasionally shared by them to others.",
+    "tier": 3
+  },
+  {
+    "id": "lightning_storm",
+    "safe_id": "lightning_storm",
+    "level": 8,
+    "name": "Lightning Storm",
+    "description": "You call the power of the sky to strike the earth.  Several lightning blasts fire from your finger tips to strike the target.",
+    "tier": 3
+  },
+  {
+    "id": "vacuum_decompression",
+    "safe_id": "vacuum_decompression",
+    "level": 8,
+    "name": "Vacuum Decompression",
+    "description": "Create a high pressure zone originating from the selected point.  Shortly after, the massive pressure wave will crush everything inside, inflicting barotrarumatic injuries on everyone effected.  It will also try to pull unprepared creatures inside the zone before attack.",
+    "tier": 3
+  },
+  {
+    "id": "rupture",
+    "safe_id": "rupture",
+    "level": 7,
+    "name": "Rupture",
+    "description": "You pour mana into an unwilling and unprepared vessel, causing cellular break-down, internal hemorrhaging, ley lines becoming muddled, and electronics overcharging.  Immensely gruesome, crude, and was once illegal world-wide, not that it matters now.",
+    "tier": 3
+  },
+  {
+    "id": "obfuscated_body",
+    "safe_id": "obfuscated_body",
+    "level": 7,
+    "name": "Obfuscated Body",
+    "description": "A magical aura distorts light around your body, increasing the amount of attacks you might dodge in a given turn.",
+    "tier": 3
+  },
+  {
+    "id": "druidic_healing",
+    "safe_id": "druidic_healing",
+    "level": 7,
+    "name": "Sacrificial Healing",
+    "description": "Channels some of the user's own life force into healing energy, for the sake of one's allies.",
+    "tier": 3
+  },
+  {
+    "id": "magus_mana_blast",
+    "safe_id": "magus_mana_blast",
+    "level": 7,
+    "name": "Mana Blast",
+    "description": "A blast of concentrated magical power that obliterates a large area.",
+    "tier": 3
+  },
+  {
+    "id": "invisibility",
+    "safe_id": "invisibility",
+    "level": 7,
+    "name": "Invisibility",
+    "description": "Creates a magical field that hides your visual presence to others.  Colloquially known as invisibility, but without all the science mumbo jumbo.",
+    "tier": 3
+  },
+  {
+    "id": "summon_magic_motorcycle",
+    "safe_id": "summon_magic_motorcycle",
+    "level": 7,
+    "name": "Summon Mojocycle",
+    "description": "You're not a cowboy, but on a steel horse you ride regardless.",
+    "tier": 3
+  },
+  {
+    "id": "dominate",
+    "safe_id": "dominate",
+    "level": 6,
+    "name": "Domination",
+    "description": "Force the undead creature you pick to obey your command, making it ally for a short time.  It's an expensive spell, so use it wisely.",
+    "tier": 2
+  },
+  {
+    "id": "devour",
+    "safe_id": "devour",
+    "level": 6,
+    "name": "Devour",
+    "description": "Kill a summoned creature, consuming its life energy to regain some health.",
+    "tier": 2
+  },
+  {
+    "id": "vicious_tentacle",
+    "safe_id": "vicious_tentacle",
+    "level": 6,
+    "name": "Vicious Tentacle",
+    "description": "This spell extrudes a long nasty whiplike tentacle of sharp bones and oozing acid from your body, it has a long reach attack and vicious damage.",
+    "tier": 2
+  },
+  {
+    "id": "bio_bonespear",
+    "safe_id": "bio_bonespear",
+    "level": 6,
+    "name": "Conjure Bonespear",
+    "description": "This spell creates a long shaft of bone with a wicked point and blades along its length.",
+    "tier": 2
+  },
+  {
+    "id": "dark_sight",
+    "safe_id": "dark_sight",
+    "level": 6,
+    "name": "Dark Sight",
+    "description": "Gives you the power to see in the dark.",
+    "tier": 2
+  },
+  {
+    "id": "megablast",
+    "safe_id": "megablast",
+    "level": 6,
+    "name": "Megablast",
+    "description": "You always wanted to fire energy beams like in the animes you watched as a kid.  Now you can!",
+    "tier": 2
+  },
+  {
+    "id": "druidic_regrowth",
+    "safe_id": "druidic_regrowth",
+    "level": 6,
+    "name": "Sacrificial Regrowth",
+    "description": "Through giving of one's own life force, you restore withered and barren plant life nearby.  What remains will need time to regrow its full strength.",
+    "tier": 2
+  },
+  {
+    "id": "summon_wolf_druid",
+    "safe_id": "summon_wolf_druid",
+    "level": 6,
+    "name": "Summon Wolf",
+    "description": "Call to the wilds for aid from some wolves.",
+    "tier": 2
+  },
+  {
+    "id": "druid_healing",
+    "safe_id": "druid_healing",
+    "level": 6,
+    "name": "Restoration",
+    "description": "Magic energy, that slowly heal your body from wounds.",
+    "tier": 2
+  },
+  {
+    "id": "eshaper_melee_damage",
+    "safe_id": "eshaper_melee_damage",
+    "level": 6,
+    "name": "Weighting",
+    "description": "Fill yourself with the power of Earth, and make each your attacks as devastating as an earthquake.",
+    "tier": 2
+  },
+  {
+    "id": "eshaper_crystal_wrap",
+    "safe_id": "eshaper_crystal_wrap",
+    "level": 6,
+    "name": "Crystal Wrapping",
+    "description": "You cover your body with a layer of small, razor-sharp crystals.  It makes monsters that attack you take some damage in return, and gives you some additional cut damage in melee.",
+    "tier": 2
+  },
+  {
+    "id": "gravity_well",
+    "safe_id": "gravity_well",
+    "level": 6,
+    "name": "Gravity Well",
+    "description": "Summons a well of gravity with the epicenter at the location.  Deals bashing damage to all creatures in the affected area.",
+    "tier": 2
+  },
+  {
+    "id": "magus_haste",
+    "safe_id": "magus_haste",
+    "level": 6,
+    "name": "Haste",
+    "description": "This spell gives you an enormous boost of speed lasting a short period of time.",
+    "tier": 2
+  },
+  {
+    "id": "magus_baleful_polymorph",
+    "safe_id": "magus_baleful_polymorph",
+    "level": 6,
+    "name": "Baleful Polymorph",
+    "description": "Transform your enemies into frogs.",
+    "tier": 2
+  },
+  {
+    "id": "stormshaper_ionization",
+    "safe_id": "stormshaper_ionization",
+    "level": 6,
+    "name": "Ionization",
+    "description": "By manipulating the charge in the air, you can conjure a sharp snap of lightning over a wide area.  While its destructive potential is a far cry from natural lightning, the light and thunderclap produced will leave your foes reeling.",
+    "tier": 2
+  },
+  {
+    "id": "storm_shipwrecker",
+    "safe_id": "storm_shipwrecker",
+    "level": 6,
+    "name": "Shipwrecker",
+    "description": "The spell moves out of your mouth, creating a giant shockwave, and shuttering everything in its path.",
+    "tier": 2
+  },
+  {
+    "id": "storm_superconductor",
+    "safe_id": "storm_superconductor",
+    "level": 6,
+    "name": "Superconductor",
+    "description": "Create a devastating electric charge on a small distance, roasting everything to their death.",
+    "tier": 2
+  },
+  {
+    "id": "summon_teravolt",
+    "safe_id": "summon_teravolt",
+    "level": 6,
+    "name": "Summon Teravolt",
+    "description": "Summon a Teravolt, a small, semi-intelligent spirit, that homes onto hostile creatures before exploding into a huge spark cloud.",
+    "tier": 2
+  },
+  {
+    "id": "recover_bionic_power",
+    "safe_id": "recover_bionic_power",
+    "level": 6,
+    "name": "Manatricity",
+    "description": "You have found a way to convert your spiritual energy into power you can use for your bionics.",
+    "tier": 2
+  },
+  {
+    "id": "animated_blade",
+    "safe_id": "animated_blade",
+    "level": 6,
+    "name": "Animated Blade",
+    "description": "This spell conjures flying animated blades that will cut your enemies down to size.  Into small pieces that is.",
+    "tier": 2
+  },
+  {
+    "id": "improved_knock",
+    "safe_id": "improved_knock",
+    "level": 6,
+    "name": "Improved Knock",
+    "description": "You channel magic into a force capable of opening doors.  This variant can open any locked door.",
+    "tier": 2
+  },
+  {
+    "id": "recover_mana",
+    "safe_id": "recover_mana",
+    "level": 5,
+    "name": "Life Conversion",
+    "description": "You channel lifeforce itself into your spiritual energy.  You spend runes to regain mana.",
+    "tier": 2
+  },
+  {
+    "id": "recover_pain",
+    "safe_id": "recover_pain",
+    "level": 5,
+    "name": "Mind over Pain",
+    "description": "With an intense ritual that resembles crossfit, you manage to put some of your pain at bay.",
+    "tier": 2
+  },
+  {
+    "id": "summon_undead_swarm",
+    "safe_id": "summon_undead_swarm",
+    "level": 5,
+    "name": "Summon Undead Swarm",
+    "description": "A group of undead animals rises from the depths of the earth to fight for you.  You may be able to summon the stronger ones with a higher level in this spell.",
+    "tier": 2
+  },
+  {
+    "id": "life_detonation",
+    "safe_id": "life_detonation",
+    "level": 5,
+    "name": "Life Detonation",
+    "description": "Explode a living energy inside your undead, to release a tremendous force around.",
+    "tier": 2
+  },
+  {
+    "id": "recover_fatigue",
+    "safe_id": "recover_fatigue",
+    "level": 5,
+    "name": "Nature's Trance",
+    "description": "Your connection to living things allows you to go into a magical trance.  This allows you to recover fatigue quickly in exchange for mana.",
+    "tier": 2
+  },
+  {
+    "id": "druid_feralform",
+    "safe_id": "druid_feralform",
+    "level": 5,
+    "name": "Feral Form",
+    "description": "This spell unleashes your inner beast, growing claws & fangs to rend your foes limb from limb.",
+    "tier": 2
+  },
+  {
+    "id": "druid_natures_commune",
+    "safe_id": "druid_natures_commune",
+    "level": 5,
+    "name": "Nature's Commune",
+    "description": "You concentrate on the nature around you and commune with it, improving your health and calming the nearby wildlife.",
+    "tier": 2
+  },
+  {
+    "id": "recover_stamina",
+    "safe_id": "recover_stamina",
+    "level": 5,
+    "name": "Stone's Endurance",
+    "description": "You focus on the stones beneath you and draw from their agelessness.  Your mana is converted to stamina.",
+    "tier": 2
+  },
+  {
+    "id": "eshaper_shardstorm",
+    "safe_id": "eshaper_shardstorm",
+    "level": 5,
+    "name": "Shardstorm",
+    "description": "Creates an omnidirectional spray of razor sharp metal shards all around you.",
+    "tier": 2
+  },
+  {
+    "id": "eshaper_impalement",
+    "safe_id": "eshaper_impalement",
+    "level": 5,
+    "name": "Impalement",
+    "description": "Summon a stone spikes underground, that penetrate your enemies, and nail them for a while.",
+    "tier": 2
+  },
+  {
+    "id": "fireball",
+    "safe_id": "fireball",
+    "level": 5,
+    "name": "Fireball",
+    "description": "You hurl a pea-sized glowing orb that when reaches its target or an obstacle produces a pressure-less blast of searing heat.",
+    "tier": 2
+  },
+  {
+    "id": "cone_cold",
+    "safe_id": "cone_cold",
+    "level": 5,
+    "name": "Cone of Cold",
+    "description": "You blast a cone of frigid air toward the target.",
+    "tier": 2
+  },
+  {
+    "id": "hoary_blast",
+    "safe_id": "hoary_blast",
+    "level": 5,
+    "name": "Hoary Blast",
+    "description": "You project a glowing white crystal of ice and it explodes on impact into a blossom of shattering cold.",
+    "tier": 2
+  },
+  {
+    "id": "magus_mana_bolt",
+    "safe_id": "magus_mana_bolt",
+    "level": 5,
+    "name": "Mana Bolt",
+    "description": "A bolt of magical power that only damages your foes.",
+    "tier": 2
+  },
+  {
+    "id": "magus_mana_beam",
+    "safe_id": "magus_mana_beam",
+    "level": 5,
+    "name": "Mana Beam",
+    "description": "A beam of focused magical power that damages any foes in its path.",
+    "tier": 2
+  },
+  {
+    "id": "magus_escape",
+    "safe_id": "magus_escape",
+    "level": 5,
+    "name": "Escape",
+    "description": "Teleports you in a random direction a medium distance, to help escape your foes in dangerous situations.",
+    "tier": 2
+  },
+  {
+    "id": "cats_grace",
+    "safe_id": "cats_grace",
+    "level": 5,
+    "name": "Cat's Grace",
+    "description": "You become more graceful, agile, and coordinated.",
+    "tier": 2
+  },
+  {
+    "id": "eagles_sight",
+    "safe_id": "eagles_sight",
+    "level": 5,
+    "name": "Eagle's Sight",
+    "description": "You gain the perception of an eagle.",
+    "tier": 2
+  },
+  {
+    "id": "ogres_strength",
+    "safe_id": "ogres_strength",
+    "level": 5,
+    "name": "Ogre's Strength",
+    "description": "You gain the strength of an ogre.",
+    "tier": 2
+  },
+  {
+    "id": "foxs_cunning",
+    "safe_id": "foxs_cunning",
+    "level": 5,
+    "name": "Fox's Cunning",
+    "description": "You become wily like a fox.",
+    "tier": 2
+  },
+  {
+    "id": "storm_hammer",
+    "safe_id": "storm_hammer",
+    "level": 5,
+    "name": "Call Stormhammer",
+    "description": "Creates a crackling magical warhammer full of lightning to smite your foes with, and of course, smash things to bits!",
+    "tier": 2
+  },
+  {
+    "id": "stormfist",
+    "safe_id": "stormfist",
+    "level": 5,
+    "name": "Stormfist",
+    "description": "Encases your arm and hand in a sheath of crackling magical lightning, you can punch and defend yourself with it in melee combat.",
+    "tier": 2
+  },
+  {
+    "id": "explosive_decompression",
+    "safe_id": "explosive_decompression",
+    "level": 5,
+    "name": "Explosive Decompression",
+    "description": "Create a high pressure zone originating from the selected point.  Shortly after, the massive pressure wave will crush everything inside, inflicting barotrarumatic injuries on everyone effected.",
+    "tier": 2
+  },
+  {
+    "id": "shocking_dash",
+    "safe_id": "shocking_dash",
+    "level": 5,
+    "name": "Shocking Dash",
+    "description": "Fill your legs with energy, and dash into picked place.",
+    "tier": 2
+  },
+  {
+    "id": "toxtricity",
+    "safe_id": "toxtricity",
+    "level": 5,
+    "name": "Toxtricity",
+    "description": "Inject an electric energy into the creatures, which makes them weak, and deal huge damage over time.",
+    "tier": 2
+  },
+  {
+    "id": "electric_waves",
+    "safe_id": "electric_waves",
+    "level": 5,
+    "name": "Electric Waves",
+    "description": "Your hands start to emit a huge amount of energy, that you release with each attack.  The damage is increased the more you master the spell.",
+    "tier": 2
+  },
+  {
+    "id": "mirror_image",
+    "safe_id": "mirror_image",
+    "level": 5,
+    "name": "Mirror Image",
+    "description": "This spell manipulates light into barely tangible duplicates of a living being, a magical hologram in short.",
+    "tier": 2
+  },
+  {
+    "id": "holographic_transposition",
+    "safe_id": "holographic_transposition",
+    "level": 5,
+    "name": "Holographic Transposition",
+    "description": "Allows you to swap places with a previously existing holographic image of yourself.  If the universe itself can't tell you apart, who could?",
+    "tier": 2
+  },
+  {
+    "id": "summon_floating_disk",
+    "safe_id": "summon_floating_disk",
+    "level": 5,
+    "name": "Summon Floating Disk",
+    "description": "Summons a floating disk that is sworn to carry your burdens.",
+    "tier": 2
+  },
+  {
+    "id": "technomancer_knifeshot",
+    "safe_id": "technomancer_knifeshot",
+    "level": 5,
+    "name": "Knifeshot",
+    "description": "This spell generates a magnetic field around a knife, before launching it at high speed.",
+    "tier": 2
+  },
+  {
+    "id": "convert_sorcerer",
+    "safe_id": "convert_sorcerer",
+    "level": 5,
+    "name": "Convert",
+    "description": "Kill an ally creature, converting its life energy into compact rune, that you can use afterwards.",
+    "tier": 2
+  },
+  {
+    "id": "animist_summon_decaying_boneclub",
+    "safe_id": "animist_summon_decaying_boneclub",
+    "level": 4,
+    "name": "Decaying Boneclub",
+    "description": "This spell links your live blood to the dead blood & bones, creating a club hungry for the flesh of the living.",
+    "tier": 1
+  },
+  {
+    "id": "bio_grotesque",
+    "safe_id": "bio_grotesque",
+    "level": 4,
+    "name": "Grotesque Enhancement",
+    "description": "A spell that warps your body in alien ways to increase your physical abilities and strength.",
+    "tier": 1
+  },
+  {
+    "id": "thought_shield",
+    "safe_id": "thought_shield",
+    "level": 4,
+    "name": "Thought Shield",
+    "description": "Two small shimmering spots appear on your temples, protecting your mind from outside influences.",
+    "tier": 1
+  },
+  {
+    "id": "druid_naturebow1",
+    "safe_id": "druid_naturebow1",
+    "level": 4,
+    "name": "Nature's Bow",
+    "description": "This spell conjures a magical wooden recurve bow that fires endless arrows for as long as it lasts.",
+    "tier": 1
+  },
+  {
+    "id": "purify_seed",
+    "safe_id": "purify_seed",
+    "level": 4,
+    "name": "Purification Seed",
+    "description": "You summon a gift of the earth which will purify water.  Rapidly degrades if not utilized.",
+    "tier": 1
+  },
+  {
+    "id": "druid_healing_herb",
+    "safe_id": "druid_healing_herb",
+    "level": 4,
+    "name": "Floral Healing",
+    "description": "Use some magic herbs to heal yourself.",
+    "tier": 1
+  },
+  {
+    "id": "druid_bandage_heal",
+    "safe_id": "druid_bandage_heal",
+    "level": 4,
+    "name": "Vegetative Poultice",
+    "description": "This spell turns a mixture of bark and leaves into a powerful salve capable of stopping even grievous wounds from bleeding.",
+    "tier": 1
+  },
+  {
+    "id": "ice_spike",
+    "safe_id": "ice_spike",
+    "level": 4,
+    "name": "Ice Spike",
+    "description": "Causes jagged icicles to form in the air above the target, falling and damaging it.",
+    "tier": 1
+  },
+  {
+    "id": "frost_armor",
+    "safe_id": "frost_armor",
+    "level": 4,
+    "name": "Frost Armor",
+    "description": "Covers you in a thin layer of magical ice to attack the enemies nearby.",
+    "tier": 1
+  },
+  {
+    "id": "kelvinist_flamebreath",
+    "safe_id": "kelvinist_flamebreath",
+    "level": 4,
+    "name": "Flamebreath",
+    "description": "This spell ignites dust scattered in the air, creating a cone of flame.  The hot ashes can cling to targets, causing additional burns over time.",
+    "tier": 1
+  },
+  {
+    "id": "lightning_bolt",
+    "safe_id": "lightning_bolt",
+    "level": 4,
+    "name": "Lightning Bolt",
+    "description": "The goto spell for many Stormshapers, this iconic spell does just what you expect: you shoot lightning from your fingertips.  However, this lightning is more directed than most lightning, and travels in a line through most non-solid targets.",
+    "tier": 1
+  },
+  {
+    "id": "holy_blade",
+    "safe_id": "holy_blade",
+    "level": 4,
+    "name": "Mage Blade",
+    "description": "This blade of light will cut through any evil it makes contact with!",
+    "tier": 1
+  },
+  {
+    "id": "spirit_armor",
+    "safe_id": "spirit_armor",
+    "level": 4,
+    "name": "Mage Armor",
+    "description": "Evil will not make it through your defenses if your faith is strong enough!",
+    "tier": 1
+  },
+  {
+    "id": "synaptic_stimulation",
+    "safe_id": "synaptic_stimulation",
+    "level": 4,
+    "name": "Synaptic Stimulation",
+    "description": "This spell stimulates the synapses in your brain beyond normal processing speeds, giving you a large boost in mental processing capability, including enhancing your reflexes, speed, and raw intellectual power.  Use responsibly!",
+    "tier": 1
+  },
+  {
+    "id": "pain_split",
+    "safe_id": "pain_split",
+    "level": 3,
+    "name": "Pain Split",
+    "description": "Evens out damage among your limbs.",
+    "tier": 1
+  },
+  {
+    "id": "bio_fleshpouch",
+    "safe_id": "bio_fleshpouch",
+    "level": 3,
+    "name": "Flesh Pouch",
+    "description": "This spell grows a large pouch out of your skin on your back, allowing you to store your gear in it.",
+    "tier": 1
+  },
+  {
+    "id": "biomancer_coagulant_weave",
+    "safe_id": "biomancer_coagulant_weave",
+    "level": 3,
+    "name": "Coagulant Weave",
+    "description": "Turns your biological mastery inwards, medically enhancing your flesh.  Rather than strength of healing, it staves off blood loss and purges wounds before they can turn septic, at the cost of increased hunger and thirst.",
+    "tier": 1
+  },
+  {
+    "id": "biomancer_caustic_aura",
+    "safe_id": "biomancer_caustic_aura",
+    "level": 3,
+    "name": "Caustic Aura",
+    "description": "This spell suspends acid in a layer around you, corroding melee attackers when struck and enhancing your melee damage.",
+    "tier": 1
+  },
+  {
+    "id": "protection_aura",
+    "safe_id": "protection_aura",
+    "level": 3,
+    "name": "Aura of Protection",
+    "description": "Encases your whole body in a magical aura that protects you from the environment.",
+    "tier": 1
+  },
+  {
+    "id": "sound_bomb",
+    "safe_id": "sound_bomb",
+    "level": 3,
+    "name": "Sound Bomb",
+    "description": "Behind the cool name hides a common joke spell to spook your friends and restrain dogs.  It can be useful in some special cases.",
+    "tier": 1
+  },
+  {
+    "id": "druid_veggrasp",
+    "safe_id": "druid_veggrasp",
+    "level": 3,
+    "name": "Vegetative Grasp",
+    "description": "This spell causes roots and vines to burst forth from the ground and grab your foes, slowing them and doing a small amount of damage as they dig in.",
+    "tier": 1
+  },
+  {
+    "id": "druid_rootstrike",
+    "safe_id": "druid_rootstrike",
+    "level": 3,
+    "name": "Root Strike",
+    "description": "This spell causes roots to spear out the ground and stab into your foes in an arc, impaling them.",
+    "tier": 1
+  },
+  {
+    "id": "seismic_stomp",
+    "safe_id": "seismic_stomp",
+    "level": 3,
+    "name": "Seismic Stomp",
+    "description": "Focusing mana into your leg, you stomp your foot and send out a shockwave, knocking enemies around you onto the ground.",
+    "tier": 1
+  },
+  {
+    "id": "eshaper_shardspray",
+    "safe_id": "eshaper_shardspray",
+    "level": 3,
+    "name": "Shardspray",
+    "description": "This spell projects a wide spray of sharp metal shards, cutting into your foes and friends alike.",
+    "tier": 1
+  },
+  {
+    "id": "move_earth",
+    "safe_id": "move_earth",
+    "level": 3,
+    "name": "Move Earth",
+    "description": "Your essence flows around you, and the earth follows.",
+    "tier": 1
+  },
+  {
+    "id": "clairvoyance",
+    "safe_id": "clairvoyance",
+    "level": 3,
+    "name": "Clairvoyance",
+    "description": "You close your eyes and the earth surrenders its secrets to you.",
+    "tier": 1
+  },
+  {
+    "id": "earthshaper_stoneskin",
+    "safe_id": "earthshaper_stoneskin",
+    "level": 3,
+    "name": "Stoneskin",
+    "description": "Envelops your entire body in armor formed from living rock, encumbering yet protective.",
+    "tier": 1
+  },
+  {
+    "id": "earthshaper_pillar",
+    "safe_id": "earthshaper_pillar",
+    "level": 3,
+    "name": "Pillar of Stone",
+    "description": "Drawing upon the surrounding earth, you form a pillar of solid rock.  Experience will make the task easier, and less disruptive to the surrounding area.",
+    "tier": 1
+  },
+  {
+    "id": "eshaper_spawn_tools",
+    "safe_id": "eshaper_spawn_tools",
+    "level": 3,
+    "name": "Utility Molding",
+    "description": "Shape the basic working tools, using your own magic abilities and earth nearby.  Activate to change the shape of a tool.",
+    "tier": 1
+  },
+  {
+    "id": "point_flare",
+    "safe_id": "point_flare",
+    "level": 3,
+    "name": "Point Flare",
+    "description": "Causes an intense heat at the location, damaging the target.",
+    "tier": 1
+  },
+  {
+    "id": "burning_hands",
+    "safe_id": "burning_hands",
+    "level": 3,
+    "name": "Burning Hands",
+    "description": "You're pretty sure you saw this in a game somewhere.  You fire a short-range cone of fire.",
+    "tier": 1
+  },
+  {
+    "id": "frost_spray",
+    "safe_id": "frost_spray",
+    "level": 3,
+    "name": "Frost Spray",
+    "description": "You're pretty sure you saw this in a game somewhere.  You fire a short-range cone of ice and cold.",
+    "tier": 1
+  },
+  {
+    "id": "glide_ice",
+    "safe_id": "glide_ice",
+    "level": 3,
+    "name": "Glide on Ice",
+    "description": "Encases your feet in a magical coating of ice, allowing you to glide along smooth surfaces faster.",
+    "tier": 1
+  },
+  {
+    "id": "ice_shield",
+    "safe_id": "ice_shield",
+    "level": 3,
+    "name": "Ice Shield",
+    "description": "Creates a magical shield of ice on your arm, you can defend yourself with it in melee combat and use it to bash.",
+    "tier": 1
+  },
+  {
+    "id": "kelvinist_summon_flamesword",
+    "safe_id": "kelvinist_summon_flamesword",
+    "level": 3,
+    "name": "Flamesword",
+    "description": "This spell ignites a wooden sword, creating a flaming blade able to burn, bruise, and chop.",
+    "tier": 1
+  },
+  {
+    "id": "phase_door",
+    "safe_id": "phase_door",
+    "level": 3,
+    "name": "Phase Door",
+    "description": "Teleports you in a random direction a short distance.",
+    "tier": 1
+  },
+  {
+    "id": "magus_force_jar",
+    "safe_id": "magus_force_jar",
+    "level": 3,
+    "name": "Jar of Force",
+    "description": "Summon a jar of force in which you can store liquids.",
+    "tier": 1
+  },
+  {
+    "id": "magus_summon_impact_sling",
+    "safe_id": "magus_summon_impact_sling",
+    "level": 3,
+    "name": "Impact Sling",
+    "description": "This spell infuses a sling with tremendous force, delivering devastating pebble shots until the energy tears it apart.",
+    "tier": 1
+  },
+  {
+    "id": "jolt",
+    "safe_id": "jolt",
+    "level": 3,
+    "name": "Jolt",
+    "description": "A short-ranged fan of electricity shoots from your fingers.",
+    "tier": 1
+  },
+  {
+    "id": "windstrike",
+    "safe_id": "windstrike",
+    "level": 3,
+    "name": "Windstrike",
+    "description": "A powerful blast of wind slams into anything in front of your body.",
+    "tier": 1
+  },
+  {
+    "id": "windrun",
+    "safe_id": "windrun",
+    "level": 3,
+    "name": "Windrunning",
+    "description": "A magical wind pushes you forward as you move, easing your movements and increasing speed.",
+    "tier": 1
+  },
+  {
+    "id": "stormshaper_repelling_arc",
+    "safe_id": "stormshaper_repelling_arc",
+    "level": 3,
+    "name": "Repelling Arc",
+    "description": "Manifests an aura of crackling electricity around you to strike attackers with baleful lightning.",
+    "tier": 1
+  },
+  {
+    "id": "air_bubble",
+    "safe_id": "air_bubble",
+    "level": 3,
+    "name": "Air Bubble",
+    "description": "Cover your head with an air bubble, allowing you to breathe underwater or prevent breathing of toxic gases.",
+    "tier": 1
+  },
+  {
+    "id": "electric_eye",
+    "safe_id": "electric_eye",
+    "level": 3,
+    "name": "Electric Eye",
+    "description": "Enhance your sight with your powers.  It allows you to see creatures of the same energy around you.  Enhanced perception speed enables you to see attacks coming, allowing for an additional block or dodge attempt.",
+    "tier": 1
+  },
+  {
+    "id": "quantum_tunnel_lesser",
+    "safe_id": "quantum_tunnel_lesser",
+    "level": 3,
+    "name": "Lesser Quantum Tunnel",
+    "description": "This spell manipulates some quantum something or other to tunnel you through a short distance of space, and even matter, unfortunately there's that whole uncertainty thing as to where you come out.  It leaves you a little dazed on the other side as you reorient yourself.",
+    "tier": 1
+  },
+  {
+    "id": "knock",
+    "safe_id": "knock",
+    "level": 3,
+    "name": "Knock",
+    "description": "You channel magic into a force capable of opening doors.  This variant can only open wooden doors.",
+    "tier": 1
+  },
+  {
+    "id": "smite",
+    "safe_id": "smite",
+    "level": 2,
+    "name": "Smite",
+    "description": "Evil has become pervasive throughout the world.  Let your power be the light that shines in the darkness!"
+  },
+  {
+    "id": "pertifying_touch",
+    "safe_id": "pertifying_touch",
+    "level": 2,
+    "name": "Petrifying Touch",
+    "description": "Your hands tries to transform the body of your enemy into a pure stone.  The effect is temporary, but it can deal significant damage."
+  },
+  {
+    "id": "reactive_armor",
+    "safe_id": "reactive_armor",
+    "level": 2,
+    "name": "Reactive Armour",
+    "description": "Explode your stone skin, to deal massive damage to all enemies around."
+  },
+  {
+    "id": "lightning_blast",
+    "safe_id": "lightning_blast",
+    "level": 2,
+    "name": "Lightning Blast",
+    "description": "You fire a small concentrated ball of lightning at the target.  The electricity diffuses quickly, so it doesn't do much damage, but you're able to fire off several quick ones in a row."
+  },
+  {
+    "id": "bless",
+    "safe_id": "bless",
+    "level": 2,
+    "name": "Bless",
+    "description": "A spell of blessing that gives you energy and boosts your abilities."
+  },
+  {
+    "id": "x-ray",
+    "safe_id": "x_ray",
+    "level": 2,
+    "name": "X-ray Vision",
+    "description": "You fire a cone of X-rays that magically allows you to see that area for a short time."
+  },
+  {
+    "id": "summon_undead",
+    "safe_id": "summon_undead",
+    "level": 1,
+    "name": "Summon Undead",
+    "description": "An ethereal-looking undead rises from the depths of the earth to fight for you.  You may be able to summon the stronger ones with a higher level in this spell."
+  },
+  {
+    "id": "necrotic_gaze",
+    "safe_id": "necrotic_gaze",
+    "level": 1,
+    "name": "Necrotic Gaze",
+    "description": "You use the power of your own blood, concentrated in rune, to imbue necrotic energy into your gaze, damaging the target you look at."
+  },
+  {
+    "id": "disruption_bolt",
+    "safe_id": "disruption_bolt",
+    "level": 1,
+    "name": "Disruption Bolt",
+    "description": "Release a resonant bolt of spiritual energy at a nearby target.  It will disrupt the natural link between matter and animus, causing heavy but never lethal damage."
+  },
+  {
+    "id": "summon_wisps",
+    "safe_id": "summon_wisps",
+    "level": 1,
+    "name": "Ignus Fatuus",
+    "description": "Summons ghostly foxfire worked from living marsh vapor, to lead your enemies astray.  With more experience, this spell can conjure multiple ghost lights."
+  },
+  {
+    "id": "bleed",
+    "safe_id": "bleed",
+    "level": 1,
+    "name": "Bleed",
+    "description": "With a shout and a gesture, the target starts bleeding from old wounds."
+  },
+  {
+    "id": "light_healing",
+    "safe_id": "light_healing",
+    "level": 1,
+    "name": "Cure Light Wounds",
+    "description": "Heals a little bit of damage on the target."
+  },
+  {
+    "id": "bio_acidicspray",
+    "safe_id": "bio_acidicspray",
+    "level": 1,
+    "name": "Acidic Spray",
+    "description": "When cast, the mage opens his mouth and sprays acid in a wide cone to dissolve his foes into goo.  Just imagine what he'll do with the goo."
+  },
+  {
+    "id": "biomancer_paralytic_dart",
+    "safe_id": "biomancer_paralytic_dart",
+    "level": 1,
+    "name": "Paralytic Dart",
+    "description": "Spits a warped needle of sinew and bone, carrying with it a sting that slows your victim."
+  },
+  {
+    "id": "biomancer_visceral_projection",
+    "safe_id": "biomancer_visceral_projection",
+    "level": 1,
+    "name": "Visceral Projection",
+    "description": "Projects a spray of acrid blood and gore all around you, growing to ensnare your prey in a field of twitching poisonous tendrils."
+  },
+  {
+    "id": "crystallize_mana",
+    "safe_id": "crystallize_mana",
+    "level": 1,
+    "name": "Crystallize Mana",
+    "description": "Crystallizes mana into solid form."
+  },
+  {
+    "id": "blinding_flash",
+    "safe_id": "blinding_flash",
+    "level": 1,
+    "name": "Blinding Flash",
+    "description": "Blind enemies for a short time with a sudden, dazzling light.  Higher levels deal slightly higher damage."
+  },
+  {
+    "id": "ethereal_grasp",
+    "safe_id": "ethereal_grasp",
+    "level": 1,
+    "name": "Ethereal Grasp",
+    "description": "A mass of spectral hands emerge from the ground, slowing everything in range.  Higher levels allow a bigger AoE, and longer effect."
+  },
+  {
+    "id": "druid_tornskin",
+    "safe_id": "druid_tornskin",
+    "level": 1,
+    "name": "Tornskin",
+    "description": "This spell, which resembles Thornskin through the sap & needles covering the page, seemed to involve thorns and bleeding wounds.  The marred words may have altered the function."
+  },
+  {
+    "id": "druid_growth",
+    "safe_id": "druid_growth",
+    "level": 1,
+    "name": "Seed of Growth",
+    "description": "Offer some of your life in a ritual to get tokens of growth in return."
+  },
+  {
+    "id": "stonefist",
+    "safe_id": "stonefist",
+    "level": 1,
+    "name": "Stonefist",
+    "description": "Encases your arms and hands in a sheath of magical stone, you can punch and defend yourself with it in melee combat."
+  },
+  {
+    "id": "eshaper_piercing_bolt",
+    "safe_id": "eshaper_piercing_bolt",
+    "level": 1,
+    "name": "Piercing Bolt",
+    "description": "This spell projects a piercing rod of conjured iron at those that dare oppose you."
+  },
+  {
+    "id": "earthshaper_boulder",
+    "safe_id": "earthshaper_boulder",
+    "level": 1,
+    "name": "Summon Boulder",
+    "description": "Pull the smooth rock underground, using your forces of earth shaping.  You can use it as a table, or as a primitive anvil."
+  },
+  {
+    "id": "stormshaper_wall_of_fog",
+    "safe_id": "stormshaper_wall_of_fog",
+    "level": 1,
+    "name": "Wall of Fog",
+    "description": "Draws forth a broad wall of thick fog.  While the sudden force of air pressure will floor any enemies caught in it, the conjuration is otherwise harmless."
+  },
+  {
+    "id": "create_atomic_lamp",
+    "safe_id": "create_atomic_lamp",
+    "level": 1,
+    "name": "Lamp",
+    "description": "Creates a magical lamp."
+  },
+  {
+    "id": "laze",
+    "safe_id": "laze",
+    "level": 1,
+    "name": "Laze",
+    "description": "You concentrate and release a focused beam of photons at a target, also known as a laser."
+  },
+  {
+    "id": "create_atomic_light",
+    "safe_id": "create_atomic_light",
+    "level": 0,
+    "name": "Magical Light",
+    "description": "Creates a magical light."
+  },
+  {
+    "id": "druid_woodshaft",
+    "safe_id": "druid_woodshaft",
+    "level": 0,
+    "name": "Wooden Shaft",
+    "description": "This spell creates a projectile of hardwood that shoots forth from the caster's hand at high speed to stab into an enemy."
+  },
+  {
+    "id": "summon_cats",
+    "safe_id": "summon_cats",
+    "level": 0,
+    "name": "Bag of Cats",
+    "description": "Are you the crazy cat lady?"
+  },
+  {
+    "id": "eshaper_rockbolt",
+    "safe_id": "eshaper_rockbolt",
+    "level": 0,
+    "name": "Rockbolt",
+    "description": "Fires a conjured stone projectile at high velocity."
+  },
+  {
+    "id": "create_lighter",
+    "safe_id": "create_lighter",
+    "level": 0,
+    "name": "Finger Firelighter",
+    "description": "Summons a small flame that does not burn you, but you can use it to light things on fire.  It seems to need you to have some intent to light things on fire, because you are able to put it in your pocket with no issue."
+  },
+  {
+    "id": "chilling_touch",
+    "safe_id": "chilling_touch",
+    "level": 0,
+    "name": "Chilling Touch",
+    "description": "Freezes the touched target with intense cold."
+  },
+  {
+    "id": "shadow_field",
+    "safe_id": "shadow_field",
+    "level": 0,
+    "name": "Shadow Field",
+    "description": "Cast a field of intense shadows."
+  },
+  {
+    "id": "magic_missile",
+    "safe_id": "magic_missile",
+    "level": 0,
+    "name": "Magic Missile",
+    "description": "I cast Magic Missile at the darkness!"
+  },
+  {
+    "id": "shocking_lash",
+    "safe_id": "shocking_lash",
+    "level": 0,
+    "name": "Shocking Lash",
+    "description": "A quick burst of electricity strikes a target and possibly one other nearby."
+  },
+  {
+    "id": "electric_arts",
+    "safe_id": "electric_arts",
+    "level": 0,
+    "name": "Electric Arts",
+    "description": "This spell were designed for scholars, that just started to learn stormshaping.  It allows them to use their abilities, when their magic control is weak, and they can injure themselves with electricity."
+  },
+  {
+    "id": "taze",
+    "safe_id": "taze",
+    "level": 0,
+    "name": "Taze",
+    "description": "This spell creates a very short range bolt of electricity to shock your foes."
+  },
+  {
+    "id": "create_rune_sorcerer",
+    "safe_id": "create_rune_sorcerer",
+    "level": 0,
+    "name": "Counterfeit Rune",
+    "description": "This ritual creates a small pebble infused with a sorcerer's power.  It can trick spells that require runes to cast to think that you have the rune required.",
+    "tier": 0
+  }
+]
