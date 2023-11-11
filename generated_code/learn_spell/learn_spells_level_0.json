@@ -42,6 +42,47 @@
   },
   {
     "type": "talk_topic",
+    "id": "TALK_SORCERER_LEARN_SPELL_classless_watch_spell_at_level_0",
+    "dynamic_line": "Knowing the Day and the Hour: Probably the single greatest example of technology rendering magic obsolete, this spell allows you know exactly what time it is.",
+    "responses": [
+      {
+        "text": "Select Spell.",
+        "topic": "TALK_SORCERER_MENU_MAIN",
+        "effect": [
+          {
+            "math": [
+              "u_val('spell_level', 'spell: classless_watch_spell')",
+              "=",
+              "u_current_sorcerer_level"
+            ]
+          },
+          {
+            "math": [
+              "u_used_spell_slot_for_classless_watch_spell",
+              "=",
+              "0.5"
+            ]
+          },
+          {
+            "math": [
+              "u_sorcerer_level_0_spells_known",
+              "++"
+            ]
+          }
+        ]
+      },
+      {
+        "text": "Go Back.",
+        "topic": "TALK_SORCERER_MENU_MAIN"
+      },
+      {
+        "text": "Quit.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "type": "talk_topic",
     "id": "TALK_SORCERER_LEARN_SPELL_druid_woodshaft_at_level_0",
     "dynamic_line": "Wooden Shaft: This spell creates a projectile of hardwood that shoots forth from the caster's hand at high speed to stab into an enemy.",
     "responses": [
@@ -371,7 +412,7 @@
   {
     "type": "talk_topic",
     "id": "TALK_SORCERER_LEARN_SPELL_electric_arts_at_level_0",
-    "dynamic_line": "Electric Arts: This spell were designed for scholars, that just started to learn stormshaping.  It allows them to use their abilities, when their magic control is weak, and they can injure themselves with electricity.",
+    "dynamic_line": "Electric Arts: A spell designed for scholars having just started to learn stormshaping, allowing them to reduce the damage to themselves their often capricious new abilities may cause.",
     "responses": [
       {
         "text": "Select Spell.",
@@ -523,6 +564,17 @@
         },
         "text": "Learn Magical Light ( level 0 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_create_atomic_light_at_level_0"
+      },
+      {
+        "condition": {
+          "math": [
+            "u_used_spell_slot_for_classless_watch_spell",
+            "==",
+            "0"
+          ]
+        },
+        "text": "Learn Knowing the Day and the Hour ( level 0 )",
+        "topic": "TALK_SORCERER_LEARN_SPELL_classless_watch_spell_at_level_0"
       },
       {
         "condition": {

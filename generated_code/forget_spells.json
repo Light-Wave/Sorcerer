@@ -55,6 +55,47 @@
     {
       "condition": {
         "math": [
+          "u_used_spell_slot_for_classless_disjunction",
+          ">",
+          "0"
+        ]
+      },
+      "text": "Forget Disjunction ( level <u_val:used_spell_slot_for_classless_disjunction> )",
+      "topic": "TALK_SORCERER_MENU_MAIN",
+      "effect": [
+        {
+          "math": [
+            "u_val('spell_level', 'spell: classless_disjunction')",
+            "=",
+            "-1"
+          ]
+        },
+        {
+          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "variables": {
+            "forgotten_spell_level": {
+              "u_val": "used_spell_slot_for_classless_disjunction"
+            }
+          }
+        },
+        {
+          "math": [
+            "u_used_spell_slot_for_classless_disjunction",
+            "=",
+            "0"
+          ]
+        },
+        {
+          "math": [
+            "u_sorcerer_forget_spell_charge",
+            "--"
+          ]
+        }
+      ]
+    },
+    {
+      "condition": {
+        "math": [
           "u_used_spell_slot_for_cause_rot",
           ">",
           "0"
@@ -81,6 +122,88 @@
         {
           "math": [
             "u_used_spell_slot_for_cause_rot",
+            "=",
+            "0"
+          ]
+        },
+        {
+          "math": [
+            "u_sorcerer_forget_spell_charge",
+            "--"
+          ]
+        }
+      ]
+    },
+    {
+      "condition": {
+        "math": [
+          "u_used_spell_slot_for_druid_beguile_savage_beast",
+          ">",
+          "0"
+        ]
+      },
+      "text": "Forget Beguiling the Savage Beast ( level <u_val:used_spell_slot_for_druid_beguile_savage_beast> )",
+      "topic": "TALK_SORCERER_MENU_MAIN",
+      "effect": [
+        {
+          "math": [
+            "u_val('spell_level', 'spell: druid_beguile_savage_beast')",
+            "=",
+            "-1"
+          ]
+        },
+        {
+          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "variables": {
+            "forgotten_spell_level": {
+              "u_val": "used_spell_slot_for_druid_beguile_savage_beast"
+            }
+          }
+        },
+        {
+          "math": [
+            "u_used_spell_slot_for_druid_beguile_savage_beast",
+            "=",
+            "0"
+          ]
+        },
+        {
+          "math": [
+            "u_sorcerer_forget_spell_charge",
+            "--"
+          ]
+        }
+      ]
+    },
+    {
+      "condition": {
+        "math": [
+          "u_used_spell_slot_for_druid_thorn_skin",
+          ">",
+          "0"
+        ]
+      },
+      "text": "Forget Thornskin ( level <u_val:used_spell_slot_for_druid_thorn_skin> )",
+      "topic": "TALK_SORCERER_MENU_MAIN",
+      "effect": [
+        {
+          "math": [
+            "u_val('spell_level', 'spell: druid_thorn_skin')",
+            "=",
+            "-1"
+          ]
+        },
+        {
+          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "variables": {
+            "forgotten_spell_level": {
+              "u_val": "used_spell_slot_for_druid_thorn_skin"
+            }
+          }
+        },
+        {
+          "math": [
+            "u_used_spell_slot_for_druid_thorn_skin",
             "=",
             "0"
           ]
@@ -219,6 +342,47 @@
     {
       "condition": {
         "math": [
+          "u_used_spell_slot_for_earthshaper_granite_aegis",
+          ">",
+          "0"
+        ]
+      },
+      "text": "Forget Granite Aegis ( level <u_val:used_spell_slot_for_earthshaper_granite_aegis> )",
+      "topic": "TALK_SORCERER_MENU_MAIN",
+      "effect": [
+        {
+          "math": [
+            "u_val('spell_level', 'spell: earthshaper_granite_aegis')",
+            "=",
+            "-1"
+          ]
+        },
+        {
+          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "variables": {
+            "forgotten_spell_level": {
+              "u_val": "used_spell_slot_for_earthshaper_granite_aegis"
+            }
+          }
+        },
+        {
+          "math": [
+            "u_used_spell_slot_for_earthshaper_granite_aegis",
+            "=",
+            "0"
+          ]
+        },
+        {
+          "math": [
+            "u_sorcerer_forget_spell_charge",
+            "--"
+          ]
+        }
+      ]
+    },
+    {
+      "condition": {
+        "math": [
           "u_used_spell_slot_for_nova_flare",
           ">",
           "0"
@@ -327,6 +491,47 @@
         {
           "math": [
             "u_used_spell_slot_for_focused_bolt",
+            "=",
+            "0"
+          ]
+        },
+        {
+          "math": [
+            "u_sorcerer_forget_spell_charge",
+            "--"
+          ]
+        }
+      ]
+    },
+    {
+      "condition": {
+        "math": [
+          "u_used_spell_slot_for_magus_word_of_recall",
+          ">",
+          "0"
+        ]
+      },
+      "text": "Forget Word of Recall ( level <u_val:used_spell_slot_for_magus_word_of_recall> )",
+      "topic": "TALK_SORCERER_MENU_MAIN",
+      "effect": [
+        {
+          "math": [
+            "u_val('spell_level', 'spell: magus_word_of_recall')",
+            "=",
+            "-1"
+          ]
+        },
+        {
+          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "variables": {
+            "forgotten_spell_level": {
+              "u_val": "used_spell_slot_for_magus_word_of_recall"
+            }
+          }
+        },
+        {
+          "math": [
+            "u_used_spell_slot_for_magus_word_of_recall",
             "=",
             "0"
           ]
@@ -834,6 +1039,88 @@
     {
       "condition": {
         "math": [
+          "u_used_spell_slot_for_biomancer_giant_growth",
+          ">",
+          "0"
+        ]
+      },
+      "text": "Forget Giant Growth ( level <u_val:used_spell_slot_for_biomancer_giant_growth> )",
+      "topic": "TALK_SORCERER_MENU_MAIN",
+      "effect": [
+        {
+          "math": [
+            "u_val('spell_level', 'spell: biomancer_giant_growth')",
+            "=",
+            "-1"
+          ]
+        },
+        {
+          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "variables": {
+            "forgotten_spell_level": {
+              "u_val": "used_spell_slot_for_biomancer_giant_growth"
+            }
+          }
+        },
+        {
+          "math": [
+            "u_used_spell_slot_for_biomancer_giant_growth",
+            "=",
+            "0"
+          ]
+        },
+        {
+          "math": [
+            "u_sorcerer_forget_spell_charge",
+            "--"
+          ]
+        }
+      ]
+    },
+    {
+      "condition": {
+        "math": [
+          "u_used_spell_slot_for_biomancer_lashing_tentacles",
+          ">",
+          "0"
+        ]
+      },
+      "text": "Forget Lashing Tentacles ( level <u_val:used_spell_slot_for_biomancer_lashing_tentacles> )",
+      "topic": "TALK_SORCERER_MENU_MAIN",
+      "effect": [
+        {
+          "math": [
+            "u_val('spell_level', 'spell: biomancer_lashing_tentacles')",
+            "=",
+            "-1"
+          ]
+        },
+        {
+          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "variables": {
+            "forgotten_spell_level": {
+              "u_val": "used_spell_slot_for_biomancer_lashing_tentacles"
+            }
+          }
+        },
+        {
+          "math": [
+            "u_used_spell_slot_for_biomancer_lashing_tentacles",
+            "=",
+            "0"
+          ]
+        },
+        {
+          "math": [
+            "u_sorcerer_forget_spell_charge",
+            "--"
+          ]
+        }
+      ]
+    },
+    {
+      "condition": {
+        "math": [
           "u_used_spell_slot_for_dark_sight",
           ">",
           "0"
@@ -1024,6 +1311,88 @@
         {
           "math": [
             "u_used_spell_slot_for_druid_healing",
+            "=",
+            "0"
+          ]
+        },
+        {
+          "math": [
+            "u_sorcerer_forget_spell_charge",
+            "--"
+          ]
+        }
+      ]
+    },
+    {
+      "condition": {
+        "math": [
+          "u_used_spell_slot_for_druid_whisper_leaves",
+          ">",
+          "0"
+        ]
+      },
+      "text": "Forget Whisper of the Leaves ( level <u_val:used_spell_slot_for_druid_whisper_leaves> )",
+      "topic": "TALK_SORCERER_MENU_MAIN",
+      "effect": [
+        {
+          "math": [
+            "u_val('spell_level', 'spell: druid_whisper_leaves')",
+            "=",
+            "-1"
+          ]
+        },
+        {
+          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "variables": {
+            "forgotten_spell_level": {
+              "u_val": "used_spell_slot_for_druid_whisper_leaves"
+            }
+          }
+        },
+        {
+          "math": [
+            "u_used_spell_slot_for_druid_whisper_leaves",
+            "=",
+            "0"
+          ]
+        },
+        {
+          "math": [
+            "u_sorcerer_forget_spell_charge",
+            "--"
+          ]
+        }
+      ]
+    },
+    {
+      "condition": {
+        "math": [
+          "u_used_spell_slot_for_druid_summon_tanglevine",
+          ">",
+          "0"
+        ]
+      },
+      "text": "Forget Summon Tanglevine ( level <u_val:used_spell_slot_for_druid_summon_tanglevine> )",
+      "topic": "TALK_SORCERER_MENU_MAIN",
+      "effect": [
+        {
+          "math": [
+            "u_val('spell_level', 'spell: druid_summon_tanglevine')",
+            "=",
+            "-1"
+          ]
+        },
+        {
+          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "variables": {
+            "forgotten_spell_level": {
+              "u_val": "used_spell_slot_for_druid_summon_tanglevine"
+            }
+          }
+        },
+        {
+          "math": [
+            "u_used_spell_slot_for_druid_summon_tanglevine",
             "=",
             "0"
           ]
@@ -1408,6 +1777,47 @@
     {
       "condition": {
         "math": [
+          "u_used_spell_slot_for_stormshaper_heart_of_hurricane",
+          ">",
+          "0"
+        ]
+      },
+      "text": "Forget Heart of the Hurricane ( level <u_val:used_spell_slot_for_stormshaper_heart_of_hurricane> )",
+      "topic": "TALK_SORCERER_MENU_MAIN",
+      "effect": [
+        {
+          "math": [
+            "u_val('spell_level', 'spell: stormshaper_heart_of_hurricane')",
+            "=",
+            "-1"
+          ]
+        },
+        {
+          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "variables": {
+            "forgotten_spell_level": {
+              "u_val": "used_spell_slot_for_stormshaper_heart_of_hurricane"
+            }
+          }
+        },
+        {
+          "math": [
+            "u_used_spell_slot_for_stormshaper_heart_of_hurricane",
+            "=",
+            "0"
+          ]
+        },
+        {
+          "math": [
+            "u_sorcerer_forget_spell_charge",
+            "--"
+          ]
+        }
+      ]
+    },
+    {
+      "condition": {
+        "math": [
           "u_used_spell_slot_for_recover_bionic_power",
           ">",
           "0"
@@ -1516,6 +1926,88 @@
         {
           "math": [
             "u_used_spell_slot_for_improved_knock",
+            "=",
+            "0"
+          ]
+        },
+        {
+          "math": [
+            "u_sorcerer_forget_spell_charge",
+            "--"
+          ]
+        }
+      ]
+    },
+    {
+      "condition": {
+        "math": [
+          "u_used_spell_slot_for_technomancer_robot_shutdown",
+          ">",
+          "0"
+        ]
+      },
+      "text": "Forget Shutdown ( level <u_val:used_spell_slot_for_technomancer_robot_shutdown> )",
+      "topic": "TALK_SORCERER_MENU_MAIN",
+      "effect": [
+        {
+          "math": [
+            "u_val('spell_level', 'spell: technomancer_robot_shutdown')",
+            "=",
+            "-1"
+          ]
+        },
+        {
+          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "variables": {
+            "forgotten_spell_level": {
+              "u_val": "used_spell_slot_for_technomancer_robot_shutdown"
+            }
+          }
+        },
+        {
+          "math": [
+            "u_used_spell_slot_for_technomancer_robot_shutdown",
+            "=",
+            "0"
+          ]
+        },
+        {
+          "math": [
+            "u_sorcerer_forget_spell_charge",
+            "--"
+          ]
+        }
+      ]
+    },
+    {
+      "condition": {
+        "math": [
+          "u_used_spell_slot_for_technomancer_conjure_ups",
+          ">",
+          "0"
+        ]
+      },
+      "text": "Forget Power Supply ( level <u_val:used_spell_slot_for_technomancer_conjure_ups> )",
+      "topic": "TALK_SORCERER_MENU_MAIN",
+      "effect": [
+        {
+          "math": [
+            "u_val('spell_level', 'spell: technomancer_conjure_ups')",
+            "=",
+            "-1"
+          ]
+        },
+        {
+          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "variables": {
+            "forgotten_spell_level": {
+              "u_val": "used_spell_slot_for_technomancer_conjure_ups"
+            }
+          }
+        },
+        {
+          "math": [
+            "u_used_spell_slot_for_technomancer_conjure_ups",
             "=",
             "0"
           ]
@@ -2351,6 +2843,47 @@
     {
       "condition": {
         "math": [
+          "u_used_spell_slot_for_magus_teleport_mark",
+          ">",
+          "0"
+        ]
+      },
+      "text": "Forget Magus's Mark ( level <u_val:used_spell_slot_for_magus_teleport_mark> )",
+      "topic": "TALK_SORCERER_MENU_MAIN",
+      "effect": [
+        {
+          "math": [
+            "u_val('spell_level', 'spell: magus_teleport_mark')",
+            "=",
+            "-1"
+          ]
+        },
+        {
+          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "variables": {
+            "forgotten_spell_level": {
+              "u_val": "used_spell_slot_for_magus_teleport_mark"
+            }
+          }
+        },
+        {
+          "math": [
+            "u_used_spell_slot_for_magus_teleport_mark",
+            "=",
+            "0"
+          ]
+        },
+        {
+          "math": [
+            "u_sorcerer_forget_spell_charge",
+            "--"
+          ]
+        }
+      ]
+    },
+    {
+      "condition": {
+        "math": [
           "u_used_spell_slot_for_storm_hammer",
           ">",
           "0"
@@ -2925,6 +3458,47 @@
     {
       "condition": {
         "math": [
+          "u_used_spell_slot_for_classless_dispel_magic",
+          ">",
+          "0"
+        ]
+      },
+      "text": "Forget Dispel Magic ( level <u_val:used_spell_slot_for_classless_dispel_magic> )",
+      "topic": "TALK_SORCERER_MENU_MAIN",
+      "effect": [
+        {
+          "math": [
+            "u_val('spell_level', 'spell: classless_dispel_magic')",
+            "=",
+            "-1"
+          ]
+        },
+        {
+          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "variables": {
+            "forgotten_spell_level": {
+              "u_val": "used_spell_slot_for_classless_dispel_magic"
+            }
+          }
+        },
+        {
+          "math": [
+            "u_used_spell_slot_for_classless_dispel_magic",
+            "=",
+            "0"
+          ]
+        },
+        {
+          "math": [
+            "u_sorcerer_forget_spell_charge",
+            "--"
+          ]
+        }
+      ]
+    },
+    {
+      "condition": {
+        "math": [
           "u_used_spell_slot_for_druid_naturebow1",
           ">",
           "0"
@@ -3074,6 +3648,47 @@
         {
           "math": [
             "u_used_spell_slot_for_druid_bandage_heal",
+            "=",
+            "0"
+          ]
+        },
+        {
+          "math": [
+            "u_sorcerer_forget_spell_charge",
+            "--"
+          ]
+        }
+      ]
+    },
+    {
+      "condition": {
+        "math": [
+          "u_used_spell_slot_for_druid_summon_brambles",
+          ">",
+          "0"
+        ]
+      },
+      "text": "Forget Stranglethorns ( level <u_val:used_spell_slot_for_druid_summon_brambles> )",
+      "topic": "TALK_SORCERER_MENU_MAIN",
+      "effect": [
+        {
+          "math": [
+            "u_val('spell_level', 'spell: druid_summon_brambles')",
+            "=",
+            "-1"
+          ]
+        },
+        {
+          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "variables": {
+            "forgotten_spell_level": {
+              "u_val": "used_spell_slot_for_druid_summon_brambles"
+            }
+          }
+        },
+        {
+          "math": [
+            "u_used_spell_slot_for_druid_summon_brambles",
             "=",
             "0"
           ]
@@ -3376,6 +3991,88 @@
     {
       "condition": {
         "math": [
+          "u_used_spell_slot_for_technomancer_welder",
+          ">",
+          "0"
+        ]
+      },
+      "text": "Forget Voltaic Touch ( level <u_val:used_spell_slot_for_technomancer_welder> )",
+      "topic": "TALK_SORCERER_MENU_MAIN",
+      "effect": [
+        {
+          "math": [
+            "u_val('spell_level', 'spell: technomancer_welder')",
+            "=",
+            "-1"
+          ]
+        },
+        {
+          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "variables": {
+            "forgotten_spell_level": {
+              "u_val": "used_spell_slot_for_technomancer_welder"
+            }
+          }
+        },
+        {
+          "math": [
+            "u_used_spell_slot_for_technomancer_welder",
+            "=",
+            "0"
+          ]
+        },
+        {
+          "math": [
+            "u_sorcerer_forget_spell_charge",
+            "--"
+          ]
+        }
+      ]
+    },
+    {
+      "condition": {
+        "math": [
+          "u_used_spell_slot_for_animist_summon_watcher",
+          ">",
+          "0"
+        ]
+      },
+      "text": "Forget Summon Watcher Spirit ( level <u_val:used_spell_slot_for_animist_summon_watcher> )",
+      "topic": "TALK_SORCERER_MENU_MAIN",
+      "effect": [
+        {
+          "math": [
+            "u_val('spell_level', 'spell: animist_summon_watcher')",
+            "=",
+            "-1"
+          ]
+        },
+        {
+          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "variables": {
+            "forgotten_spell_level": {
+              "u_val": "used_spell_slot_for_animist_summon_watcher"
+            }
+          }
+        },
+        {
+          "math": [
+            "u_used_spell_slot_for_animist_summon_watcher",
+            "=",
+            "0"
+          ]
+        },
+        {
+          "math": [
+            "u_sorcerer_forget_spell_charge",
+            "--"
+          ]
+        }
+      ]
+    },
+    {
+      "condition": {
+        "math": [
           "u_used_spell_slot_for_pain_split",
           ">",
           "0"
@@ -3540,6 +4237,88 @@
     {
       "condition": {
         "math": [
+          "u_used_spell_slot_for_biomancer_swim_frog",
+          ">",
+          "0"
+        ]
+      },
+      "text": "Forget Limbs of the Frog ( level <u_val:used_spell_slot_for_biomancer_swim_frog> )",
+      "topic": "TALK_SORCERER_MENU_MAIN",
+      "effect": [
+        {
+          "math": [
+            "u_val('spell_level', 'spell: biomancer_swim_frog')",
+            "=",
+            "-1"
+          ]
+        },
+        {
+          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "variables": {
+            "forgotten_spell_level": {
+              "u_val": "used_spell_slot_for_biomancer_swim_frog"
+            }
+          }
+        },
+        {
+          "math": [
+            "u_used_spell_slot_for_biomancer_swim_frog",
+            "=",
+            "0"
+          ]
+        },
+        {
+          "math": [
+            "u_sorcerer_forget_spell_charge",
+            "--"
+          ]
+        }
+      ]
+    },
+    {
+      "condition": {
+        "math": [
+          "u_used_spell_slot_for_biomancer_carrion_feast",
+          ">",
+          "0"
+        ]
+      },
+      "text": "Forget Carrion Feast ( level <u_val:used_spell_slot_for_biomancer_carrion_feast> )",
+      "topic": "TALK_SORCERER_MENU_MAIN",
+      "effect": [
+        {
+          "math": [
+            "u_val('spell_level', 'spell: biomancer_carrion_feast')",
+            "=",
+            "-1"
+          ]
+        },
+        {
+          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "variables": {
+            "forgotten_spell_level": {
+              "u_val": "used_spell_slot_for_biomancer_carrion_feast"
+            }
+          }
+        },
+        {
+          "math": [
+            "u_used_spell_slot_for_biomancer_carrion_feast",
+            "=",
+            "0"
+          ]
+        },
+        {
+          "math": [
+            "u_sorcerer_forget_spell_charge",
+            "--"
+          ]
+        }
+      ]
+    },
+    {
+      "condition": {
+        "math": [
           "u_used_spell_slot_for_protection_aura",
           ">",
           "0"
@@ -3689,6 +4468,88 @@
         {
           "math": [
             "u_used_spell_slot_for_druid_rootstrike",
+            "=",
+            "0"
+          ]
+        },
+        {
+          "math": [
+            "u_sorcerer_forget_spell_charge",
+            "--"
+          ]
+        }
+      ]
+    },
+    {
+      "condition": {
+        "math": [
+          "u_used_spell_slot_for_druid_harvest_hunter",
+          ">",
+          "0"
+        ]
+      },
+      "text": "Forget Harvest of the Hunter ( level <u_val:used_spell_slot_for_druid_harvest_hunter> )",
+      "topic": "TALK_SORCERER_MENU_MAIN",
+      "effect": [
+        {
+          "math": [
+            "u_val('spell_level', 'spell: druid_harvest_hunter')",
+            "=",
+            "-1"
+          ]
+        },
+        {
+          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "variables": {
+            "forgotten_spell_level": {
+              "u_val": "used_spell_slot_for_druid_harvest_hunter"
+            }
+          }
+        },
+        {
+          "math": [
+            "u_used_spell_slot_for_druid_harvest_hunter",
+            "=",
+            "0"
+          ]
+        },
+        {
+          "math": [
+            "u_sorcerer_forget_spell_charge",
+            "--"
+          ]
+        }
+      ]
+    },
+    {
+      "condition": {
+        "math": [
+          "u_used_spell_slot_for_druid_bramble_spear",
+          ">",
+          "0"
+        ]
+      },
+      "text": "Forget Spear of Brambles ( level <u_val:used_spell_slot_for_druid_bramble_spear> )",
+      "topic": "TALK_SORCERER_MENU_MAIN",
+      "effect": [
+        {
+          "math": [
+            "u_val('spell_level', 'spell: druid_bramble_spear')",
+            "=",
+            "-1"
+          ]
+        },
+        {
+          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "variables": {
+            "forgotten_spell_level": {
+              "u_val": "used_spell_slot_for_druid_bramble_spear"
+            }
+          }
+        },
+        {
+          "math": [
+            "u_used_spell_slot_for_druid_bramble_spear",
             "=",
             "0"
           ]
@@ -3991,6 +4852,88 @@
     {
       "condition": {
         "math": [
+          "u_used_spell_slot_for_earthshaper_danger_sense",
+          ">",
+          "0"
+        ]
+      },
+      "text": "Forget Tremorsense ( level <u_val:used_spell_slot_for_earthshaper_danger_sense> )",
+      "topic": "TALK_SORCERER_MENU_MAIN",
+      "effect": [
+        {
+          "math": [
+            "u_val('spell_level', 'spell: earthshaper_danger_sense')",
+            "=",
+            "-1"
+          ]
+        },
+        {
+          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "variables": {
+            "forgotten_spell_level": {
+              "u_val": "used_spell_slot_for_earthshaper_danger_sense"
+            }
+          }
+        },
+        {
+          "math": [
+            "u_used_spell_slot_for_earthshaper_danger_sense",
+            "=",
+            "0"
+          ]
+        },
+        {
+          "math": [
+            "u_sorcerer_forget_spell_charge",
+            "--"
+          ]
+        }
+      ]
+    },
+    {
+      "condition": {
+        "math": [
+          "u_used_spell_slot_for_earthshaper_fortitude_of_stone",
+          ">",
+          "0"
+        ]
+      },
+      "text": "Forget Stones' Fortitude ( level <u_val:used_spell_slot_for_earthshaper_fortitude_of_stone> )",
+      "topic": "TALK_SORCERER_MENU_MAIN",
+      "effect": [
+        {
+          "math": [
+            "u_val('spell_level', 'spell: earthshaper_fortitude_of_stone')",
+            "=",
+            "-1"
+          ]
+        },
+        {
+          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "variables": {
+            "forgotten_spell_level": {
+              "u_val": "used_spell_slot_for_earthshaper_fortitude_of_stone"
+            }
+          }
+        },
+        {
+          "math": [
+            "u_used_spell_slot_for_earthshaper_fortitude_of_stone",
+            "=",
+            "0"
+          ]
+        },
+        {
+          "math": [
+            "u_sorcerer_forget_spell_charge",
+            "--"
+          ]
+        }
+      ]
+    },
+    {
+      "condition": {
+        "math": [
           "u_used_spell_slot_for_point_flare",
           ">",
           "0"
@@ -4237,6 +5180,88 @@
     {
       "condition": {
         "math": [
+          "u_used_spell_slot_for_kelvinist_anti_cold",
+          ">",
+          "0"
+        ]
+      },
+      "text": "Forget Cloak of Warmth ( level <u_val:used_spell_slot_for_kelvinist_anti_cold> )",
+      "topic": "TALK_SORCERER_MENU_MAIN",
+      "effect": [
+        {
+          "math": [
+            "u_val('spell_level', 'spell: kelvinist_anti_cold')",
+            "=",
+            "-1"
+          ]
+        },
+        {
+          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "variables": {
+            "forgotten_spell_level": {
+              "u_val": "used_spell_slot_for_kelvinist_anti_cold"
+            }
+          }
+        },
+        {
+          "math": [
+            "u_used_spell_slot_for_kelvinist_anti_cold",
+            "=",
+            "0"
+          ]
+        },
+        {
+          "math": [
+            "u_sorcerer_forget_spell_charge",
+            "--"
+          ]
+        }
+      ]
+    },
+    {
+      "condition": {
+        "math": [
+          "u_used_spell_slot_for_kelvinist_anti_heat",
+          ">",
+          "0"
+        ]
+      },
+      "text": "Forget Cloak of Chill ( level <u_val:used_spell_slot_for_kelvinist_anti_heat> )",
+      "topic": "TALK_SORCERER_MENU_MAIN",
+      "effect": [
+        {
+          "math": [
+            "u_val('spell_level', 'spell: kelvinist_anti_heat')",
+            "=",
+            "-1"
+          ]
+        },
+        {
+          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "variables": {
+            "forgotten_spell_level": {
+              "u_val": "used_spell_slot_for_kelvinist_anti_heat"
+            }
+          }
+        },
+        {
+          "math": [
+            "u_used_spell_slot_for_kelvinist_anti_heat",
+            "=",
+            "0"
+          ]
+        },
+        {
+          "math": [
+            "u_sorcerer_forget_spell_charge",
+            "--"
+          ]
+        }
+      ]
+    },
+    {
+      "condition": {
+        "math": [
           "u_used_spell_slot_for_phase_door",
           ">",
           "0"
@@ -4345,6 +5370,88 @@
         {
           "math": [
             "u_used_spell_slot_for_magus_summon_impact_sling",
+            "=",
+            "0"
+          ]
+        },
+        {
+          "math": [
+            "u_sorcerer_forget_spell_charge",
+            "--"
+          ]
+        }
+      ]
+    },
+    {
+      "condition": {
+        "math": [
+          "u_used_spell_slot_for_magus_slowfall",
+          ">",
+          "0"
+        ]
+      },
+      "text": "Forget Slowfall ( level <u_val:used_spell_slot_for_magus_slowfall> )",
+      "topic": "TALK_SORCERER_MENU_MAIN",
+      "effect": [
+        {
+          "math": [
+            "u_val('spell_level', 'spell: magus_slowfall')",
+            "=",
+            "-1"
+          ]
+        },
+        {
+          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "variables": {
+            "forgotten_spell_level": {
+              "u_val": "used_spell_slot_for_magus_slowfall"
+            }
+          }
+        },
+        {
+          "math": [
+            "u_used_spell_slot_for_magus_slowfall",
+            "=",
+            "0"
+          ]
+        },
+        {
+          "math": [
+            "u_sorcerer_forget_spell_charge",
+            "--"
+          ]
+        }
+      ]
+    },
+    {
+      "condition": {
+        "math": [
+          "u_used_spell_slot_for_magus_spiderclimb",
+          ">",
+          "0"
+        ]
+      },
+      "text": "Forget Spider Climb ( level <u_val:used_spell_slot_for_magus_spiderclimb> )",
+      "topic": "TALK_SORCERER_MENU_MAIN",
+      "effect": [
+        {
+          "math": [
+            "u_val('spell_level', 'spell: magus_spiderclimb')",
+            "=",
+            "-1"
+          ]
+        },
+        {
+          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "variables": {
+            "forgotten_spell_level": {
+              "u_val": "used_spell_slot_for_magus_spiderclimb"
+            }
+          }
+        },
+        {
+          "math": [
+            "u_used_spell_slot_for_magus_spiderclimb",
             "=",
             "0"
           ]
@@ -4606,6 +5713,47 @@
     {
       "condition": {
         "math": [
+          "u_used_spell_slot_for_stormshaper_cloak_of_fog",
+          ">",
+          "0"
+        ]
+      },
+      "text": "Forget Cloak of Fog ( level <u_val:used_spell_slot_for_stormshaper_cloak_of_fog> )",
+      "topic": "TALK_SORCERER_MENU_MAIN",
+      "effect": [
+        {
+          "math": [
+            "u_val('spell_level', 'spell: stormshaper_cloak_of_fog')",
+            "=",
+            "-1"
+          ]
+        },
+        {
+          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "variables": {
+            "forgotten_spell_level": {
+              "u_val": "used_spell_slot_for_stormshaper_cloak_of_fog"
+            }
+          }
+        },
+        {
+          "math": [
+            "u_used_spell_slot_for_stormshaper_cloak_of_fog",
+            "=",
+            "0"
+          ]
+        },
+        {
+          "math": [
+            "u_sorcerer_forget_spell_charge",
+            "--"
+          ]
+        }
+      ]
+    },
+    {
+      "condition": {
+        "math": [
           "u_used_spell_slot_for_quantum_tunnel_lesser",
           ">",
           "0"
@@ -4714,6 +5862,47 @@
         {
           "math": [
             "u_used_spell_slot_for_smite",
+            "=",
+            "0"
+          ]
+        },
+        {
+          "math": [
+            "u_sorcerer_forget_spell_charge",
+            "--"
+          ]
+        }
+      ]
+    },
+    {
+      "condition": {
+        "math": [
+          "u_used_spell_slot_for_animist_sense_outsiders",
+          ">",
+          "0"
+        ]
+      },
+      "text": "Forget Sense Outsiders ( level <u_val:used_spell_slot_for_animist_sense_outsiders> )",
+      "topic": "TALK_SORCERER_MENU_MAIN",
+      "effect": [
+        {
+          "math": [
+            "u_val('spell_level', 'spell: animist_sense_outsiders')",
+            "=",
+            "-1"
+          ]
+        },
+        {
+          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "variables": {
+            "forgotten_spell_level": {
+              "u_val": "used_spell_slot_for_animist_sense_outsiders"
+            }
+          }
+        },
+        {
+          "math": [
+            "u_used_spell_slot_for_animist_sense_outsiders",
             "=",
             "0"
           ]
@@ -5303,6 +6492,47 @@
     {
       "condition": {
         "math": [
+          "u_used_spell_slot_for_biomancer_cure_disease_minor",
+          ">",
+          "0"
+        ]
+      },
+      "text": "Forget Cure Disease, Minor ( level <u_val:used_spell_slot_for_biomancer_cure_disease_minor> )",
+      "topic": "TALK_SORCERER_MENU_MAIN",
+      "effect": [
+        {
+          "math": [
+            "u_val('spell_level', 'spell: biomancer_cure_disease_minor')",
+            "=",
+            "-1"
+          ]
+        },
+        {
+          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "variables": {
+            "forgotten_spell_level": {
+              "u_val": "used_spell_slot_for_biomancer_cure_disease_minor"
+            }
+          }
+        },
+        {
+          "math": [
+            "u_used_spell_slot_for_biomancer_cure_disease_minor",
+            "=",
+            "0"
+          ]
+        },
+        {
+          "math": [
+            "u_sorcerer_forget_spell_charge",
+            "--"
+          ]
+        }
+      ]
+    },
+    {
+      "condition": {
+        "math": [
           "u_used_spell_slot_for_crystallize_mana",
           ">",
           "0"
@@ -5631,6 +6861,47 @@
     {
       "condition": {
         "math": [
+          "u_used_spell_slot_for_earthshaper_turning_of_earth",
+          ">",
+          "0"
+        ]
+      },
+      "text": "Forget The Turning of the Earth ( level <u_val:used_spell_slot_for_earthshaper_turning_of_earth> )",
+      "topic": "TALK_SORCERER_MENU_MAIN",
+      "effect": [
+        {
+          "math": [
+            "u_val('spell_level', 'spell: earthshaper_turning_of_earth')",
+            "=",
+            "-1"
+          ]
+        },
+        {
+          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "variables": {
+            "forgotten_spell_level": {
+              "u_val": "used_spell_slot_for_earthshaper_turning_of_earth"
+            }
+          }
+        },
+        {
+          "math": [
+            "u_used_spell_slot_for_earthshaper_turning_of_earth",
+            "=",
+            "0"
+          ]
+        },
+        {
+          "math": [
+            "u_sorcerer_forget_spell_charge",
+            "--"
+          ]
+        }
+      ]
+    },
+    {
+      "condition": {
+        "math": [
           "u_used_spell_slot_for_stormshaper_wall_of_fog",
           ">",
           "0"
@@ -5657,6 +6928,47 @@
         {
           "math": [
             "u_used_spell_slot_for_stormshaper_wall_of_fog",
+            "=",
+            "0"
+          ]
+        },
+        {
+          "math": [
+            "u_sorcerer_forget_spell_charge",
+            "--"
+          ]
+        }
+      ]
+    },
+    {
+      "condition": {
+        "math": [
+          "u_used_spell_slot_for_stormshaper_cloak_of_frog",
+          ">",
+          "0"
+        ]
+      },
+      "text": "Forget Cloak of Frog ( level <u_val:used_spell_slot_for_stormshaper_cloak_of_frog> )",
+      "topic": "TALK_SORCERER_MENU_MAIN",
+      "effect": [
+        {
+          "math": [
+            "u_val('spell_level', 'spell: stormshaper_cloak_of_frog')",
+            "=",
+            "-1"
+          ]
+        },
+        {
+          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "variables": {
+            "forgotten_spell_level": {
+              "u_val": "used_spell_slot_for_stormshaper_cloak_of_frog"
+            }
+          }
+        },
+        {
+          "math": [
+            "u_used_spell_slot_for_stormshaper_cloak_of_frog",
             "=",
             "0"
           ]
@@ -5754,6 +7066,47 @@
     {
       "condition": {
         "math": [
+          "u_used_spell_slot_for_technomancer_conjure_radio",
+          ">",
+          "0"
+        ]
+      },
+      "text": "Forget Speak through the Aether ( level <u_val:used_spell_slot_for_technomancer_conjure_radio> )",
+      "topic": "TALK_SORCERER_MENU_MAIN",
+      "effect": [
+        {
+          "math": [
+            "u_val('spell_level', 'spell: technomancer_conjure_radio')",
+            "=",
+            "-1"
+          ]
+        },
+        {
+          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "variables": {
+            "forgotten_spell_level": {
+              "u_val": "used_spell_slot_for_technomancer_conjure_radio"
+            }
+          }
+        },
+        {
+          "math": [
+            "u_used_spell_slot_for_technomancer_conjure_radio",
+            "=",
+            "0"
+          ]
+        },
+        {
+          "math": [
+            "u_sorcerer_forget_spell_charge",
+            "--"
+          ]
+        }
+      ]
+    },
+    {
+      "condition": {
+        "math": [
           "u_used_spell_slot_for_create_atomic_light",
           ">",
           "0"
@@ -5780,6 +7133,47 @@
         {
           "math": [
             "u_used_spell_slot_for_create_atomic_light",
+            "=",
+            "0"
+          ]
+        },
+        {
+          "math": [
+            "u_sorcerer_forget_spell_charge",
+            "--"
+          ]
+        }
+      ]
+    },
+    {
+      "condition": {
+        "math": [
+          "u_used_spell_slot_for_classless_watch_spell",
+          ">",
+          "0"
+        ]
+      },
+      "text": "Forget Knowing the Day and the Hour ( level <u_val:used_spell_slot_for_classless_watch_spell> )",
+      "topic": "TALK_SORCERER_MENU_MAIN",
+      "effect": [
+        {
+          "math": [
+            "u_val('spell_level', 'spell: classless_watch_spell')",
+            "=",
+            "-1"
+          ]
+        },
+        {
+          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "variables": {
+            "forgotten_spell_level": {
+              "u_val": "used_spell_slot_for_classless_watch_spell"
+            }
+          }
+        },
+        {
+          "math": [
+            "u_used_spell_slot_for_classless_watch_spell",
             "=",
             "0"
           ]

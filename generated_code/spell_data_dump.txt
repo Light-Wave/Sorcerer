@@ -4,7 +4,15 @@
     "safe_id": "banishment_lesser",
     "level": 8,
     "name": "Lesser Banishment",
-    "description": "Banish a monster to the lesser-known nether dimension.  If a monster is more powerful than you can handle, the spell drains your life force to make up the difference.",
+    "description": "Banish a monster to a lesser-known nether dimension.  If a monster is more powerful than you can handle, the spell drains your life force to make up the difference.",
+    "tier": 3
+  },
+  {
+    "id": "classless_disjunction",
+    "safe_id": "classless_disjunction",
+    "level": 8,
+    "name": "Disjunction",
+    "description": "The ultimate anti-magic spell, Disjunction will strip even attunement-related or powerful enchantments from the target.",
     "tier": 3
   },
   {
@@ -16,11 +24,27 @@
     "tier": 3
   },
   {
+    "id": "druid_beguile_savage_beast",
+    "safe_id": "druid_beguile_savage_beast",
+    "level": 8,
+    "name": "Beguiling the Savage Beast",
+    "description": "Using your connection to nature, you can sway an animal to your service.  This spell even works on mutated animals.",
+    "tier": 3
+  },
+  {
+    "id": "druid_thorn_skin",
+    "safe_id": "druid_thorn_skin",
+    "level": 8,
+    "name": "Thornskin",
+    "description": "This spell transforms the druid's skin into a bark-like material covered in large thorns.  It provides excellent protection but slightly slows you and makes you vulnerable to fire.",
+    "tier": 3
+  },
+  {
     "id": "shape_of_dust",
     "safe_id": "shape_of_dust",
     "level": 8,
     "name": "Shape of Dust",
-    "description": "Hide yourself between the sand gust.  It's harder to hit you, and monster's can't spot you.",
+    "description": "Hide yourself within sand-filled winds.  It's harder to hit you, and monsters can't spot you.",
     "tier": 3
   },
   {
@@ -37,6 +61,14 @@
     "level": 8,
     "name": "Reading the Earthbones",
     "description": "You extend your senses into the ground, becoming aware of every hill and valley within a large area.  It will only work when in contact with the earth.",
+    "tier": 3
+  },
+  {
+    "id": "earthshaper_granite_aegis",
+    "safe_id": "earthshaper_granite_aegis",
+    "level": 8,
+    "name": "Granite Aegis",
+    "description": "In an extremity of danger, summon a hollow shell of rock around yourself.  It lasts only a few moments, but sometimes that's all you need.  You must be standing on the living earth to invoke it.",
     "tier": 3
   },
   {
@@ -64,6 +96,14 @@
     "tier": 3
   },
   {
+    "id": "magus_word_of_recall",
+    "safe_id": "magus_word_of_recall",
+    "level": 8,
+    "name": "Word of Recall",
+    "description": "Immediately return to the place you marked with Magus's Mark, no matter how far away it is.",
+    "tier": 3
+  },
+  {
     "id": "lightning_storm",
     "safe_id": "lightning_storm",
     "level": 8,
@@ -76,7 +116,7 @@
     "safe_id": "vacuum_decompression",
     "level": 8,
     "name": "Vacuum Decompression",
-    "description": "Create a high pressure zone originating from the selected point.  Shortly after, the massive pressure wave will crush everything inside, inflicting barotrarumatic injuries on everyone effected.  It will also try to pull unprepared creatures inside the zone before attack.",
+    "description": "Create a high-pressure zone originating from the selected point.  Shortly after, a massive pressure wave will crush everything inside, inflicting barotrarumatic injuries on everyone affected.  The pressure differential will also pull unprepared creatures inside the zone before collapsing.",
     "tier": 3
   },
   {
@@ -84,7 +124,7 @@
     "safe_id": "rupture",
     "level": 7,
     "name": "Rupture",
-    "description": "You pour mana into an unwilling and unprepared vessel, causing cellular break-down, internal hemorrhaging, ley lines becoming muddled, and electronics overcharging.  Immensely gruesome, crude, and was once illegal world-wide, not that it matters now.",
+    "description": "You pour mana into an unwilling and unprepared vessel, causing cellular break-down, internal hemorrhaging, muddling ley lines, and overcharging electronics.  Immensely gruesome and crude, it was once illegal world-wide, not that it matters now.",
     "tier": 3
   },
   {
@@ -160,6 +200,22 @@
     "tier": 2
   },
   {
+    "id": "biomancer_giant_growth",
+    "safe_id": "biomancer_giant_growth",
+    "level": 6,
+    "name": "Giant Growth",
+    "description": "Grow to enormous size.  Your clothing and equipment will not grow with you.",
+    "tier": 2
+  },
+  {
+    "id": "biomancer_lashing_tentacles",
+    "safe_id": "biomancer_lashing_tentacles",
+    "level": 6,
+    "name": "Lashing Tentacles",
+    "description": "Grow a pair of lashing tentacles from your shoulders.  While not as long as the Vicious Tentacle, they will strike anyone in melee with you.  You cannot wear rigid torso armor with them.",
+    "tier": 2
+  },
+  {
     "id": "dark_sight",
     "safe_id": "dark_sight",
     "level": 6,
@@ -196,7 +252,23 @@
     "safe_id": "druid_healing",
     "level": 6,
     "name": "Restoration",
-    "description": "Magic energy, that slowly heal your body from wounds.",
+    "description": "Directed magical energy that slowly heals your body from wounds.",
+    "tier": 2
+  },
+  {
+    "id": "druid_whisper_leaves",
+    "safe_id": "druid_whisper_leaves",
+    "level": 6,
+    "name": "Whisper of the Leaves",
+    "description": "This spell allows you to hear the trees' wisdom in the rustle of the leaves and the creaking of their roots, discerning the layout of the forest.",
+    "tier": 2
+  },
+  {
+    "id": "druid_summon_tanglevine",
+    "safe_id": "druid_summon_tanglevine",
+    "level": 6,
+    "name": "Summon Tanglevine",
+    "description": "This spell causes an animated vine to burst from the ground and attempt to seize a nearby target and hold it fast.",
     "tier": 2
   },
   {
@@ -252,7 +324,7 @@
     "safe_id": "storm_shipwrecker",
     "level": 6,
     "name": "Shipwrecker",
-    "description": "The spell moves out of your mouth, creating a giant shockwave, and shuttering everything in its path.",
+    "description": "The spell moves out of your mouth, creating a giant shockwave that shatters everything in its path.",
     "tier": 2
   },
   {
@@ -260,7 +332,7 @@
     "safe_id": "storm_superconductor",
     "level": 6,
     "name": "Superconductor",
-    "description": "Create a devastating electric charge on a small distance, roasting everything to their death.",
+    "description": "Create arcs of devastating electric charge in an area around you, roasting everything within.",
     "tier": 2
   },
   {
@@ -268,7 +340,15 @@
     "safe_id": "summon_teravolt",
     "level": 6,
     "name": "Summon Teravolt",
-    "description": "Summon a Teravolt, a small, semi-intelligent spirit, that homes onto hostile creatures before exploding into a huge spark cloud.",
+    "description": "Summon a Teravolt, a small, semi-intelligent spirit that homes onto hostile creatures before exploding into a huge spark cloud.",
+    "tier": 2
+  },
+  {
+    "id": "stormshaper_heart_of_hurricane",
+    "safe_id": "stormshaper_heart_of_hurricane",
+    "level": 6,
+    "name": "Heart of the Hurricane",
+    "description": "Compress the fury of the hurricane winds into a thin shell of raging air around yourself.  It will make it harder for you to lose your footing or be knocked down and occasionally throw attackers away from you, but the whirling winds are loud.",
     "tier": 2
   },
   {
@@ -293,6 +373,22 @@
     "level": 6,
     "name": "Improved Knock",
     "description": "You channel magic into a force capable of opening doors.  This variant can open any locked door.",
+    "tier": 2
+  },
+  {
+    "id": "technomancer_robot_shutdown",
+    "safe_id": "technomancer_robot_shutdown",
+    "level": 6,
+    "name": "Shutdown",
+    "description": "Overload the target, stunning it briefly.  Originally developed during the Roman Empire to target out-of-control golems, this spell became significantly more popular in modern times when it was discovered it also worked on robots and machinery.",
+    "tier": 2
+  },
+  {
+    "id": "technomancer_conjure_ups",
+    "safe_id": "technomancer_conjure_ups",
+    "level": 6,
+    "name": "Power Supply",
+    "description": "For the technomancer with no enhancements, this spell summons a power supply composed of pure mana that can be used to charge any compatible device.  It will continually recharge until the duration expires.",
     "tier": 2
   },
   {
@@ -324,7 +420,7 @@
     "safe_id": "life_detonation",
     "level": 5,
     "name": "Life Detonation",
-    "description": "Explode a living energy inside your undead, to release a tremendous force around.",
+    "description": "Explode a living energy inside your undead and release a tremendous force around it.",
     "tier": 2
   },
   {
@@ -348,7 +444,7 @@
     "safe_id": "druid_natures_commune",
     "level": 5,
     "name": "Nature's Commune",
-    "description": "You concentrate on the nature around you and commune with it, improving your health and calming the nearby wildlife.",
+    "description": "You concentrate on the nature around you and commune with it, improving your health and calming nearby wildlife.  This spell may only be cast outdoors.",
     "tier": 2
   },
   {
@@ -456,6 +552,14 @@
     "tier": 2
   },
   {
+    "id": "magus_teleport_mark",
+    "safe_id": "magus_teleport_mark",
+    "level": 5,
+    "name": "Magus's Mark",
+    "description": "Mark a particular patch of ground to allow you to return to it later.",
+    "tier": 2
+  },
+  {
     "id": "storm_hammer",
     "safe_id": "storm_hammer",
     "level": 5,
@@ -476,7 +580,7 @@
     "safe_id": "explosive_decompression",
     "level": 5,
     "name": "Explosive Decompression",
-    "description": "Create a high pressure zone originating from the selected point.  Shortly after, the massive pressure wave will crush everything inside, inflicting barotrarumatic injuries on everyone effected.",
+    "description": "Create a high-pressure zone originating from the selected point.  Shortly after, a massive pressure wave will crush everything inside, inflicting barotrarumatic injuries on everyone affected.",
     "tier": 2
   },
   {
@@ -484,7 +588,7 @@
     "safe_id": "shocking_dash",
     "level": 5,
     "name": "Shocking Dash",
-    "description": "Fill your legs with energy, and dash into picked place.",
+    "description": "Fill your legs with energy and quickly dash to a target destination.",
     "tier": 2
   },
   {
@@ -492,7 +596,7 @@
     "safe_id": "toxtricity",
     "level": 5,
     "name": "Toxtricity",
-    "description": "Inject an electric energy into the creatures, which makes them weak, and deal huge damage over time.",
+    "description": "Inject a corrosive electric energy into targets within the affected area, weakening them and dealing huge damage over time.",
     "tier": 2
   },
   {
@@ -548,7 +652,7 @@
     "safe_id": "animist_summon_decaying_boneclub",
     "level": 4,
     "name": "Decaying Boneclub",
-    "description": "This spell links your live blood to the dead blood & bones, creating a club hungry for the flesh of the living.",
+    "description": "This spell links your living blood to dead blood and bones, creating a club hungry for the flesh of the living.",
     "tier": 1
   },
   {
@@ -568,11 +672,19 @@
     "tier": 1
   },
   {
+    "id": "classless_dispel_magic",
+    "safe_id": "classless_dispel_magic",
+    "level": 4,
+    "name": "Dispel Magic",
+    "description": "Remove magical effects from your target.  It fails when faced with powerful enchantments or the unique bonuses provided by attunements.",
+    "tier": 1
+  },
+  {
     "id": "druid_naturebow1",
     "safe_id": "druid_naturebow1",
     "level": 4,
     "name": "Nature's Bow",
-    "description": "This spell conjures a magical wooden recurve bow that fires endless arrows for as long as it lasts.",
+    "description": "This spell conjures a magical wooden recurve bow, as well as a quiver and a set of arrows to go with it.",
     "tier": 1
   },
   {
@@ -597,6 +709,14 @@
     "level": 4,
     "name": "Vegetative Poultice",
     "description": "This spell turns a mixture of bark and leaves into a powerful salve capable of stopping even grievous wounds from bleeding.",
+    "tier": 1
+  },
+  {
+    "id": "druid_summon_brambles",
+    "safe_id": "druid_summon_brambles",
+    "level": 4,
+    "name": "Stranglethorns",
+    "description": "Call up thick brambles, either in a line to form a wall or an arc to trap an enemy.  They will grow to full size in moments.",
     "tier": 1
   },
   {
@@ -628,7 +748,7 @@
     "safe_id": "lightning_bolt",
     "level": 4,
     "name": "Lightning Bolt",
-    "description": "The goto spell for many Stormshapers, this iconic spell does just what you expect: you shoot lightning from your fingertips.  However, this lightning is more directed than most lightning, and travels in a line through most non-solid targets.",
+    "description": "The go-to spell for many Stormshapers, this iconic spell does just what you expect: you shoot lightning from your fingertips.  However, this lightning is more directed than most lightning, and travels in a line through most non-solid targets.",
     "tier": 1
   },
   {
@@ -653,6 +773,22 @@
     "level": 4,
     "name": "Synaptic Stimulation",
     "description": "This spell stimulates the synapses in your brain beyond normal processing speeds, giving you a large boost in mental processing capability, including enhancing your reflexes, speed, and raw intellectual power.  Use responsibly!",
+    "tier": 1
+  },
+  {
+    "id": "technomancer_welder",
+    "safe_id": "technomancer_welder",
+    "level": 4,
+    "name": "Voltaic Touch",
+    "description": "Using the principles of what were once called \"voltaic arcs\", you can electrically heat metal hot enough to weld it together.",
+    "tier": 1
+  },
+  {
+    "id": "animist_summon_watcher",
+    "safe_id": "animist_summon_watcher",
+    "level": 3,
+    "name": "Summon Watcher Spirit",
+    "description": "Summon a watcher spirit, whose senses overlap with your own and through whose eyes you can see.  Although they are spirits, they are fragile and dissipate easily in the face of any assault.",
     "tier": 1
   },
   {
@@ -688,6 +824,22 @@
     "tier": 1
   },
   {
+    "id": "biomancer_swim_frog",
+    "safe_id": "biomancer_swim_frog",
+    "level": 3,
+    "name": "Limbs of the Frog",
+    "description": "Grow webbing on your hands and feet, making quick swimming a breeze.",
+    "tier": 1
+  },
+  {
+    "id": "biomancer_carrion_feast",
+    "safe_id": "biomancer_carrion_feast",
+    "level": 3,
+    "name": "Carrion Feast",
+    "description": "Alter your digestive system to consume rotten food with no ill effects.  This is either a truly ancient spell or otherwise must have been the product of some university thaumaturgical research department.",
+    "tier": 1
+  },
+  {
     "id": "protection_aura",
     "safe_id": "protection_aura",
     "level": 3,
@@ -717,6 +869,22 @@
     "level": 3,
     "name": "Root Strike",
     "description": "This spell causes roots to spear out the ground and stab into your foes in an arc, impaling them.",
+    "tier": 1
+  },
+  {
+    "id": "druid_harvest_hunter",
+    "safe_id": "druid_harvest_hunter",
+    "level": 3,
+    "name": "Harvest of the Hunter",
+    "description": "This spell creates a grouping of odd-looking but functional arrows out of forest detritus.",
+    "tier": 1
+  },
+  {
+    "id": "druid_bramble_spear",
+    "safe_id": "druid_bramble_spear",
+    "level": 3,
+    "name": "Spear of Brambles",
+    "description": "This spell turns a stick into a vicious spear that drips with sticky sap.",
     "tier": 1
   },
   {
@@ -776,6 +944,22 @@
     "tier": 1
   },
   {
+    "id": "earthshaper_danger_sense",
+    "safe_id": "earthshaper_danger_sense",
+    "level": 3,
+    "name": "Tremorsense",
+    "description": "By sensing their movements upon the earth, you can detect nearby sources of danger.  You must maintain a connection to the earth for the spell to function.",
+    "tier": 1
+  },
+  {
+    "id": "earthshaper_fortitude_of_stone",
+    "safe_id": "earthshaper_fortitude_of_stone",
+    "level": 3,
+    "name": "Stones' Fortitude",
+    "description": "Draw on the eternal endurance of the stones, slowing your metabolism and staving off hunger and thirst.  However, while the enchantment is in effect, you will not heal.",
+    "tier": 1
+  },
+  {
     "id": "point_flare",
     "safe_id": "point_flare",
     "level": 3,
@@ -824,6 +1008,22 @@
     "tier": 1
   },
   {
+    "id": "kelvinist_anti_cold",
+    "safe_id": "kelvinist_anti_cold",
+    "level": 3,
+    "name": "Cloak of Warmth",
+    "description": "Heat the nearby air, keeping you warm and providing some protection against ice and cold.",
+    "tier": 1
+  },
+  {
+    "id": "kelvinist_anti_heat",
+    "safe_id": "kelvinist_anti_heat",
+    "level": 3,
+    "name": "Cloak of Chill",
+    "description": "Cool the nearby air, keeping you cool and providing some protection against heat and flame.",
+    "tier": 1
+  },
+  {
     "id": "phase_door",
     "safe_id": "phase_door",
     "level": 3,
@@ -845,6 +1045,22 @@
     "level": 3,
     "name": "Impact Sling",
     "description": "This spell infuses a sling with tremendous force, delivering devastating pebble shots until the energy tears it apart.",
+    "tier": 1
+  },
+  {
+    "id": "magus_slowfall",
+    "safe_id": "magus_slowfall",
+    "level": 3,
+    "name": "Slowfall",
+    "description": "Reduce the velocity of your falls by a great amount, or to zero if at high mastery.",
+    "tier": 1
+  },
+  {
+    "id": "magus_spiderclimb",
+    "safe_id": "magus_spiderclimb",
+    "level": 3,
+    "name": "Spider Climb",
+    "description": "Ascend even the most sheer wall with ease as you cling to surfaces using the power of magic.",
     "tier": 1
   },
   {
@@ -896,6 +1112,14 @@
     "tier": 1
   },
   {
+    "id": "stormshaper_cloak_of_fog",
+    "safe_id": "stormshaper_cloak_of_fog",
+    "level": 3,
+    "name": "Cloak of Fog",
+    "description": "Call out to the sky spirits for aid and ask them to conceal you from your enemies.  The fog will hide your passage, but you do not have any special ability to see through it yourself.",
+    "tier": 1
+  },
+  {
     "id": "quantum_tunnel_lesser",
     "safe_id": "quantum_tunnel_lesser",
     "level": 3,
@@ -917,6 +1141,13 @@
     "level": 2,
     "name": "Smite",
     "description": "Evil has become pervasive throughout the world.  Let your power be the light that shines in the darkness!"
+  },
+  {
+    "id": "animist_sense_outsiders",
+    "safe_id": "animist_sense_outsiders",
+    "level": 2,
+    "name": "Sense Outsiders",
+    "description": "You can sense the presence of nearby beings from the Nether."
   },
   {
     "id": "pertifying_touch",
@@ -979,7 +1210,7 @@
     "safe_id": "summon_wisps",
     "level": 1,
     "name": "Ignus Fatuus",
-    "description": "Summons ghostly foxfire worked from living marsh vapor, to lead your enemies astray.  With more experience, this spell can conjure multiple ghost lights."
+    "description": "Summons ghostly foxfire worked from living marsh vapor to lead your enemies astray.  With more experience, this spell can conjure multiple ghost lights."
   },
   {
     "id": "bleed",
@@ -1015,6 +1246,13 @@
     "level": 1,
     "name": "Visceral Projection",
     "description": "Projects a spray of acrid blood and gore all around you, growing to ensnare your prey in a field of twitching poisonous tendrils."
+  },
+  {
+    "id": "biomancer_cure_disease_minor",
+    "safe_id": "biomancer_cure_disease_minor",
+    "level": 1,
+    "name": "Cure Disease, Minor",
+    "description": "Cure any flu or common cold you might be suffering from.  This is one of the few biomantic cure spells that is castable on other people."
   },
   {
     "id": "crystallize_mana",
@@ -1073,11 +1311,25 @@
     "description": "Pull the smooth rock underground, using your forces of earth shaping.  You can use it as a table, or as a primitive anvil."
   },
   {
+    "id": "earthshaper_turning_of_earth",
+    "safe_id": "earthshaper_turning_of_earth",
+    "level": 1,
+    "name": "The Turning of the Earth",
+    "description": "Ask the earth spirits to prepare the earth for growth and planting."
+  },
+  {
     "id": "stormshaper_wall_of_fog",
     "safe_id": "stormshaper_wall_of_fog",
     "level": 1,
     "name": "Wall of Fog",
     "description": "Draws forth a broad wall of thick fog.  While the sudden force of air pressure will floor any enemies caught in it, the conjuration is otherwise harmless."
+  },
+  {
+    "id": "stormshaper_cloak_of_frog",
+    "safe_id": "stormshaper_cloak_of_frog",
+    "level": 1,
+    "name": "Cloak of Frog",
+    "description": "Someone's personal notes were added to this spell.  You're positive that they changed both the name and the function."
   },
   {
     "id": "create_atomic_lamp",
@@ -1094,11 +1346,25 @@
     "description": "You concentrate and release a focused beam of photons at a target, also known as a laser."
   },
   {
+    "id": "technomancer_conjure_radio",
+    "safe_id": "technomancer_conjure_radio",
+    "level": 1,
+    "name": "Speak through the Aether",
+    "description": "One of the most widely-known pre-modern technomantic spells, this allows technomancers to communicate at a distance.  Its use declined rapidly after Guglielmo Marconi invented the radio and suddenly everyone could listen in to their conversations."
+  },
+  {
     "id": "create_atomic_light",
     "safe_id": "create_atomic_light",
     "level": 0,
     "name": "Magical Light",
     "description": "Creates a magical light."
+  },
+  {
+    "id": "classless_watch_spell",
+    "safe_id": "classless_watch_spell",
+    "level": 0,
+    "name": "Knowing the Day and the Hour",
+    "description": "Probably the single greatest example of technology rendering magic obsolete, this spell allows you know exactly what time it is."
   },
   {
     "id": "druid_woodshaft",
@@ -1161,7 +1427,7 @@
     "safe_id": "electric_arts",
     "level": 0,
     "name": "Electric Arts",
-    "description": "This spell were designed for scholars, that just started to learn stormshaping.  It allows them to use their abilities, when their magic control is weak, and they can injure themselves with electricity."
+    "description": "A spell designed for scholars having just started to learn stormshaping, allowing them to reduce the damage to themselves their often capricious new abilities may cause."
   },
   {
     "id": "taze",

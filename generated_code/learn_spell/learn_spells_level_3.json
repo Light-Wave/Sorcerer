@@ -1,6 +1,47 @@
 [
   {
     "type": "talk_topic",
+    "id": "TALK_SORCERER_LEARN_SPELL_animist_summon_watcher_at_level_3",
+    "dynamic_line": "Summon Watcher Spirit: Summon a watcher spirit, whose senses overlap with your own and through whose eyes you can see.  Although they are spirits, they are fragile and dissipate easily in the face of any assault.",
+    "responses": [
+      {
+        "text": "Select Spell.",
+        "topic": "TALK_SORCERER_MENU_MAIN",
+        "effect": [
+          {
+            "math": [
+              "u_val('spell_level', 'spell: animist_summon_watcher')",
+              "=",
+              "u_current_sorcerer_level"
+            ]
+          },
+          {
+            "math": [
+              "u_used_spell_slot_for_animist_summon_watcher",
+              "=",
+              "3"
+            ]
+          },
+          {
+            "math": [
+              "u_sorcerer_level_3_spells_known",
+              "++"
+            ]
+          }
+        ]
+      },
+      {
+        "text": "Go Back.",
+        "topic": "TALK_SORCERER_MENU_MAIN"
+      },
+      {
+        "text": "Quit.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "type": "talk_topic",
     "id": "TALK_SORCERER_LEARN_SPELL_pain_split_at_level_3",
     "dynamic_line": "Pain Split: Evens out damage among your limbs.",
     "responses": [
@@ -165,6 +206,88 @@
   },
   {
     "type": "talk_topic",
+    "id": "TALK_SORCERER_LEARN_SPELL_biomancer_swim_frog_at_level_3",
+    "dynamic_line": "Limbs of the Frog: Grow webbing on your hands and feet, making quick swimming a breeze.",
+    "responses": [
+      {
+        "text": "Select Spell.",
+        "topic": "TALK_SORCERER_MENU_MAIN",
+        "effect": [
+          {
+            "math": [
+              "u_val('spell_level', 'spell: biomancer_swim_frog')",
+              "=",
+              "u_current_sorcerer_level"
+            ]
+          },
+          {
+            "math": [
+              "u_used_spell_slot_for_biomancer_swim_frog",
+              "=",
+              "3"
+            ]
+          },
+          {
+            "math": [
+              "u_sorcerer_level_3_spells_known",
+              "++"
+            ]
+          }
+        ]
+      },
+      {
+        "text": "Go Back.",
+        "topic": "TALK_SORCERER_MENU_MAIN"
+      },
+      {
+        "text": "Quit.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_SORCERER_LEARN_SPELL_biomancer_carrion_feast_at_level_3",
+    "dynamic_line": "Carrion Feast: Alter your digestive system to consume rotten food with no ill effects.  This is either a truly ancient spell or otherwise must have been the product of some university thaumaturgical research department.",
+    "responses": [
+      {
+        "text": "Select Spell.",
+        "topic": "TALK_SORCERER_MENU_MAIN",
+        "effect": [
+          {
+            "math": [
+              "u_val('spell_level', 'spell: biomancer_carrion_feast')",
+              "=",
+              "u_current_sorcerer_level"
+            ]
+          },
+          {
+            "math": [
+              "u_used_spell_slot_for_biomancer_carrion_feast",
+              "=",
+              "3"
+            ]
+          },
+          {
+            "math": [
+              "u_sorcerer_level_3_spells_known",
+              "++"
+            ]
+          }
+        ]
+      },
+      {
+        "text": "Go Back.",
+        "topic": "TALK_SORCERER_MENU_MAIN"
+      },
+      {
+        "text": "Quit.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "type": "talk_topic",
     "id": "TALK_SORCERER_LEARN_SPELL_protection_aura_at_level_3",
     "dynamic_line": "Aura of Protection: Encases your whole body in a magical aura that protects you from the environment.",
     "responses": [
@@ -305,6 +428,88 @@
           {
             "math": [
               "u_used_spell_slot_for_druid_rootstrike",
+              "=",
+              "3"
+            ]
+          },
+          {
+            "math": [
+              "u_sorcerer_level_3_spells_known",
+              "++"
+            ]
+          }
+        ]
+      },
+      {
+        "text": "Go Back.",
+        "topic": "TALK_SORCERER_MENU_MAIN"
+      },
+      {
+        "text": "Quit.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_SORCERER_LEARN_SPELL_druid_harvest_hunter_at_level_3",
+    "dynamic_line": "Harvest of the Hunter: This spell creates a grouping of odd-looking but functional arrows out of forest detritus.",
+    "responses": [
+      {
+        "text": "Select Spell.",
+        "topic": "TALK_SORCERER_MENU_MAIN",
+        "effect": [
+          {
+            "math": [
+              "u_val('spell_level', 'spell: druid_harvest_hunter')",
+              "=",
+              "u_current_sorcerer_level"
+            ]
+          },
+          {
+            "math": [
+              "u_used_spell_slot_for_druid_harvest_hunter",
+              "=",
+              "3"
+            ]
+          },
+          {
+            "math": [
+              "u_sorcerer_level_3_spells_known",
+              "++"
+            ]
+          }
+        ]
+      },
+      {
+        "text": "Go Back.",
+        "topic": "TALK_SORCERER_MENU_MAIN"
+      },
+      {
+        "text": "Quit.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_SORCERER_LEARN_SPELL_druid_bramble_spear_at_level_3",
+    "dynamic_line": "Spear of Brambles: This spell turns a stick into a vicious spear that drips with sticky sap.",
+    "responses": [
+      {
+        "text": "Select Spell.",
+        "topic": "TALK_SORCERER_MENU_MAIN",
+        "effect": [
+          {
+            "math": [
+              "u_val('spell_level', 'spell: druid_bramble_spear')",
+              "=",
+              "u_current_sorcerer_level"
+            ]
+          },
+          {
+            "math": [
+              "u_used_spell_slot_for_druid_bramble_spear",
               "=",
               "3"
             ]
@@ -616,6 +821,88 @@
   },
   {
     "type": "talk_topic",
+    "id": "TALK_SORCERER_LEARN_SPELL_earthshaper_danger_sense_at_level_3",
+    "dynamic_line": "Tremorsense: By sensing their movements upon the earth, you can detect nearby sources of danger.  You must maintain a connection to the earth for the spell to function.",
+    "responses": [
+      {
+        "text": "Select Spell.",
+        "topic": "TALK_SORCERER_MENU_MAIN",
+        "effect": [
+          {
+            "math": [
+              "u_val('spell_level', 'spell: earthshaper_danger_sense')",
+              "=",
+              "u_current_sorcerer_level"
+            ]
+          },
+          {
+            "math": [
+              "u_used_spell_slot_for_earthshaper_danger_sense",
+              "=",
+              "3"
+            ]
+          },
+          {
+            "math": [
+              "u_sorcerer_level_3_spells_known",
+              "++"
+            ]
+          }
+        ]
+      },
+      {
+        "text": "Go Back.",
+        "topic": "TALK_SORCERER_MENU_MAIN"
+      },
+      {
+        "text": "Quit.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_SORCERER_LEARN_SPELL_earthshaper_fortitude_of_stone_at_level_3",
+    "dynamic_line": "Stones' Fortitude: Draw on the eternal endurance of the stones, slowing your metabolism and staving off hunger and thirst.  However, while the enchantment is in effect, you will not heal.",
+    "responses": [
+      {
+        "text": "Select Spell.",
+        "topic": "TALK_SORCERER_MENU_MAIN",
+        "effect": [
+          {
+            "math": [
+              "u_val('spell_level', 'spell: earthshaper_fortitude_of_stone')",
+              "=",
+              "u_current_sorcerer_level"
+            ]
+          },
+          {
+            "math": [
+              "u_used_spell_slot_for_earthshaper_fortitude_of_stone",
+              "=",
+              "3"
+            ]
+          },
+          {
+            "math": [
+              "u_sorcerer_level_3_spells_known",
+              "++"
+            ]
+          }
+        ]
+      },
+      {
+        "text": "Go Back.",
+        "topic": "TALK_SORCERER_MENU_MAIN"
+      },
+      {
+        "text": "Quit.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "type": "talk_topic",
     "id": "TALK_SORCERER_LEARN_SPELL_point_flare_at_level_3",
     "dynamic_line": "Point Flare: Causes an intense heat at the location, damaging the target.",
     "responses": [
@@ -862,6 +1149,88 @@
   },
   {
     "type": "talk_topic",
+    "id": "TALK_SORCERER_LEARN_SPELL_kelvinist_anti_cold_at_level_3",
+    "dynamic_line": "Cloak of Warmth: Heat the nearby air, keeping you warm and providing some protection against ice and cold.",
+    "responses": [
+      {
+        "text": "Select Spell.",
+        "topic": "TALK_SORCERER_MENU_MAIN",
+        "effect": [
+          {
+            "math": [
+              "u_val('spell_level', 'spell: kelvinist_anti_cold')",
+              "=",
+              "u_current_sorcerer_level"
+            ]
+          },
+          {
+            "math": [
+              "u_used_spell_slot_for_kelvinist_anti_cold",
+              "=",
+              "3"
+            ]
+          },
+          {
+            "math": [
+              "u_sorcerer_level_3_spells_known",
+              "++"
+            ]
+          }
+        ]
+      },
+      {
+        "text": "Go Back.",
+        "topic": "TALK_SORCERER_MENU_MAIN"
+      },
+      {
+        "text": "Quit.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_SORCERER_LEARN_SPELL_kelvinist_anti_heat_at_level_3",
+    "dynamic_line": "Cloak of Chill: Cool the nearby air, keeping you cool and providing some protection against heat and flame.",
+    "responses": [
+      {
+        "text": "Select Spell.",
+        "topic": "TALK_SORCERER_MENU_MAIN",
+        "effect": [
+          {
+            "math": [
+              "u_val('spell_level', 'spell: kelvinist_anti_heat')",
+              "=",
+              "u_current_sorcerer_level"
+            ]
+          },
+          {
+            "math": [
+              "u_used_spell_slot_for_kelvinist_anti_heat",
+              "=",
+              "3"
+            ]
+          },
+          {
+            "math": [
+              "u_sorcerer_level_3_spells_known",
+              "++"
+            ]
+          }
+        ]
+      },
+      {
+        "text": "Go Back.",
+        "topic": "TALK_SORCERER_MENU_MAIN"
+      },
+      {
+        "text": "Quit.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "type": "talk_topic",
     "id": "TALK_SORCERER_LEARN_SPELL_phase_door_at_level_3",
     "dynamic_line": "Phase Door: Teleports you in a random direction a short distance.",
     "responses": [
@@ -961,6 +1330,88 @@
           {
             "math": [
               "u_used_spell_slot_for_magus_summon_impact_sling",
+              "=",
+              "3"
+            ]
+          },
+          {
+            "math": [
+              "u_sorcerer_level_3_spells_known",
+              "++"
+            ]
+          }
+        ]
+      },
+      {
+        "text": "Go Back.",
+        "topic": "TALK_SORCERER_MENU_MAIN"
+      },
+      {
+        "text": "Quit.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_SORCERER_LEARN_SPELL_magus_slowfall_at_level_3",
+    "dynamic_line": "Slowfall: Reduce the velocity of your falls by a great amount, or to zero if at high mastery.",
+    "responses": [
+      {
+        "text": "Select Spell.",
+        "topic": "TALK_SORCERER_MENU_MAIN",
+        "effect": [
+          {
+            "math": [
+              "u_val('spell_level', 'spell: magus_slowfall')",
+              "=",
+              "u_current_sorcerer_level"
+            ]
+          },
+          {
+            "math": [
+              "u_used_spell_slot_for_magus_slowfall",
+              "=",
+              "3"
+            ]
+          },
+          {
+            "math": [
+              "u_sorcerer_level_3_spells_known",
+              "++"
+            ]
+          }
+        ]
+      },
+      {
+        "text": "Go Back.",
+        "topic": "TALK_SORCERER_MENU_MAIN"
+      },
+      {
+        "text": "Quit.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_SORCERER_LEARN_SPELL_magus_spiderclimb_at_level_3",
+    "dynamic_line": "Spider Climb: Ascend even the most sheer wall with ease as you cling to surfaces using the power of magic.",
+    "responses": [
+      {
+        "text": "Select Spell.",
+        "topic": "TALK_SORCERER_MENU_MAIN",
+        "effect": [
+          {
+            "math": [
+              "u_val('spell_level', 'spell: magus_spiderclimb')",
+              "=",
+              "u_current_sorcerer_level"
+            ]
+          },
+          {
+            "math": [
+              "u_used_spell_slot_for_magus_spiderclimb",
               "=",
               "3"
             ]
@@ -1231,6 +1682,47 @@
   },
   {
     "type": "talk_topic",
+    "id": "TALK_SORCERER_LEARN_SPELL_stormshaper_cloak_of_fog_at_level_3",
+    "dynamic_line": "Cloak of Fog: Call out to the sky spirits for aid and ask them to conceal you from your enemies.  The fog will hide your passage, but you do not have any special ability to see through it yourself.",
+    "responses": [
+      {
+        "text": "Select Spell.",
+        "topic": "TALK_SORCERER_MENU_MAIN",
+        "effect": [
+          {
+            "math": [
+              "u_val('spell_level', 'spell: stormshaper_cloak_of_fog')",
+              "=",
+              "u_current_sorcerer_level"
+            ]
+          },
+          {
+            "math": [
+              "u_used_spell_slot_for_stormshaper_cloak_of_fog",
+              "=",
+              "3"
+            ]
+          },
+          {
+            "math": [
+              "u_sorcerer_level_3_spells_known",
+              "++"
+            ]
+          }
+        ]
+      },
+      {
+        "text": "Go Back.",
+        "topic": "TALK_SORCERER_MENU_MAIN"
+      },
+      {
+        "text": "Quit.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "type": "talk_topic",
     "id": "TALK_SORCERER_LEARN_SPELL_quantum_tunnel_lesser_at_level_3",
     "dynamic_line": "Lesser Quantum Tunnel: This spell manipulates some quantum something or other to tunnel you through a short distance of space, and even matter, unfortunately there's that whole uncertainty thing as to where you come out.  It leaves you a little dazed on the other side as you reorient yourself.",
     "responses": [
@@ -1330,6 +1822,47 @@
           {
             "math": [
               "u_used_spell_slot_for_smite",
+              "=",
+              "3"
+            ]
+          },
+          {
+            "math": [
+              "u_sorcerer_level_3_spells_known",
+              "++"
+            ]
+          }
+        ]
+      },
+      {
+        "text": "Go Back.",
+        "topic": "TALK_SORCERER_MENU_MAIN"
+      },
+      {
+        "text": "Quit.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_SORCERER_LEARN_SPELL_animist_sense_outsiders_at_level_3",
+    "dynamic_line": "Sense Outsiders: You can sense the presence of nearby beings from the Nether.",
+    "responses": [
+      {
+        "text": "Select Spell.",
+        "topic": "TALK_SORCERER_MENU_MAIN",
+        "effect": [
+          {
+            "math": [
+              "u_val('spell_level', 'spell: animist_sense_outsiders')",
+              "=",
+              "u_current_sorcerer_level"
+            ]
+          },
+          {
+            "math": [
+              "u_used_spell_slot_for_animist_sense_outsiders",
               "=",
               "3"
             ]
@@ -1683,7 +2216,7 @@
   {
     "type": "talk_topic",
     "id": "TALK_SORCERER_LEARN_SPELL_summon_wisps_at_level_3",
-    "dynamic_line": "Ignus Fatuus: Summons ghostly foxfire worked from living marsh vapor, to lead your enemies astray.  With more experience, this spell can conjure multiple ghost lights.",
+    "dynamic_line": "Ignus Fatuus: Summons ghostly foxfire worked from living marsh vapor to lead your enemies astray.  With more experience, this spell can conjure multiple ghost lights.",
     "responses": [
       {
         "text": "Select Spell.",
@@ -1904,6 +2437,47 @@
           {
             "math": [
               "u_used_spell_slot_for_biomancer_visceral_projection",
+              "=",
+              "3"
+            ]
+          },
+          {
+            "math": [
+              "u_sorcerer_level_3_spells_known",
+              "++"
+            ]
+          }
+        ]
+      },
+      {
+        "text": "Go Back.",
+        "topic": "TALK_SORCERER_MENU_MAIN"
+      },
+      {
+        "text": "Quit.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_SORCERER_LEARN_SPELL_biomancer_cure_disease_minor_at_level_3",
+    "dynamic_line": "Cure Disease, Minor: Cure any flu or common cold you might be suffering from.  This is one of the few biomantic cure spells that is castable on other people.",
+    "responses": [
+      {
+        "text": "Select Spell.",
+        "topic": "TALK_SORCERER_MENU_MAIN",
+        "effect": [
+          {
+            "math": [
+              "u_val('spell_level', 'spell: biomancer_cure_disease_minor')",
+              "=",
+              "u_current_sorcerer_level"
+            ]
+          },
+          {
+            "math": [
+              "u_used_spell_slot_for_biomancer_cure_disease_minor",
               "=",
               "3"
             ]
@@ -2256,6 +2830,47 @@
   },
   {
     "type": "talk_topic",
+    "id": "TALK_SORCERER_LEARN_SPELL_earthshaper_turning_of_earth_at_level_3",
+    "dynamic_line": "The Turning of the Earth: Ask the earth spirits to prepare the earth for growth and planting.",
+    "responses": [
+      {
+        "text": "Select Spell.",
+        "topic": "TALK_SORCERER_MENU_MAIN",
+        "effect": [
+          {
+            "math": [
+              "u_val('spell_level', 'spell: earthshaper_turning_of_earth')",
+              "=",
+              "u_current_sorcerer_level"
+            ]
+          },
+          {
+            "math": [
+              "u_used_spell_slot_for_earthshaper_turning_of_earth",
+              "=",
+              "3"
+            ]
+          },
+          {
+            "math": [
+              "u_sorcerer_level_3_spells_known",
+              "++"
+            ]
+          }
+        ]
+      },
+      {
+        "text": "Go Back.",
+        "topic": "TALK_SORCERER_MENU_MAIN"
+      },
+      {
+        "text": "Quit.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "type": "talk_topic",
     "id": "TALK_SORCERER_LEARN_SPELL_stormshaper_wall_of_fog_at_level_3",
     "dynamic_line": "Wall of Fog: Draws forth a broad wall of thick fog.  While the sudden force of air pressure will floor any enemies caught in it, the conjuration is otherwise harmless.",
     "responses": [
@@ -2273,6 +2888,47 @@
           {
             "math": [
               "u_used_spell_slot_for_stormshaper_wall_of_fog",
+              "=",
+              "3"
+            ]
+          },
+          {
+            "math": [
+              "u_sorcerer_level_3_spells_known",
+              "++"
+            ]
+          }
+        ]
+      },
+      {
+        "text": "Go Back.",
+        "topic": "TALK_SORCERER_MENU_MAIN"
+      },
+      {
+        "text": "Quit.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_SORCERER_LEARN_SPELL_stormshaper_cloak_of_frog_at_level_3",
+    "dynamic_line": "Cloak of Frog: Someone's personal notes were added to this spell.  You're positive that they changed both the name and the function.",
+    "responses": [
+      {
+        "text": "Select Spell.",
+        "topic": "TALK_SORCERER_MENU_MAIN",
+        "effect": [
+          {
+            "math": [
+              "u_val('spell_level', 'spell: stormshaper_cloak_of_frog')",
+              "=",
+              "u_current_sorcerer_level"
+            ]
+          },
+          {
+            "math": [
+              "u_used_spell_slot_for_stormshaper_cloak_of_frog",
               "=",
               "3"
             ]
@@ -2379,6 +3035,47 @@
   },
   {
     "type": "talk_topic",
+    "id": "TALK_SORCERER_LEARN_SPELL_technomancer_conjure_radio_at_level_3",
+    "dynamic_line": "Speak through the Aether: One of the most widely-known pre-modern technomantic spells, this allows technomancers to communicate at a distance.  Its use declined rapidly after Guglielmo Marconi invented the radio and suddenly everyone could listen in to their conversations.",
+    "responses": [
+      {
+        "text": "Select Spell.",
+        "topic": "TALK_SORCERER_MENU_MAIN",
+        "effect": [
+          {
+            "math": [
+              "u_val('spell_level', 'spell: technomancer_conjure_radio')",
+              "=",
+              "u_current_sorcerer_level"
+            ]
+          },
+          {
+            "math": [
+              "u_used_spell_slot_for_technomancer_conjure_radio",
+              "=",
+              "3"
+            ]
+          },
+          {
+            "math": [
+              "u_sorcerer_level_3_spells_known",
+              "++"
+            ]
+          }
+        ]
+      },
+      {
+        "text": "Go Back.",
+        "topic": "TALK_SORCERER_MENU_MAIN"
+      },
+      {
+        "text": "Quit.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "type": "talk_topic",
     "id": "TALK_SORCERER_LEARN_SPELL_create_atomic_light_at_level_3",
     "dynamic_line": "Magical Light: Creates a magical light.",
     "responses": [
@@ -2396,6 +3093,47 @@
           {
             "math": [
               "u_used_spell_slot_for_create_atomic_light",
+              "=",
+              "3"
+            ]
+          },
+          {
+            "math": [
+              "u_sorcerer_level_3_spells_known",
+              "++"
+            ]
+          }
+        ]
+      },
+      {
+        "text": "Go Back.",
+        "topic": "TALK_SORCERER_MENU_MAIN"
+      },
+      {
+        "text": "Quit.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_SORCERER_LEARN_SPELL_classless_watch_spell_at_level_3",
+    "dynamic_line": "Knowing the Day and the Hour: Probably the single greatest example of technology rendering magic obsolete, this spell allows you know exactly what time it is.",
+    "responses": [
+      {
+        "text": "Select Spell.",
+        "topic": "TALK_SORCERER_MENU_MAIN",
+        "effect": [
+          {
+            "math": [
+              "u_val('spell_level', 'spell: classless_watch_spell')",
+              "=",
+              "u_current_sorcerer_level"
+            ]
+          },
+          {
+            "math": [
+              "u_used_spell_slot_for_classless_watch_spell",
               "=",
               "3"
             ]
@@ -2749,7 +3487,7 @@
   {
     "type": "talk_topic",
     "id": "TALK_SORCERER_LEARN_SPELL_electric_arts_at_level_3",
-    "dynamic_line": "Electric Arts: This spell were designed for scholars, that just started to learn stormshaping.  It allows them to use their abilities, when their magic control is weak, and they can injure themselves with electricity.",
+    "dynamic_line": "Electric Arts: A spell designed for scholars having just started to learn stormshaping, allowing them to reduce the damage to themselves their often capricious new abilities may cause.",
     "responses": [
       {
         "text": "Select Spell.",
@@ -2894,6 +3632,17 @@
       {
         "condition": {
           "math": [
+            "u_used_spell_slot_for_animist_summon_watcher",
+            "==",
+            "0"
+          ]
+        },
+        "text": "Learn Summon Watcher Spirit ( level 3 )",
+        "topic": "TALK_SORCERER_LEARN_SPELL_animist_summon_watcher_at_level_3"
+      },
+      {
+        "condition": {
+          "math": [
             "u_used_spell_slot_for_pain_split",
             "==",
             "0"
@@ -2938,6 +3687,28 @@
       {
         "condition": {
           "math": [
+            "u_used_spell_slot_for_biomancer_swim_frog",
+            "==",
+            "0"
+          ]
+        },
+        "text": "Learn Limbs of the Frog ( level 3 )",
+        "topic": "TALK_SORCERER_LEARN_SPELL_biomancer_swim_frog_at_level_3"
+      },
+      {
+        "condition": {
+          "math": [
+            "u_used_spell_slot_for_biomancer_carrion_feast",
+            "==",
+            "0"
+          ]
+        },
+        "text": "Learn Carrion Feast ( level 3 )",
+        "topic": "TALK_SORCERER_LEARN_SPELL_biomancer_carrion_feast_at_level_3"
+      },
+      {
+        "condition": {
+          "math": [
             "u_used_spell_slot_for_protection_aura",
             "==",
             "0"
@@ -2978,6 +3749,28 @@
         },
         "text": "Learn Root Strike ( level 3 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_druid_rootstrike_at_level_3"
+      },
+      {
+        "condition": {
+          "math": [
+            "u_used_spell_slot_for_druid_harvest_hunter",
+            "==",
+            "0"
+          ]
+        },
+        "text": "Learn Harvest of the Hunter ( level 3 )",
+        "topic": "TALK_SORCERER_LEARN_SPELL_druid_harvest_hunter_at_level_3"
+      },
+      {
+        "condition": {
+          "math": [
+            "u_used_spell_slot_for_druid_bramble_spear",
+            "==",
+            "0"
+          ]
+        },
+        "text": "Learn Spear of Brambles ( level 3 )",
+        "topic": "TALK_SORCERER_LEARN_SPELL_druid_bramble_spear_at_level_3"
       },
       {
         "condition": {
@@ -3059,6 +3852,28 @@
       {
         "condition": {
           "math": [
+            "u_used_spell_slot_for_earthshaper_danger_sense",
+            "==",
+            "0"
+          ]
+        },
+        "text": "Learn Tremorsense ( level 3 )",
+        "topic": "TALK_SORCERER_LEARN_SPELL_earthshaper_danger_sense_at_level_3"
+      },
+      {
+        "condition": {
+          "math": [
+            "u_used_spell_slot_for_earthshaper_fortitude_of_stone",
+            "==",
+            "0"
+          ]
+        },
+        "text": "Learn Stones' Fortitude ( level 3 )",
+        "topic": "TALK_SORCERER_LEARN_SPELL_earthshaper_fortitude_of_stone_at_level_3"
+      },
+      {
+        "condition": {
+          "math": [
             "u_used_spell_slot_for_point_flare",
             "==",
             "0"
@@ -3125,6 +3940,28 @@
       {
         "condition": {
           "math": [
+            "u_used_spell_slot_for_kelvinist_anti_cold",
+            "==",
+            "0"
+          ]
+        },
+        "text": "Learn Cloak of Warmth ( level 3 )",
+        "topic": "TALK_SORCERER_LEARN_SPELL_kelvinist_anti_cold_at_level_3"
+      },
+      {
+        "condition": {
+          "math": [
+            "u_used_spell_slot_for_kelvinist_anti_heat",
+            "==",
+            "0"
+          ]
+        },
+        "text": "Learn Cloak of Chill ( level 3 )",
+        "topic": "TALK_SORCERER_LEARN_SPELL_kelvinist_anti_heat_at_level_3"
+      },
+      {
+        "condition": {
+          "math": [
             "u_used_spell_slot_for_phase_door",
             "==",
             "0"
@@ -3154,6 +3991,28 @@
         },
         "text": "Learn Impact Sling ( level 3 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_magus_summon_impact_sling_at_level_3"
+      },
+      {
+        "condition": {
+          "math": [
+            "u_used_spell_slot_for_magus_slowfall",
+            "==",
+            "0"
+          ]
+        },
+        "text": "Learn Slowfall ( level 3 )",
+        "topic": "TALK_SORCERER_LEARN_SPELL_magus_slowfall_at_level_3"
+      },
+      {
+        "condition": {
+          "math": [
+            "u_used_spell_slot_for_magus_spiderclimb",
+            "==",
+            "0"
+          ]
+        },
+        "text": "Learn Spider Climb ( level 3 )",
+        "topic": "TALK_SORCERER_LEARN_SPELL_magus_spiderclimb_at_level_3"
       },
       {
         "condition": {
@@ -3224,6 +4083,17 @@
       {
         "condition": {
           "math": [
+            "u_used_spell_slot_for_stormshaper_cloak_of_fog",
+            "==",
+            "0"
+          ]
+        },
+        "text": "Learn Cloak of Fog ( level 3 )",
+        "topic": "TALK_SORCERER_LEARN_SPELL_stormshaper_cloak_of_fog_at_level_3"
+      },
+      {
+        "condition": {
+          "math": [
             "u_used_spell_slot_for_quantum_tunnel_lesser",
             "==",
             "0"
@@ -3253,6 +4123,17 @@
         },
         "text": "Learn Smite ( level 2 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_smite_at_level_3"
+      },
+      {
+        "condition": {
+          "math": [
+            "u_used_spell_slot_for_animist_sense_outsiders",
+            "==",
+            "0"
+          ]
+        },
+        "text": "Learn Sense Outsiders ( level 2 )",
+        "topic": "TALK_SORCERER_LEARN_SPELL_animist_sense_outsiders_at_level_3"
       },
       {
         "condition": {
@@ -3411,6 +4292,17 @@
       {
         "condition": {
           "math": [
+            "u_used_spell_slot_for_biomancer_cure_disease_minor",
+            "==",
+            "0"
+          ]
+        },
+        "text": "Learn Cure Disease, Minor ( level 1 )",
+        "topic": "TALK_SORCERER_LEARN_SPELL_biomancer_cure_disease_minor_at_level_3"
+      },
+      {
+        "condition": {
+          "math": [
             "u_used_spell_slot_for_crystallize_mana",
             "==",
             "0"
@@ -3499,6 +4391,17 @@
       {
         "condition": {
           "math": [
+            "u_used_spell_slot_for_earthshaper_turning_of_earth",
+            "==",
+            "0"
+          ]
+        },
+        "text": "Learn The Turning of the Earth ( level 1 )",
+        "topic": "TALK_SORCERER_LEARN_SPELL_earthshaper_turning_of_earth_at_level_3"
+      },
+      {
+        "condition": {
+          "math": [
             "u_used_spell_slot_for_stormshaper_wall_of_fog",
             "==",
             "0"
@@ -3506,6 +4409,17 @@
         },
         "text": "Learn Wall of Fog ( level 1 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_stormshaper_wall_of_fog_at_level_3"
+      },
+      {
+        "condition": {
+          "math": [
+            "u_used_spell_slot_for_stormshaper_cloak_of_frog",
+            "==",
+            "0"
+          ]
+        },
+        "text": "Learn Cloak of Frog ( level 1 )",
+        "topic": "TALK_SORCERER_LEARN_SPELL_stormshaper_cloak_of_frog_at_level_3"
       },
       {
         "condition": {
@@ -3532,6 +4446,17 @@
       {
         "condition": {
           "math": [
+            "u_used_spell_slot_for_technomancer_conjure_radio",
+            "==",
+            "0"
+          ]
+        },
+        "text": "Learn Speak through the Aether ( level 1 )",
+        "topic": "TALK_SORCERER_LEARN_SPELL_technomancer_conjure_radio_at_level_3"
+      },
+      {
+        "condition": {
+          "math": [
             "u_used_spell_slot_for_create_atomic_light",
             "==",
             "0"
@@ -3539,6 +4464,17 @@
         },
         "text": "Learn Magical Light ( level 0 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_create_atomic_light_at_level_3"
+      },
+      {
+        "condition": {
+          "math": [
+            "u_used_spell_slot_for_classless_watch_spell",
+            "==",
+            "0"
+          ]
+        },
+        "text": "Learn Knowing the Day and the Hour ( level 0 )",
+        "topic": "TALK_SORCERER_LEARN_SPELL_classless_watch_spell_at_level_3"
       },
       {
         "condition": {

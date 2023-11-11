@@ -9,7 +9,7 @@
   },
   {
     "id": "create_electric_lighter",
-    "disabled": true
+    "disabled": true,
     "//": "Mostly same effect as the kelvinist version, and we don't need two of them to clog up the UI."
   },
   {
