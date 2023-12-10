@@ -5,7 +5,7 @@
     "eoc_type": "EVENT",
     "required_event": "opens_spellbook",
     "condition": { "and": [ { "u_has_trait": "SORCERER" }, { "u_has_var": "power_source", "context": "SORCERER", "value": "dodge" } ] },
-    "effect": { "math": [ "u_val('spell_level_adjustment')", "=", "floor( u_val('dodge') )" ] }
+    "effect": { "math": [ "u_val('spell_level_adjustment')", "+=", "floor( u_val('dodge') )" ] }
   },
   {
     "//": "Based off of Aikido",
@@ -87,7 +87,7 @@
     ],
     "onblock_buffs": [
       {
-        "id": "buff_aikido_onblock",
+        "id": "buff_spelldancing_onblock",
         "name": "Fluid Blocking",
         "description": "After a smooth block, you prepare to counter your foe.\n\n-10% move cost.\nLasts 1 turn.",
         "unarmed_allowed": true,
@@ -99,7 +99,7 @@
     ],
     "ondodge_buffs": [
       {
-        "id": "buff_aikido_ondodge",
+        "id": "buff_spelldancing_ondodge",
         "name": "Fluid Dodging",
         "description": "After a smooth dodge, you prepare to counter your foe.\n\n-10% move cost.\nLasts 1 turn.",
         "unarmed_allowed": true,
@@ -125,7 +125,6 @@
     "unarmed_allowed": true,
     "melee_allowed": true,
     "unarmed_weapons_allowed": false,
-    "required_buffs_all": [ "buff_spelldancer_on_recent_defend" ],
     "crit_ok": true,
     "//condition": "Humanoids of similar size and no flying",
     "condition": {
@@ -168,7 +167,6 @@
     "unarmed_allowed": true,
     "melee_allowed": true,
     "unarmed_weapons_allowed": false,
-    "required_buffs_all": [ "buff_spelldancer_on_recent_defend" ],
     "crit_ok": true,
     "disarms": true,
     "tech_effects": [

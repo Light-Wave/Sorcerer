@@ -25,8 +25,8 @@
         "topic": "TALK_SORCERER_GAIN_BLOODLINE_TAROT"
       },
       {
-        "text": "Attuned bloodlines",
-        "topic": "TALK_SORCERER_GAIN_BLOODLINE_ATTUNED"
+        "text": "Attuned bloodlines (NYI)",
+        "topic": "TALK_SORCERER_PICK_BLOODLINE"
       },
       { "text": "Quit.", "topic": "TALK_DONE" }
     ]
@@ -42,7 +42,7 @@
         "effect": [
           { "u_add_trait": "SORCERER" },
           { "run_eocs": "EOC_level_up_sorcerer" },
-          { "math": [ "u_available_favourite_spells", "=", 1 ] },
+          { "math": [ "u_available_favourite_spells", "=", "1" ] },
           { "u_add_var": "power_source", "value": "intelligence", "context": "SORCERER" },
           { "u_add_var": "bloodline", "value": "STANDARD", "context": "SORCERER_BLOODLINE" }
         ]
