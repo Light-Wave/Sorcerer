@@ -59,6 +59,16 @@
         "text": "Learn a level 0 spell",
         "topic": "TALK_SORCERER_LEARN_SPELL_0"
       },
+      {
+        "condition": { "math": [ "u_current_sorcerer_level", "==", 0 ] },
+        "text": "Pick a bloodline",
+        "topic": "TALK_SORCERER_PICK_BLOODLINE"
+      },
+      {
+        "condition": { "math": [ "u_available_favourite_spells", ">", 0 ] },
+        "text": "Pick a favourite spell",
+        "topic": "TALK_SORCERER_PICK_FAV_SPELL"
+      },
       { "text": "Quit.", "topic": "TALK_DONE" }
     ]
   }

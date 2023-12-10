@@ -1,0 +1,11 @@
+[
+  {
+    "id": "manual_spelldancing",
+    "copy-from": "book_martial",
+    "type": "BOOK",
+    "name": { "str": "The Spirit of Spelldancing", "str_pl": "copies of The Spirit of Spelldancing" },
+    "price_postapoc": 2000,
+    "description": "A complete guide to Spelldancing.  Writen by you.  Somehow.",
+    "martial_art": "style_spelldancing"
+  }
+]

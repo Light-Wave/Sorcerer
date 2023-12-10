@@ -136,6 +136,8 @@ def read_spell_data(path):
                   "name": str(jo["name"]),
                   "description": str(jo["description"])
                 }
+                # Deals with if the name is not just a string.
+                # Haven't figgured out a way to automatically deal with spells that contains the string "str". So we just deal with them manually.
                 if "str" in jo["name"] and new_spell_data["id"] != "windstrike" and new_spell_data["id"] != "demon_possession_aura":
                     new_spell_data["name"] = str(jo["name"]["str"]) 
                 for spell_name in tier_0_spell_list:
@@ -271,6 +273,37 @@ def write_forget_spell():
     with open(path + "/forget_spells.json", mode="wt") as f:
         f.write(json.dumps(main_topic, indent=2))
 
+
+# Writes dialogue options to pick a favourite spell
+def write_pick_favourite_spell():
+    main_topic = {
+        "type": "talk_topic",
+        "id": "TALK_SORCERER_PICK_FAV_SPELL",
+        "dynamic_line": "Pick a spell you have a special affinity for to gain a small boost in caster level for said spell.  The boost will quickly become obselete, but will help you get started on your journey.",
+        "responses": [
+            { "text": "Go Back.", "topic": "TALK_SORCERER_MENU_MAIN" },
+            { "text": "Quit.", "topic": "TALK_DONE" }
+            ]
+        }
+    for spell in spell_data:
+        if spell["level"] <= 1:
+            response = {
+                "condition": { "math": [ "u_used_spell_slot_for_"+spell["safe_id"], ">", "0" ] },
+                "text": "Pick " + spell["name"] + " ( level <u_val:used_spell_slot_for_" + spell["safe_id"] + "> )",
+                "topic": "TALK_SORCERER_MENU_MAIN",
+                "effect": [
+                    { "math": [ "u_val('spell_level', 'spell: " + spell["id"] + "')", "=", "max(3, u_val('spell_level', 'spell: " + spell["id"] + "') )" ] },
+                    { "math": [ "u_available_favourite_spells", "--" ] }
+                ]
+            }
+            main_topic["responses"].append(response)
+    path = "../generated_code/bloodlines/standard"
+    isExist = os.path.exists(path)
+    if not isExist:
+        os.makedirs(path)
+    with open(path + "/pick_favourite_spell.json", mode="wt") as f:
+        f.write(json.dumps(main_topic, indent=2))
+
 # Writes the EOCs that deals with keeping known spells atleast at the same level as your sorcerer level
 def write_level_up_spells():
     main_topic = {
@@ -318,6 +351,7 @@ for number in range(0,10):
 
 write_forget_spell()
 write_level_up_spells()
+write_pick_favourite_spell()
 
 # Writes out the generated spell data for debugging purposes
 path = "../generated_code/"
