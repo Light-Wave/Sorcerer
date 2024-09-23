@@ -575,6 +575,47 @@
   },
   {
     "type": "talk_topic",
+    "id": "TALK_SORCERER_LEARN_SPELL_classless_restore_crystal_mana_at_level_1",
+    "dynamic_line": "Mana Extraction: Return crystallized mana into raw mana and absorb it, restoring some of your mana.  The process is slow and not very efficient, but it's easier to transport than mana potions.",
+    "responses": [
+      {
+        "text": "Select Spell.",
+        "topic": "TALK_SORCERER_MENU_MAIN",
+        "effect": [
+          {
+            "math": [
+              "u_spell_level('classless_restore_crystal_mana')",
+              "=",
+              "u_current_sorcerer_level"
+            ]
+          },
+          {
+            "math": [
+              "u_used_spell_slot_for_classless_restore_crystal_mana",
+              "=",
+              "1"
+            ]
+          },
+          {
+            "math": [
+              "u_sorcerer_level_1_spells_known",
+              "++"
+            ]
+          }
+        ]
+      },
+      {
+        "text": "Go Back.",
+        "topic": "TALK_SORCERER_MENU_MAIN"
+      },
+      {
+        "text": "Quit.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "type": "talk_topic",
     "id": "TALK_SORCERER_LEARN_SPELL_druid_tornskin_at_level_1",
     "dynamic_line": "Tornskin: This spell, which resembles Thornskin through the sap & needles covering the page, seemed to involve thorns and bleeding wounds.  The marred words may have altered the function.",
     "responses": [
@@ -1002,6 +1043,47 @@
           {
             "math": [
               "u_used_spell_slot_for_magus_far_hand_pull",
+              "=",
+              "1"
+            ]
+          },
+          {
+            "math": [
+              "u_sorcerer_level_1_spells_known",
+              "++"
+            ]
+          }
+        ]
+      },
+      {
+        "text": "Go Back.",
+        "topic": "TALK_SORCERER_MENU_MAIN"
+      },
+      {
+        "text": "Quit.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_SORCERER_LEARN_SPELL_magus_light_target_at_level_1",
+    "dynamic_line": "Faerie Fire: Cause the air around the target to glow slightly, revealing their location and making it slightly harder for them to dodge attacks.",
+    "responses": [
+      {
+        "text": "Select Spell.",
+        "topic": "TALK_SORCERER_MENU_MAIN",
+        "effect": [
+          {
+            "math": [
+              "u_spell_level('magus_light_target')",
+              "=",
+              "u_current_sorcerer_level"
+            ]
+          },
+          {
+            "math": [
+              "u_used_spell_slot_for_magus_light_target",
               "=",
               "1"
             ]
@@ -2023,6 +2105,17 @@
       {
         "condition": {
           "math": [
+            "u_used_spell_slot_for_classless_restore_crystal_mana",
+            "==",
+            "0"
+          ]
+        },
+        "text": "Learn Mana Extraction ( level 1 )",
+        "topic": "TALK_SORCERER_LEARN_SPELL_classless_restore_crystal_mana_at_level_1"
+      },
+      {
+        "condition": {
+          "math": [
             "u_used_spell_slot_for_druid_tornskin",
             "==",
             "0"
@@ -2140,6 +2233,17 @@
         },
         "text": "Learn Sorcerer's Hand ( level 1 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_magus_far_hand_pull_at_level_1"
+      },
+      {
+        "condition": {
+          "math": [
+            "u_used_spell_slot_for_magus_light_target",
+            "==",
+            "0"
+          ]
+        },
+        "text": "Learn Faerie Fire ( level 1 )",
+        "topic": "TALK_SORCERER_LEARN_SPELL_magus_light_target_at_level_1"
       },
       {
         "condition": {

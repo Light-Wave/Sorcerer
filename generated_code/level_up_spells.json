@@ -949,6 +949,27 @@
     },
     {
       "run_eocs": {
+        "id": "sorcerer_level_up_magus_slow",
+        "condition": {
+          "math": [
+            "u_used_spell_slot_for_magus_slow",
+            ">",
+            "0"
+          ]
+        },
+        "effect": [
+          {
+            "math": [
+              "u_spell_level('magus_slow')",
+              "=",
+              "max(u_current_sorcerer_level, u_spell_level('magus_slow') )"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "run_eocs": {
         "id": "sorcerer_level_up_magus_baleful_polymorph",
         "condition": {
           "math": [
@@ -2496,6 +2517,27 @@
               "u_spell_level('animist_summon_watcher')",
               "=",
               "max(u_current_sorcerer_level, u_spell_level('animist_summon_watcher') )"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "run_eocs": {
+        "id": "sorcerer_level_up_animist_cast_spells_when_silent",
+        "condition": {
+          "math": [
+            "u_used_spell_slot_for_animist_cast_spells_when_silent",
+            ">",
+            "0"
+          ]
+        },
+        "effect": [
+          {
+            "math": [
+              "u_spell_level('animist_cast_spells_when_silent')",
+              "=",
+              "max(u_current_sorcerer_level, u_spell_level('animist_cast_spells_when_silent') )"
             ]
           }
         ]
@@ -4078,6 +4120,27 @@
     },
     {
       "run_eocs": {
+        "id": "sorcerer_level_up_classless_restore_crystal_mana",
+        "condition": {
+          "math": [
+            "u_used_spell_slot_for_classless_restore_crystal_mana",
+            ">",
+            "0"
+          ]
+        },
+        "effect": [
+          {
+            "math": [
+              "u_spell_level('classless_restore_crystal_mana')",
+              "=",
+              "max(u_current_sorcerer_level, u_spell_level('classless_restore_crystal_mana') )"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "run_eocs": {
         "id": "sorcerer_level_up_druid_tornskin",
         "condition": {
           "math": [
@@ -4302,6 +4365,27 @@
               "u_spell_level('magus_far_hand_pull')",
               "=",
               "max(u_current_sorcerer_level, u_spell_level('magus_far_hand_pull') )"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "run_eocs": {
+        "id": "sorcerer_level_up_magus_light_target",
+        "condition": {
+          "math": [
+            "u_used_spell_slot_for_magus_light_target",
+            ">",
+            "0"
+          ]
+        },
+        "effect": [
+          {
+            "math": [
+              "u_spell_level('magus_light_target')",
+              "=",
+              "max(u_current_sorcerer_level, u_spell_level('magus_light_target') )"
             ]
           }
         ]

@@ -2543,6 +2543,47 @@
   },
   {
     "type": "talk_topic",
+    "id": "TALK_SORCERER_LEARN_SPELL_animist_cast_spells_when_silent_at_level_5",
+    "dynamic_line": "The Inner Voice: Channel magic through your soul instead of your voice, allowing you to cast spells that require speech even when mute.",
+    "responses": [
+      {
+        "text": "Select Spell.",
+        "topic": "TALK_SORCERER_MENU_MAIN",
+        "effect": [
+          {
+            "math": [
+              "u_spell_level('animist_cast_spells_when_silent')",
+              "=",
+              "u_current_sorcerer_level"
+            ]
+          },
+          {
+            "math": [
+              "u_used_spell_slot_for_animist_cast_spells_when_silent",
+              "=",
+              "5"
+            ]
+          },
+          {
+            "math": [
+              "u_sorcerer_level_5_spells_known",
+              "++"
+            ]
+          }
+        ]
+      },
+      {
+        "text": "Go Back.",
+        "topic": "TALK_SORCERER_MENU_MAIN"
+      },
+      {
+        "text": "Quit.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "type": "talk_topic",
     "id": "TALK_SORCERER_LEARN_SPELL_pain_split_at_level_5",
     "dynamic_line": "Pain Split: Evens out damage among your limbs.",
     "responses": [
@@ -3159,7 +3200,7 @@
   {
     "type": "talk_topic",
     "id": "TALK_SORCERER_LEARN_SPELL_druid_water_walking_at_level_5",
-    "dynamic_line": "Water Strider's Walk: While standing in water, enchant yourself so that the water will buoy you up and prevent you from sinking.",
+    "dynamic_line": "Water Strider's Walk: Enchant yourself so that the water will buoy you up and prevent you from sinking, allowing you to walk on its surface.",
     "responses": [
       {
         "text": "Select Spell.",
@@ -5618,6 +5659,47 @@
   },
   {
     "type": "talk_topic",
+    "id": "TALK_SORCERER_LEARN_SPELL_classless_restore_crystal_mana_at_level_5",
+    "dynamic_line": "Mana Extraction: Return crystallized mana into raw mana and absorb it, restoring some of your mana.  The process is slow and not very efficient, but it's easier to transport than mana potions.",
+    "responses": [
+      {
+        "text": "Select Spell.",
+        "topic": "TALK_SORCERER_MENU_MAIN",
+        "effect": [
+          {
+            "math": [
+              "u_spell_level('classless_restore_crystal_mana')",
+              "=",
+              "u_current_sorcerer_level"
+            ]
+          },
+          {
+            "math": [
+              "u_used_spell_slot_for_classless_restore_crystal_mana",
+              "=",
+              "5"
+            ]
+          },
+          {
+            "math": [
+              "u_sorcerer_level_5_spells_known",
+              "++"
+            ]
+          }
+        ]
+      },
+      {
+        "text": "Go Back.",
+        "topic": "TALK_SORCERER_MENU_MAIN"
+      },
+      {
+        "text": "Quit.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "type": "talk_topic",
     "id": "TALK_SORCERER_LEARN_SPELL_druid_tornskin_at_level_5",
     "dynamic_line": "Tornskin: This spell, which resembles Thornskin through the sap & needles covering the page, seemed to involve thorns and bleeding wounds.  The marred words may have altered the function.",
     "responses": [
@@ -6045,6 +6127,47 @@
           {
             "math": [
               "u_used_spell_slot_for_magus_far_hand_pull",
+              "=",
+              "5"
+            ]
+          },
+          {
+            "math": [
+              "u_sorcerer_level_5_spells_known",
+              "++"
+            ]
+          }
+        ]
+      },
+      {
+        "text": "Go Back.",
+        "topic": "TALK_SORCERER_MENU_MAIN"
+      },
+      {
+        "text": "Quit.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_SORCERER_LEARN_SPELL_magus_light_target_at_level_5",
+    "dynamic_line": "Faerie Fire: Cause the air around the target to glow slightly, revealing their location and making it slightly harder for them to dodge attacks.",
+    "responses": [
+      {
+        "text": "Select Spell.",
+        "topic": "TALK_SORCERER_MENU_MAIN",
+        "effect": [
+          {
+            "math": [
+              "u_spell_level('magus_light_target')",
+              "=",
+              "u_current_sorcerer_level"
+            ]
+          },
+          {
+            "math": [
+              "u_used_spell_slot_for_magus_light_target",
               "=",
               "5"
             ]
@@ -7594,6 +7717,17 @@
       {
         "condition": {
           "math": [
+            "u_used_spell_slot_for_animist_cast_spells_when_silent",
+            "==",
+            "0"
+          ]
+        },
+        "text": "Learn The Inner Voice ( level 3 )",
+        "topic": "TALK_SORCERER_LEARN_SPELL_animist_cast_spells_when_silent_at_level_5"
+      },
+      {
+        "condition": {
+          "math": [
             "u_used_spell_slot_for_pain_split",
             "==",
             "0"
@@ -8419,6 +8553,17 @@
       {
         "condition": {
           "math": [
+            "u_used_spell_slot_for_classless_restore_crystal_mana",
+            "==",
+            "0"
+          ]
+        },
+        "text": "Learn Mana Extraction ( level 1 )",
+        "topic": "TALK_SORCERER_LEARN_SPELL_classless_restore_crystal_mana_at_level_5"
+      },
+      {
+        "condition": {
+          "math": [
             "u_used_spell_slot_for_druid_tornskin",
             "==",
             "0"
@@ -8536,6 +8681,17 @@
         },
         "text": "Learn Sorcerer's Hand ( level 1 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_magus_far_hand_pull_at_level_5"
+      },
+      {
+        "condition": {
+          "math": [
+            "u_used_spell_slot_for_magus_light_target",
+            "==",
+            "0"
+          ]
+        },
+        "text": "Learn Faerie Fire ( level 1 )",
+        "topic": "TALK_SORCERER_LEARN_SPELL_magus_light_target_at_level_5"
       },
       {
         "condition": {

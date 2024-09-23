@@ -378,6 +378,32 @@
     {
       "condition": {
         "math": [
+          "u_used_spell_slot_for_classless_restore_crystal_mana",
+          ">",
+          "0"
+        ]
+      },
+      "text": "Pick Mana Extraction ( level <u_val:used_spell_slot_for_classless_restore_crystal_mana> )",
+      "topic": "TALK_SORCERER_MENU_MAIN",
+      "effect": [
+        {
+          "math": [
+            "u_spell_level('classless_restore_crystal_mana')",
+            "=",
+            "max(3, u_spell_level('classless_restore_crystal_mana') )"
+          ]
+        },
+        {
+          "math": [
+            "u_available_favourite_spells",
+            "--"
+          ]
+        }
+      ]
+    },
+    {
+      "condition": {
+        "math": [
           "u_used_spell_slot_for_druid_tornskin",
           ">",
           "0"
@@ -651,6 +677,32 @@
             "u_spell_level('magus_far_hand_pull')",
             "=",
             "max(3, u_spell_level('magus_far_hand_pull') )"
+          ]
+        },
+        {
+          "math": [
+            "u_available_favourite_spells",
+            "--"
+          ]
+        }
+      ]
+    },
+    {
+      "condition": {
+        "math": [
+          "u_used_spell_slot_for_magus_light_target",
+          ">",
+          "0"
+        ]
+      },
+      "text": "Pick Faerie Fire ( level <u_val:used_spell_slot_for_magus_light_target> )",
+      "topic": "TALK_SORCERER_MENU_MAIN",
+      "effect": [
+        {
+          "math": [
+            "u_spell_level('magus_light_target')",
+            "=",
+            "max(3, u_spell_level('magus_light_target') )"
           ]
         },
         {

@@ -1859,6 +1859,47 @@
     {
       "condition": {
         "math": [
+          "u_used_spell_slot_for_magus_slow",
+          ">",
+          "0"
+        ]
+      },
+      "text": "Forget Slow ( level <u_val:used_spell_slot_for_magus_slow> )",
+      "topic": "TALK_SORCERER_MENU_MAIN",
+      "effect": [
+        {
+          "math": [
+            "u_spell_level('magus_slow')",
+            "=",
+            "-1"
+          ]
+        },
+        {
+          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "variables": {
+            "forgotten_spell_level": {
+              "u_val": "used_spell_slot_for_magus_slow"
+            }
+          }
+        },
+        {
+          "math": [
+            "u_used_spell_slot_for_magus_slow",
+            "=",
+            "0"
+          ]
+        },
+        {
+          "math": [
+            "u_sorcerer_forget_spell_charge",
+            "--"
+          ]
+        }
+      ]
+    },
+    {
+      "condition": {
+        "math": [
           "u_used_spell_slot_for_magus_baleful_polymorph",
           ">",
           "0"
@@ -4878,6 +4919,47 @@
         {
           "math": [
             "u_used_spell_slot_for_animist_summon_watcher",
+            "=",
+            "0"
+          ]
+        },
+        {
+          "math": [
+            "u_sorcerer_forget_spell_charge",
+            "--"
+          ]
+        }
+      ]
+    },
+    {
+      "condition": {
+        "math": [
+          "u_used_spell_slot_for_animist_cast_spells_when_silent",
+          ">",
+          "0"
+        ]
+      },
+      "text": "Forget The Inner Voice ( level <u_val:used_spell_slot_for_animist_cast_spells_when_silent> )",
+      "topic": "TALK_SORCERER_MENU_MAIN",
+      "effect": [
+        {
+          "math": [
+            "u_spell_level('animist_cast_spells_when_silent')",
+            "=",
+            "-1"
+          ]
+        },
+        {
+          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "variables": {
+            "forgotten_spell_level": {
+              "u_val": "used_spell_slot_for_animist_cast_spells_when_silent"
+            }
+          }
+        },
+        {
+          "math": [
+            "u_used_spell_slot_for_animist_cast_spells_when_silent",
             "=",
             "0"
           ]
@@ -7968,6 +8050,47 @@
     {
       "condition": {
         "math": [
+          "u_used_spell_slot_for_classless_restore_crystal_mana",
+          ">",
+          "0"
+        ]
+      },
+      "text": "Forget Mana Extraction ( level <u_val:used_spell_slot_for_classless_restore_crystal_mana> )",
+      "topic": "TALK_SORCERER_MENU_MAIN",
+      "effect": [
+        {
+          "math": [
+            "u_spell_level('classless_restore_crystal_mana')",
+            "=",
+            "-1"
+          ]
+        },
+        {
+          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "variables": {
+            "forgotten_spell_level": {
+              "u_val": "used_spell_slot_for_classless_restore_crystal_mana"
+            }
+          }
+        },
+        {
+          "math": [
+            "u_used_spell_slot_for_classless_restore_crystal_mana",
+            "=",
+            "0"
+          ]
+        },
+        {
+          "math": [
+            "u_sorcerer_forget_spell_charge",
+            "--"
+          ]
+        }
+      ]
+    },
+    {
+      "condition": {
+        "math": [
           "u_used_spell_slot_for_druid_tornskin",
           ">",
           "0"
@@ -8404,6 +8527,47 @@
         {
           "math": [
             "u_used_spell_slot_for_magus_far_hand_pull",
+            "=",
+            "0"
+          ]
+        },
+        {
+          "math": [
+            "u_sorcerer_forget_spell_charge",
+            "--"
+          ]
+        }
+      ]
+    },
+    {
+      "condition": {
+        "math": [
+          "u_used_spell_slot_for_magus_light_target",
+          ">",
+          "0"
+        ]
+      },
+      "text": "Forget Faerie Fire ( level <u_val:used_spell_slot_for_magus_light_target> )",
+      "topic": "TALK_SORCERER_MENU_MAIN",
+      "effect": [
+        {
+          "math": [
+            "u_spell_level('magus_light_target')",
+            "=",
+            "-1"
+          ]
+        },
+        {
+          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "variables": {
+            "forgotten_spell_level": {
+              "u_val": "used_spell_slot_for_magus_light_target"
+            }
+          }
+        },
+        {
+          "math": [
+            "u_used_spell_slot_for_magus_light_target",
             "=",
             "0"
           ]
