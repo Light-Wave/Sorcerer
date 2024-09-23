@@ -2,7 +2,7 @@
   {
     "type": "talk_topic",
     "id": "TALK_SORCERER_LEARN_SPELL_animist_summon_decaying_boneclub_at_level_4",
-    "dynamic_line": "Decaying Boneclub: This spell links your living blood to dead blood and bones, creating a club hungry for the flesh of the living.",
+    "dynamic_line": "Decaying Boneclub: You link your living blood to dead bones, creating a club hungry for the flesh of the living.",
     "responses": [
       {
         "text": "Select Spell.",
@@ -10,7 +10,7 @@
         "effect": [
           {
             "math": [
-              "u_val('spell_level', 'spell: animist_summon_decaying_boneclub')",
+              "u_spell_level('animist_summon_decaying_boneclub')",
               "=",
               "u_current_sorcerer_level"
             ]
@@ -42,8 +42,8 @@
   },
   {
     "type": "talk_topic",
-    "id": "TALK_SORCERER_LEARN_SPELL_bio_grotesque_at_level_4",
-    "dynamic_line": "Grotesque Enhancement: A spell that warps your body in alien ways to increase your physical abilities and strength.",
+    "id": "TALK_SORCERER_LEARN_SPELL_animist_luck_bone_at_level_4",
+    "dynamic_line": "Osseous Luck: Attract spirits of good fortune to a bone, granting minor bonuses as long as it is carried.  Though benevolent, the spirits are capricious, and exactly what benefits they will provide cannot be determined ahead of time.  The bone crumbles to dust when the spell duration expires and the spirits leave.",
     "responses": [
       {
         "text": "Select Spell.",
@@ -51,7 +51,48 @@
         "effect": [
           {
             "math": [
-              "u_val('spell_level', 'spell: bio_grotesque')",
+              "u_spell_level('animist_luck_bone')",
+              "=",
+              "u_current_sorcerer_level"
+            ]
+          },
+          {
+            "math": [
+              "u_used_spell_slot_for_animist_luck_bone",
+              "=",
+              "4"
+            ]
+          },
+          {
+            "math": [
+              "u_sorcerer_level_4_spells_known",
+              "++"
+            ]
+          }
+        ]
+      },
+      {
+        "text": "Go Back.",
+        "topic": "TALK_SORCERER_MENU_MAIN"
+      },
+      {
+        "text": "Quit.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_SORCERER_LEARN_SPELL_bio_grotesque_at_level_4",
+    "dynamic_line": "Grotesque Enhancement: A spell that warps your body in foreign, unnatural ways to increase your physical abilities and strength.",
+    "responses": [
+      {
+        "text": "Select Spell.",
+        "topic": "TALK_SORCERER_MENU_MAIN",
+        "effect": [
+          {
+            "math": [
+              "u_spell_level('bio_grotesque')",
               "=",
               "u_current_sorcerer_level"
             ]
@@ -92,7 +133,7 @@
         "effect": [
           {
             "math": [
-              "u_val('spell_level', 'spell: thought_shield')",
+              "u_spell_level('thought_shield')",
               "=",
               "u_current_sorcerer_level"
             ]
@@ -133,7 +174,7 @@
         "effect": [
           {
             "math": [
-              "u_val('spell_level', 'spell: classless_dispel_magic')",
+              "u_spell_level('classless_dispel_magic')",
               "=",
               "u_current_sorcerer_level"
             ]
@@ -174,7 +215,7 @@
         "effect": [
           {
             "math": [
-              "u_val('spell_level', 'spell: druid_naturebow1')",
+              "u_spell_level('druid_naturebow1')",
               "=",
               "u_current_sorcerer_level"
             ]
@@ -215,7 +256,7 @@
         "effect": [
           {
             "math": [
-              "u_val('spell_level', 'spell: purify_seed')",
+              "u_spell_level('purify_seed')",
               "=",
               "u_current_sorcerer_level"
             ]
@@ -256,7 +297,7 @@
         "effect": [
           {
             "math": [
-              "u_val('spell_level', 'spell: druid_healing_herb')",
+              "u_spell_level('druid_healing_herb')",
               "=",
               "u_current_sorcerer_level"
             ]
@@ -297,7 +338,7 @@
         "effect": [
           {
             "math": [
-              "u_val('spell_level', 'spell: druid_bandage_heal')",
+              "u_spell_level('druid_bandage_heal')",
               "=",
               "u_current_sorcerer_level"
             ]
@@ -330,7 +371,7 @@
   {
     "type": "talk_topic",
     "id": "TALK_SORCERER_LEARN_SPELL_druid_summon_brambles_at_level_4",
-    "dynamic_line": "Stranglethorns: Call up thick brambles, either in a line to form a wall or an arc to trap an enemy.  They will grow to full size in moments.",
+    "dynamic_line": "Stranglethorns: Call up thick, swiftly growing brambles, either in a line to form a wall or an arc to trap an enemy.",
     "responses": [
       {
         "text": "Select Spell.",
@@ -338,7 +379,7 @@
         "effect": [
           {
             "math": [
-              "u_val('spell_level', 'spell: druid_summon_brambles')",
+              "u_spell_level('druid_summon_brambles')",
               "=",
               "u_current_sorcerer_level"
             ]
@@ -370,8 +411,8 @@
   },
   {
     "type": "talk_topic",
-    "id": "TALK_SORCERER_LEARN_SPELL_ice_spike_at_level_4",
-    "dynamic_line": "Ice Spike: Causes jagged icicles to form in the air above the target, falling and damaging it.",
+    "id": "TALK_SORCERER_LEARN_SPELL_druid_breathing_underwater_at_level_4",
+    "dynamic_line": "Aquatic Mantle: Cover yourself in a thin layer of magical seaweed, preventing you from getting wet and allowing you to breathe underwater.",
     "responses": [
       {
         "text": "Select Spell.",
@@ -379,7 +420,48 @@
         "effect": [
           {
             "math": [
-              "u_val('spell_level', 'spell: ice_spike')",
+              "u_spell_level('druid_breathing_underwater')",
+              "=",
+              "u_current_sorcerer_level"
+            ]
+          },
+          {
+            "math": [
+              "u_used_spell_slot_for_druid_breathing_underwater",
+              "=",
+              "4"
+            ]
+          },
+          {
+            "math": [
+              "u_sorcerer_level_4_spells_known",
+              "++"
+            ]
+          }
+        ]
+      },
+      {
+        "text": "Go Back.",
+        "topic": "TALK_SORCERER_MENU_MAIN"
+      },
+      {
+        "text": "Quit.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_SORCERER_LEARN_SPELL_ice_spike_at_level_4",
+    "dynamic_line": "Ice Spike: Causes jagged icicles to form in the air above the target, falling and damaging them.",
+    "responses": [
+      {
+        "text": "Select Spell.",
+        "topic": "TALK_SORCERER_MENU_MAIN",
+        "effect": [
+          {
+            "math": [
+              "u_spell_level('ice_spike')",
               "=",
               "u_current_sorcerer_level"
             ]
@@ -412,7 +494,7 @@
   {
     "type": "talk_topic",
     "id": "TALK_SORCERER_LEARN_SPELL_frost_armor_at_level_4",
-    "dynamic_line": "Frost Armor: Covers you in a thin layer of magical ice to attack the enemies nearby.",
+    "dynamic_line": "Frost Armor: Covers you in a thin layer of reactive magical ice to attack those who harm you.",
     "responses": [
       {
         "text": "Select Spell.",
@@ -420,7 +502,7 @@
         "effect": [
           {
             "math": [
-              "u_val('spell_level', 'spell: frost_armor')",
+              "u_spell_level('frost_armor')",
               "=",
               "u_current_sorcerer_level"
             ]
@@ -461,7 +543,7 @@
         "effect": [
           {
             "math": [
-              "u_val('spell_level', 'spell: kelvinist_flamebreath')",
+              "u_spell_level('kelvinist_flamebreath')",
               "=",
               "u_current_sorcerer_level"
             ]
@@ -494,7 +576,7 @@
   {
     "type": "talk_topic",
     "id": "TALK_SORCERER_LEARN_SPELL_lightning_bolt_at_level_4",
-    "dynamic_line": "Lightning Bolt: The go-to spell for many Stormshapers, this iconic spell does just what you expect: you shoot lightning from your fingertips.  However, this lightning is more directed than most lightning, and travels in a line through most non-solid targets.",
+    "dynamic_line": "Lightning Bolt: The go-to spell for many Stormshapers, this iconic spell does just what you expect: shoot lightning from your fingertips.  However, this lightning is more directed than most lightning, and travels in a line through most non-solid targets.",
     "responses": [
       {
         "text": "Select Spell.",
@@ -502,7 +584,7 @@
         "effect": [
           {
             "math": [
-              "u_val('spell_level', 'spell: lightning_bolt')",
+              "u_spell_level('lightning_bolt')",
               "=",
               "u_current_sorcerer_level"
             ]
@@ -543,7 +625,7 @@
         "effect": [
           {
             "math": [
-              "u_val('spell_level', 'spell: holy_blade')",
+              "u_spell_level('holy_blade')",
               "=",
               "u_current_sorcerer_level"
             ]
@@ -584,7 +666,7 @@
         "effect": [
           {
             "math": [
-              "u_val('spell_level', 'spell: spirit_armor')",
+              "u_spell_level('spirit_armor')",
               "=",
               "u_current_sorcerer_level"
             ]
@@ -617,7 +699,7 @@
   {
     "type": "talk_topic",
     "id": "TALK_SORCERER_LEARN_SPELL_synaptic_stimulation_at_level_4",
-    "dynamic_line": "Synaptic Stimulation: This spell stimulates the synapses in your brain beyond normal processing speeds, giving you a large boost in mental processing capability, including enhancing your reflexes, speed, and raw intellectual power.  Use responsibly!",
+    "dynamic_line": "Synaptic Stimulation: This spell stimulates the synapses in your brain beyond normal processing speeds, giving you a large boost in mental processing capability.  It enhances your reflexes, speed, and raw intellectual power.  Use responsibly!",
     "responses": [
       {
         "text": "Select Spell.",
@@ -625,7 +707,7 @@
         "effect": [
           {
             "math": [
-              "u_val('spell_level', 'spell: synaptic_stimulation')",
+              "u_spell_level('synaptic_stimulation')",
               "=",
               "u_current_sorcerer_level"
             ]
@@ -666,7 +748,7 @@
         "effect": [
           {
             "math": [
-              "u_val('spell_level', 'spell: technomancer_welder')",
+              "u_spell_level('technomancer_welder')",
               "=",
               "u_current_sorcerer_level"
             ]
@@ -674,6 +756,47 @@
           {
             "math": [
               "u_used_spell_slot_for_technomancer_welder",
+              "=",
+              "4"
+            ]
+          },
+          {
+            "math": [
+              "u_sorcerer_level_4_spells_known",
+              "++"
+            ]
+          }
+        ]
+      },
+      {
+        "text": "Go Back.",
+        "topic": "TALK_SORCERER_MENU_MAIN"
+      },
+      {
+        "text": "Quit.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_SORCERER_LEARN_SPELL_technomancer_far_sight_at_level_4",
+    "dynamic_line": "Zoom Lens: By etching tiny runes on a lens of great quality and infusing it with their magic, the caster can use the lens to see further than even the finest mundane binoculars.  Unfortunately, the arrangement is unstable and the lens will disintegrate after a time.",
+    "responses": [
+      {
+        "text": "Select Spell.",
+        "topic": "TALK_SORCERER_MENU_MAIN",
+        "effect": [
+          {
+            "math": [
+              "u_spell_level('technomancer_far_sight')",
+              "=",
+              "u_current_sorcerer_level"
+            ]
+          },
+          {
+            "math": [
+              "u_used_spell_slot_for_technomancer_far_sight",
               "=",
               "4"
             ]
@@ -707,7 +830,7 @@
         "effect": [
           {
             "math": [
-              "u_val('spell_level', 'spell: animist_summon_watcher')",
+              "u_spell_level('animist_summon_watcher')",
               "=",
               "u_current_sorcerer_level"
             ]
@@ -748,7 +871,7 @@
         "effect": [
           {
             "math": [
-              "u_val('spell_level', 'spell: pain_split')",
+              "u_spell_level('pain_split')",
               "=",
               "u_current_sorcerer_level"
             ]
@@ -789,7 +912,7 @@
         "effect": [
           {
             "math": [
-              "u_val('spell_level', 'spell: bio_fleshpouch')",
+              "u_spell_level('bio_fleshpouch')",
               "=",
               "u_current_sorcerer_level"
             ]
@@ -830,7 +953,7 @@
         "effect": [
           {
             "math": [
-              "u_val('spell_level', 'spell: biomancer_coagulant_weave')",
+              "u_spell_level('biomancer_coagulant_weave')",
               "=",
               "u_current_sorcerer_level"
             ]
@@ -871,7 +994,7 @@
         "effect": [
           {
             "math": [
-              "u_val('spell_level', 'spell: biomancer_caustic_aura')",
+              "u_spell_level('biomancer_caustic_aura')",
               "=",
               "u_current_sorcerer_level"
             ]
@@ -912,7 +1035,7 @@
         "effect": [
           {
             "math": [
-              "u_val('spell_level', 'spell: biomancer_swim_frog')",
+              "u_spell_level('biomancer_swim_frog')",
               "=",
               "u_current_sorcerer_level"
             ]
@@ -953,7 +1076,7 @@
         "effect": [
           {
             "math": [
-              "u_val('spell_level', 'spell: biomancer_carrion_feast')",
+              "u_spell_level('biomancer_carrion_feast')",
               "=",
               "u_current_sorcerer_level"
             ]
@@ -961,6 +1084,88 @@
           {
             "math": [
               "u_used_spell_slot_for_biomancer_carrion_feast",
+              "=",
+              "4"
+            ]
+          },
+          {
+            "math": [
+              "u_sorcerer_level_4_spells_known",
+              "++"
+            ]
+          }
+        ]
+      },
+      {
+        "text": "Go Back.",
+        "topic": "TALK_SORCERER_MENU_MAIN"
+      },
+      {
+        "text": "Quit.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_SORCERER_LEARN_SPELL_biomancer_slow_bleeding_at_level_4",
+    "dynamic_line": "Halt Bleeding: As you can control your body, you can control your blood.",
+    "responses": [
+      {
+        "text": "Select Spell.",
+        "topic": "TALK_SORCERER_MENU_MAIN",
+        "effect": [
+          {
+            "math": [
+              "u_spell_level('biomancer_slow_bleeding')",
+              "=",
+              "u_current_sorcerer_level"
+            ]
+          },
+          {
+            "math": [
+              "u_used_spell_slot_for_biomancer_slow_bleeding",
+              "=",
+              "4"
+            ]
+          },
+          {
+            "math": [
+              "u_sorcerer_level_4_spells_known",
+              "++"
+            ]
+          }
+        ]
+      },
+      {
+        "text": "Go Back.",
+        "topic": "TALK_SORCERER_MENU_MAIN"
+      },
+      {
+        "text": "Quit.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_SORCERER_LEARN_SPELL_biomancer_eat_tons_of_food_at_level_4",
+    "dynamic_line": "Gluttonous Consumption: Magically expand your stomach size, allowing it to consume more food without taking up any more room in your body.  Once a rarely-learned spell, it's much more useful now that you're not always sure where your next meal is coming from.",
+    "responses": [
+      {
+        "text": "Select Spell.",
+        "topic": "TALK_SORCERER_MENU_MAIN",
+        "effect": [
+          {
+            "math": [
+              "u_spell_level('biomancer_eat_tons_of_food')",
+              "=",
+              "u_current_sorcerer_level"
+            ]
+          },
+          {
+            "math": [
+              "u_used_spell_slot_for_biomancer_eat_tons_of_food",
               "=",
               "4"
             ]
@@ -994,7 +1199,7 @@
         "effect": [
           {
             "math": [
-              "u_val('spell_level', 'spell: protection_aura')",
+              "u_spell_level('protection_aura')",
               "=",
               "u_current_sorcerer_level"
             ]
@@ -1035,7 +1240,7 @@
         "effect": [
           {
             "math": [
-              "u_val('spell_level', 'spell: sound_bomb')",
+              "u_spell_level('sound_bomb')",
               "=",
               "u_current_sorcerer_level"
             ]
@@ -1076,7 +1281,7 @@
         "effect": [
           {
             "math": [
-              "u_val('spell_level', 'spell: druid_veggrasp')",
+              "u_spell_level('druid_veggrasp')",
               "=",
               "u_current_sorcerer_level"
             ]
@@ -1109,7 +1314,7 @@
   {
     "type": "talk_topic",
     "id": "TALK_SORCERER_LEARN_SPELL_druid_rootstrike_at_level_4",
-    "dynamic_line": "Root Strike: This spell causes roots to spear out the ground and stab into your foes in an arc, impaling them.",
+    "dynamic_line": "Root Strike: This spell causes roots to spear out of the ground in a cone and stab into your foes, impaling them.",
     "responses": [
       {
         "text": "Select Spell.",
@@ -1117,7 +1322,7 @@
         "effect": [
           {
             "math": [
-              "u_val('spell_level', 'spell: druid_rootstrike')",
+              "u_spell_level('druid_rootstrike')",
               "=",
               "u_current_sorcerer_level"
             ]
@@ -1158,7 +1363,7 @@
         "effect": [
           {
             "math": [
-              "u_val('spell_level', 'spell: druid_harvest_hunter')",
+              "u_spell_level('druid_harvest_hunter')",
               "=",
               "u_current_sorcerer_level"
             ]
@@ -1199,7 +1404,7 @@
         "effect": [
           {
             "math": [
-              "u_val('spell_level', 'spell: druid_bramble_spear')",
+              "u_spell_level('druid_bramble_spear')",
               "=",
               "u_current_sorcerer_level"
             ]
@@ -1207,6 +1412,129 @@
           {
             "math": [
               "u_used_spell_slot_for_druid_bramble_spear",
+              "=",
+              "4"
+            ]
+          },
+          {
+            "math": [
+              "u_sorcerer_level_4_spells_known",
+              "++"
+            ]
+          }
+        ]
+      },
+      {
+        "text": "Go Back.",
+        "topic": "TALK_SORCERER_MENU_MAIN"
+      },
+      {
+        "text": "Quit.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_SORCERER_LEARN_SPELL_druid_disinfectant_at_level_4",
+    "dynamic_line": "Wash the Wounds Clean: Transform a bit of water into a magical disinfectant as you pour it over your wounds.",
+    "responses": [
+      {
+        "text": "Select Spell.",
+        "topic": "TALK_SORCERER_MENU_MAIN",
+        "effect": [
+          {
+            "math": [
+              "u_spell_level('druid_disinfectant')",
+              "=",
+              "u_current_sorcerer_level"
+            ]
+          },
+          {
+            "math": [
+              "u_used_spell_slot_for_druid_disinfectant",
+              "=",
+              "4"
+            ]
+          },
+          {
+            "math": [
+              "u_sorcerer_level_4_spells_known",
+              "++"
+            ]
+          }
+        ]
+      },
+      {
+        "text": "Go Back.",
+        "topic": "TALK_SORCERER_MENU_MAIN"
+      },
+      {
+        "text": "Quit.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_SORCERER_LEARN_SPELL_druid_water_walking_at_level_4",
+    "dynamic_line": "Water Strider's Walk: While standing in water, enchant yourself so that the water will buoy you up and prevent you from sinking.",
+    "responses": [
+      {
+        "text": "Select Spell.",
+        "topic": "TALK_SORCERER_MENU_MAIN",
+        "effect": [
+          {
+            "math": [
+              "u_spell_level('druid_water_walking')",
+              "=",
+              "u_current_sorcerer_level"
+            ]
+          },
+          {
+            "math": [
+              "u_used_spell_slot_for_druid_water_walking",
+              "=",
+              "4"
+            ]
+          },
+          {
+            "math": [
+              "u_sorcerer_level_4_spells_known",
+              "++"
+            ]
+          }
+        ]
+      },
+      {
+        "text": "Go Back.",
+        "topic": "TALK_SORCERER_MENU_MAIN"
+      },
+      {
+        "text": "Quit.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_SORCERER_LEARN_SPELL_druid_bearmantle_at_level_4",
+    "dynamic_line": "Bearmantle: Adopt some of the aspect of the bear, protecting you from cold and preparing you for winter.",
+    "responses": [
+      {
+        "text": "Select Spell.",
+        "topic": "TALK_SORCERER_MENU_MAIN",
+        "effect": [
+          {
+            "math": [
+              "u_spell_level('druid_bearmantle')",
+              "=",
+              "u_current_sorcerer_level"
+            ]
+          },
+          {
+            "math": [
+              "u_used_spell_slot_for_druid_bearmantle",
               "=",
               "4"
             ]
@@ -1240,7 +1568,7 @@
         "effect": [
           {
             "math": [
-              "u_val('spell_level', 'spell: seismic_stomp')",
+              "u_spell_level('seismic_stomp')",
               "=",
               "u_current_sorcerer_level"
             ]
@@ -1281,7 +1609,7 @@
         "effect": [
           {
             "math": [
-              "u_val('spell_level', 'spell: eshaper_shardspray')",
+              "u_spell_level('eshaper_shardspray')",
               "=",
               "u_current_sorcerer_level"
             ]
@@ -1322,7 +1650,7 @@
         "effect": [
           {
             "math": [
-              "u_val('spell_level', 'spell: move_earth')",
+              "u_spell_level('move_earth')",
               "=",
               "u_current_sorcerer_level"
             ]
@@ -1363,7 +1691,7 @@
         "effect": [
           {
             "math": [
-              "u_val('spell_level', 'spell: clairvoyance')",
+              "u_spell_level('clairvoyance')",
               "=",
               "u_current_sorcerer_level"
             ]
@@ -1404,7 +1732,7 @@
         "effect": [
           {
             "math": [
-              "u_val('spell_level', 'spell: earthshaper_stoneskin')",
+              "u_spell_level('earthshaper_stoneskin')",
               "=",
               "u_current_sorcerer_level"
             ]
@@ -1445,7 +1773,7 @@
         "effect": [
           {
             "math": [
-              "u_val('spell_level', 'spell: earthshaper_pillar')",
+              "u_spell_level('earthshaper_pillar')",
               "=",
               "u_current_sorcerer_level"
             ]
@@ -1486,7 +1814,7 @@
         "effect": [
           {
             "math": [
-              "u_val('spell_level', 'spell: eshaper_spawn_tools')",
+              "u_spell_level('eshaper_spawn_tools')",
               "=",
               "u_current_sorcerer_level"
             ]
@@ -1527,7 +1855,7 @@
         "effect": [
           {
             "math": [
-              "u_val('spell_level', 'spell: earthshaper_danger_sense')",
+              "u_spell_level('earthshaper_danger_sense')",
               "=",
               "u_current_sorcerer_level"
             ]
@@ -1568,7 +1896,7 @@
         "effect": [
           {
             "math": [
-              "u_val('spell_level', 'spell: earthshaper_fortitude_of_stone')",
+              "u_spell_level('earthshaper_fortitude_of_stone')",
               "=",
               "u_current_sorcerer_level"
             ]
@@ -1600,8 +1928,8 @@
   },
   {
     "type": "talk_topic",
-    "id": "TALK_SORCERER_LEARN_SPELL_point_flare_at_level_4",
-    "dynamic_line": "Point Flare: Causes an intense heat at the location, damaging the target.",
+    "id": "TALK_SORCERER_LEARN_SPELL_earthshaper_harden_earth_at_level_4",
+    "dynamic_line": "Harden Earth: Compress dirt together so it becomes as hard as rock.  A great way to turn makeshift barricades into a fortress.",
     "responses": [
       {
         "text": "Select Spell.",
@@ -1609,7 +1937,89 @@
         "effect": [
           {
             "math": [
-              "u_val('spell_level', 'spell: point_flare')",
+              "u_spell_level('earthshaper_harden_earth')",
+              "=",
+              "u_current_sorcerer_level"
+            ]
+          },
+          {
+            "math": [
+              "u_used_spell_slot_for_earthshaper_harden_earth",
+              "=",
+              "4"
+            ]
+          },
+          {
+            "math": [
+              "u_sorcerer_level_4_spells_known",
+              "++"
+            ]
+          }
+        ]
+      },
+      {
+        "text": "Go Back.",
+        "topic": "TALK_SORCERER_MENU_MAIN"
+      },
+      {
+        "text": "Quit.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_SORCERER_LEARN_SPELL_earthshaper_repair_metal_stone_at_level_4",
+    "dynamic_line": "Fault-Mending Chant: While holding an item made of natural metal or stone, mold it with your hands, work to repairing any flaws and restoring its condition.  Note that some items may still not be repaired.",
+    "responses": [
+      {
+        "text": "Select Spell.",
+        "topic": "TALK_SORCERER_MENU_MAIN",
+        "effect": [
+          {
+            "math": [
+              "u_spell_level('earthshaper_repair_metal_stone')",
+              "=",
+              "u_current_sorcerer_level"
+            ]
+          },
+          {
+            "math": [
+              "u_used_spell_slot_for_earthshaper_repair_metal_stone",
+              "=",
+              "4"
+            ]
+          },
+          {
+            "math": [
+              "u_sorcerer_level_4_spells_known",
+              "++"
+            ]
+          }
+        ]
+      },
+      {
+        "text": "Go Back.",
+        "topic": "TALK_SORCERER_MENU_MAIN"
+      },
+      {
+        "text": "Quit.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_SORCERER_LEARN_SPELL_point_flare_at_level_4",
+    "dynamic_line": "Point Flare: Generates strong heat at the targeted location, damaging anything susceptible to high temperatures.",
+    "responses": [
+      {
+        "text": "Select Spell.",
+        "topic": "TALK_SORCERER_MENU_MAIN",
+        "effect": [
+          {
+            "math": [
+              "u_spell_level('point_flare')",
               "=",
               "u_current_sorcerer_level"
             ]
@@ -1650,7 +2060,7 @@
         "effect": [
           {
             "math": [
-              "u_val('spell_level', 'spell: burning_hands')",
+              "u_spell_level('burning_hands')",
               "=",
               "u_current_sorcerer_level"
             ]
@@ -1691,7 +2101,7 @@
         "effect": [
           {
             "math": [
-              "u_val('spell_level', 'spell: frost_spray')",
+              "u_spell_level('frost_spray')",
               "=",
               "u_current_sorcerer_level"
             ]
@@ -1732,7 +2142,7 @@
         "effect": [
           {
             "math": [
-              "u_val('spell_level', 'spell: glide_ice')",
+              "u_spell_level('glide_ice')",
               "=",
               "u_current_sorcerer_level"
             ]
@@ -1765,7 +2175,7 @@
   {
     "type": "talk_topic",
     "id": "TALK_SORCERER_LEARN_SPELL_ice_shield_at_level_4",
-    "dynamic_line": "Ice Shield: Creates a magical shield of ice on your arm, you can defend yourself with it in melee combat and use it to bash.",
+    "dynamic_line": "Ice Shield: Creates a magical shield of ice on your arm, with which you can defend yourself in melee and use it to bash.",
     "responses": [
       {
         "text": "Select Spell.",
@@ -1773,7 +2183,7 @@
         "effect": [
           {
             "math": [
-              "u_val('spell_level', 'spell: ice_shield')",
+              "u_spell_level('ice_shield')",
               "=",
               "u_current_sorcerer_level"
             ]
@@ -1814,7 +2224,7 @@
         "effect": [
           {
             "math": [
-              "u_val('spell_level', 'spell: kelvinist_summon_flamesword')",
+              "u_spell_level('kelvinist_summon_flamesword')",
               "=",
               "u_current_sorcerer_level"
             ]
@@ -1855,7 +2265,7 @@
         "effect": [
           {
             "math": [
-              "u_val('spell_level', 'spell: kelvinist_anti_cold')",
+              "u_spell_level('kelvinist_anti_cold')",
               "=",
               "u_current_sorcerer_level"
             ]
@@ -1896,7 +2306,7 @@
         "effect": [
           {
             "math": [
-              "u_val('spell_level', 'spell: kelvinist_anti_heat')",
+              "u_spell_level('kelvinist_anti_heat')",
               "=",
               "u_current_sorcerer_level"
             ]
@@ -1928,8 +2338,8 @@
   },
   {
     "type": "talk_topic",
-    "id": "TALK_SORCERER_LEARN_SPELL_phase_door_at_level_4",
-    "dynamic_line": "Phase Door: Teleports you in a random direction a short distance.",
+    "id": "TALK_SORCERER_LEARN_SPELL_kelvinist_persuasion_spell_at_level_4",
+    "dynamic_line": "Flames of Passion: Like the bonfire gathers revelers around it, the kelvinist becomes the life of the party, as their eyes shine with passion and their voice burns with the heat of their conviction.  You will be more convincing while this spell is in effect.  Before the Cataclysm, this was one of the most common spells that apprentices were desperate to learn and master mages were reluctant to teach.",
     "responses": [
       {
         "text": "Select Spell.",
@@ -1937,7 +2347,48 @@
         "effect": [
           {
             "math": [
-              "u_val('spell_level', 'spell: phase_door')",
+              "u_spell_level('kelvinist_persuasion_spell')",
+              "=",
+              "u_current_sorcerer_level"
+            ]
+          },
+          {
+            "math": [
+              "u_used_spell_slot_for_kelvinist_persuasion_spell",
+              "=",
+              "4"
+            ]
+          },
+          {
+            "math": [
+              "u_sorcerer_level_4_spells_known",
+              "++"
+            ]
+          }
+        ]
+      },
+      {
+        "text": "Go Back.",
+        "topic": "TALK_SORCERER_MENU_MAIN"
+      },
+      {
+        "text": "Quit.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_SORCERER_LEARN_SPELL_phase_door_at_level_4",
+    "dynamic_line": "Phase Door: Teleports you a short distance in a random direction.",
+    "responses": [
+      {
+        "text": "Select Spell.",
+        "topic": "TALK_SORCERER_MENU_MAIN",
+        "effect": [
+          {
+            "math": [
+              "u_spell_level('phase_door')",
               "=",
               "u_current_sorcerer_level"
             ]
@@ -1978,7 +2429,7 @@
         "effect": [
           {
             "math": [
-              "u_val('spell_level', 'spell: magus_force_jar')",
+              "u_spell_level('magus_force_jar')",
               "=",
               "u_current_sorcerer_level"
             ]
@@ -2019,7 +2470,7 @@
         "effect": [
           {
             "math": [
-              "u_val('spell_level', 'spell: magus_summon_impact_sling')",
+              "u_spell_level('magus_summon_impact_sling')",
               "=",
               "u_current_sorcerer_level"
             ]
@@ -2060,7 +2511,7 @@
         "effect": [
           {
             "math": [
-              "u_val('spell_level', 'spell: magus_slowfall')",
+              "u_spell_level('magus_slowfall')",
               "=",
               "u_current_sorcerer_level"
             ]
@@ -2093,7 +2544,7 @@
   {
     "type": "talk_topic",
     "id": "TALK_SORCERER_LEARN_SPELL_magus_spiderclimb_at_level_4",
-    "dynamic_line": "Spider Climb: Ascend even the most sheer wall with ease as you cling to surfaces using the power of magic.",
+    "dynamic_line": "Spider Climb: Ascend even the most sheer wall with ease as you cling to surfaces.",
     "responses": [
       {
         "text": "Select Spell.",
@@ -2101,7 +2552,7 @@
         "effect": [
           {
             "math": [
-              "u_val('spell_level', 'spell: magus_spiderclimb')",
+              "u_spell_level('magus_spiderclimb')",
               "=",
               "u_current_sorcerer_level"
             ]
@@ -2142,7 +2593,7 @@
         "effect": [
           {
             "math": [
-              "u_val('spell_level', 'spell: jolt')",
+              "u_spell_level('jolt')",
               "=",
               "u_current_sorcerer_level"
             ]
@@ -2183,7 +2634,7 @@
         "effect": [
           {
             "math": [
-              "u_val('spell_level', 'spell: windstrike')",
+              "u_spell_level('windstrike')",
               "=",
               "u_current_sorcerer_level"
             ]
@@ -2224,7 +2675,7 @@
         "effect": [
           {
             "math": [
-              "u_val('spell_level', 'spell: windrun')",
+              "u_spell_level('windrun')",
               "=",
               "u_current_sorcerer_level"
             ]
@@ -2265,7 +2716,7 @@
         "effect": [
           {
             "math": [
-              "u_val('spell_level', 'spell: stormshaper_repelling_arc')",
+              "u_spell_level('stormshaper_repelling_arc')",
               "=",
               "u_current_sorcerer_level"
             ]
@@ -2306,7 +2757,7 @@
         "effect": [
           {
             "math": [
-              "u_val('spell_level', 'spell: air_bubble')",
+              "u_spell_level('air_bubble')",
               "=",
               "u_current_sorcerer_level"
             ]
@@ -2339,7 +2790,7 @@
   {
     "type": "talk_topic",
     "id": "TALK_SORCERER_LEARN_SPELL_electric_eye_at_level_4",
-    "dynamic_line": "Electric Eye: Enhance your sight with your powers.  It allows you to see creatures of the same energy around you.  Enhanced perception speed enables you to see attacks coming, allowing for an additional block or dodge attempt.",
+    "dynamic_line": "Electric Eye: Enhance your sight with your powers which allows you to see creatures of the same energy around you.  This enhanced perception speed enables you to see more attacks incoming, allowing for an additional block or dodge attempt.",
     "responses": [
       {
         "text": "Select Spell.",
@@ -2347,7 +2798,7 @@
         "effect": [
           {
             "math": [
-              "u_val('spell_level', 'spell: electric_eye')",
+              "u_spell_level('electric_eye')",
               "=",
               "u_current_sorcerer_level"
             ]
@@ -2388,7 +2839,7 @@
         "effect": [
           {
             "math": [
-              "u_val('spell_level', 'spell: stormshaper_cloak_of_fog')",
+              "u_spell_level('stormshaper_cloak_of_fog')",
               "=",
               "u_current_sorcerer_level"
             ]
@@ -2429,7 +2880,7 @@
         "effect": [
           {
             "math": [
-              "u_val('spell_level', 'spell: quantum_tunnel_lesser')",
+              "u_spell_level('quantum_tunnel_lesser')",
               "=",
               "u_current_sorcerer_level"
             ]
@@ -2470,7 +2921,7 @@
         "effect": [
           {
             "math": [
-              "u_val('spell_level', 'spell: knock')",
+              "u_spell_level('knock')",
               "=",
               "u_current_sorcerer_level"
             ]
@@ -2478,6 +2929,88 @@
           {
             "math": [
               "u_used_spell_slot_for_knock",
+              "=",
+              "4"
+            ]
+          },
+          {
+            "math": [
+              "u_sorcerer_level_4_spells_known",
+              "++"
+            ]
+          }
+        ]
+      },
+      {
+        "text": "Go Back.",
+        "topic": "TALK_SORCERER_MENU_MAIN"
+      },
+      {
+        "text": "Quit.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_SORCERER_LEARN_SPELL_technomancer_gain_electronics_computer_spell_at_level_4",
+    "dynamic_line": "Machine Mind: This spell grants the caster an intuitive understanding of electronics and computers, making their use, repair, and construction much easier.",
+    "responses": [
+      {
+        "text": "Select Spell.",
+        "topic": "TALK_SORCERER_MENU_MAIN",
+        "effect": [
+          {
+            "math": [
+              "u_spell_level('technomancer_gain_electronics_computer_spell')",
+              "=",
+              "u_current_sorcerer_level"
+            ]
+          },
+          {
+            "math": [
+              "u_used_spell_slot_for_technomancer_gain_electronics_computer_spell",
+              "=",
+              "4"
+            ]
+          },
+          {
+            "math": [
+              "u_sorcerer_level_4_spells_known",
+              "++"
+            ]
+          }
+        ]
+      },
+      {
+        "text": "Go Back.",
+        "topic": "TALK_SORCERER_MENU_MAIN"
+      },
+      {
+        "text": "Quit.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_SORCERER_LEARN_SPELL_technomancer_pain_ignore_at_level_4",
+    "dynamic_line": "The Body Mechanical: With a word of power, you spur your body to function as a machine would, partially ignoring the effects of pain for a brief moment.",
+    "responses": [
+      {
+        "text": "Select Spell.",
+        "topic": "TALK_SORCERER_MENU_MAIN",
+        "effect": [
+          {
+            "math": [
+              "u_spell_level('technomancer_pain_ignore')",
+              "=",
+              "u_current_sorcerer_level"
+            ]
+          },
+          {
+            "math": [
+              "u_used_spell_slot_for_technomancer_pain_ignore",
               "=",
               "4"
             ]
@@ -2511,7 +3044,7 @@
         "effect": [
           {
             "math": [
-              "u_val('spell_level', 'spell: smite')",
+              "u_spell_level('smite')",
               "=",
               "u_current_sorcerer_level"
             ]
@@ -2552,7 +3085,7 @@
         "effect": [
           {
             "math": [
-              "u_val('spell_level', 'spell: animist_sense_outsiders')",
+              "u_spell_level('animist_sense_outsiders')",
               "=",
               "u_current_sorcerer_level"
             ]
@@ -2593,7 +3126,7 @@
         "effect": [
           {
             "math": [
-              "u_val('spell_level', 'spell: pertifying_touch')",
+              "u_spell_level('pertifying_touch')",
               "=",
               "u_current_sorcerer_level"
             ]
@@ -2626,7 +3159,7 @@
   {
     "type": "talk_topic",
     "id": "TALK_SORCERER_LEARN_SPELL_reactive_armor_at_level_4",
-    "dynamic_line": "Reactive Armour: Explode your stone skin, to deal massive damage to all enemies around.",
+    "dynamic_line": "Reactive Armor: Explode your stone skin, to deal massive damage to all enemies around.",
     "responses": [
       {
         "text": "Select Spell.",
@@ -2634,7 +3167,7 @@
         "effect": [
           {
             "math": [
-              "u_val('spell_level', 'spell: reactive_armor')",
+              "u_spell_level('reactive_armor')",
               "=",
               "u_current_sorcerer_level"
             ]
@@ -2667,7 +3200,7 @@
   {
     "type": "talk_topic",
     "id": "TALK_SORCERER_LEARN_SPELL_lightning_blast_at_level_4",
-    "dynamic_line": "Lightning Blast: You fire a small concentrated ball of lightning at the target.  The electricity diffuses quickly, so it doesn't do much damage, but you're able to fire off several quick ones in a row.",
+    "dynamic_line": "Lightning Blast: You fire a small concentrated ball of lightning at the target.  The electricity diffuses rapidly, so it doesn't do much damage, but you're able to fire off several ones quickly.",
     "responses": [
       {
         "text": "Select Spell.",
@@ -2675,7 +3208,7 @@
         "effect": [
           {
             "math": [
-              "u_val('spell_level', 'spell: lightning_blast')",
+              "u_spell_level('lightning_blast')",
               "=",
               "u_current_sorcerer_level"
             ]
@@ -2708,7 +3241,7 @@
   {
     "type": "talk_topic",
     "id": "TALK_SORCERER_LEARN_SPELL_bless_at_level_4",
-    "dynamic_line": "Bless: A spell of blessing that gives you energy and boosts your abilities.",
+    "dynamic_line": "Bless: A blessing that gives you energy and boosts your abilities.",
     "responses": [
       {
         "text": "Select Spell.",
@@ -2716,7 +3249,7 @@
         "effect": [
           {
             "math": [
-              "u_val('spell_level', 'spell: bless')",
+              "u_spell_level('bless')",
               "=",
               "u_current_sorcerer_level"
             ]
@@ -2724,6 +3257,47 @@
           {
             "math": [
               "u_used_spell_slot_for_bless",
+              "=",
+              "4"
+            ]
+          },
+          {
+            "math": [
+              "u_sorcerer_level_4_spells_known",
+              "++"
+            ]
+          }
+        ]
+      },
+      {
+        "text": "Go Back.",
+        "topic": "TALK_SORCERER_MENU_MAIN"
+      },
+      {
+        "text": "Quit.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_SORCERER_LEARN_SPELL_laze_at_level_4",
+    "dynamic_line": "Laze: You concentrate and release a focused beam of photons at a target, also known as a laser.",
+    "responses": [
+      {
+        "text": "Select Spell.",
+        "topic": "TALK_SORCERER_MENU_MAIN",
+        "effect": [
+          {
+            "math": [
+              "u_spell_level('laze')",
+              "=",
+              "u_current_sorcerer_level"
+            ]
+          },
+          {
+            "math": [
+              "u_used_spell_slot_for_laze",
               "=",
               "4"
             ]
@@ -2757,7 +3331,7 @@
         "effect": [
           {
             "math": [
-              "u_val('spell_level', 'spell: x-ray')",
+              "u_spell_level('x-ray')",
               "=",
               "u_current_sorcerer_level"
             ]
@@ -2790,7 +3364,7 @@
   {
     "type": "talk_topic",
     "id": "TALK_SORCERER_LEARN_SPELL_summon_undead_at_level_4",
-    "dynamic_line": "Summon Undead: An ethereal-looking undead rises from the depths of the earth to fight for you.  You may be able to summon the stronger ones with a higher level in this spell.",
+    "dynamic_line": "Summon Undead: An ethereal-looking undead rises from the depths of the earth to fight for you.  The type of undead you summon get deadlier with increasing spell level.",
     "responses": [
       {
         "text": "Select Spell.",
@@ -2798,7 +3372,7 @@
         "effect": [
           {
             "math": [
-              "u_val('spell_level', 'spell: summon_undead')",
+              "u_spell_level('summon_undead')",
               "=",
               "u_current_sorcerer_level"
             ]
@@ -2831,7 +3405,7 @@
   {
     "type": "talk_topic",
     "id": "TALK_SORCERER_LEARN_SPELL_necrotic_gaze_at_level_4",
-    "dynamic_line": "Necrotic Gaze: You use the power of your own blood, concentrated in rune, to imbue necrotic energy into your gaze, damaging the target you look at.",
+    "dynamic_line": "Necrotic Gaze: Using the power of blood contained within a rune, you imbue necrotic energy into your gaze, damaging the target you look at.",
     "responses": [
       {
         "text": "Select Spell.",
@@ -2839,7 +3413,7 @@
         "effect": [
           {
             "math": [
-              "u_val('spell_level', 'spell: necrotic_gaze')",
+              "u_spell_level('necrotic_gaze')",
               "=",
               "u_current_sorcerer_level"
             ]
@@ -2872,7 +3446,7 @@
   {
     "type": "talk_topic",
     "id": "TALK_SORCERER_LEARN_SPELL_disruption_bolt_at_level_4",
-    "dynamic_line": "Disruption Bolt: Release a resonant bolt of spiritual energy at a nearby target.  It will disrupt the natural link between matter and animus, causing heavy but never lethal damage.",
+    "dynamic_line": "Disruption Bolt: Release a resonant bolt of spiritual energy at a nearby target.  It will disrupt the natural link between matter and animus, causing heavy, non-lethal damage.",
     "responses": [
       {
         "text": "Select Spell.",
@@ -2880,7 +3454,7 @@
         "effect": [
           {
             "math": [
-              "u_val('spell_level', 'spell: disruption_bolt')",
+              "u_spell_level('disruption_bolt')",
               "=",
               "u_current_sorcerer_level"
             ]
@@ -2921,7 +3495,7 @@
         "effect": [
           {
             "math": [
-              "u_val('spell_level', 'spell: summon_wisps')",
+              "u_spell_level('summon_wisps')",
               "=",
               "u_current_sorcerer_level"
             ]
@@ -2954,7 +3528,7 @@
   {
     "type": "talk_topic",
     "id": "TALK_SORCERER_LEARN_SPELL_bleed_at_level_4",
-    "dynamic_line": "Bleed: With a shout and a gesture, the target starts bleeding from old wounds.",
+    "dynamic_line": "Bleed: Agitate old wounds on a creature, causing blood to ooze out of them.",
     "responses": [
       {
         "text": "Select Spell.",
@@ -2962,7 +3536,7 @@
         "effect": [
           {
             "math": [
-              "u_val('spell_level', 'spell: bleed')",
+              "u_spell_level('bleed')",
               "=",
               "u_current_sorcerer_level"
             ]
@@ -3003,7 +3577,7 @@
         "effect": [
           {
             "math": [
-              "u_val('spell_level', 'spell: light_healing')",
+              "u_spell_level('light_healing')",
               "=",
               "u_current_sorcerer_level"
             ]
@@ -3044,7 +3618,7 @@
         "effect": [
           {
             "math": [
-              "u_val('spell_level', 'spell: bio_acidicspray')",
+              "u_spell_level('bio_acidicspray')",
               "=",
               "u_current_sorcerer_level"
             ]
@@ -3085,7 +3659,7 @@
         "effect": [
           {
             "math": [
-              "u_val('spell_level', 'spell: biomancer_paralytic_dart')",
+              "u_spell_level('biomancer_paralytic_dart')",
               "=",
               "u_current_sorcerer_level"
             ]
@@ -3126,7 +3700,7 @@
         "effect": [
           {
             "math": [
-              "u_val('spell_level', 'spell: biomancer_visceral_projection')",
+              "u_spell_level('biomancer_visceral_projection')",
               "=",
               "u_current_sorcerer_level"
             ]
@@ -3159,7 +3733,7 @@
   {
     "type": "talk_topic",
     "id": "TALK_SORCERER_LEARN_SPELL_biomancer_cure_disease_minor_at_level_4",
-    "dynamic_line": "Cure Disease, Minor: Cure any flu or common cold you might be suffering from.  This is one of the few biomantic cure spells that is castable on other people.",
+    "dynamic_line": "Cure Disease, Minor: Cure any minor illnesses you might be suffering from.  This is one of the few biomantic cure spells that is castable on other people.",
     "responses": [
       {
         "text": "Select Spell.",
@@ -3167,7 +3741,7 @@
         "effect": [
           {
             "math": [
-              "u_val('spell_level', 'spell: biomancer_cure_disease_minor')",
+              "u_spell_level('biomancer_cure_disease_minor')",
               "=",
               "u_current_sorcerer_level"
             ]
@@ -3208,7 +3782,7 @@
         "effect": [
           {
             "math": [
-              "u_val('spell_level', 'spell: crystallize_mana')",
+              "u_spell_level('crystallize_mana')",
               "=",
               "u_current_sorcerer_level"
             ]
@@ -3249,7 +3823,7 @@
         "effect": [
           {
             "math": [
-              "u_val('spell_level', 'spell: blinding_flash')",
+              "u_spell_level('blinding_flash')",
               "=",
               "u_current_sorcerer_level"
             ]
@@ -3290,7 +3864,7 @@
         "effect": [
           {
             "math": [
-              "u_val('spell_level', 'spell: ethereal_grasp')",
+              "u_spell_level('ethereal_grasp')",
               "=",
               "u_current_sorcerer_level"
             ]
@@ -3298,6 +3872,47 @@
           {
             "math": [
               "u_used_spell_slot_for_ethereal_grasp",
+              "=",
+              "4"
+            ]
+          },
+          {
+            "math": [
+              "u_sorcerer_level_4_spells_known",
+              "++"
+            ]
+          }
+        ]
+      },
+      {
+        "text": "Go Back.",
+        "topic": "TALK_SORCERER_MENU_MAIN"
+      },
+      {
+        "text": "Quit.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_SORCERER_LEARN_SPELL_classless_clean_clothing_and_self_at_level_4",
+    "dynamic_line": "Freshen Up: Undoubtedly the single most common spell in the world before the Cataclysm, Freshen Up cleans your teeth, sweetens your breath, removes stains and sweat from your clothes, exfoliates you, and gives volume back to your hair.",
+    "responses": [
+      {
+        "text": "Select Spell.",
+        "topic": "TALK_SORCERER_MENU_MAIN",
+        "effect": [
+          {
+            "math": [
+              "u_spell_level('classless_clean_clothing_and_self')",
+              "=",
+              "u_current_sorcerer_level"
+            ]
+          },
+          {
+            "math": [
+              "u_used_spell_slot_for_classless_clean_clothing_and_self",
               "=",
               "4"
             ]
@@ -3331,7 +3946,7 @@
         "effect": [
           {
             "math": [
-              "u_val('spell_level', 'spell: druid_tornskin')",
+              "u_spell_level('druid_tornskin')",
               "=",
               "u_current_sorcerer_level"
             ]
@@ -3372,7 +3987,7 @@
         "effect": [
           {
             "math": [
-              "u_val('spell_level', 'spell: druid_growth')",
+              "u_spell_level('druid_growth')",
               "=",
               "u_current_sorcerer_level"
             ]
@@ -3380,6 +3995,88 @@
           {
             "math": [
               "u_used_spell_slot_for_druid_growth",
+              "=",
+              "4"
+            ]
+          },
+          {
+            "math": [
+              "u_sorcerer_level_4_spells_known",
+              "++"
+            ]
+          }
+        ]
+      },
+      {
+        "text": "Go Back.",
+        "topic": "TALK_SORCERER_MENU_MAIN"
+      },
+      {
+        "text": "Quit.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_SORCERER_LEARN_SPELL_druid_anti_heat_at_level_4",
+    "dynamic_line": "Water's Cooling Touch: Draw on some of the essence of water, providing protection against the summer's heat.",
+    "responses": [
+      {
+        "text": "Select Spell.",
+        "topic": "TALK_SORCERER_MENU_MAIN",
+        "effect": [
+          {
+            "math": [
+              "u_spell_level('druid_anti_heat')",
+              "=",
+              "u_current_sorcerer_level"
+            ]
+          },
+          {
+            "math": [
+              "u_used_spell_slot_for_druid_anti_heat",
+              "=",
+              "4"
+            ]
+          },
+          {
+            "math": [
+              "u_sorcerer_level_4_spells_known",
+              "++"
+            ]
+          }
+        ]
+      },
+      {
+        "text": "Go Back.",
+        "topic": "TALK_SORCERER_MENU_MAIN"
+      },
+      {
+        "text": "Quit.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_SORCERER_LEARN_SPELL_druid_traverse_the_wilds_at_level_4",
+    "dynamic_line": "Traverse the Wilds: Blend in the wilds and urge them to speed your passage.  Trees bend out of the way, bushes do not hinder you, and even grass subtly moves your feet along.  The spell cannot be cast near civilization and similarly will fade if your travels take you out of the wilds.",
+    "responses": [
+      {
+        "text": "Select Spell.",
+        "topic": "TALK_SORCERER_MENU_MAIN",
+        "effect": [
+          {
+            "math": [
+              "u_spell_level('druid_traverse_the_wilds')",
+              "=",
+              "u_current_sorcerer_level"
+            ]
+          },
+          {
+            "math": [
+              "u_used_spell_slot_for_druid_traverse_the_wilds",
               "=",
               "4"
             ]
@@ -3413,7 +4110,7 @@
         "effect": [
           {
             "math": [
-              "u_val('spell_level', 'spell: stonefist')",
+              "u_spell_level('stonefist')",
               "=",
               "u_current_sorcerer_level"
             ]
@@ -3454,7 +4151,7 @@
         "effect": [
           {
             "math": [
-              "u_val('spell_level', 'spell: eshaper_piercing_bolt')",
+              "u_spell_level('eshaper_piercing_bolt')",
               "=",
               "u_current_sorcerer_level"
             ]
@@ -3487,7 +4184,7 @@
   {
     "type": "talk_topic",
     "id": "TALK_SORCERER_LEARN_SPELL_earthshaper_boulder_at_level_4",
-    "dynamic_line": "Summon Boulder: Pull the smooth rock underground, using your forces of earth shaping.  You can use it as a table, or as a primitive anvil.",
+    "dynamic_line": "Summon Boulder: Pull forth a table of smooth rock from the underground bedrock, using your forces of earthshaping.  You can use it as a table or as a primitive anvil.",
     "responses": [
       {
         "text": "Select Spell.",
@@ -3495,7 +4192,7 @@
         "effect": [
           {
             "math": [
-              "u_val('spell_level', 'spell: earthshaper_boulder')",
+              "u_spell_level('earthshaper_boulder')",
               "=",
               "u_current_sorcerer_level"
             ]
@@ -3536,7 +4233,7 @@
         "effect": [
           {
             "math": [
-              "u_val('spell_level', 'spell: earthshaper_turning_of_earth')",
+              "u_spell_level('earthshaper_turning_of_earth')",
               "=",
               "u_current_sorcerer_level"
             ]
@@ -3544,6 +4241,129 @@
           {
             "math": [
               "u_used_spell_slot_for_earthshaper_turning_of_earth",
+              "=",
+              "4"
+            ]
+          },
+          {
+            "math": [
+              "u_sorcerer_level_4_spells_known",
+              "++"
+            ]
+          }
+        ]
+      },
+      {
+        "text": "Go Back.",
+        "topic": "TALK_SORCERER_MENU_MAIN"
+      },
+      {
+        "text": "Quit.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_SORCERER_LEARN_SPELL_kelvinist_firebolt_at_level_4",
+    "dynamic_line": "Firebolt: A simple spell that hurls a bolt of fire to the target location.  While not as damaging as some more complex spells, it is quick to cast and will ignite anything flammable at the target.",
+    "responses": [
+      {
+        "text": "Select Spell.",
+        "topic": "TALK_SORCERER_MENU_MAIN",
+        "effect": [
+          {
+            "math": [
+              "u_spell_level('kelvinist_firebolt')",
+              "=",
+              "u_current_sorcerer_level"
+            ]
+          },
+          {
+            "math": [
+              "u_used_spell_slot_for_kelvinist_firebolt",
+              "=",
+              "4"
+            ]
+          },
+          {
+            "math": [
+              "u_sorcerer_level_4_spells_known",
+              "++"
+            ]
+          }
+        ]
+      },
+      {
+        "text": "Go Back.",
+        "topic": "TALK_SORCERER_MENU_MAIN"
+      },
+      {
+        "text": "Quit.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_SORCERER_LEARN_SPELL_magus_stop_attack_shield_at_level_4",
+    "dynamic_line": "Mageshield: A simple but powerful spell, Mageshield will render the caster immune to any single attack.  It is indiscriminate: whether hit by an anti-tank missile or the caster stubbing their toe, it will absorb all energy of the attack and then fade.",
+    "responses": [
+      {
+        "text": "Select Spell.",
+        "topic": "TALK_SORCERER_MENU_MAIN",
+        "effect": [
+          {
+            "math": [
+              "u_spell_level('magus_stop_attack_shield')",
+              "=",
+              "u_current_sorcerer_level"
+            ]
+          },
+          {
+            "math": [
+              "u_used_spell_slot_for_magus_stop_attack_shield",
+              "=",
+              "4"
+            ]
+          },
+          {
+            "math": [
+              "u_sorcerer_level_4_spells_known",
+              "++"
+            ]
+          }
+        ]
+      },
+      {
+        "text": "Go Back.",
+        "topic": "TALK_SORCERER_MENU_MAIN"
+      },
+      {
+        "text": "Quit.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_SORCERER_LEARN_SPELL_magus_far_hand_pull_at_level_4",
+    "dynamic_line": "Sorcerer's Hand: Pull a target or set of items to you.",
+    "responses": [
+      {
+        "text": "Select Spell.",
+        "topic": "TALK_SORCERER_MENU_MAIN",
+        "effect": [
+          {
+            "math": [
+              "u_spell_level('magus_far_hand_pull')",
+              "=",
+              "u_current_sorcerer_level"
+            ]
+          },
+          {
+            "math": [
+              "u_used_spell_slot_for_magus_far_hand_pull",
               "=",
               "4"
             ]
@@ -3577,7 +4397,7 @@
         "effect": [
           {
             "math": [
-              "u_val('spell_level', 'spell: stormshaper_wall_of_fog')",
+              "u_spell_level('stormshaper_wall_of_fog')",
               "=",
               "u_current_sorcerer_level"
             ]
@@ -3618,7 +4438,7 @@
         "effect": [
           {
             "math": [
-              "u_val('spell_level', 'spell: stormshaper_cloak_of_frog')",
+              "u_spell_level('stormshaper_cloak_of_frog')",
               "=",
               "u_current_sorcerer_level"
             ]
@@ -3626,6 +4446,47 @@
           {
             "math": [
               "u_used_spell_slot_for_stormshaper_cloak_of_frog",
+              "=",
+              "4"
+            ]
+          },
+          {
+            "math": [
+              "u_sorcerer_level_4_spells_known",
+              "++"
+            ]
+          }
+        ]
+      },
+      {
+        "text": "Go Back.",
+        "topic": "TALK_SORCERER_MENU_MAIN"
+      },
+      {
+        "text": "Quit.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_SORCERER_LEARN_SPELL_stormshaper_loud_voice_spell_at_level_4",
+    "dynamic_line": "Thundering Voice: Increase the volume of the caster's voice, allowing every word to resound like a peal of thunder.  As a useful side effect, it makes the caster immune to hearing damage caused by loud noises.",
+    "responses": [
+      {
+        "text": "Select Spell.",
+        "topic": "TALK_SORCERER_MENU_MAIN",
+        "effect": [
+          {
+            "math": [
+              "u_spell_level('stormshaper_loud_voice_spell')",
+              "=",
+              "u_current_sorcerer_level"
+            ]
+          },
+          {
+            "math": [
+              "u_used_spell_slot_for_stormshaper_loud_voice_spell",
               "=",
               "4"
             ]
@@ -3659,7 +4520,7 @@
         "effect": [
           {
             "math": [
-              "u_val('spell_level', 'spell: create_atomic_lamp')",
+              "u_spell_level('create_atomic_lamp')",
               "=",
               "u_current_sorcerer_level"
             ]
@@ -3667,47 +4528,6 @@
           {
             "math": [
               "u_used_spell_slot_for_create_atomic_lamp",
-              "=",
-              "4"
-            ]
-          },
-          {
-            "math": [
-              "u_sorcerer_level_4_spells_known",
-              "++"
-            ]
-          }
-        ]
-      },
-      {
-        "text": "Go Back.",
-        "topic": "TALK_SORCERER_MENU_MAIN"
-      },
-      {
-        "text": "Quit.",
-        "topic": "TALK_DONE"
-      }
-    ]
-  },
-  {
-    "type": "talk_topic",
-    "id": "TALK_SORCERER_LEARN_SPELL_laze_at_level_4",
-    "dynamic_line": "Laze: You concentrate and release a focused beam of photons at a target, also known as a laser.",
-    "responses": [
-      {
-        "text": "Select Spell.",
-        "topic": "TALK_SORCERER_MENU_MAIN",
-        "effect": [
-          {
-            "math": [
-              "u_val('spell_level', 'spell: laze')",
-              "=",
-              "u_current_sorcerer_level"
-            ]
-          },
-          {
-            "math": [
-              "u_used_spell_slot_for_laze",
               "=",
               "4"
             ]
@@ -3741,7 +4561,7 @@
         "effect": [
           {
             "math": [
-              "u_val('spell_level', 'spell: technomancer_conjure_radio')",
+              "u_spell_level('technomancer_conjure_radio')",
               "=",
               "u_current_sorcerer_level"
             ]
@@ -3782,7 +4602,7 @@
         "effect": [
           {
             "math": [
-              "u_val('spell_level', 'spell: create_atomic_light')",
+              "u_spell_level('create_atomic_light')",
               "=",
               "u_current_sorcerer_level"
             ]
@@ -3823,7 +4643,7 @@
         "effect": [
           {
             "math": [
-              "u_val('spell_level', 'spell: classless_watch_spell')",
+              "u_spell_level('classless_watch_spell')",
               "=",
               "u_current_sorcerer_level"
             ]
@@ -3831,6 +4651,47 @@
           {
             "math": [
               "u_used_spell_slot_for_classless_watch_spell",
+              "=",
+              "4"
+            ]
+          },
+          {
+            "math": [
+              "u_sorcerer_level_4_spells_known",
+              "++"
+            ]
+          }
+        ]
+      },
+      {
+        "text": "Go Back.",
+        "topic": "TALK_SORCERER_MENU_MAIN"
+      },
+      {
+        "text": "Quit.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_SORCERER_LEARN_SPELL_classless_easy_sleep_spell_at_level_4",
+    "dynamic_line": "Peaceful Rest: A favorite of overworked mages and dilettantes who, this spell makes it much easier to fall asleep regardless of how tired you are.",
+    "responses": [
+      {
+        "text": "Select Spell.",
+        "topic": "TALK_SORCERER_MENU_MAIN",
+        "effect": [
+          {
+            "math": [
+              "u_spell_level('classless_easy_sleep_spell')",
+              "=",
+              "u_current_sorcerer_level"
+            ]
+          },
+          {
+            "math": [
+              "u_used_spell_slot_for_classless_easy_sleep_spell",
               "=",
               "4"
             ]
@@ -3864,7 +4725,7 @@
         "effect": [
           {
             "math": [
-              "u_val('spell_level', 'spell: druid_woodshaft')",
+              "u_spell_level('druid_woodshaft')",
               "=",
               "u_current_sorcerer_level"
             ]
@@ -3905,7 +4766,7 @@
         "effect": [
           {
             "math": [
-              "u_val('spell_level', 'spell: summon_cats')",
+              "u_spell_level('summon_cats')",
               "=",
               "u_current_sorcerer_level"
             ]
@@ -3946,7 +4807,7 @@
         "effect": [
           {
             "math": [
-              "u_val('spell_level', 'spell: eshaper_rockbolt')",
+              "u_spell_level('eshaper_rockbolt')",
               "=",
               "u_current_sorcerer_level"
             ]
@@ -3979,7 +4840,7 @@
   {
     "type": "talk_topic",
     "id": "TALK_SORCERER_LEARN_SPELL_create_lighter_at_level_4",
-    "dynamic_line": "Finger Firelighter: Summons a small flame that does not burn you, but you can use it to light things on fire.  It seems to need you to have some intent to light things on fire, because you are able to put it in your pocket with no issue.",
+    "dynamic_line": "Finger Firelighter: Summons a small flame that does not affect you, but can be used to light things on fire.  It seems to need you to have some intent to light things on fire, since you are able to put it in your pocket with no issue.",
     "responses": [
       {
         "text": "Select Spell.",
@@ -3987,7 +4848,7 @@
         "effect": [
           {
             "math": [
-              "u_val('spell_level', 'spell: create_lighter')",
+              "u_spell_level('create_lighter')",
               "=",
               "u_current_sorcerer_level"
             ]
@@ -4028,7 +4889,7 @@
         "effect": [
           {
             "math": [
-              "u_val('spell_level', 'spell: chilling_touch')",
+              "u_spell_level('chilling_touch')",
               "=",
               "u_current_sorcerer_level"
             ]
@@ -4060,8 +4921,8 @@
   },
   {
     "type": "talk_topic",
-    "id": "TALK_SORCERER_LEARN_SPELL_shadow_field_at_level_4",
-    "dynamic_line": "Shadow Field: Cast a field of intense shadows.",
+    "id": "TALK_SORCERER_LEARN_SPELL_kelvinist_heat_food_at_level_4",
+    "dynamic_line": "Baking Hands: With the tiniest amount of heat, unfreeze an item of food or drink and heat it up to a comfortable temperature.",
     "responses": [
       {
         "text": "Select Spell.",
@@ -4069,7 +4930,48 @@
         "effect": [
           {
             "math": [
-              "u_val('spell_level', 'spell: shadow_field')",
+              "u_spell_level('kelvinist_heat_food')",
+              "=",
+              "u_current_sorcerer_level"
+            ]
+          },
+          {
+            "math": [
+              "u_used_spell_slot_for_kelvinist_heat_food",
+              "=",
+              "4"
+            ]
+          },
+          {
+            "math": [
+              "u_sorcerer_level_4_spells_known",
+              "++"
+            ]
+          }
+        ]
+      },
+      {
+        "text": "Go Back.",
+        "topic": "TALK_SORCERER_MENU_MAIN"
+      },
+      {
+        "text": "Quit.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_SORCERER_LEARN_SPELL_shadow_field_at_level_4",
+    "dynamic_line": "Shadow Field: Shroud an area in intense shadows.",
+    "responses": [
+      {
+        "text": "Select Spell.",
+        "topic": "TALK_SORCERER_MENU_MAIN",
+        "effect": [
+          {
+            "math": [
+              "u_spell_level('shadow_field')",
               "=",
               "u_current_sorcerer_level"
             ]
@@ -4110,7 +5012,7 @@
         "effect": [
           {
             "math": [
-              "u_val('spell_level', 'spell: magic_missile')",
+              "u_spell_level('magic_missile')",
               "=",
               "u_current_sorcerer_level"
             ]
@@ -4151,7 +5053,7 @@
         "effect": [
           {
             "math": [
-              "u_val('spell_level', 'spell: shocking_lash')",
+              "u_spell_level('shocking_lash')",
               "=",
               "u_current_sorcerer_level"
             ]
@@ -4184,7 +5086,7 @@
   {
     "type": "talk_topic",
     "id": "TALK_SORCERER_LEARN_SPELL_electric_arts_at_level_4",
-    "dynamic_line": "Electric Arts: A spell designed for scholars having just started to learn stormshaping, allowing them to reduce the damage to themselves their often capricious new abilities may cause.",
+    "dynamic_line": "Electric Arts: A spell designed for scholars who have recently started to learn stormshaping, allowing them to reduce the damage their often capricious new abilities may cause to themselves.",
     "responses": [
       {
         "text": "Select Spell.",
@@ -4192,7 +5094,7 @@
         "effect": [
           {
             "math": [
-              "u_val('spell_level', 'spell: electric_arts')",
+              "u_spell_level('electric_arts')",
               "=",
               "u_current_sorcerer_level"
             ]
@@ -4225,7 +5127,7 @@
   {
     "type": "talk_topic",
     "id": "TALK_SORCERER_LEARN_SPELL_taze_at_level_4",
-    "dynamic_line": "Taze: This spell creates a very short range bolt of electricity to shock your foes.",
+    "dynamic_line": "Taze: This spell arcs two small bolts of electricity into a target, shocking them.",
     "responses": [
       {
         "text": "Select Spell.",
@@ -4233,7 +5135,7 @@
         "effect": [
           {
             "math": [
-              "u_val('spell_level', 'spell: taze')",
+              "u_spell_level('taze')",
               "=",
               "u_current_sorcerer_level"
             ]
@@ -4274,7 +5176,7 @@
         "effect": [
           {
             "math": [
-              "u_val('spell_level', 'spell: create_rune_sorcerer')",
+              "u_spell_level('create_rune_sorcerer')",
               "=",
               "u_current_sorcerer_level"
             ]
@@ -4336,6 +5238,17 @@
         },
         "text": "Learn Decaying Boneclub ( level 4 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_animist_summon_decaying_boneclub_at_level_4"
+      },
+      {
+        "condition": {
+          "math": [
+            "u_used_spell_slot_for_animist_luck_bone",
+            "==",
+            "0"
+          ]
+        },
+        "text": "Learn Osseous Luck ( level 4 )",
+        "topic": "TALK_SORCERER_LEARN_SPELL_animist_luck_bone_at_level_4"
       },
       {
         "condition": {
@@ -4428,6 +5341,17 @@
       {
         "condition": {
           "math": [
+            "u_used_spell_slot_for_druid_breathing_underwater",
+            "==",
+            "0"
+          ]
+        },
+        "text": "Learn Aquatic Mantle ( level 4 )",
+        "topic": "TALK_SORCERER_LEARN_SPELL_druid_breathing_underwater_at_level_4"
+      },
+      {
+        "condition": {
+          "math": [
             "u_used_spell_slot_for_ice_spike",
             "==",
             "0"
@@ -4516,6 +5440,17 @@
       {
         "condition": {
           "math": [
+            "u_used_spell_slot_for_technomancer_far_sight",
+            "==",
+            "0"
+          ]
+        },
+        "text": "Learn Zoom Lens ( level 4 )",
+        "topic": "TALK_SORCERER_LEARN_SPELL_technomancer_far_sight_at_level_4"
+      },
+      {
+        "condition": {
+          "math": [
             "u_used_spell_slot_for_animist_summon_watcher",
             "==",
             "0"
@@ -4593,6 +5528,28 @@
       {
         "condition": {
           "math": [
+            "u_used_spell_slot_for_biomancer_slow_bleeding",
+            "==",
+            "0"
+          ]
+        },
+        "text": "Learn Halt Bleeding ( level 3 )",
+        "topic": "TALK_SORCERER_LEARN_SPELL_biomancer_slow_bleeding_at_level_4"
+      },
+      {
+        "condition": {
+          "math": [
+            "u_used_spell_slot_for_biomancer_eat_tons_of_food",
+            "==",
+            "0"
+          ]
+        },
+        "text": "Learn Gluttonous Consumption ( level 3 )",
+        "topic": "TALK_SORCERER_LEARN_SPELL_biomancer_eat_tons_of_food_at_level_4"
+      },
+      {
+        "condition": {
+          "math": [
             "u_used_spell_slot_for_protection_aura",
             "==",
             "0"
@@ -4655,6 +5612,39 @@
         },
         "text": "Learn Spear of Brambles ( level 3 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_druid_bramble_spear_at_level_4"
+      },
+      {
+        "condition": {
+          "math": [
+            "u_used_spell_slot_for_druid_disinfectant",
+            "==",
+            "0"
+          ]
+        },
+        "text": "Learn Wash the Wounds Clean ( level 3 )",
+        "topic": "TALK_SORCERER_LEARN_SPELL_druid_disinfectant_at_level_4"
+      },
+      {
+        "condition": {
+          "math": [
+            "u_used_spell_slot_for_druid_water_walking",
+            "==",
+            "0"
+          ]
+        },
+        "text": "Learn Water Strider's Walk ( level 3 )",
+        "topic": "TALK_SORCERER_LEARN_SPELL_druid_water_walking_at_level_4"
+      },
+      {
+        "condition": {
+          "math": [
+            "u_used_spell_slot_for_druid_bearmantle",
+            "==",
+            "0"
+          ]
+        },
+        "text": "Learn Bearmantle ( level 3 )",
+        "topic": "TALK_SORCERER_LEARN_SPELL_druid_bearmantle_at_level_4"
       },
       {
         "condition": {
@@ -4758,6 +5748,28 @@
       {
         "condition": {
           "math": [
+            "u_used_spell_slot_for_earthshaper_harden_earth",
+            "==",
+            "0"
+          ]
+        },
+        "text": "Learn Harden Earth ( level 3 )",
+        "topic": "TALK_SORCERER_LEARN_SPELL_earthshaper_harden_earth_at_level_4"
+      },
+      {
+        "condition": {
+          "math": [
+            "u_used_spell_slot_for_earthshaper_repair_metal_stone",
+            "==",
+            "0"
+          ]
+        },
+        "text": "Learn Fault-Mending Chant ( level 3 )",
+        "topic": "TALK_SORCERER_LEARN_SPELL_earthshaper_repair_metal_stone_at_level_4"
+      },
+      {
+        "condition": {
+          "math": [
             "u_used_spell_slot_for_point_flare",
             "==",
             "0"
@@ -4842,6 +5854,17 @@
         },
         "text": "Learn Cloak of Chill ( level 3 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_kelvinist_anti_heat_at_level_4"
+      },
+      {
+        "condition": {
+          "math": [
+            "u_used_spell_slot_for_kelvinist_persuasion_spell",
+            "==",
+            "0"
+          ]
+        },
+        "text": "Learn Flames of Passion ( level 3 )",
+        "topic": "TALK_SORCERER_LEARN_SPELL_kelvinist_persuasion_spell_at_level_4"
       },
       {
         "condition": {
@@ -5000,6 +6023,28 @@
       {
         "condition": {
           "math": [
+            "u_used_spell_slot_for_technomancer_gain_electronics_computer_spell",
+            "==",
+            "0"
+          ]
+        },
+        "text": "Learn Machine Mind ( level 3 )",
+        "topic": "TALK_SORCERER_LEARN_SPELL_technomancer_gain_electronics_computer_spell_at_level_4"
+      },
+      {
+        "condition": {
+          "math": [
+            "u_used_spell_slot_for_technomancer_pain_ignore",
+            "==",
+            "0"
+          ]
+        },
+        "text": "Learn The Body Mechanical ( level 3 )",
+        "topic": "TALK_SORCERER_LEARN_SPELL_technomancer_pain_ignore_at_level_4"
+      },
+      {
+        "condition": {
+          "math": [
             "u_used_spell_slot_for_smite",
             "==",
             "0"
@@ -5038,7 +6083,7 @@
             "0"
           ]
         },
-        "text": "Learn Reactive Armour ( level 2 )",
+        "text": "Learn Reactive Armor ( level 2 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_reactive_armor_at_level_4"
       },
       {
@@ -5062,6 +6107,17 @@
         },
         "text": "Learn Bless ( level 2 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_bless_at_level_4"
+      },
+      {
+        "condition": {
+          "math": [
+            "u_used_spell_slot_for_laze",
+            "==",
+            "0"
+          ]
+        },
+        "text": "Learn Laze ( level 2 )",
+        "topic": "TALK_SORCERER_LEARN_SPELL_laze_at_level_4"
       },
       {
         "condition": {
@@ -5220,6 +6276,17 @@
       {
         "condition": {
           "math": [
+            "u_used_spell_slot_for_classless_clean_clothing_and_self",
+            "==",
+            "0"
+          ]
+        },
+        "text": "Learn Freshen Up ( level 1 )",
+        "topic": "TALK_SORCERER_LEARN_SPELL_classless_clean_clothing_and_self_at_level_4"
+      },
+      {
+        "condition": {
+          "math": [
             "u_used_spell_slot_for_druid_tornskin",
             "==",
             "0"
@@ -5238,6 +6305,28 @@
         },
         "text": "Learn Seed of Growth ( level 1 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_druid_growth_at_level_4"
+      },
+      {
+        "condition": {
+          "math": [
+            "u_used_spell_slot_for_druid_anti_heat",
+            "==",
+            "0"
+          ]
+        },
+        "text": "Learn Water's Cooling Touch ( level 1 )",
+        "topic": "TALK_SORCERER_LEARN_SPELL_druid_anti_heat_at_level_4"
+      },
+      {
+        "condition": {
+          "math": [
+            "u_used_spell_slot_for_druid_traverse_the_wilds",
+            "==",
+            "0"
+          ]
+        },
+        "text": "Learn Traverse the Wilds ( level 1 )",
+        "topic": "TALK_SORCERER_LEARN_SPELL_druid_traverse_the_wilds_at_level_4"
       },
       {
         "condition": {
@@ -5286,6 +6375,39 @@
       {
         "condition": {
           "math": [
+            "u_used_spell_slot_for_kelvinist_firebolt",
+            "==",
+            "0"
+          ]
+        },
+        "text": "Learn Firebolt ( level 1 )",
+        "topic": "TALK_SORCERER_LEARN_SPELL_kelvinist_firebolt_at_level_4"
+      },
+      {
+        "condition": {
+          "math": [
+            "u_used_spell_slot_for_magus_stop_attack_shield",
+            "==",
+            "0"
+          ]
+        },
+        "text": "Learn Mageshield ( level 1 )",
+        "topic": "TALK_SORCERER_LEARN_SPELL_magus_stop_attack_shield_at_level_4"
+      },
+      {
+        "condition": {
+          "math": [
+            "u_used_spell_slot_for_magus_far_hand_pull",
+            "==",
+            "0"
+          ]
+        },
+        "text": "Learn Sorcerer's Hand ( level 1 )",
+        "topic": "TALK_SORCERER_LEARN_SPELL_magus_far_hand_pull_at_level_4"
+      },
+      {
+        "condition": {
+          "math": [
             "u_used_spell_slot_for_stormshaper_wall_of_fog",
             "==",
             "0"
@@ -5308,6 +6430,17 @@
       {
         "condition": {
           "math": [
+            "u_used_spell_slot_for_stormshaper_loud_voice_spell",
+            "==",
+            "0"
+          ]
+        },
+        "text": "Learn Thundering Voice ( level 1 )",
+        "topic": "TALK_SORCERER_LEARN_SPELL_stormshaper_loud_voice_spell_at_level_4"
+      },
+      {
+        "condition": {
+          "math": [
             "u_used_spell_slot_for_create_atomic_lamp",
             "==",
             "0"
@@ -5315,17 +6448,6 @@
         },
         "text": "Learn Lamp ( level 1 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_create_atomic_lamp_at_level_4"
-      },
-      {
-        "condition": {
-          "math": [
-            "u_used_spell_slot_for_laze",
-            "==",
-            "0"
-          ]
-        },
-        "text": "Learn Laze ( level 1 )",
-        "topic": "TALK_SORCERER_LEARN_SPELL_laze_at_level_4"
       },
       {
         "condition": {
@@ -5359,6 +6481,17 @@
         },
         "text": "Learn Knowing the Day and the Hour ( level 0 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_classless_watch_spell_at_level_4"
+      },
+      {
+        "condition": {
+          "math": [
+            "u_used_spell_slot_for_classless_easy_sleep_spell",
+            "==",
+            "0"
+          ]
+        },
+        "text": "Learn Peaceful Rest ( level 0 )",
+        "topic": "TALK_SORCERER_LEARN_SPELL_classless_easy_sleep_spell_at_level_4"
       },
       {
         "condition": {
@@ -5414,6 +6547,17 @@
         },
         "text": "Learn Chilling Touch ( level 0 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_chilling_touch_at_level_4"
+      },
+      {
+        "condition": {
+          "math": [
+            "u_used_spell_slot_for_kelvinist_heat_food",
+            "==",
+            "0"
+          ]
+        },
+        "text": "Learn Baking Hands ( level 0 )",
+        "topic": "TALK_SORCERER_LEARN_SPELL_kelvinist_heat_food_at_level_4"
       },
       {
         "condition": {

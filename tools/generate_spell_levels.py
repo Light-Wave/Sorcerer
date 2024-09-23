@@ -224,7 +224,7 @@ def write_learn_spell(level):
                     "text": "Select Spell.",
                     "topic": "TALK_SORCERER_MENU_MAIN",
                     "effect": [
-                      { "math": [ "u_val('spell_level', 'spell: " + spell["id"] + "')", "=", "u_current_sorcerer_level" ] },
+                      { "math": [ "u_spell_level('" + spell["id"] + "')", "=", "u_current_sorcerer_level" ] },
                       { "math": [ "u_used_spell_slot_for_"+spell["safe_id"], "=", str( max( level, 0.5 ) ) ] },
                       { "math": [ "u_sorcerer_level_"+str(level)+"_spells_known", "++" ] },
                     ]
@@ -259,7 +259,7 @@ def write_forget_spell():
             "text": "Forget " + spell["name"] + " ( level <u_val:used_spell_slot_for_" + spell["safe_id"] + "> )",
             "topic": "TALK_SORCERER_MENU_MAIN",
             "effect": [
-                { "math": [ "u_val('spell_level', 'spell: " + spell["id"] + "')", "=", "-1" ] },
+                { "math": [ "u_spell_level('" + spell["id"] + "')", "=", "-1" ] },
                 { "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots", "variables": { "forgotten_spell_level": { "u_val": "used_spell_slot_for_"+spell["safe_id"] } } },
                 { "math": [ "u_used_spell_slot_for_"+spell["safe_id"], "=", "0" ] },
                 { "math": [ "u_sorcerer_forget_spell_charge", "--" ] }
@@ -292,7 +292,7 @@ def write_pick_favourite_spell():
                 "text": "Pick " + spell["name"] + " ( level <u_val:used_spell_slot_for_" + spell["safe_id"] + "> )",
                 "topic": "TALK_SORCERER_MENU_MAIN",
                 "effect": [
-                    { "math": [ "u_val('spell_level', 'spell: " + spell["id"] + "')", "=", "max(3, u_val('spell_level', 'spell: " + spell["id"] + "') )" ] },
+                    { "math": [ "u_spell_level('" + spell["id"] + "')", "=", "max(3, u_spell_level('" + spell["id"] + "') )" ] },
                     { "math": [ "u_available_favourite_spells", "--" ] }
                 ]
             }
@@ -316,7 +316,7 @@ def write_level_up_spells():
             "run_eocs": {
               "id": "sorcerer_level_up_"+spell["safe_id"],
               "condition": { "math": [ "u_used_spell_slot_for_"+spell["safe_id"], ">", "0" ] },
-              "effect": [ { "math": [ "u_val('spell_level', 'spell: " + spell["id"] + "')", "=", "max(u_current_sorcerer_level, u_val('spell_level', 'spell: " + spell["id"] + "') )" ] } ]
+              "effect": [ { "math": [ "u_spell_level('" + spell["id"] + "')", "=", "max(u_current_sorcerer_level, u_spell_level('" + spell["id"] + "') )" ] } ]
             }
         }
         main_topic["effect"].append(effect)

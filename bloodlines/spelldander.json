@@ -5,7 +5,7 @@
     "eoc_type": "EVENT",
     "required_event": "opens_spellbook",
     "condition": { "and": [ { "u_has_trait": "SORCERER" }, { "u_has_var": "power_source", "context": "SORCERER", "value": "dodge" } ] },
-    "effect": { "math": [ "u_val('spell_level_adjustment')", "+=", "floor( u_val('dodge') )" ] }
+    "effect": { "math": [ "u_spell_level_adjustment('null')", "+=", "floor( u_val('dodge') )" ] }
   },
   {
     "//": "Based off of Aikido",
@@ -34,7 +34,6 @@
         "name": "Spelldancing Block",
         "description": "With empty hands, you can use your flow of mana to block incomming attacks.\n\nBlocked damage reduced by 100% of Dexterity, +2 blocking effectiveness.",
         "unarmed_allowed": true,
-        "unarmed_weapons_allowed": false,
         "melee_allowed": true,
         "flat_bonuses": [
           { "stat": "block", "scaling-stat": "dex", "scale": 1.0 },
@@ -56,7 +55,6 @@
         "name": "Intermediate Spelldancing",
         "description": "As your understanding of the flow of your inner mana grows, you learn to use empty hands to block multiple opponents.\n\nBlocked damage reduced by 100% of Dexterity, +1 blocking effectiveness, +1 block attempt.",
         "unarmed_allowed": true,
-        "unarmed_weapons_allowed": false,
         "melee_allowed": true,
         "skill_requirements": [ { "name": "unarmed", "level": 3 }, { "name": "spellcraft", "level": 3 } ],
         "bonus_blocks": 1,
@@ -77,7 +75,6 @@
         "name": "Advanced Spelldancing",
         "description": "An your power grows, you learn to better use your hands to protect yourself.\n\n+1 blocking effectiveness, +1 block attempt.",
         "unarmed_allowed": true,
-        "unarmed_weapons_allowed": false,
         "melee_allowed": true,
         "skill_requirements": [ { "name": "unarmed", "level": 5 }, { "name": "spellcraft", "level": 5 } ],
         "bonus_dodges": 1,
@@ -91,7 +88,6 @@
         "name": "Fluid Blocking",
         "description": "After a smooth block, you prepare to counter your foe.\n\n-10% move cost.\nLasts 1 turn.",
         "unarmed_allowed": true,
-        "unarmed_weapons_allowed": false,
         "melee_allowed": true,
         "buff_duration": 1,
         "mult_bonuses": [ { "stat": "movecost", "scale": 0.9 } ]
@@ -103,7 +99,6 @@
         "name": "Fluid Dodging",
         "description": "After a smooth dodge, you prepare to counter your foe.\n\n-10% move cost.\nLasts 1 turn.",
         "unarmed_allowed": true,
-        "unarmed_weapons_allowed": false,
         "melee_allowed": true,
         "buff_duration": 1,
         "mult_bonuses": [ { "stat": "movecost", "scale": 0.9 } ]
@@ -124,7 +119,6 @@
     "skill_requirements": [ { "name": "unarmed", "level": 2 } ],
     "unarmed_allowed": true,
     "melee_allowed": true,
-    "unarmed_weapons_allowed": false,
     "crit_ok": true,
     "//condition": "Humanoids of similar size and no flying",
     "condition": {
@@ -166,7 +160,6 @@
     "skill_requirements": [ { "name": "unarmed", "level": 4 } ],
     "unarmed_allowed": true,
     "melee_allowed": true,
-    "unarmed_weapons_allowed": false,
     "crit_ok": true,
     "disarms": true,
     "tech_effects": [
