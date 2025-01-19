@@ -31,8 +31,8 @@
           { "u_add_trait": "SORCERER" },
           { "run_eocs": "EOC_level_up_sorcerer" },
           { "math": [ "u_available_favourite_spells", "=", "1" ] },
-          { "u_add_var": "power_source", "value": "intelligence", "context": "SORCERER" },
-          { "u_add_var": "bloodline", "value": "STANDARD", "context": "SORCERER_BLOODLINE" }
+          { "u_add_var": "power_source", "value": "intelligence" },
+          { "u_add_var": "bloodline", "value": "STANDARD" }
         ]
       },
       {
@@ -53,8 +53,8 @@
         "effect": [
           { "u_add_trait": "SORCERER" },
           { "run_eocs": "EOC_level_up_sorcerer" },
-          { "u_add_var": "power_source", "value": "strength", "context": "SORCERER" },
-          { "u_add_var": "bloodline", "value": "BLOODRAGER", "context": "SORCERER_BLOODLINE" }
+          { "u_add_var": "power_source", "value": "strength" },
+          { "u_add_var": "bloodline", "value": "BLOODRAGER" }
         ]
       },
       {
@@ -75,8 +75,8 @@
         "effect": [
           { "u_add_trait": "SORCERER" },
           { "run_eocs": "EOC_level_up_sorcerer" },
-          { "u_add_var": "power_source", "value": "dodge", "context": "SORCERER" },
-          { "u_add_var": "bloodline", "value": "SPELLDANCER", "context": "SORCERER_BLOODLINE" },
+          { "u_add_var": "power_source", "value": "dodge" },
+          { "u_add_var": "bloodline", "value": "SPELLDANCER" },
           { "u_spawn_item": "manual_spelldancing" }
         ]
       },

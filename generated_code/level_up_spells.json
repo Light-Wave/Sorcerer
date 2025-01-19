@@ -193,6 +193,48 @@
     },
     {
       "run_eocs": {
+        "id": "sorcerer_level_up_druid_create_temporary_spring",
+        "condition": {
+          "math": [
+            "u_used_spell_slot_for_druid_create_temporary_spring",
+            ">",
+            "0"
+          ]
+        },
+        "effect": [
+          {
+            "math": [
+              "u_spell_level('druid_create_temporary_spring')",
+              "=",
+              "max(u_current_sorcerer_level, u_spell_level('druid_create_temporary_spring') )"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "run_eocs": {
+        "id": "sorcerer_level_up_druid_turn_tree_into_treant",
+        "condition": {
+          "math": [
+            "u_used_spell_slot_for_druid_turn_tree_into_treant",
+            ">",
+            "0"
+          ]
+        },
+        "effect": [
+          {
+            "math": [
+              "u_spell_level('druid_turn_tree_into_treant')",
+              "=",
+              "max(u_current_sorcerer_level, u_spell_level('druid_turn_tree_into_treant') )"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "run_eocs": {
         "id": "sorcerer_level_up_shape_of_dust",
         "condition": {
           "math": [
@@ -298,6 +340,27 @@
     },
     {
       "run_eocs": {
+        "id": "sorcerer_level_up_earthshaper_diggable_teleport",
+        "condition": {
+          "math": [
+            "u_used_spell_slot_for_earthshaper_diggable_teleport",
+            ">",
+            "0"
+          ]
+        },
+        "effect": [
+          {
+            "math": [
+              "u_spell_level('earthshaper_diggable_teleport')",
+              "=",
+              "max(u_current_sorcerer_level, u_spell_level('earthshaper_diggable_teleport') )"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "run_eocs": {
         "id": "sorcerer_level_up_nova_flare",
         "condition": {
           "math": [
@@ -354,6 +417,27 @@
               "u_spell_level('kelvinist_no_emotion_spell')",
               "=",
               "max(u_current_sorcerer_level, u_spell_level('kelvinist_no_emotion_spell') )"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "run_eocs": {
+        "id": "sorcerer_level_up_kelvinist_set_everyone_on_fire",
+        "condition": {
+          "math": [
+            "u_used_spell_slot_for_kelvinist_set_everyone_on_fire",
+            ">",
+            "0"
+          ]
+        },
+        "effect": [
+          {
+            "math": [
+              "u_spell_level('kelvinist_set_everyone_on_fire')",
+              "=",
+              "max(u_current_sorcerer_level, u_spell_level('kelvinist_set_everyone_on_fire') )"
             ]
           }
         ]
@@ -438,6 +522,48 @@
               "u_spell_level('magus_diamond_imbuement')",
               "=",
               "max(u_current_sorcerer_level, u_spell_level('magus_diamond_imbuement') )"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "run_eocs": {
+        "id": "sorcerer_level_up_magus_permanent_light",
+        "condition": {
+          "math": [
+            "u_used_spell_slot_for_magus_permanent_light",
+            ">",
+            "0"
+          ]
+        },
+        "effect": [
+          {
+            "math": [
+              "u_spell_level('magus_permanent_light')",
+              "=",
+              "max(u_current_sorcerer_level, u_spell_level('magus_permanent_light') )"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "run_eocs": {
+        "id": "sorcerer_level_up_magus_cannot_move_attack_or_damage_target",
+        "condition": {
+          "math": [
+            "u_used_spell_slot_for_magus_cannot_move_attack_or_damage_target",
+            ">",
+            "0"
+          ]
+        },
+        "effect": [
+          {
+            "math": [
+              "u_spell_level('magus_cannot_move_attack_or_damage_target')",
+              "=",
+              "max(u_current_sorcerer_level, u_spell_level('magus_cannot_move_attack_or_damage_target') )"
             ]
           }
         ]
@@ -2125,6 +2251,27 @@
     },
     {
       "run_eocs": {
+        "id": "sorcerer_level_up_animist_do_psionic_damage_to_head",
+        "condition": {
+          "math": [
+            "u_used_spell_slot_for_animist_do_psionic_damage_to_head",
+            ">",
+            "0"
+          ]
+        },
+        "effect": [
+          {
+            "math": [
+              "u_spell_level('animist_do_psionic_damage_to_head')",
+              "=",
+              "max(u_current_sorcerer_level, u_spell_level('animist_do_psionic_damage_to_head') )"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "run_eocs": {
         "id": "sorcerer_level_up_bio_grotesque",
         "condition": {
           "math": [
@@ -2139,6 +2286,27 @@
               "u_spell_level('bio_grotesque')",
               "=",
               "max(u_current_sorcerer_level, u_spell_level('bio_grotesque') )"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "run_eocs": {
+        "id": "sorcerer_level_up_biomancer_get_more_blood",
+        "condition": {
+          "math": [
+            "u_used_spell_slot_for_biomancer_get_more_blood",
+            ">",
+            "0"
+          ]
+        },
+        "effect": [
+          {
+            "math": [
+              "u_spell_level('biomancer_get_more_blood')",
+              "=",
+              "max(u_current_sorcerer_level, u_spell_level('biomancer_get_more_blood') )"
             ]
           }
         ]
@@ -2895,6 +3063,27 @@
               "u_spell_level('druid_bearmantle')",
               "=",
               "max(u_current_sorcerer_level, u_spell_level('druid_bearmantle') )"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "run_eocs": {
+        "id": "sorcerer_level_up_druid_goodberry",
+        "condition": {
+          "math": [
+            "u_used_spell_slot_for_druid_goodberry",
+            ">",
+            "0"
+          ]
+        },
+        "effect": [
+          {
+            "math": [
+              "u_spell_level('druid_goodberry')",
+              "=",
+              "max(u_current_sorcerer_level, u_spell_level('druid_goodberry') )"
             ]
           }
         ]
@@ -3924,6 +4113,27 @@
               "u_spell_level('bleed')",
               "=",
               "max(u_current_sorcerer_level, u_spell_level('bleed') )"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "run_eocs": {
+        "id": "sorcerer_level_up_animist_detect_wizards",
+        "condition": {
+          "math": [
+            "u_used_spell_slot_for_animist_detect_wizards",
+            ">",
+            "0"
+          ]
+        },
+        "effect": [
+          {
+            "math": [
+              "u_spell_level('animist_detect_wizards')",
+              "=",
+              "max(u_current_sorcerer_level, u_spell_level('animist_detect_wizards') )"
             ]
           }
         ]

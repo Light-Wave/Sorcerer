@@ -144,12 +144,38 @@
     {
       "condition": {
         "math": [
+          "u_used_spell_slot_for_animist_detect_wizards",
+          ">",
+          "0"
+        ]
+      },
+      "text": "Pick Witchsight ( level <u_val:used_spell_slot_for_animist_detect_wizards> )",
+      "topic": "TALK_SORCERER_MENU_MAIN",
+      "effect": [
+        {
+          "math": [
+            "u_spell_level('animist_detect_wizards')",
+            "=",
+            "max(3, u_spell_level('animist_detect_wizards') )"
+          ]
+        },
+        {
+          "math": [
+            "u_available_favourite_spells",
+            "--"
+          ]
+        }
+      ]
+    },
+    {
+      "condition": {
+        "math": [
           "u_used_spell_slot_for_light_healing",
           ">",
           "0"
         ]
       },
-      "text": "Pick Cure Light Wounds ( level <u_val:used_spell_slot_for_light_healing> )",
+      "text": "Pick Knit the Rent Flesh ( level <u_val:used_spell_slot_for_light_healing> )",
       "topic": "TALK_SORCERER_MENU_MAIN",
       "effect": [
         {
@@ -253,7 +279,7 @@
           "0"
         ]
       },
-      "text": "Pick Cure Disease, Minor ( level <u_val:used_spell_slot_for_biomancer_cure_disease_minor> )",
+      "text": "Pick Purgation of Maladies ( level <u_val:used_spell_slot_for_biomancer_cure_disease_minor> )",
       "topic": "TALK_SORCERER_MENU_MAIN",
       "effect": [
         {

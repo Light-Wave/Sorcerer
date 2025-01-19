@@ -4,7 +4,7 @@
     "id": "EOC_CASTER_BOOST_SPELLDANCER",
     "eoc_type": "EVENT",
     "required_event": "opens_spellbook",
-    "condition": { "and": [ { "u_has_trait": "SORCERER" }, { "u_has_var": "power_source", "context": "SORCERER", "value": "dodge" } ] },
+    "condition": { "and": [ { "u_has_trait": "SORCERER" }, { "compare_string": [ {"u_val": "power_source"}, "dodge"] } ] },
     "effect": { "math": [ "u_spell_level_adjustment('null')", "+=", "floor( u_val('dodge') )" ] }
   },
   {

@@ -30,7 +30,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_banishment_lesser"
@@ -71,7 +71,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_animist_mass_hiding_aoe"
@@ -112,7 +112,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_animist_spirit_walking"
@@ -142,7 +142,7 @@
           "0"
         ]
       },
-      "text": "Forget Rapid Regeneration ( level <u_val:used_spell_slot_for_biomancer_hyper_regeneration> )",
+      "text": "Forget Corporeal Reconstitution ( level <u_val:used_spell_slot_for_biomancer_hyper_regeneration> )",
       "topic": "TALK_SORCERER_MENU_MAIN",
       "effect": [
         {
@@ -153,7 +153,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_biomancer_hyper_regeneration"
@@ -194,7 +194,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_classless_disjunction"
@@ -235,7 +235,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_cause_rot"
@@ -276,7 +276,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_druid_beguile_savage_beast"
@@ -317,7 +317,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_druid_thorn_skin"
@@ -358,7 +358,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_druid_renew_forest_spell"
@@ -368,6 +368,88 @@
         {
           "math": [
             "u_used_spell_slot_for_druid_renew_forest_spell",
+            "=",
+            "0"
+          ]
+        },
+        {
+          "math": [
+            "u_sorcerer_forget_spell_charge",
+            "--"
+          ]
+        }
+      ]
+    },
+    {
+      "condition": {
+        "math": [
+          "u_used_spell_slot_for_druid_create_temporary_spring",
+          ">",
+          "0"
+        ]
+      },
+      "text": "Forget Fountain of the Depths ( level <u_val:used_spell_slot_for_druid_create_temporary_spring> )",
+      "topic": "TALK_SORCERER_MENU_MAIN",
+      "effect": [
+        {
+          "math": [
+            "u_spell_level('druid_create_temporary_spring')",
+            "=",
+            "-1"
+          ]
+        },
+        {
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
+          "variables": {
+            "forgotten_spell_level": {
+              "u_val": "used_spell_slot_for_druid_create_temporary_spring"
+            }
+          }
+        },
+        {
+          "math": [
+            "u_used_spell_slot_for_druid_create_temporary_spring",
+            "=",
+            "0"
+          ]
+        },
+        {
+          "math": [
+            "u_sorcerer_forget_spell_charge",
+            "--"
+          ]
+        }
+      ]
+    },
+    {
+      "condition": {
+        "math": [
+          "u_used_spell_slot_for_druid_turn_tree_into_treant",
+          ">",
+          "0"
+        ]
+      },
+      "text": "Forget Awakening of the Forest Guardian ( level <u_val:used_spell_slot_for_druid_turn_tree_into_treant> )",
+      "topic": "TALK_SORCERER_MENU_MAIN",
+      "effect": [
+        {
+          "math": [
+            "u_spell_level('druid_turn_tree_into_treant')",
+            "=",
+            "-1"
+          ]
+        },
+        {
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
+          "variables": {
+            "forgotten_spell_level": {
+              "u_val": "used_spell_slot_for_druid_turn_tree_into_treant"
+            }
+          }
+        },
+        {
+          "math": [
+            "u_used_spell_slot_for_druid_turn_tree_into_treant",
             "=",
             "0"
           ]
@@ -399,7 +481,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_shape_of_dust"
@@ -440,7 +522,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_summon_eshaper_golem"
@@ -481,7 +563,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_earthshaper_reveal_world_map"
@@ -522,7 +604,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_earthshaper_granite_aegis"
@@ -563,7 +645,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_earthshaper_sleep_in_earth"
@@ -573,6 +655,47 @@
         {
           "math": [
             "u_used_spell_slot_for_earthshaper_sleep_in_earth",
+            "=",
+            "0"
+          ]
+        },
+        {
+          "math": [
+            "u_sorcerer_forget_spell_charge",
+            "--"
+          ]
+        }
+      ]
+    },
+    {
+      "condition": {
+        "math": [
+          "u_used_spell_slot_for_earthshaper_diggable_teleport",
+          ">",
+          "0"
+        ]
+      },
+      "text": "Forget Earth Gate ( level <u_val:used_spell_slot_for_earthshaper_diggable_teleport> )",
+      "topic": "TALK_SORCERER_MENU_MAIN",
+      "effect": [
+        {
+          "math": [
+            "u_spell_level('earthshaper_diggable_teleport')",
+            "=",
+            "-1"
+          ]
+        },
+        {
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
+          "variables": {
+            "forgotten_spell_level": {
+              "u_val": "used_spell_slot_for_earthshaper_diggable_teleport"
+            }
+          }
+        },
+        {
+          "math": [
+            "u_used_spell_slot_for_earthshaper_diggable_teleport",
             "=",
             "0"
           ]
@@ -604,7 +727,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_nova_flare"
@@ -645,7 +768,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_freezing_touch"
@@ -686,7 +809,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_kelvinist_no_emotion_spell"
@@ -696,6 +819,47 @@
         {
           "math": [
             "u_used_spell_slot_for_kelvinist_no_emotion_spell",
+            "=",
+            "0"
+          ]
+        },
+        {
+          "math": [
+            "u_sorcerer_forget_spell_charge",
+            "--"
+          ]
+        }
+      ]
+    },
+    {
+      "condition": {
+        "math": [
+          "u_used_spell_slot_for_kelvinist_set_everyone_on_fire",
+          ">",
+          "0"
+        ]
+      },
+      "text": "Forget Flames of the Apocalypse ( level <u_val:used_spell_slot_for_kelvinist_set_everyone_on_fire> )",
+      "topic": "TALK_SORCERER_MENU_MAIN",
+      "effect": [
+        {
+          "math": [
+            "u_spell_level('kelvinist_set_everyone_on_fire')",
+            "=",
+            "-1"
+          ]
+        },
+        {
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
+          "variables": {
+            "forgotten_spell_level": {
+              "u_val": "used_spell_slot_for_kelvinist_set_everyone_on_fire"
+            }
+          }
+        },
+        {
+          "math": [
+            "u_used_spell_slot_for_kelvinist_set_everyone_on_fire",
             "=",
             "0"
           ]
@@ -727,7 +891,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_magus_haste"
@@ -768,7 +932,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_focused_bolt"
@@ -809,7 +973,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_magus_word_of_recall"
@@ -850,7 +1014,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_magus_diamond_imbuement"
@@ -860,6 +1024,88 @@
         {
           "math": [
             "u_used_spell_slot_for_magus_diamond_imbuement",
+            "=",
+            "0"
+          ]
+        },
+        {
+          "math": [
+            "u_sorcerer_forget_spell_charge",
+            "--"
+          ]
+        }
+      ]
+    },
+    {
+      "condition": {
+        "math": [
+          "u_used_spell_slot_for_magus_permanent_light",
+          ">",
+          "0"
+        ]
+      },
+      "text": "Forget Imperishable Light ( level <u_val:used_spell_slot_for_magus_permanent_light> )",
+      "topic": "TALK_SORCERER_MENU_MAIN",
+      "effect": [
+        {
+          "math": [
+            "u_spell_level('magus_permanent_light')",
+            "=",
+            "-1"
+          ]
+        },
+        {
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
+          "variables": {
+            "forgotten_spell_level": {
+              "u_val": "used_spell_slot_for_magus_permanent_light"
+            }
+          }
+        },
+        {
+          "math": [
+            "u_used_spell_slot_for_magus_permanent_light",
+            "=",
+            "0"
+          ]
+        },
+        {
+          "math": [
+            "u_sorcerer_forget_spell_charge",
+            "--"
+          ]
+        }
+      ]
+    },
+    {
+      "condition": {
+        "math": [
+          "u_used_spell_slot_for_magus_cannot_move_attack_or_damage_target",
+          ">",
+          "0"
+        ]
+      },
+      "text": "Forget Adamantine Gaol ( level <u_val:used_spell_slot_for_magus_cannot_move_attack_or_damage_target> )",
+      "topic": "TALK_SORCERER_MENU_MAIN",
+      "effect": [
+        {
+          "math": [
+            "u_spell_level('magus_cannot_move_attack_or_damage_target')",
+            "=",
+            "-1"
+          ]
+        },
+        {
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
+          "variables": {
+            "forgotten_spell_level": {
+              "u_val": "used_spell_slot_for_magus_cannot_move_attack_or_damage_target"
+            }
+          }
+        },
+        {
+          "math": [
+            "u_used_spell_slot_for_magus_cannot_move_attack_or_damage_target",
             "=",
             "0"
           ]
@@ -891,7 +1137,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_lightning_storm"
@@ -932,7 +1178,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_vacuum_decompression"
@@ -973,7 +1219,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_rupture"
@@ -1014,7 +1260,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_obfuscated_body"
@@ -1055,7 +1301,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_druidic_healing"
@@ -1096,7 +1342,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_magus_mana_blast"
@@ -1137,7 +1383,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_summon_magic_motorcycle"
@@ -1178,7 +1424,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_dominate"
@@ -1219,7 +1465,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_devour"
@@ -1260,7 +1506,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_vicious_tentacle"
@@ -1301,7 +1547,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_bio_bonespear"
@@ -1342,7 +1588,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_biomancer_giant_growth"
@@ -1383,7 +1629,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_biomancer_lashing_tentacles"
@@ -1424,7 +1670,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_biomancer_caustic_blood"
@@ -1465,7 +1711,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_megablast"
@@ -1506,7 +1752,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_druidic_regrowth"
@@ -1547,7 +1793,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_summon_wolf_druid"
@@ -1588,7 +1834,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_druid_healing"
@@ -1629,7 +1875,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_druid_whisper_leaves"
@@ -1670,7 +1916,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_druid_summon_tanglevine"
@@ -1711,7 +1957,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_eshaper_melee_damage"
@@ -1752,7 +1998,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_eshaper_crystal_wrap"
@@ -1793,7 +2039,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_kelvinist_summon_freezer_spell"
@@ -1834,7 +2080,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_gravity_well"
@@ -1875,7 +2121,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_magus_slow"
@@ -1916,7 +2162,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_magus_baleful_polymorph"
@@ -1957,7 +2203,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_stormshaper_ionization"
@@ -1998,7 +2244,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_storm_shipwrecker"
@@ -2039,7 +2285,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_storm_superconductor"
@@ -2080,7 +2326,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_summon_teravolt"
@@ -2121,7 +2367,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_stormshaper_heart_of_hurricane"
@@ -2162,7 +2408,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_recover_bionic_power"
@@ -2203,7 +2449,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_animated_blade"
@@ -2244,7 +2490,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_improved_knock"
@@ -2285,7 +2531,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_technomancer_robot_shutdown"
@@ -2326,7 +2572,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_technomancer_conjure_ups"
@@ -2367,7 +2613,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_technomancer_create_ups_connection"
@@ -2408,7 +2654,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_recover_mana"
@@ -2449,7 +2695,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_recover_pain"
@@ -2490,7 +2736,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_summon_undead_swarm"
@@ -2531,7 +2777,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_life_detonation"
@@ -2572,7 +2818,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_animist_add_evasion_spell"
@@ -2613,7 +2859,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_animist_slow_food_rotting_spell"
@@ -2654,7 +2900,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_biomancer_scalpel_fingers"
@@ -2695,7 +2941,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_dark_sight"
@@ -2736,7 +2982,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_recover_sleepiness"
@@ -2777,7 +3023,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_druid_feralform"
@@ -2818,7 +3064,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_druid_natures_commune"
@@ -2859,7 +3105,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_druid_wood_living_tree_spell"
@@ -2900,7 +3146,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_recover_stamina"
@@ -2941,7 +3187,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_eshaper_shardstorm"
@@ -2982,7 +3228,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_eshaper_impalement"
@@ -3023,7 +3269,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_fireball"
@@ -3064,7 +3310,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_cone_cold"
@@ -3105,7 +3351,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_hoary_blast"
@@ -3146,7 +3392,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_kelvinist_extinguish_fire_spell"
@@ -3187,7 +3433,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_magus_mana_bolt"
@@ -3228,7 +3474,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_magus_mana_beam"
@@ -3269,7 +3515,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_magus_escape"
@@ -3310,7 +3556,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_cats_grace"
@@ -3351,7 +3597,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_eagles_sight"
@@ -3392,7 +3638,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_ogres_strength"
@@ -3433,7 +3679,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_foxs_cunning"
@@ -3474,7 +3720,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_magus_teleport_mark"
@@ -3515,7 +3761,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_magus_ranged_increase"
@@ -3556,7 +3802,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_storm_hammer"
@@ -3597,7 +3843,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_stormfist"
@@ -3638,7 +3884,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_explosive_decompression"
@@ -3679,7 +3925,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_shocking_dash"
@@ -3720,7 +3966,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_toxtricity"
@@ -3761,7 +4007,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_electric_waves"
@@ -3802,7 +4048,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_invisibility"
@@ -3843,7 +4089,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_mirror_image"
@@ -3884,7 +4130,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_holographic_transposition"
@@ -3925,7 +4171,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_summon_floating_disk"
@@ -3966,7 +4212,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_technomancer_knifeshot"
@@ -4007,7 +4253,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_technomancer_recharge_vehicle"
@@ -4048,7 +4294,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_convert_sorcerer"
@@ -4089,7 +4335,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_animist_summon_decaying_boneclub"
@@ -4130,7 +4376,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_animist_luck_bone"
@@ -4140,6 +4386,47 @@
         {
           "math": [
             "u_used_spell_slot_for_animist_luck_bone",
+            "=",
+            "0"
+          ]
+        },
+        {
+          "math": [
+            "u_sorcerer_forget_spell_charge",
+            "--"
+          ]
+        }
+      ]
+    },
+    {
+      "condition": {
+        "math": [
+          "u_used_spell_slot_for_animist_do_psionic_damage_to_head",
+          ">",
+          "0"
+        ]
+      },
+      "text": "Forget Mind Crush ( level <u_val:used_spell_slot_for_animist_do_psionic_damage_to_head> )",
+      "topic": "TALK_SORCERER_MENU_MAIN",
+      "effect": [
+        {
+          "math": [
+            "u_spell_level('animist_do_psionic_damage_to_head')",
+            "=",
+            "-1"
+          ]
+        },
+        {
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
+          "variables": {
+            "forgotten_spell_level": {
+              "u_val": "used_spell_slot_for_animist_do_psionic_damage_to_head"
+            }
+          }
+        },
+        {
+          "math": [
+            "u_used_spell_slot_for_animist_do_psionic_damage_to_head",
             "=",
             "0"
           ]
@@ -4171,7 +4458,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_bio_grotesque"
@@ -4181,6 +4468,47 @@
         {
           "math": [
             "u_used_spell_slot_for_bio_grotesque",
+            "=",
+            "0"
+          ]
+        },
+        {
+          "math": [
+            "u_sorcerer_forget_spell_charge",
+            "--"
+          ]
+        }
+      ]
+    },
+    {
+      "condition": {
+        "math": [
+          "u_used_spell_slot_for_biomancer_get_more_blood",
+          ">",
+          "0"
+        ]
+      },
+      "text": "Forget Carmine Infusion ( level <u_val:used_spell_slot_for_biomancer_get_more_blood> )",
+      "topic": "TALK_SORCERER_MENU_MAIN",
+      "effect": [
+        {
+          "math": [
+            "u_spell_level('biomancer_get_more_blood')",
+            "=",
+            "-1"
+          ]
+        },
+        {
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
+          "variables": {
+            "forgotten_spell_level": {
+              "u_val": "used_spell_slot_for_biomancer_get_more_blood"
+            }
+          }
+        },
+        {
+          "math": [
+            "u_used_spell_slot_for_biomancer_get_more_blood",
             "=",
             "0"
           ]
@@ -4212,7 +4540,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_thought_shield"
@@ -4253,7 +4581,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_classless_dispel_magic"
@@ -4294,7 +4622,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_druid_naturebow1"
@@ -4335,7 +4663,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_purify_seed"
@@ -4376,7 +4704,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_druid_healing_herb"
@@ -4417,7 +4745,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_druid_bandage_heal"
@@ -4458,7 +4786,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_druid_summon_brambles"
@@ -4499,7 +4827,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_druid_breathing_underwater"
@@ -4540,7 +4868,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_ice_spike"
@@ -4581,7 +4909,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_frost_armor"
@@ -4622,7 +4950,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_kelvinist_flamebreath"
@@ -4663,7 +4991,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_lightning_bolt"
@@ -4704,7 +5032,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_holy_blade"
@@ -4745,7 +5073,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_spirit_armor"
@@ -4786,7 +5114,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_synaptic_stimulation"
@@ -4827,7 +5155,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_technomancer_welder"
@@ -4868,7 +5196,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_technomancer_far_sight"
@@ -4909,7 +5237,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_animist_summon_watcher"
@@ -4950,7 +5278,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_animist_cast_spells_when_silent"
@@ -4991,7 +5319,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_pain_split"
@@ -5032,7 +5360,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_bio_fleshpouch"
@@ -5073,7 +5401,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_biomancer_coagulant_weave"
@@ -5114,7 +5442,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_biomancer_caustic_aura"
@@ -5155,7 +5483,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_biomancer_swim_frog"
@@ -5196,7 +5524,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_biomancer_carrion_feast"
@@ -5237,7 +5565,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_biomancer_slow_bleeding"
@@ -5278,7 +5606,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_biomancer_eat_tons_of_food"
@@ -5319,7 +5647,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_protection_aura"
@@ -5360,7 +5688,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_sound_bomb"
@@ -5401,7 +5729,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_druid_veggrasp"
@@ -5442,7 +5770,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_druid_rootstrike"
@@ -5483,7 +5811,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_druid_harvest_hunter"
@@ -5524,7 +5852,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_druid_bramble_spear"
@@ -5565,7 +5893,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_druid_disinfectant"
@@ -5606,7 +5934,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_druid_water_walking"
@@ -5647,7 +5975,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_druid_bearmantle"
@@ -5657,6 +5985,47 @@
         {
           "math": [
             "u_used_spell_slot_for_druid_bearmantle",
+            "=",
+            "0"
+          ]
+        },
+        {
+          "math": [
+            "u_sorcerer_forget_spell_charge",
+            "--"
+          ]
+        }
+      ]
+    },
+    {
+      "condition": {
+        "math": [
+          "u_used_spell_slot_for_druid_goodberry",
+          ">",
+          "0"
+        ]
+      },
+      "text": "Forget Goodberry ( level <u_val:used_spell_slot_for_druid_goodberry> )",
+      "topic": "TALK_SORCERER_MENU_MAIN",
+      "effect": [
+        {
+          "math": [
+            "u_spell_level('druid_goodberry')",
+            "=",
+            "-1"
+          ]
+        },
+        {
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
+          "variables": {
+            "forgotten_spell_level": {
+              "u_val": "used_spell_slot_for_druid_goodberry"
+            }
+          }
+        },
+        {
+          "math": [
+            "u_used_spell_slot_for_druid_goodberry",
             "=",
             "0"
           ]
@@ -5688,7 +6057,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_seismic_stomp"
@@ -5729,7 +6098,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_eshaper_shardspray"
@@ -5770,7 +6139,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_move_earth"
@@ -5811,7 +6180,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_clairvoyance"
@@ -5852,7 +6221,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_earthshaper_stoneskin"
@@ -5893,7 +6262,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_earthshaper_pillar"
@@ -5934,7 +6303,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_eshaper_spawn_tools"
@@ -5975,7 +6344,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_earthshaper_danger_sense"
@@ -6016,7 +6385,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_earthshaper_fortitude_of_stone"
@@ -6057,7 +6426,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_earthshaper_harden_earth"
@@ -6098,7 +6467,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_earthshaper_repair_metal_stone"
@@ -6139,7 +6508,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_point_flare"
@@ -6180,7 +6549,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_burning_hands"
@@ -6221,7 +6590,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_frost_spray"
@@ -6262,7 +6631,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_glide_ice"
@@ -6303,7 +6672,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_ice_shield"
@@ -6344,7 +6713,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_kelvinist_summon_flamesword"
@@ -6385,7 +6754,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_kelvinist_anti_cold"
@@ -6426,7 +6795,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_kelvinist_anti_heat"
@@ -6467,7 +6836,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_kelvinist_persuasion_spell"
@@ -6508,7 +6877,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_phase_door"
@@ -6549,7 +6918,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_magus_force_jar"
@@ -6590,7 +6959,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_magus_summon_impact_sling"
@@ -6631,7 +7000,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_magus_slowfall"
@@ -6672,7 +7041,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_magus_spiderclimb"
@@ -6713,7 +7082,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_jolt"
@@ -6754,7 +7123,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_windstrike"
@@ -6795,7 +7164,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_windrun"
@@ -6836,7 +7205,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_stormshaper_repelling_arc"
@@ -6877,7 +7246,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_air_bubble"
@@ -6918,7 +7287,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_electric_eye"
@@ -6959,7 +7328,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_stormshaper_cloak_of_fog"
@@ -7000,7 +7369,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_quantum_tunnel_lesser"
@@ -7041,7 +7410,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_knock"
@@ -7082,7 +7451,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_technomancer_gain_electronics_computer_spell"
@@ -7123,7 +7492,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_technomancer_pain_ignore"
@@ -7164,7 +7533,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_smite"
@@ -7205,7 +7574,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_animist_sense_outsiders"
@@ -7246,7 +7615,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_pertifying_touch"
@@ -7287,7 +7656,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_reactive_armor"
@@ -7328,7 +7697,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_lightning_blast"
@@ -7369,7 +7738,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_bless"
@@ -7410,7 +7779,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_laze"
@@ -7451,7 +7820,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_x_ray"
@@ -7492,7 +7861,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_summon_undead"
@@ -7533,7 +7902,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_necrotic_gaze"
@@ -7574,7 +7943,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_disruption_bolt"
@@ -7615,7 +7984,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_summon_wisps"
@@ -7656,7 +8025,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_bleed"
@@ -7681,12 +8050,53 @@
     {
       "condition": {
         "math": [
+          "u_used_spell_slot_for_animist_detect_wizards",
+          ">",
+          "0"
+        ]
+      },
+      "text": "Forget Witchsight ( level <u_val:used_spell_slot_for_animist_detect_wizards> )",
+      "topic": "TALK_SORCERER_MENU_MAIN",
+      "effect": [
+        {
+          "math": [
+            "u_spell_level('animist_detect_wizards')",
+            "=",
+            "-1"
+          ]
+        },
+        {
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
+          "variables": {
+            "forgotten_spell_level": {
+              "u_val": "used_spell_slot_for_animist_detect_wizards"
+            }
+          }
+        },
+        {
+          "math": [
+            "u_used_spell_slot_for_animist_detect_wizards",
+            "=",
+            "0"
+          ]
+        },
+        {
+          "math": [
+            "u_sorcerer_forget_spell_charge",
+            "--"
+          ]
+        }
+      ]
+    },
+    {
+      "condition": {
+        "math": [
           "u_used_spell_slot_for_light_healing",
           ">",
           "0"
         ]
       },
-      "text": "Forget Cure Light Wounds ( level <u_val:used_spell_slot_for_light_healing> )",
+      "text": "Forget Knit the Rent Flesh ( level <u_val:used_spell_slot_for_light_healing> )",
       "topic": "TALK_SORCERER_MENU_MAIN",
       "effect": [
         {
@@ -7697,7 +8107,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_light_healing"
@@ -7738,7 +8148,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_bio_acidicspray"
@@ -7779,7 +8189,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_biomancer_paralytic_dart"
@@ -7820,7 +8230,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_biomancer_visceral_projection"
@@ -7850,7 +8260,7 @@
           "0"
         ]
       },
-      "text": "Forget Cure Disease, Minor ( level <u_val:used_spell_slot_for_biomancer_cure_disease_minor> )",
+      "text": "Forget Purgation of Maladies ( level <u_val:used_spell_slot_for_biomancer_cure_disease_minor> )",
       "topic": "TALK_SORCERER_MENU_MAIN",
       "effect": [
         {
@@ -7861,7 +8271,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_biomancer_cure_disease_minor"
@@ -7902,7 +8312,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_crystallize_mana"
@@ -7943,7 +8353,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_blinding_flash"
@@ -7984,7 +8394,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_ethereal_grasp"
@@ -8025,7 +8435,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_classless_clean_clothing_and_self"
@@ -8066,7 +8476,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_classless_restore_crystal_mana"
@@ -8107,7 +8517,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_druid_tornskin"
@@ -8148,7 +8558,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_druid_growth"
@@ -8189,7 +8599,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_druid_anti_heat"
@@ -8230,7 +8640,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_druid_traverse_the_wilds"
@@ -8271,7 +8681,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_stonefist"
@@ -8312,7 +8722,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_eshaper_piercing_bolt"
@@ -8353,7 +8763,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_earthshaper_boulder"
@@ -8394,7 +8804,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_earthshaper_turning_of_earth"
@@ -8435,7 +8845,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_kelvinist_firebolt"
@@ -8476,7 +8886,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_magus_stop_attack_shield"
@@ -8517,7 +8927,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_magus_far_hand_pull"
@@ -8558,7 +8968,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_magus_light_target"
@@ -8599,7 +9009,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_stormshaper_wall_of_fog"
@@ -8640,7 +9050,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_stormshaper_cloak_of_frog"
@@ -8681,7 +9091,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_stormshaper_loud_voice_spell"
@@ -8722,7 +9132,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_create_atomic_lamp"
@@ -8763,7 +9173,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_technomancer_conjure_radio"
@@ -8804,7 +9214,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_create_atomic_light"
@@ -8845,7 +9255,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_classless_watch_spell"
@@ -8886,7 +9296,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_classless_easy_sleep_spell"
@@ -8927,7 +9337,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_druid_woodshaft"
@@ -8968,7 +9378,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_summon_cats"
@@ -9009,7 +9419,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_eshaper_rockbolt"
@@ -9050,7 +9460,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_create_lighter"
@@ -9091,7 +9501,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_chilling_touch"
@@ -9132,7 +9542,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_kelvinist_heat_food"
@@ -9173,7 +9583,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_shadow_field"
@@ -9214,7 +9624,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_magic_missile"
@@ -9255,7 +9665,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_shocking_lash"
@@ -9296,7 +9706,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_electric_arts"
@@ -9337,7 +9747,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_taze"
@@ -9378,7 +9788,7 @@
           ]
         },
         {
-          "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots",
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
           "variables": {
             "forgotten_spell_level": {
               "u_val": "used_spell_slot_for_create_rune_sorcerer"

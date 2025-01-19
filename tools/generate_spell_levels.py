@@ -2,7 +2,7 @@ import os
 import json
 
 # If you want to run this script you will likely need to edit this path
-Magiclysm_path ="../../../data/mods/Magiclysm"
+Magiclysm_path ="../../../../current/data/mods/Magiclysm"
 
 tier_0_scroll_list = []
 tier_1_scroll_list = []
@@ -260,7 +260,7 @@ def write_forget_spell():
             "topic": "TALK_SORCERER_MENU_MAIN",
             "effect": [
                 { "math": [ "u_spell_level('" + spell["id"] + "')", "=", "-1" ] },
-                { "run_eoc_with": "EOC_sorcerer_forget_spell_refund_slots", "variables": { "forgotten_spell_level": { "u_val": "used_spell_slot_for_"+spell["safe_id"] } } },
+                { "run_eocs": "EOC_sorcerer_forget_spell_refund_slots", "variables": { "forgotten_spell_level": { "u_val": "used_spell_slot_for_"+spell["safe_id"] } } },
                 { "math": [ "u_used_spell_slot_for_"+spell["safe_id"], "=", "0" ] },
                 { "math": [ "u_sorcerer_forget_spell_charge", "--" ] }
             ]

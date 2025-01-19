@@ -27,7 +27,7 @@
     "id": "biomancer_hyper_regeneration",
     "safe_id": "biomancer_hyper_regeneration",
     "level": 8,
-    "name": "Rapid Regeneration",
+    "name": "Corporeal Reconstitution",
     "description": "Possibly the most powerful of the biomantic healing spells, this causes your flesh to literally knit itself together before your eyes.",
     "tier": 3
   },
@@ -68,7 +68,23 @@
     "safe_id": "druid_renew_forest_spell",
     "level": 8,
     "name": "Renewing the Forest",
-    "description": "While outdoors and not underground, the druid can create a profusion of life around themselves, causing grass to grow through pavement, bushes and flowers to sprout, and trees to grow to full height in moments.",
+    "description": "While outdoors and not underground, the druid can create a profusion of life around themselves, causing grass to grow through pavement, bushes and flowers to sprout, and trees to grow to full height in moments.\n\nIn <color_yellow>addition to</color> mana, this spell also requires <color_red>hit points</color> to cast and <color_yellow>will fail</color> if you are too injured.",
+    "tier": 3
+  },
+  {
+    "id": "druid_create_temporary_spring",
+    "safe_id": "druid_create_temporary_spring",
+    "level": 8,
+    "name": "Fountain of the Depths",
+    "description": "Call to the waters beneath the earth and bring them to the surface, creating a natural spring.  The waters will subside when the spell's duration ends.",
+    "tier": 3
+  },
+  {
+    "id": "druid_turn_tree_into_treant",
+    "safe_id": "druid_turn_tree_into_treant",
+    "level": 8,
+    "name": "Awakening of the Forest Guardian",
+    "description": "Grant a nearby tree awareness and mobility, letting it shake free from the soil and rise up to crush your enemies.  It will root itself again when the spell expires.\n\nYou must be <color_yellow>standing next to a tree</color> for the spell to take effect.",
     "tier": 3
   },
   {
@@ -112,6 +128,14 @@
     "tier": 3
   },
   {
+    "id": "earthshaper_diggable_teleport",
+    "safe_id": "earthshaper_diggable_teleport",
+    "level": 8,
+    "name": "Earth Gate",
+    "description": "While standing on natural earth, sink into it and emerge from any other patch of natural earth within the spell's range.",
+    "tier": 3
+  },
+  {
     "id": "nova_flare",
     "safe_id": "nova_flare",
     "level": 8,
@@ -133,6 +157,14 @@
     "level": 8,
     "name": "The Rime-Covered Heart",
     "description": "Draw on the essence of ice to freeze out all emotion, rendering you comfortably numb.  This spell used to get you on several lists if the government learned that you knew it, back when there was a government to care about that.",
+    "tier": 3
+  },
+  {
+    "id": "kelvinist_set_everyone_on_fire",
+    "safe_id": "kelvinist_set_everyone_on_fire",
+    "level": 8,
+    "name": "Flames of the Apocalypse",
+    "description": "Force a large amount of burning mana into every hostile target affected by the spell, causing them to explode in flames.  Knowledge of this spell required licensing and registration before the Cataclysm, but you're pretty sure the ATF isn't going to be hassling you any time soon.",
     "tier": 3
   },
   {
@@ -168,6 +200,22 @@
     "tier": 3
   },
   {
+    "id": "magus_permanent_light",
+    "safe_id": "magus_permanent_light",
+    "level": 8,
+    "name": "Imperishable Light",
+    "description": "Enchant the air in a location to glow, producing a orb of soft light.  While not particularly bright, the light will last years if you're not lucky and millennia if you are.",
+    "tier": 3
+  },
+  {
+    "id": "magus_cannot_move_attack_or_damage_target",
+    "safe_id": "magus_cannot_move_attack_or_damage_target",
+    "level": 8,
+    "name": "Adamantine Gaol",
+    "description": "Create an impenetrable shell of force around the target, preventing them from moving or acting for the spell's duration.  The shell works in two directions and the target is also immune to all harm.\n\nAdamantine Gaol <color_yellow>cannot be dispelled</color>.",
+    "tier": 3
+  },
+  {
     "id": "lightning_storm",
     "safe_id": "lightning_storm",
     "level": 8,
@@ -188,7 +236,7 @@
     "safe_id": "rupture",
     "level": 7,
     "name": "Rupture",
-    "description": "You pour mana into an unwilling and unprepared vessel, causing cellular break-down, internal hemorrhaging, muddling ley lines, and overcharging electronics.  Immensely gruesome and crude, it was once illegal world-wide, not that it matters now.",
+    "description": "You pour mana into an unwilling and unprepared vessel, causing cellular break-down, internal hemorrhaging, muddling ley lines, and overcharging electronics.  The more powerful the spell, the faster the damage happens.  Immensely gruesome and crude, it was once illegal world-wide, not that it matters now.",
     "tier": 3
   },
   {
@@ -364,7 +412,7 @@
     "safe_id": "magus_slow",
     "level": 6,
     "name": "Slow",
-    "description": "This spell gives you an enormous boost of speed lasting a short period of time.",
+    "description": "This spell weakens your target, resulting in a decrease of speed lasting a short period of time.",
     "tier": 2
   },
   {
@@ -452,7 +500,7 @@
     "safe_id": "technomancer_conjure_ups",
     "level": 6,
     "name": "Power Supply",
-    "description": "For the technomancer with no enhancements, this spell summons a power supply composed of pure mana that can be used to charge any compatible device.  It will continually recharge until the duration expires.",
+    "description": "For the technomancer with no enhancements, this spell summons a power supply composed of pure mana that can be used to charge any compatible device.  Just keep it on your person and it will continually recharge your electronic devices until the duration expires.",
     "tier": 2
   },
   {
@@ -808,11 +856,27 @@
     "tier": 1
   },
   {
+    "id": "animist_do_psionic_damage_to_head",
+    "safe_id": "animist_do_psionic_damage_to_head",
+    "level": 4,
+    "name": "Mind Crush",
+    "description": "Directly assault the target's spirit, bypassing any physical protections they have.",
+    "tier": 1
+  },
+  {
     "id": "bio_grotesque",
     "safe_id": "bio_grotesque",
     "level": 4,
     "name": "Grotesque Enhancement",
     "description": "A spell that warps your body in foreign, unnatural ways to increase your physical abilities and strength.",
+    "tier": 1
+  },
+  {
+    "id": "biomancer_get_more_blood",
+    "safe_id": "biomancer_get_more_blood",
+    "level": 4,
+    "name": "Carmine Infusion",
+    "description": "Using water as a catalyst, restore some of your lost blood.  This spell has no effect if you're healthy and uninjured.",
     "tier": 1
   },
   {
@@ -1052,7 +1116,7 @@
     "safe_id": "druid_veggrasp",
     "level": 3,
     "name": "Vegetative Grasp",
-    "description": "This spell causes roots and vines to burst forth from the ground and grab your foes, slowing them and doing a small amount of damage as they dig in.",
+    "description": "This spell causes roots and vines to burst forth from the ground and grab your foes, slowing them and doing a small amount of damage as they dig in.\n\nLarger targets will be <color_yellow>less affected</color> by the spell, and it has <color_red>no effect</color> on targets not on natural ground.",
     "tier": 1
   },
   {
@@ -1101,6 +1165,14 @@
     "level": 3,
     "name": "Bearmantle",
     "description": "Adopt some of the aspect of the bear, protecting you from cold and preparing you for winter.",
+    "tier": 1
+  },
+  {
+    "id": "druid_goodberry",
+    "safe_id": "druid_goodberry",
+    "level": 3,
+    "name": "Goodberry",
+    "description": "Enchant a set of berries, transforming them into magical fruit that will provide a hearty meal's worth of nutrition and a small amount of healing when eaten.  The goodberries will rot away within 24 hours if not eaten.",
     "tier": 1
   },
   {
@@ -1410,7 +1482,7 @@
     "safe_id": "pertifying_touch",
     "level": 2,
     "name": "Petrifying Touch",
-    "description": "Your hands tries to transform the body of your enemy into a pure stone.  The effect is temporary, but it can deal significant damage."
+    "description": "With a simple touch, you transform the body of your enemy into pure stone.  The effect is temporary, but the target will be totally immobile while the spell lasts."
   },
   {
     "id": "reactive_armor",
@@ -1483,11 +1555,18 @@
     "description": "Agitate old wounds on a creature, causing blood to ooze out of them."
   },
   {
+    "id": "animist_detect_wizards",
+    "safe_id": "animist_detect_wizards",
+    "level": 1,
+    "name": "Witchsight",
+    "description": "Open your senses up to look for the bright corporeal ley lines of those who spent their lives frequently expending their mana.  This also applies to creatures or alien beings that frequently use spells."
+  },
+  {
     "id": "light_healing",
     "safe_id": "light_healing",
     "level": 1,
-    "name": "Cure Light Wounds",
-    "description": "Heals a little bit of damage on the target."
+    "name": "Knit the Rent Flesh",
+    "description": "Cause the target's wounds to writhe, the flesh to crawl back together, and their injuries to heal.  Disturbing, and painful, but effective."
   },
   {
     "id": "bio_acidicspray",
@@ -1514,8 +1593,8 @@
     "id": "biomancer_cure_disease_minor",
     "safe_id": "biomancer_cure_disease_minor",
     "level": 1,
-    "name": "Cure Disease, Minor",
-    "description": "Cure any minor illnesses you might be suffering from.  This is one of the few biomantic cure spells that is castable on other people."
+    "name": "Purgation of Maladies",
+    "description": "Vomit up any minor illnesses you might be suffering from, such as colds or the flu.  This is one of the few biomantic cure spells that is castable on other people."
   },
   {
     "id": "crystallize_mana",
@@ -1536,7 +1615,7 @@
     "safe_id": "ethereal_grasp",
     "level": 1,
     "name": "Ethereal Grasp",
-    "description": "A mass of spectral hands emerge from the ground, slowing everything in range.  Higher levels allow a bigger AoE, and longer effect."
+    "description": "A mass of spectral hands emerge from the ground, grabbing and slowing everything in range.  Higher levels allow a bigger AoE, and longer effect\n\nLarger targets will be <color_yellow>less affected</color> by the spell."
   },
   {
     "id": "classless_clean_clothing_and_self",

@@ -1764,6 +1764,47 @@
   },
   {
     "type": "talk_topic",
+    "id": "TALK_SORCERER_LEARN_SPELL_animist_do_psionic_damage_to_head_at_level_5",
+    "dynamic_line": "Mind Crush: Directly assault the target's spirit, bypassing any physical protections they have.",
+    "responses": [
+      {
+        "text": "Select Spell.",
+        "topic": "TALK_SORCERER_MENU_MAIN",
+        "effect": [
+          {
+            "math": [
+              "u_spell_level('animist_do_psionic_damage_to_head')",
+              "=",
+              "u_current_sorcerer_level"
+            ]
+          },
+          {
+            "math": [
+              "u_used_spell_slot_for_animist_do_psionic_damage_to_head",
+              "=",
+              "5"
+            ]
+          },
+          {
+            "math": [
+              "u_sorcerer_level_5_spells_known",
+              "++"
+            ]
+          }
+        ]
+      },
+      {
+        "text": "Go Back.",
+        "topic": "TALK_SORCERER_MENU_MAIN"
+      },
+      {
+        "text": "Quit.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "type": "talk_topic",
     "id": "TALK_SORCERER_LEARN_SPELL_bio_grotesque_at_level_5",
     "dynamic_line": "Grotesque Enhancement: A spell that warps your body in foreign, unnatural ways to increase your physical abilities and strength.",
     "responses": [
@@ -1781,6 +1822,47 @@
           {
             "math": [
               "u_used_spell_slot_for_bio_grotesque",
+              "=",
+              "5"
+            ]
+          },
+          {
+            "math": [
+              "u_sorcerer_level_5_spells_known",
+              "++"
+            ]
+          }
+        ]
+      },
+      {
+        "text": "Go Back.",
+        "topic": "TALK_SORCERER_MENU_MAIN"
+      },
+      {
+        "text": "Quit.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_SORCERER_LEARN_SPELL_biomancer_get_more_blood_at_level_5",
+    "dynamic_line": "Carmine Infusion: Using water as a catalyst, restore some of your lost blood.  This spell has no effect if you're healthy and uninjured.",
+    "responses": [
+      {
+        "text": "Select Spell.",
+        "topic": "TALK_SORCERER_MENU_MAIN",
+        "effect": [
+          {
+            "math": [
+              "u_spell_level('biomancer_get_more_blood')",
+              "=",
+              "u_current_sorcerer_level"
+            ]
+          },
+          {
+            "math": [
+              "u_used_spell_slot_for_biomancer_get_more_blood",
               "=",
               "5"
             ]
@@ -2995,7 +3077,7 @@
   {
     "type": "talk_topic",
     "id": "TALK_SORCERER_LEARN_SPELL_druid_veggrasp_at_level_5",
-    "dynamic_line": "Vegetative Grasp: This spell causes roots and vines to burst forth from the ground and grab your foes, slowing them and doing a small amount of damage as they dig in.",
+    "dynamic_line": "Vegetative Grasp: This spell causes roots and vines to burst forth from the ground and grab your foes, slowing them and doing a small amount of damage as they dig in.\n\nLarger targets will be <color_yellow>less affected</color> by the spell, and it has <color_red>no effect</color> on targets not on natural ground.",
     "responses": [
       {
         "text": "Select Spell.",
@@ -3257,6 +3339,47 @@
           {
             "math": [
               "u_used_spell_slot_for_druid_bearmantle",
+              "=",
+              "5"
+            ]
+          },
+          {
+            "math": [
+              "u_sorcerer_level_5_spells_known",
+              "++"
+            ]
+          }
+        ]
+      },
+      {
+        "text": "Go Back.",
+        "topic": "TALK_SORCERER_MENU_MAIN"
+      },
+      {
+        "text": "Quit.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_SORCERER_LEARN_SPELL_druid_goodberry_at_level_5",
+    "dynamic_line": "Goodberry: Enchant a set of berries, transforming them into magical fruit that will provide a hearty meal's worth of nutrition and a small amount of healing when eaten.  The goodberries will rot away within 24 hours if not eaten.",
+    "responses": [
+      {
+        "text": "Select Spell.",
+        "topic": "TALK_SORCERER_MENU_MAIN",
+        "effect": [
+          {
+            "math": [
+              "u_spell_level('druid_goodberry')",
+              "=",
+              "u_current_sorcerer_level"
+            ]
+          },
+          {
+            "math": [
+              "u_used_spell_slot_for_druid_goodberry",
               "=",
               "5"
             ]
@@ -4840,7 +4963,7 @@
   {
     "type": "talk_topic",
     "id": "TALK_SORCERER_LEARN_SPELL_pertifying_touch_at_level_5",
-    "dynamic_line": "Petrifying Touch: Your hands tries to transform the body of your enemy into a pure stone.  The effect is temporary, but it can deal significant damage.",
+    "dynamic_line": "Petrifying Touch: With a simple touch, you transform the body of your enemy into pure stone.  The effect is temporary, but the target will be totally immobile while the spell lasts.",
     "responses": [
       {
         "text": "Select Spell.",
@@ -5290,8 +5413,49 @@
   },
   {
     "type": "talk_topic",
+    "id": "TALK_SORCERER_LEARN_SPELL_animist_detect_wizards_at_level_5",
+    "dynamic_line": "Witchsight: Open your senses up to look for the bright corporeal ley lines of those who spent their lives frequently expending their mana.  This also applies to creatures or alien beings that frequently use spells.",
+    "responses": [
+      {
+        "text": "Select Spell.",
+        "topic": "TALK_SORCERER_MENU_MAIN",
+        "effect": [
+          {
+            "math": [
+              "u_spell_level('animist_detect_wizards')",
+              "=",
+              "u_current_sorcerer_level"
+            ]
+          },
+          {
+            "math": [
+              "u_used_spell_slot_for_animist_detect_wizards",
+              "=",
+              "5"
+            ]
+          },
+          {
+            "math": [
+              "u_sorcerer_level_5_spells_known",
+              "++"
+            ]
+          }
+        ]
+      },
+      {
+        "text": "Go Back.",
+        "topic": "TALK_SORCERER_MENU_MAIN"
+      },
+      {
+        "text": "Quit.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "type": "talk_topic",
     "id": "TALK_SORCERER_LEARN_SPELL_light_healing_at_level_5",
-    "dynamic_line": "Cure Light Wounds: Heals a little bit of damage on the target.",
+    "dynamic_line": "Knit the Rent Flesh: Cause the target's wounds to writhe, the flesh to crawl back together, and their injuries to heal.  Disturbing, and painful, but effective.",
     "responses": [
       {
         "text": "Select Spell.",
@@ -5455,7 +5619,7 @@
   {
     "type": "talk_topic",
     "id": "TALK_SORCERER_LEARN_SPELL_biomancer_cure_disease_minor_at_level_5",
-    "dynamic_line": "Cure Disease, Minor: Cure any minor illnesses you might be suffering from.  This is one of the few biomantic cure spells that is castable on other people.",
+    "dynamic_line": "Purgation of Maladies: Vomit up any minor illnesses you might be suffering from, such as colds or the flu.  This is one of the few biomantic cure spells that is castable on other people.",
     "responses": [
       {
         "text": "Select Spell.",
@@ -5578,7 +5742,7 @@
   {
     "type": "talk_topic",
     "id": "TALK_SORCERER_LEARN_SPELL_ethereal_grasp_at_level_5",
-    "dynamic_line": "Ethereal Grasp: A mass of spectral hands emerge from the ground, slowing everything in range.  Higher levels allow a bigger AoE, and longer effect.",
+    "dynamic_line": "Ethereal Grasp: A mass of spectral hands emerge from the ground, grabbing and slowing everything in range.  Higher levels allow a bigger AoE, and longer effect\n\nLarger targets will be <color_yellow>less affected</color> by the spell.",
     "responses": [
       {
         "text": "Select Spell.",
@@ -7508,6 +7672,17 @@
       {
         "condition": {
           "math": [
+            "u_used_spell_slot_for_animist_do_psionic_damage_to_head",
+            "==",
+            "0"
+          ]
+        },
+        "text": "Learn Mind Crush ( level 4 )",
+        "topic": "TALK_SORCERER_LEARN_SPELL_animist_do_psionic_damage_to_head_at_level_5"
+      },
+      {
+        "condition": {
+          "math": [
             "u_used_spell_slot_for_bio_grotesque",
             "==",
             "0"
@@ -7515,6 +7690,17 @@
         },
         "text": "Learn Grotesque Enhancement ( level 4 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_bio_grotesque_at_level_5"
+      },
+      {
+        "condition": {
+          "math": [
+            "u_used_spell_slot_for_biomancer_get_more_blood",
+            "==",
+            "0"
+          ]
+        },
+        "text": "Learn Carmine Infusion ( level 4 )",
+        "topic": "TALK_SORCERER_LEARN_SPELL_biomancer_get_more_blood_at_level_5"
       },
       {
         "condition": {
@@ -7911,6 +8097,17 @@
         },
         "text": "Learn Bearmantle ( level 3 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_druid_bearmantle_at_level_5"
+      },
+      {
+        "condition": {
+          "math": [
+            "u_used_spell_slot_for_druid_goodberry",
+            "==",
+            "0"
+          ]
+        },
+        "text": "Learn Goodberry ( level 3 )",
+        "topic": "TALK_SORCERER_LEARN_SPELL_druid_goodberry_at_level_5"
       },
       {
         "condition": {
@@ -8454,12 +8651,23 @@
       {
         "condition": {
           "math": [
+            "u_used_spell_slot_for_animist_detect_wizards",
+            "==",
+            "0"
+          ]
+        },
+        "text": "Learn Witchsight ( level 1 )",
+        "topic": "TALK_SORCERER_LEARN_SPELL_animist_detect_wizards_at_level_5"
+      },
+      {
+        "condition": {
+          "math": [
             "u_used_spell_slot_for_light_healing",
             "==",
             "0"
           ]
         },
-        "text": "Learn Cure Light Wounds ( level 1 )",
+        "text": "Learn Knit the Rent Flesh ( level 1 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_light_healing_at_level_5"
       },
       {
@@ -8503,7 +8711,7 @@
             "0"
           ]
         },
-        "text": "Learn Cure Disease, Minor ( level 1 )",
+        "text": "Learn Purgation of Maladies ( level 1 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_biomancer_cure_disease_minor_at_level_5"
       },
       {

@@ -84,7 +84,7 @@
   {
     "type": "talk_topic",
     "id": "TALK_SORCERER_LEARN_SPELL_pertifying_touch_at_level_2",
-    "dynamic_line": "Petrifying Touch: Your hands tries to transform the body of your enemy into a pure stone.  The effect is temporary, but it can deal significant damage.",
+    "dynamic_line": "Petrifying Touch: With a simple touch, you transform the body of your enemy into pure stone.  The effect is temporary, but the target will be totally immobile while the spell lasts.",
     "responses": [
       {
         "text": "Select Spell.",
@@ -534,8 +534,49 @@
   },
   {
     "type": "talk_topic",
+    "id": "TALK_SORCERER_LEARN_SPELL_animist_detect_wizards_at_level_2",
+    "dynamic_line": "Witchsight: Open your senses up to look for the bright corporeal ley lines of those who spent their lives frequently expending their mana.  This also applies to creatures or alien beings that frequently use spells.",
+    "responses": [
+      {
+        "text": "Select Spell.",
+        "topic": "TALK_SORCERER_MENU_MAIN",
+        "effect": [
+          {
+            "math": [
+              "u_spell_level('animist_detect_wizards')",
+              "=",
+              "u_current_sorcerer_level"
+            ]
+          },
+          {
+            "math": [
+              "u_used_spell_slot_for_animist_detect_wizards",
+              "=",
+              "2"
+            ]
+          },
+          {
+            "math": [
+              "u_sorcerer_level_2_spells_known",
+              "++"
+            ]
+          }
+        ]
+      },
+      {
+        "text": "Go Back.",
+        "topic": "TALK_SORCERER_MENU_MAIN"
+      },
+      {
+        "text": "Quit.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "type": "talk_topic",
     "id": "TALK_SORCERER_LEARN_SPELL_light_healing_at_level_2",
-    "dynamic_line": "Cure Light Wounds: Heals a little bit of damage on the target.",
+    "dynamic_line": "Knit the Rent Flesh: Cause the target's wounds to writhe, the flesh to crawl back together, and their injuries to heal.  Disturbing, and painful, but effective.",
     "responses": [
       {
         "text": "Select Spell.",
@@ -699,7 +740,7 @@
   {
     "type": "talk_topic",
     "id": "TALK_SORCERER_LEARN_SPELL_biomancer_cure_disease_minor_at_level_2",
-    "dynamic_line": "Cure Disease, Minor: Cure any minor illnesses you might be suffering from.  This is one of the few biomantic cure spells that is castable on other people.",
+    "dynamic_line": "Purgation of Maladies: Vomit up any minor illnesses you might be suffering from, such as colds or the flu.  This is one of the few biomantic cure spells that is castable on other people.",
     "responses": [
       {
         "text": "Select Spell.",
@@ -822,7 +863,7 @@
   {
     "type": "talk_topic",
     "id": "TALK_SORCERER_LEARN_SPELL_ethereal_grasp_at_level_2",
-    "dynamic_line": "Ethereal Grasp: A mass of spectral hands emerge from the ground, slowing everything in range.  Higher levels allow a bigger AoE, and longer effect.",
+    "dynamic_line": "Ethereal Grasp: A mass of spectral hands emerge from the ground, grabbing and slowing everything in range.  Higher levels allow a bigger AoE, and longer effect\n\nLarger targets will be <color_yellow>less affected</color> by the spell.",
     "responses": [
       {
         "text": "Select Spell.",
@@ -2422,12 +2463,23 @@
       {
         "condition": {
           "math": [
+            "u_used_spell_slot_for_animist_detect_wizards",
+            "==",
+            "0"
+          ]
+        },
+        "text": "Learn Witchsight ( level 1 )",
+        "topic": "TALK_SORCERER_LEARN_SPELL_animist_detect_wizards_at_level_2"
+      },
+      {
+        "condition": {
+          "math": [
             "u_used_spell_slot_for_light_healing",
             "==",
             "0"
           ]
         },
-        "text": "Learn Cure Light Wounds ( level 1 )",
+        "text": "Learn Knit the Rent Flesh ( level 1 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_light_healing_at_level_2"
       },
       {
@@ -2471,7 +2523,7 @@
             "0"
           ]
         },
-        "text": "Learn Cure Disease, Minor ( level 1 )",
+        "text": "Learn Purgation of Maladies ( level 1 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_biomancer_cure_disease_minor_at_level_2"
       },
       {
