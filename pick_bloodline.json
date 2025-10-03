@@ -30,7 +30,7 @@
         "effect": [
           { "u_add_trait": "SORCERER" },
           { "run_eocs": "EOC_level_up_sorcerer" },
-          { "math": [ "u_available_favourite_spells", "=", "1" ] },
+          { "math": ["u_available_favourite_spells", "=", "1"] },
           { "u_add_var": "power_source", "value": "intelligence" },
           { "u_add_var": "bloodline", "value": "STANDARD" }
         ]
@@ -67,7 +67,7 @@
   {
     "type": "talk_topic",
     "id": "TALK_SORCERER_GAIN_BLOODLINE_SPELLDANCER",
-    "dynamic_line": "As a spelldancer, you empower your magic though dance and acrobatics.  The elegance of your movements is matched only by the power of your spells.\nYour caster level bonus is based off of effective dodge instead of intelligence.  You have learned a martial art that focuses on casting spells while dodging attacks to power up your unarmed strikes from the mana spent.\nIs this your bloodline?",
+    "dynamic_line": "As a spelldancer, you empower your magic though dance and acrobatics.  The elegance of your movements is matched only by the power of your spells.\nYour caster level bonus is based off of effective dodge instead of intelligence.\nIs this your bloodline?",
     "responses": [
       {
         "text": "Choose bloodline",
@@ -76,8 +76,7 @@
           { "u_add_trait": "SORCERER" },
           { "run_eocs": "EOC_level_up_sorcerer" },
           { "u_add_var": "power_source", "value": "dodge" },
-          { "u_add_var": "bloodline", "value": "SPELLDANCER" },
-          { "u_spawn_item": "manual_spelldancing" }
+          { "u_add_var": "bloodline", "value": "SPELLDANCER" }
         ]
       },
       {
