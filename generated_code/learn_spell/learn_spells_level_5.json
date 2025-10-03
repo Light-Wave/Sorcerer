@@ -1149,6 +1149,47 @@
   },
   {
     "type": "talk_topic",
+    "id": "TALK_SORCERER_LEARN_SPELL_magus_push_nearby_enemies_back_at_level_5",
+    "dynamic_line": "Repulsion Wave: Unleash a wave of force, hurling all nearby targets away from you.  Heavier targets are harder to affect.",
+    "responses": [
+      {
+        "text": "Select Spell.",
+        "topic": "TALK_SORCERER_MENU_MAIN",
+        "effect": [
+          {
+            "math": [
+              "u_spell_level('magus_push_nearby_enemies_back')",
+              "=",
+              "u_current_sorcerer_level"
+            ]
+          },
+          {
+            "math": [
+              "u_used_spell_slot_for_magus_push_nearby_enemies_back",
+              "=",
+              "5"
+            ]
+          },
+          {
+            "math": [
+              "u_sorcerer_level_5_spells_known",
+              "++"
+            ]
+          }
+        ]
+      },
+      {
+        "text": "Go Back.",
+        "topic": "TALK_SORCERER_MENU_MAIN"
+      },
+      {
+        "text": "Quit.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "type": "talk_topic",
     "id": "TALK_SORCERER_LEARN_SPELL_storm_hammer_at_level_5",
     "dynamic_line": "Call Stormhammer: Creates a crackling magical warhammer full of lightning to smite your foes with, and of course, smash things to bits!",
     "responses": [
@@ -5168,7 +5209,7 @@
   {
     "type": "talk_topic",
     "id": "TALK_SORCERER_LEARN_SPELL_x-ray_at_level_5",
-    "dynamic_line": "X-ray Vision: You fire a cone of X-rays that magically allows you to see that area for a short time.",
+    "dynamic_line": "X-ray Vision: You fire a cone of X-rays that magically allow you to see that area for a short time.",
     "responses": [
       {
         "text": "Select Spell.",
@@ -7503,6 +7544,17 @@
         },
         "text": "Learn Arrowflight ( level 5 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_magus_ranged_increase_at_level_5"
+      },
+      {
+        "condition": {
+          "math": [
+            "u_used_spell_slot_for_magus_push_nearby_enemies_back",
+            "==",
+            "0"
+          ]
+        },
+        "text": "Learn Repulsion Wave ( level 5 )",
+        "topic": "TALK_SORCERER_LEARN_SPELL_magus_push_nearby_enemies_back_at_level_5"
       },
       {
         "condition": {

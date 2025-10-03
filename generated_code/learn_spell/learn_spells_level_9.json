@@ -1477,6 +1477,47 @@
   },
   {
     "type": "talk_topic",
+    "id": "TALK_SORCERER_LEARN_SPELL_animist_see_invisibility_at_level_9",
+    "dynamic_line": "Seeing the Unseen: Rather than relying on your eyes, use your soul to also detect nearby beings, allowing you to see even creatures that are invisible to normal sight.",
+    "responses": [
+      {
+        "text": "Select Spell.",
+        "topic": "TALK_SORCERER_MENU_MAIN",
+        "effect": [
+          {
+            "math": [
+              "u_spell_level('animist_see_invisibility')",
+              "=",
+              "u_current_sorcerer_level"
+            ]
+          },
+          {
+            "math": [
+              "u_used_spell_slot_for_animist_see_invisibility",
+              "=",
+              "9"
+            ]
+          },
+          {
+            "math": [
+              "u_sorcerer_level_9_spells_known",
+              "++"
+            ]
+          }
+        ]
+      },
+      {
+        "text": "Go Back.",
+        "topic": "TALK_SORCERER_MENU_MAIN"
+      },
+      {
+        "text": "Quit.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "type": "talk_topic",
     "id": "TALK_SORCERER_LEARN_SPELL_vicious_tentacle_at_level_9",
     "dynamic_line": "Vicious Tentacle: This spell extrudes a long and nasty whiplike tentacle of sharp bones and oozing acid from your body, which has a long reach attack and vicious damage.",
     "responses": [
@@ -3749,6 +3790,47 @@
           {
             "math": [
               "u_used_spell_slot_for_magus_ranged_increase",
+              "=",
+              "9"
+            ]
+          },
+          {
+            "math": [
+              "u_sorcerer_level_9_spells_known",
+              "++"
+            ]
+          }
+        ]
+      },
+      {
+        "text": "Go Back.",
+        "topic": "TALK_SORCERER_MENU_MAIN"
+      },
+      {
+        "text": "Quit.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_SORCERER_LEARN_SPELL_magus_push_nearby_enemies_back_at_level_9",
+    "dynamic_line": "Repulsion Wave: Unleash a wave of force, hurling all nearby targets away from you.  Heavier targets are harder to affect.",
+    "responses": [
+      {
+        "text": "Select Spell.",
+        "topic": "TALK_SORCERER_MENU_MAIN",
+        "effect": [
+          {
+            "math": [
+              "u_spell_level('magus_push_nearby_enemies_back')",
+              "=",
+              "u_current_sorcerer_level"
+            ]
+          },
+          {
+            "math": [
+              "u_used_spell_slot_for_magus_push_nearby_enemies_back",
               "=",
               "9"
             ]
@@ -7792,7 +7874,7 @@
   {
     "type": "talk_topic",
     "id": "TALK_SORCERER_LEARN_SPELL_x-ray_at_level_9",
-    "dynamic_line": "X-ray Vision: You fire a cone of X-rays that magically allows you to see that area for a short time.",
+    "dynamic_line": "X-ray Vision: You fire a cone of X-rays that magically allow you to see that area for a short time.",
     "responses": [
       {
         "text": "Select Spell.",
@@ -10219,6 +10301,17 @@
       {
         "condition": {
           "math": [
+            "u_used_spell_slot_for_animist_see_invisibility",
+            "==",
+            "0"
+          ]
+        },
+        "text": "Learn Seeing the Unseen ( level 6 )",
+        "topic": "TALK_SORCERER_LEARN_SPELL_animist_see_invisibility_at_level_9"
+      },
+      {
+        "condition": {
+          "math": [
             "u_used_spell_slot_for_vicious_tentacle",
             "==",
             "0"
@@ -10831,6 +10924,17 @@
         },
         "text": "Learn Arrowflight ( level 5 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_magus_ranged_increase_at_level_9"
+      },
+      {
+        "condition": {
+          "math": [
+            "u_used_spell_slot_for_magus_push_nearby_enemies_back",
+            "==",
+            "0"
+          ]
+        },
+        "text": "Learn Repulsion Wave ( level 5 )",
+        "topic": "TALK_SORCERER_LEARN_SPELL_magus_push_nearby_enemies_back_at_level_9"
       },
       {
         "condition": {

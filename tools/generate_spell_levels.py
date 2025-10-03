@@ -2,7 +2,7 @@ import os
 import json
 
 # If you want to run this script you will likely need to edit this path
-Magiclysm_path ="../../../../current/data/mods/Magiclysm"
+Magiclysm_path ="../../../data/mods/Magiclysm"
 
 tier_0_scroll_list = []
 tier_1_scroll_list = []

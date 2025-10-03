@@ -2585,7 +2585,7 @@
   {
     "type": "talk_topic",
     "id": "TALK_SORCERER_LEARN_SPELL_x-ray_at_level_3",
-    "dynamic_line": "X-ray Vision: You fire a cone of X-rays that magically allows you to see that area for a short time.",
+    "dynamic_line": "X-ray Vision: You fire a cone of X-rays that magically allow you to see that area for a short time.",
     "responses": [
       {
         "text": "Select Spell.",

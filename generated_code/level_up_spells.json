@@ -760,6 +760,27 @@
     },
     {
       "run_eocs": {
+        "id": "sorcerer_level_up_animist_see_invisibility",
+        "condition": {
+          "math": [
+            "u_used_spell_slot_for_animist_see_invisibility",
+            ">",
+            "0"
+          ]
+        },
+        "effect": [
+          {
+            "math": [
+              "u_spell_level('animist_see_invisibility')",
+              "=",
+              "max(u_current_sorcerer_level, u_spell_level('animist_see_invisibility') )"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "run_eocs": {
         "id": "sorcerer_level_up_vicious_tentacle",
         "condition": {
           "math": [
@@ -1929,6 +1950,27 @@
               "u_spell_level('magus_ranged_increase')",
               "=",
               "max(u_current_sorcerer_level, u_spell_level('magus_ranged_increase') )"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "run_eocs": {
+        "id": "sorcerer_level_up_magus_push_nearby_enemies_back",
+        "condition": {
+          "math": [
+            "u_used_spell_slot_for_magus_push_nearby_enemies_back",
+            ">",
+            "0"
+          ]
+        },
+        "effect": [
+          {
+            "math": [
+              "u_spell_level('magus_push_nearby_enemies_back')",
+              "=",
+              "max(u_current_sorcerer_level, u_spell_level('magus_push_nearby_enemies_back') )"
             ]
           }
         ]

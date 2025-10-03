@@ -1490,6 +1490,47 @@
     {
       "condition": {
         "math": [
+          "u_used_spell_slot_for_animist_see_invisibility",
+          ">",
+          "0"
+        ]
+      },
+      "text": "Forget Seeing the Unseen ( level <u_val:used_spell_slot_for_animist_see_invisibility> )",
+      "topic": "TALK_SORCERER_MENU_MAIN",
+      "effect": [
+        {
+          "math": [
+            "u_spell_level('animist_see_invisibility')",
+            "=",
+            "-1"
+          ]
+        },
+        {
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
+          "variables": {
+            "forgotten_spell_level": {
+              "u_val": "used_spell_slot_for_animist_see_invisibility"
+            }
+          }
+        },
+        {
+          "math": [
+            "u_used_spell_slot_for_animist_see_invisibility",
+            "=",
+            "0"
+          ]
+        },
+        {
+          "math": [
+            "u_sorcerer_forget_spell_charge",
+            "--"
+          ]
+        }
+      ]
+    },
+    {
+      "condition": {
+        "math": [
           "u_used_spell_slot_for_vicious_tentacle",
           ">",
           "0"
@@ -3771,6 +3812,47 @@
         {
           "math": [
             "u_used_spell_slot_for_magus_ranged_increase",
+            "=",
+            "0"
+          ]
+        },
+        {
+          "math": [
+            "u_sorcerer_forget_spell_charge",
+            "--"
+          ]
+        }
+      ]
+    },
+    {
+      "condition": {
+        "math": [
+          "u_used_spell_slot_for_magus_push_nearby_enemies_back",
+          ">",
+          "0"
+        ]
+      },
+      "text": "Forget Repulsion Wave ( level <u_val:used_spell_slot_for_magus_push_nearby_enemies_back> )",
+      "topic": "TALK_SORCERER_MENU_MAIN",
+      "effect": [
+        {
+          "math": [
+            "u_spell_level('magus_push_nearby_enemies_back')",
+            "=",
+            "-1"
+          ]
+        },
+        {
+          "run_eocs": "EOC_sorcerer_forget_spell_refund_slots",
+          "variables": {
+            "forgotten_spell_level": {
+              "u_val": "used_spell_slot_for_magus_push_nearby_enemies_back"
+            }
+          }
+        },
+        {
+          "math": [
+            "u_used_spell_slot_for_magus_push_nearby_enemies_back",
             "=",
             "0"
           ]

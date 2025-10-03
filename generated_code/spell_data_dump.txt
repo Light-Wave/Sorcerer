@@ -288,6 +288,14 @@
     "tier": 2
   },
   {
+    "id": "animist_see_invisibility",
+    "safe_id": "animist_see_invisibility",
+    "level": 6,
+    "name": "Seeing the Unseen",
+    "description": "Rather than relying on your eyes, use your soul to also detect nearby beings, allowing you to see even creatures that are invisible to normal sight.",
+    "tier": 2
+  },
+  {
     "id": "vicious_tentacle",
     "safe_id": "vicious_tentacle",
     "level": 6,
@@ -733,6 +741,14 @@
     "level": 5,
     "name": "Arrowflight",
     "description": "A popular military spell since ancient times, Arrowflight increases the range of bows and, as it later turned out, firearms.",
+    "tier": 2
+  },
+  {
+    "id": "magus_push_nearby_enemies_back",
+    "safe_id": "magus_push_nearby_enemies_back",
+    "level": 5,
+    "name": "Repulsion Wave",
+    "description": "Unleash a wave of force, hurling all nearby targets away from you.  Heavier targets are harder to affect.",
     "tier": 2
   },
   {
@@ -1517,7 +1533,7 @@
     "safe_id": "x_ray",
     "level": 2,
     "name": "X-ray Vision",
-    "description": "You fire a cone of X-rays that magically allows you to see that area for a short time."
+    "description": "You fire a cone of X-rays that magically allow you to see that area for a short time."
   },
   {
     "id": "summon_undead",
