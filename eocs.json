@@ -61,7 +61,7 @@
   {
     "type": "effect_on_condition",
     "id": "EOC_sorcerer_forget_spell_refund_slots",
-    "condition": {"expects_vars": [ "forgotten_spell_level" ]},
+    "condition": { "expects_vars": [ "forgotten_spell_level" ] },
     "effect": [
       {
         "run_eocs": {

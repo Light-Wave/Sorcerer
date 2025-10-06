@@ -4,7 +4,7 @@
     "id": "sorcerer",
     "name": "Sorcerer",
     "authors": [ "Lightwave" ],
-    "description": "A different way to play Magiclysm",
+    "description": "A different way to play Magiclysm. Gain spells and spell levels from killing enemies instead of reading books.",
     "category": "misc_additions",
     "dependencies": [ "dda", "magiclysm" ]
   }

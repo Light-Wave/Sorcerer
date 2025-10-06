@@ -4,18 +4,9 @@
     "id": "TALK_SORCERER_PICK_BLOODLINE",
     "dynamic_line": "While wizards spends their lives burried in books to understand magic, your power stems from your innately magical bloodline.  Magic is your birthright.\nInstead of studdying books, you increase in power by slaying monsters.\n\nThe standard sorcerer gains a caster level bonus based on their intelligence, but some bloodlines changes this.\nThat being said, what exactly is your bloodline?",
     "responses": [
-      {
-        "text": "Standard bloodline",
-        "topic": "TALK_SORCERER_GAIN_BLOODLINE_STANDARD"
-      },
-      {
-        "text": "Bloodrager",
-        "topic": "TALK_SORCERER_GAIN_BLOODLINE_BLOODRAGER"
-      },
-      {
-        "text": "Spelldancer",
-        "topic": "TALK_SORCERER_GAIN_BLOODLINE_SPELLDANCER"
-      },
+      { "text": "Standard bloodline", "topic": "TALK_SORCERER_GAIN_BLOODLINE_STANDARD" },
+      { "text": "Bloodrager", "topic": "TALK_SORCERER_GAIN_BLOODLINE_BLOODRAGER" },
+      { "text": "Spelldancer", "topic": "TALK_SORCERER_GAIN_BLOODLINE_SPELLDANCER" },
       { "text": "Quit.", "topic": "TALK_DONE" }
     ]
   },
@@ -30,15 +21,12 @@
         "effect": [
           { "u_add_trait": "SORCERER" },
           { "run_eocs": "EOC_level_up_sorcerer" },
-          { "math": ["u_available_favourite_spells", "=", "1"] },
+          { "math": [ "u_available_favourite_spells", "=", "1" ] },
           { "u_add_var": "power_source", "value": "intelligence" },
           { "u_add_var": "bloodline", "value": "STANDARD" }
         ]
       },
-      {
-        "text": "Back",
-        "topic": "TALK_SORCERER_PICK_BLOODLINE"
-      },
+      { "text": "Back", "topic": "TALK_SORCERER_PICK_BLOODLINE" },
       { "text": "Quit.", "topic": "TALK_DONE" }
     ]
   },
@@ -57,10 +45,7 @@
           { "u_add_var": "bloodline", "value": "BLOODRAGER" }
         ]
       },
-      {
-        "text": "Back",
-        "topic": "TALK_SORCERER_PICK_BLOODLINE"
-      },
+      { "text": "Back", "topic": "TALK_SORCERER_PICK_BLOODLINE" },
       { "text": "Quit.", "topic": "TALK_DONE" }
     ]
   },
@@ -79,10 +64,7 @@
           { "u_add_var": "bloodline", "value": "SPELLDANCER" }
         ]
       },
-      {
-        "text": "Back",
-        "topic": "TALK_SORCERER_PICK_BLOODLINE"
-      },
+      { "text": "Back", "topic": "TALK_SORCERER_PICK_BLOODLINE" },
       { "text": "Quit.", "topic": "TALK_DONE" }
     ]
   }
