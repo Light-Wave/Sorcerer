@@ -1,26 +1,26 @@
 # Sorcerer
 
-A differnet way to play Magiclysm.
-Instead of reading books, gain spells and spell levels when you level up, in much the same way as Bombasticperks.
-Each level, you can nearn a limited number of spells.
-Your caster level is determined by your sorcerer level and is boosted by your intelligence; (int/2)-3, so +0 at 6, +1 at 8, +2 at 10, and so on.
-You are not limited to what spells you can pick by classes.
-You may pick a bloodline that alters how the class works. For example, the spelldancer gets increased caster level from their effective dodge, rather than from intelligence. The deafualt class uses intelligence and lets you boost one of your known spells to level 3.
-Each time you level up, you can swap one spell you know with a spell of the same or lower level, so you are not locked in to your choises forever.
+A differnet way to play Magiclysm.<br>
+Instead of reading books, gain spells and spell levels when you level up, in much the same way as Bombasticperks.<br>
+Each level, you can nearn a limited number of spells.<br>
+Your caster level is determined by your sorcerer level and is boosted by your intelligence; (int/2)-3, so +0 at 6, +1 at 8, +2 at 10, and so on.<br>
+You are not limited to what spells you can pick by classes.<br>
+You may pick a bloodline that alters how the sorcerer works. For example, the spelldancer gets increased caster level from their effective dodge, rather than from intelligence. The deafualt bloodline uses intelligence and lets you boost one of your known spells to level 3.<br>
+Each time you level up, you can swap one spell you know with a spell of the same or lower level, so you are not locked in to your choises forever.<br>
 Inspired by Pathfinder and Dungeons and Dragons.
 
 ## Contributing
 
-Please note that the code inside the folder generated_code is auto generated and should not be edited manually. Instead, use the python script in tools. You might have to adjust the paths used before you run them.
-generated_code/spell_data_dump.txt contains data for all spells found and generated. You can copy that data into tools/spell_data.txt to edit properties of spells, disable spells, register sorcerer-specific spells, or manually alter the spell level of the spell.
-I have not yet figgured out a way to auto format the generated code, so you will have to deal with that yourself.
+Please note that the code inside the folder generated_code is auto generated and should not be edited manually. Instead, use the python script in tools. You might have to adjust the paths used before you run them.<br>
+generated_code/spell_data_dump.txt contains data for all spells found and generated. You can copy that data into tools/spell_data.txt to edit properties of spells, disable spells, register sorcerer-specific spells, or manually alter the spell level of the spell.<br>
+I have not yet figgured out a way to auto format the generated code, so you will have to deal with that yourself.<br>
 Note that while tools/spell_data.txt contains json data, it is a .txt file. This is to make sure CDDA doesn't confuse it for something it should be reading. The json is read by tools/generate_spell_levels.py.
 
 ## Balancing
 
-It seems that sorcerers will end up being more powerful than traditional Magiclysm wizards. I'm not yet sure if that is good or not. The mod might need a fair bit of nerfing.
-One path forwards would be to give traditional Magiclysm wizards more toys depending on their school, like the school weapons, the caster level boosting items, or the druids wildshape.
-Bloodlines should feel roughly equaly powerful to each other, preferably.
+It seems that sorcerers will end up being more powerful than traditional Magiclysm wizards. I'm not yet sure if that is good or not. The mod might need a fair bit of nerfing.<br>
+One path forwards would be to give traditional Magiclysm wizards more toys depending on their school, like the school weapons, the caster level boosting items, or the druids wildshape.<br>
+Bloodlines should feel roughly equaly powerful to each other, preferably.<br>
 My thinking is that if you are playing as a traditional Magiclysm wizard, you would level your main combat spell to at around level 5 before you try to use it in combat, so a sorcerer should start with their main combat spell's effective spell level being around there as well. A sorcerer will likely gain levels in less in-game time than a wizard would, but would have to do more dangerous activities to do so.
 
 # Future plans and loose ideas
@@ -51,10 +51,10 @@ Spelldancer should have their own martial art (Spelldancing) that is similar to 
 
 ## Tarot bloodline
 
-You have a tarot deck that is the source of your power. Each time you wake up you draw a hand, assuming the last time you did so is more than 8 hours ago.
-Randomly draw spells equal to the spells known by a normal sorcerer, divided up in levels the same way. You can cast the spells you drew as many times as you want.
-Optionally, have specific tarot cards that lets you cast a spell once before it is consumed, like a Tarot Card: Black Lotus, which gives you a bunch of mana instantly, or Tarot Card: The Blacksmith, which summons a forge for half a day or so.
-Mulligan your cards. Discard x cards and draw x-1 new cards. Fill up your highest leveled spell slot first, and the specific card slots last. Or perhaps let the new cards be completely random?
+You have a tarot deck that is the source of your power. Each time you wake up you draw a hand, assuming the last time you did so is more than 8 hours ago.<br>
+Randomly draw spells equal to the spells known by a normal sorcerer, divided up in levels the same way. You can cast the spells you drew as many times as you want.<br>
+Optionally, have specific tarot cards that lets you cast a spell once before it is consumed, like a Tarot Card: Black Lotus, which gives you a bunch of mana instantly, or Tarot Card: The Blacksmith, which summons a forge for half a day or so.<br>
+Mulligan your cards. Discard x cards and draw x-1 new cards. Fill up your highest leveled spell slot first, and the specific card slots last. Or perhaps let the new cards be completely random?<br>
 As you level up, you gain more harrowing-specific card slots, and a couple free mulligans.
 
 ## Shifter
@@ -71,7 +71,7 @@ Gain power based on number of followers instead of intelligence. Might be inconv
 
 ## Spellslinger
 
-Spellcasting level bonus is somewhat based on perception instead of intelligence. Perhaps after you have fired a ranged weapon, you gain a bonus to your caster level based on distance shot multiplied by your to-hit chance? Gain the ability to cast spells from further away, and to imbue your bullets with magical properties. Gain bonus spells focused on staying far away and using guns. Despite the name of the class, you can also use bows and other ranged weapons.
+Spellcasting level bonus is somewhat based on perception instead of intelligence. Perhaps after you have fired a ranged weapon, you gain a bonus to your caster level based on distance shot multiplied by your to-hit chance? Gain the ability to cast spells from further away, and to imbue your bullets with magical properties. Gain bonus spells focused on staying far away and using guns. Despite the name of the class, you can also use bows and other ranged weapons.<br>
 Perhaps instead they can craft a spellcasting focus item that lets you cast spells from futher way when wielded, and your spells become more powerful the futher away you are?
 
 ## Attuned bloodlines
