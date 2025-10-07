@@ -8,7 +8,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('rupture')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('rupture') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_rupture", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -26,7 +26,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('obfuscated_body')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('obfuscated_body') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_obfuscated_body", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -44,7 +44,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('druidic_healing')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('druidic_healing') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_druidic_healing", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -62,7 +62,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('magus_mana_blast')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('magus_mana_blast') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_magus_mana_blast", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -80,7 +80,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('summon_magic_motorcycle')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('summon_magic_motorcycle') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_summon_magic_motorcycle", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -98,7 +98,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('dominate')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('dominate') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_dominate", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -116,7 +116,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('devour')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('devour') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_devour", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -134,7 +134,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('animist_see_invisibility')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('animist_see_invisibility') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_animist_see_invisibility", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -152,7 +152,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('vicious_tentacle')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('vicious_tentacle') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_vicious_tentacle", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -170,7 +170,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('bio_bonespear')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('bio_bonespear') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_bio_bonespear", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -188,7 +188,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('biomancer_giant_growth')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('biomancer_giant_growth') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_biomancer_giant_growth", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -206,7 +206,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('biomancer_lashing_tentacles')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('biomancer_lashing_tentacles') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_biomancer_lashing_tentacles", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -224,7 +224,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('biomancer_caustic_blood')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('biomancer_caustic_blood') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_biomancer_caustic_blood", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -242,7 +242,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('megablast')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('megablast') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_megablast", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -260,7 +260,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('druidic_regrowth')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('druidic_regrowth') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_druidic_regrowth", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -278,7 +278,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('summon_wolf_druid')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('summon_wolf_druid') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_summon_wolf_druid", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -296,7 +296,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('druid_healing')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('druid_healing') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_druid_healing", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -314,7 +314,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('druid_whisper_leaves')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('druid_whisper_leaves') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_druid_whisper_leaves", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -332,7 +332,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('druid_summon_tanglevine')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('druid_summon_tanglevine') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_druid_summon_tanglevine", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -350,7 +350,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('eshaper_melee_damage')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('eshaper_melee_damage') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_eshaper_melee_damage", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -368,7 +368,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('eshaper_crystal_wrap')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('eshaper_crystal_wrap') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_eshaper_crystal_wrap", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -386,7 +386,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('kelvinist_summon_freezer_spell')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('kelvinist_summon_freezer_spell') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_kelvinist_summon_freezer_spell", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -404,7 +404,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('gravity_well')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('gravity_well') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_gravity_well", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -422,7 +422,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('magus_slow')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('magus_slow') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_magus_slow", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -440,7 +440,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('magus_baleful_polymorph')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('magus_baleful_polymorph') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_magus_baleful_polymorph", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -458,7 +458,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('stormshaper_ionization')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('stormshaper_ionization') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_stormshaper_ionization", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -476,7 +476,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('storm_shipwrecker')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('storm_shipwrecker') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_storm_shipwrecker", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -494,7 +494,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('storm_superconductor')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('storm_superconductor') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_storm_superconductor", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -512,7 +512,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('summon_teravolt')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('summon_teravolt') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_summon_teravolt", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -530,7 +530,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('stormshaper_heart_of_hurricane')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('stormshaper_heart_of_hurricane') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_stormshaper_heart_of_hurricane", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -548,7 +548,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('recover_bionic_power')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('recover_bionic_power') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_recover_bionic_power", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -566,7 +566,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('animated_blade')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('animated_blade') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_animated_blade", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -584,7 +584,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('improved_knock')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('improved_knock') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_improved_knock", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -602,7 +602,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('technomancer_robot_shutdown')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('technomancer_robot_shutdown') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_technomancer_robot_shutdown", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -620,7 +620,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('technomancer_conjure_ups')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('technomancer_conjure_ups') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_technomancer_conjure_ups", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -638,7 +638,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('technomancer_create_ups_connection')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('technomancer_create_ups_connection') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_technomancer_create_ups_connection", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -656,7 +656,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('recover_mana')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('recover_mana') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_recover_mana", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -674,7 +674,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('recover_pain')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('recover_pain') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_recover_pain", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -692,7 +692,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('summon_undead_swarm')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('summon_undead_swarm') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_summon_undead_swarm", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -710,7 +710,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('life_detonation')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('life_detonation') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_life_detonation", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -728,7 +728,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('animist_add_evasion_spell')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('animist_add_evasion_spell') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_animist_add_evasion_spell", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -746,7 +746,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('animist_slow_food_rotting_spell')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('animist_slow_food_rotting_spell') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_animist_slow_food_rotting_spell", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -764,7 +764,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('biomancer_scalpel_fingers')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('biomancer_scalpel_fingers') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_biomancer_scalpel_fingers", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -782,7 +782,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('dark_sight')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('dark_sight') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_dark_sight", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -800,7 +800,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('recover_sleepiness')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('recover_sleepiness') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_recover_sleepiness", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -818,7 +818,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('druid_feralform')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('druid_feralform') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_druid_feralform", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -836,7 +836,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('druid_natures_commune')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('druid_natures_commune') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_druid_natures_commune", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -854,7 +854,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('druid_wood_living_tree_spell')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('druid_wood_living_tree_spell') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_druid_wood_living_tree_spell", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -872,7 +872,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('recover_stamina')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('recover_stamina') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_recover_stamina", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -890,7 +890,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('eshaper_shardstorm')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('eshaper_shardstorm') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_eshaper_shardstorm", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -908,7 +908,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('eshaper_impalement')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('eshaper_impalement') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_eshaper_impalement", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -926,7 +926,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('fireball')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('fireball') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_fireball", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -944,7 +944,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('cone_cold')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('cone_cold') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_cone_cold", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -962,7 +962,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('hoary_blast')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('hoary_blast') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_hoary_blast", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -980,7 +980,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('kelvinist_extinguish_fire_spell')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('kelvinist_extinguish_fire_spell') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_kelvinist_extinguish_fire_spell", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -998,7 +998,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('magus_mana_bolt')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('magus_mana_bolt') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_magus_mana_bolt", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -1016,7 +1016,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('magus_mana_beam')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('magus_mana_beam') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_magus_mana_beam", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -1034,7 +1034,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('magus_escape')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('magus_escape') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_magus_escape", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -1052,7 +1052,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('cats_grace')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('cats_grace') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_cats_grace", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -1070,7 +1070,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('eagles_sight')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('eagles_sight') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_eagles_sight", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -1088,7 +1088,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('ogres_strength')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('ogres_strength') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_ogres_strength", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -1106,7 +1106,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('foxs_cunning')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('foxs_cunning') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_foxs_cunning", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -1124,7 +1124,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('magus_teleport_mark')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('magus_teleport_mark') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_magus_teleport_mark", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -1142,7 +1142,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('magus_ranged_increase')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('magus_ranged_increase') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_magus_ranged_increase", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -1160,7 +1160,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('magus_push_nearby_enemies_back')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('magus_push_nearby_enemies_back') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_magus_push_nearby_enemies_back", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -1178,7 +1178,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('storm_hammer')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('storm_hammer') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_storm_hammer", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -1196,7 +1196,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('stormfist')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('stormfist') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_stormfist", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -1214,7 +1214,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('explosive_decompression')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('explosive_decompression') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_explosive_decompression", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -1232,7 +1232,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('shocking_dash')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('shocking_dash') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_shocking_dash", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -1250,7 +1250,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('toxtricity')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('toxtricity') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_toxtricity", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -1268,7 +1268,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('electric_waves')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('electric_waves') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_electric_waves", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -1286,7 +1286,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('invisibility')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('invisibility') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_invisibility", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -1304,7 +1304,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('mirror_image')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('mirror_image') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_mirror_image", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -1322,7 +1322,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('holographic_transposition')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('holographic_transposition') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_holographic_transposition", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -1340,7 +1340,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('summon_floating_disk')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('summon_floating_disk') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_summon_floating_disk", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -1358,7 +1358,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('technomancer_knifeshot')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('technomancer_knifeshot') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_technomancer_knifeshot", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -1376,7 +1376,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('technomancer_recharge_vehicle')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('technomancer_recharge_vehicle') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_technomancer_recharge_vehicle", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -1394,7 +1394,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('convert_sorcerer')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('convert_sorcerer') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_convert_sorcerer", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -1412,7 +1412,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('animist_summon_decaying_boneclub')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('animist_summon_decaying_boneclub') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_animist_summon_decaying_boneclub", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -1430,7 +1430,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('animist_luck_bone')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('animist_luck_bone') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_animist_luck_bone", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -1448,7 +1448,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('animist_do_psionic_damage_to_head')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('animist_do_psionic_damage_to_head') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_animist_do_psionic_damage_to_head", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -1466,7 +1466,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('bio_grotesque')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('bio_grotesque') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_bio_grotesque", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -1484,7 +1484,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('biomancer_get_more_blood')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('biomancer_get_more_blood') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_biomancer_get_more_blood", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -1502,7 +1502,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('thought_shield')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('thought_shield') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_thought_shield", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -1520,7 +1520,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('classless_dispel_magic')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('classless_dispel_magic') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_classless_dispel_magic", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -1538,7 +1538,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('druid_naturebow1')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('druid_naturebow1') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_druid_naturebow1", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -1556,7 +1556,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('purify_seed')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('purify_seed') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_purify_seed", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -1574,7 +1574,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('druid_healing_herb')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('druid_healing_herb') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_druid_healing_herb", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -1592,7 +1592,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('druid_bandage_heal')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('druid_bandage_heal') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_druid_bandage_heal", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -1610,7 +1610,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('druid_summon_brambles')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('druid_summon_brambles') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_druid_summon_brambles", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -1628,7 +1628,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('druid_breathing_underwater')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('druid_breathing_underwater') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_druid_breathing_underwater", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -1646,7 +1646,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('ice_spike')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('ice_spike') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_ice_spike", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -1664,7 +1664,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('frost_armor')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('frost_armor') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_frost_armor", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -1682,7 +1682,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('kelvinist_flamebreath')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('kelvinist_flamebreath') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_kelvinist_flamebreath", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -1700,7 +1700,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('lightning_bolt')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('lightning_bolt') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_lightning_bolt", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -1718,7 +1718,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('holy_blade')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('holy_blade') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_holy_blade", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -1736,7 +1736,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('spirit_armor')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('spirit_armor') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_spirit_armor", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -1754,7 +1754,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('synaptic_stimulation')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('synaptic_stimulation') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_synaptic_stimulation", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -1772,7 +1772,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('technomancer_welder')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('technomancer_welder') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_technomancer_welder", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -1790,7 +1790,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('technomancer_far_sight')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('technomancer_far_sight') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_technomancer_far_sight", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -1808,7 +1808,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('animist_summon_watcher')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('animist_summon_watcher') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_animist_summon_watcher", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -1826,7 +1826,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('animist_cast_spells_when_silent')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('animist_cast_spells_when_silent') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_animist_cast_spells_when_silent", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -1844,7 +1844,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('pain_split')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('pain_split') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_pain_split", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -1862,7 +1862,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('bio_fleshpouch')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('bio_fleshpouch') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_bio_fleshpouch", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -1880,7 +1880,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('biomancer_coagulant_weave')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('biomancer_coagulant_weave') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_biomancer_coagulant_weave", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -1898,7 +1898,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('biomancer_caustic_aura')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('biomancer_caustic_aura') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_biomancer_caustic_aura", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -1916,7 +1916,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('biomancer_swim_frog')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('biomancer_swim_frog') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_biomancer_swim_frog", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -1934,7 +1934,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('biomancer_carrion_feast')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('biomancer_carrion_feast') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_biomancer_carrion_feast", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -1952,7 +1952,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('biomancer_slow_bleeding')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('biomancer_slow_bleeding') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_biomancer_slow_bleeding", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -1970,7 +1970,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('biomancer_eat_tons_of_food')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('biomancer_eat_tons_of_food') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_biomancer_eat_tons_of_food", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -1988,7 +1988,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('protection_aura')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('protection_aura') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_protection_aura", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -2006,7 +2006,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('sound_bomb')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('sound_bomb') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_sound_bomb", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -2024,7 +2024,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('druid_veggrasp')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('druid_veggrasp') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_druid_veggrasp", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -2042,7 +2042,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('druid_rootstrike')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('druid_rootstrike') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_druid_rootstrike", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -2060,7 +2060,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('druid_harvest_hunter')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('druid_harvest_hunter') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_druid_harvest_hunter", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -2078,7 +2078,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('druid_bramble_spear')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('druid_bramble_spear') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_druid_bramble_spear", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -2096,7 +2096,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('druid_disinfectant')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('druid_disinfectant') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_druid_disinfectant", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -2114,7 +2114,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('druid_water_walking')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('druid_water_walking') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_druid_water_walking", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -2132,7 +2132,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('druid_bearmantle')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('druid_bearmantle') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_druid_bearmantle", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -2150,7 +2150,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('druid_goodberry')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('druid_goodberry') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_druid_goodberry", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -2168,7 +2168,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('seismic_stomp')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('seismic_stomp') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_seismic_stomp", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -2186,7 +2186,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('eshaper_shardspray')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('eshaper_shardspray') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_eshaper_shardspray", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -2204,7 +2204,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('move_earth')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('move_earth') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_move_earth", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -2222,7 +2222,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('clairvoyance')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('clairvoyance') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_clairvoyance", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -2240,7 +2240,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('earthshaper_stoneskin')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('earthshaper_stoneskin') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_earthshaper_stoneskin", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -2258,7 +2258,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('earthshaper_pillar')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('earthshaper_pillar') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_earthshaper_pillar", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -2276,7 +2276,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('eshaper_spawn_tools')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('eshaper_spawn_tools') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_eshaper_spawn_tools", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -2294,7 +2294,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('earthshaper_danger_sense')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('earthshaper_danger_sense') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_earthshaper_danger_sense", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -2312,7 +2312,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('earthshaper_fortitude_of_stone')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('earthshaper_fortitude_of_stone') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_earthshaper_fortitude_of_stone", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -2330,7 +2330,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('earthshaper_harden_earth')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('earthshaper_harden_earth') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_earthshaper_harden_earth", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -2348,7 +2348,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('earthshaper_repair_metal_stone')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('earthshaper_repair_metal_stone') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_earthshaper_repair_metal_stone", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -2366,7 +2366,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('point_flare')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('point_flare') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_point_flare", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -2384,7 +2384,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('burning_hands')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('burning_hands') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_burning_hands", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -2402,7 +2402,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('frost_spray')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('frost_spray') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_frost_spray", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -2420,7 +2420,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('glide_ice')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('glide_ice') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_glide_ice", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -2438,7 +2438,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('ice_shield')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('ice_shield') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_ice_shield", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -2456,7 +2456,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('kelvinist_summon_flamesword')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('kelvinist_summon_flamesword') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_kelvinist_summon_flamesword", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -2474,7 +2474,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('kelvinist_anti_cold')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('kelvinist_anti_cold') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_kelvinist_anti_cold", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -2492,7 +2492,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('kelvinist_anti_heat')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('kelvinist_anti_heat') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_kelvinist_anti_heat", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -2510,7 +2510,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('kelvinist_persuasion_spell')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('kelvinist_persuasion_spell') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_kelvinist_persuasion_spell", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -2528,7 +2528,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('phase_door')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('phase_door') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_phase_door", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -2546,7 +2546,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('magus_force_jar')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('magus_force_jar') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_magus_force_jar", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -2564,7 +2564,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('magus_summon_impact_sling')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('magus_summon_impact_sling') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_magus_summon_impact_sling", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -2582,7 +2582,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('magus_slowfall')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('magus_slowfall') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_magus_slowfall", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -2600,7 +2600,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('magus_spiderclimb')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('magus_spiderclimb') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_magus_spiderclimb", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -2618,7 +2618,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('jolt')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('jolt') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_jolt", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -2636,7 +2636,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('windstrike')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('windstrike') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_windstrike", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -2654,7 +2654,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('windrun')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('windrun') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_windrun", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -2672,7 +2672,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('stormshaper_repelling_arc')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('stormshaper_repelling_arc') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_stormshaper_repelling_arc", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -2690,7 +2690,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('air_bubble')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('air_bubble') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_air_bubble", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -2708,7 +2708,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('electric_eye')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('electric_eye') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_electric_eye", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -2726,7 +2726,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('stormshaper_cloak_of_fog')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('stormshaper_cloak_of_fog') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_stormshaper_cloak_of_fog", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -2744,7 +2744,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('quantum_tunnel_lesser')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('quantum_tunnel_lesser') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_quantum_tunnel_lesser", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -2762,7 +2762,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('knock')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('knock') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_knock", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -2780,7 +2780,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('technomancer_gain_electronics_computer_spell')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('technomancer_gain_electronics_computer_spell') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_technomancer_gain_electronics_computer_spell", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -2798,7 +2798,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('technomancer_pain_ignore')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('technomancer_pain_ignore') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_technomancer_pain_ignore", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -2816,7 +2816,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('smite')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('smite') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_smite", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -2834,7 +2834,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('animist_sense_outsiders')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('animist_sense_outsiders') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_animist_sense_outsiders", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -2852,7 +2852,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('pertifying_touch')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('pertifying_touch') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_pertifying_touch", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -2870,7 +2870,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('reactive_armor')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('reactive_armor') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_reactive_armor", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -2888,7 +2888,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('lightning_blast')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('lightning_blast') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_lightning_blast", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -2906,7 +2906,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('bless')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('bless') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_bless", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -2924,7 +2924,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('laze')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('laze') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_laze", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -2942,7 +2942,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('x-ray')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('x-ray') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_x_ray", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -2960,7 +2960,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('summon_undead')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('summon_undead') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_summon_undead", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -2978,7 +2978,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('necrotic_gaze')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('necrotic_gaze') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_necrotic_gaze", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -2996,7 +2996,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('disruption_bolt')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('disruption_bolt') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_disruption_bolt", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -3014,7 +3014,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('summon_wisps')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('summon_wisps') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_summon_wisps", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -3032,7 +3032,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('bleed')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('bleed') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_bleed", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -3050,7 +3050,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('animist_detect_wizards')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('animist_detect_wizards') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_animist_detect_wizards", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -3068,7 +3068,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('light_healing')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('light_healing') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_light_healing", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -3086,7 +3086,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('bio_acidicspray')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('bio_acidicspray') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_bio_acidicspray", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -3104,7 +3104,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('biomancer_paralytic_dart')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('biomancer_paralytic_dart') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_biomancer_paralytic_dart", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -3122,7 +3122,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('biomancer_visceral_projection')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('biomancer_visceral_projection') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_biomancer_visceral_projection", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -3140,7 +3140,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('biomancer_cure_disease_minor')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('biomancer_cure_disease_minor') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_biomancer_cure_disease_minor", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -3158,7 +3158,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('crystallize_mana')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('crystallize_mana') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_crystallize_mana", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -3176,7 +3176,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('blinding_flash')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('blinding_flash') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_blinding_flash", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -3194,7 +3194,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('ethereal_grasp')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('ethereal_grasp') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_ethereal_grasp", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -3212,7 +3212,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('classless_clean_clothing_and_self')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('classless_clean_clothing_and_self') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_classless_clean_clothing_and_self", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -3230,7 +3230,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('classless_restore_crystal_mana')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('classless_restore_crystal_mana') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_classless_restore_crystal_mana", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -3248,7 +3248,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('druid_tornskin')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('druid_tornskin') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_druid_tornskin", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -3266,7 +3266,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('druid_growth')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('druid_growth') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_druid_growth", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -3284,7 +3284,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('druid_anti_heat')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('druid_anti_heat') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_druid_anti_heat", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -3302,7 +3302,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('druid_traverse_the_wilds')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('druid_traverse_the_wilds') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_druid_traverse_the_wilds", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -3320,7 +3320,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('stonefist')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('stonefist') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_stonefist", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -3338,7 +3338,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('eshaper_piercing_bolt')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('eshaper_piercing_bolt') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_eshaper_piercing_bolt", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -3356,7 +3356,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('earthshaper_boulder')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('earthshaper_boulder') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_earthshaper_boulder", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -3374,7 +3374,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('earthshaper_turning_of_earth')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('earthshaper_turning_of_earth') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_earthshaper_turning_of_earth", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -3392,7 +3392,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('kelvinist_firebolt')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('kelvinist_firebolt') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_kelvinist_firebolt", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -3410,7 +3410,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('magus_stop_attack_shield')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('magus_stop_attack_shield') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_magus_stop_attack_shield", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -3428,7 +3428,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('magus_far_hand_pull')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('magus_far_hand_pull') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_magus_far_hand_pull", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -3446,7 +3446,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('magus_light_target')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('magus_light_target') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_magus_light_target", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -3464,7 +3464,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('stormshaper_wall_of_fog')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('stormshaper_wall_of_fog') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_stormshaper_wall_of_fog", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -3482,7 +3482,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('stormshaper_cloak_of_frog')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('stormshaper_cloak_of_frog') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_stormshaper_cloak_of_frog", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -3500,7 +3500,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('stormshaper_loud_voice_spell')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('stormshaper_loud_voice_spell') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_stormshaper_loud_voice_spell", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -3518,7 +3518,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('create_atomic_lamp')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('create_atomic_lamp') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_create_atomic_lamp", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -3536,7 +3536,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('technomancer_conjure_radio')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('technomancer_conjure_radio') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_technomancer_conjure_radio", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -3554,7 +3554,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('create_atomic_light')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('create_atomic_light') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_create_atomic_light", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -3572,7 +3572,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('classless_watch_spell')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('classless_watch_spell') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_classless_watch_spell", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -3590,7 +3590,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('classless_easy_sleep_spell')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('classless_easy_sleep_spell') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_classless_easy_sleep_spell", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -3608,7 +3608,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('druid_woodshaft')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('druid_woodshaft') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_druid_woodshaft", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -3626,7 +3626,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('summon_cats')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('summon_cats') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_summon_cats", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -3644,7 +3644,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('eshaper_rockbolt')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('eshaper_rockbolt') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_eshaper_rockbolt", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -3662,7 +3662,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('create_lighter')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('create_lighter') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_create_lighter", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -3680,7 +3680,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('chilling_touch')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('chilling_touch') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_chilling_touch", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -3698,7 +3698,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('kelvinist_heat_food')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('kelvinist_heat_food') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_kelvinist_heat_food", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -3716,7 +3716,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('shadow_field')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('shadow_field') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_shadow_field", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -3734,7 +3734,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('magic_missile')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('magic_missile') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_magic_missile", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -3752,7 +3752,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('shocking_lash')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('shocking_lash') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_shocking_lash", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -3770,7 +3770,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('electric_arts')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('electric_arts') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_electric_arts", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -3788,7 +3788,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('taze')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('taze') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_taze", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -3806,7 +3806,7 @@
         "text": "Select Spell.",
         "topic": "TALK_SORCERER_MENU_MAIN",
         "effect": [
-          { "math": [ "u_spell_level('create_rune_sorcerer')", "=", "u_current_sorcerer_level" ] },
+          { "math": [ "u_spell_level('create_rune_sorcerer') = u_current_sorcerer_level" ] },
           { "math": [ "u_used_spell_slot_for_create_rune_sorcerer", "=", "7" ] },
           { "math": [ "u_sorcerer_level_7_spells_known", "++" ] }
         ]
@@ -3819,1067 +3819,1067 @@
     "type": "talk_topic",
     "id": "TALK_SORCERER_LEARN_SPELL_7",
     "dynamic_line": "<u_val:sorcerer_level_7_spells_known> / <u_val:sorcerer_level_7_spells_known_slots> level 7 spells known.",
-    "speaker_effect": { "effect": { "math": [ "curent_spell_slot", "=", "7" ] } },
+    "speaker_effect": { "effect": { "math": [ "curent_spell_slot = 7" ] } },
     "responses": [
       { "text": "Go Back.", "topic": "TALK_SORCERER_MENU_MAIN" },
       { "text": "Quit.", "topic": "TALK_DONE" },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_rupture", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_rupture == 0" ] },
         "text": "Learn Rupture ( level 7 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_rupture_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_obfuscated_body", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_obfuscated_body == 0" ] },
         "text": "Learn Obfuscated Body ( level 7 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_obfuscated_body_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_druidic_healing", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_druidic_healing == 0" ] },
         "text": "Learn Sacrificial Healing ( level 7 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_druidic_healing_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_magus_mana_blast", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_magus_mana_blast == 0" ] },
         "text": "Learn Mana Blast ( level 7 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_magus_mana_blast_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_summon_magic_motorcycle", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_summon_magic_motorcycle == 0" ] },
         "text": "Learn Summon Mojocycle ( level 7 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_summon_magic_motorcycle_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_dominate", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_dominate == 0" ] },
         "text": "Learn Domination ( level 6 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_dominate_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_devour", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_devour == 0" ] },
         "text": "Learn Devour ( level 6 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_devour_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_animist_see_invisibility", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_animist_see_invisibility == 0" ] },
         "text": "Learn Seeing the Unseen ( level 6 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_animist_see_invisibility_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_vicious_tentacle", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_vicious_tentacle == 0" ] },
         "text": "Learn Vicious Tentacle ( level 6 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_vicious_tentacle_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_bio_bonespear", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_bio_bonespear == 0" ] },
         "text": "Learn Conjure Bonespear ( level 6 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_bio_bonespear_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_biomancer_giant_growth", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_biomancer_giant_growth == 0" ] },
         "text": "Learn Giant Growth ( level 6 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_biomancer_giant_growth_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_biomancer_lashing_tentacles", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_biomancer_lashing_tentacles == 0" ] },
         "text": "Learn Lashing Tentacles ( level 6 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_biomancer_lashing_tentacles_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_biomancer_caustic_blood", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_biomancer_caustic_blood == 0" ] },
         "text": "Learn Caustic Blood ( level 6 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_biomancer_caustic_blood_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_megablast", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_megablast == 0" ] },
         "text": "Learn Megablast ( level 6 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_megablast_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_druidic_regrowth", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_druidic_regrowth == 0" ] },
         "text": "Learn Sacrificial Regrowth ( level 6 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_druidic_regrowth_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_summon_wolf_druid", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_summon_wolf_druid == 0" ] },
         "text": "Learn Summon Wolf ( level 6 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_summon_wolf_druid_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_druid_healing", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_druid_healing == 0" ] },
         "text": "Learn Restoration ( level 6 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_druid_healing_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_druid_whisper_leaves", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_druid_whisper_leaves == 0" ] },
         "text": "Learn Whisper of the Leaves ( level 6 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_druid_whisper_leaves_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_druid_summon_tanglevine", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_druid_summon_tanglevine == 0" ] },
         "text": "Learn Summon Tanglevine ( level 6 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_druid_summon_tanglevine_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_eshaper_melee_damage", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_eshaper_melee_damage == 0" ] },
         "text": "Learn Weighting ( level 6 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_eshaper_melee_damage_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_eshaper_crystal_wrap", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_eshaper_crystal_wrap == 0" ] },
         "text": "Learn Crystal Wrapping ( level 6 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_eshaper_crystal_wrap_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_kelvinist_summon_freezer_spell", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_kelvinist_summon_freezer_spell == 0" ] },
         "text": "Learn Freezer Field ( level 6 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_kelvinist_summon_freezer_spell_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_gravity_well", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_gravity_well == 0" ] },
         "text": "Learn Gravity Well ( level 6 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_gravity_well_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_magus_slow", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_magus_slow == 0" ] },
         "text": "Learn Slow ( level 6 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_magus_slow_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_magus_baleful_polymorph", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_magus_baleful_polymorph == 0" ] },
         "text": "Learn Baleful Polymorph ( level 6 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_magus_baleful_polymorph_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_stormshaper_ionization", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_stormshaper_ionization == 0" ] },
         "text": "Learn Ionization ( level 6 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_stormshaper_ionization_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_storm_shipwrecker", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_storm_shipwrecker == 0" ] },
         "text": "Learn Shipwrecker ( level 6 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_storm_shipwrecker_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_storm_superconductor", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_storm_superconductor == 0" ] },
         "text": "Learn Superconductor ( level 6 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_storm_superconductor_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_summon_teravolt", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_summon_teravolt == 0" ] },
         "text": "Learn Summon Teravolt ( level 6 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_summon_teravolt_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_stormshaper_heart_of_hurricane", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_stormshaper_heart_of_hurricane == 0" ] },
         "text": "Learn Heart of the Hurricane ( level 6 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_stormshaper_heart_of_hurricane_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_recover_bionic_power", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_recover_bionic_power == 0" ] },
         "text": "Learn Manatricity ( level 6 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_recover_bionic_power_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_animated_blade", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_animated_blade == 0" ] },
         "text": "Learn Animated Blade ( level 6 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_animated_blade_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_improved_knock", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_improved_knock == 0" ] },
         "text": "Learn Improved Knock ( level 6 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_improved_knock_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_technomancer_robot_shutdown", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_technomancer_robot_shutdown == 0" ] },
         "text": "Learn Shutdown ( level 6 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_technomancer_robot_shutdown_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_technomancer_conjure_ups", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_technomancer_conjure_ups == 0" ] },
         "text": "Learn Power Supply ( level 6 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_technomancer_conjure_ups_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_technomancer_create_ups_connection", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_technomancer_create_ups_connection == 0" ] },
         "text": "Learn Power Linkage ( level 6 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_technomancer_create_ups_connection_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_recover_mana", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_recover_mana == 0" ] },
         "text": "Learn Life Conversion ( level 5 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_recover_mana_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_recover_pain", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_recover_pain == 0" ] },
         "text": "Learn Mind over Pain ( level 5 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_recover_pain_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_summon_undead_swarm", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_summon_undead_swarm == 0" ] },
         "text": "Learn Summon Undead Swarm ( level 5 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_summon_undead_swarm_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_life_detonation", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_life_detonation == 0" ] },
         "text": "Learn Life Detonation ( level 5 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_life_detonation_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_animist_add_evasion_spell", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_animist_add_evasion_spell == 0" ] },
         "text": "Learn Guardian Spirit ( level 5 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_animist_add_evasion_spell_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_animist_slow_food_rotting_spell", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_animist_slow_food_rotting_spell == 0" ] },
         "text": "Learn Abjure Spirits of Rot ( level 5 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_animist_slow_food_rotting_spell_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_biomancer_scalpel_fingers", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_biomancer_scalpel_fingers == 0" ] },
         "text": "Learn Flensing Fingers ( level 5 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_biomancer_scalpel_fingers_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_dark_sight", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_dark_sight == 0" ] },
         "text": "Learn Dark Sight ( level 5 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_dark_sight_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_recover_sleepiness", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_recover_sleepiness == 0" ] },
         "text": "Learn Nature's Trance ( level 5 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_recover_sleepiness_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_druid_feralform", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_druid_feralform == 0" ] },
         "text": "Learn Feral Form ( level 5 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_druid_feralform_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_druid_natures_commune", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_druid_natures_commune == 0" ] },
         "text": "Learn Communion with Nature ( level 5 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_druid_natures_commune_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_druid_wood_living_tree_spell", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_druid_wood_living_tree_spell == 0" ] },
         "text": "Learn Shape Wood ( level 5 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_druid_wood_living_tree_spell_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_recover_stamina", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_recover_stamina == 0" ] },
         "text": "Learn Stone's Endurance ( level 5 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_recover_stamina_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_eshaper_shardstorm", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_eshaper_shardstorm == 0" ] },
         "text": "Learn Shardstorm ( level 5 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_eshaper_shardstorm_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_eshaper_impalement", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_eshaper_impalement == 0" ] },
         "text": "Learn Impalement ( level 5 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_eshaper_impalement_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_fireball", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_fireball == 0" ] },
         "text": "Learn Fireball ( level 5 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_fireball_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_cone_cold", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_cone_cold == 0" ] },
         "text": "Learn Cone of Cold ( level 5 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_cone_cold_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_hoary_blast", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_hoary_blast == 0" ] },
         "text": "Learn Hoary Blast ( level 5 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_hoary_blast_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_kelvinist_extinguish_fire_spell", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_kelvinist_extinguish_fire_spell == 0" ] },
         "text": "Learn Extinguish ( level 5 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_kelvinist_extinguish_fire_spell_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_magus_mana_bolt", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_magus_mana_bolt == 0" ] },
         "text": "Learn Mana Bolt ( level 5 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_magus_mana_bolt_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_magus_mana_beam", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_magus_mana_beam == 0" ] },
         "text": "Learn Mana Beam ( level 5 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_magus_mana_beam_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_magus_escape", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_magus_escape == 0" ] },
         "text": "Learn Escape ( level 5 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_magus_escape_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_cats_grace", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_cats_grace == 0" ] },
         "text": "Learn Cat's Grace ( level 5 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_cats_grace_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_eagles_sight", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_eagles_sight == 0" ] },
         "text": "Learn Eagle's Sight ( level 5 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_eagles_sight_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_ogres_strength", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_ogres_strength == 0" ] },
         "text": "Learn Ogre's Strength ( level 5 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_ogres_strength_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_foxs_cunning", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_foxs_cunning == 0" ] },
         "text": "Learn Fox's Cunning ( level 5 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_foxs_cunning_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_magus_teleport_mark", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_magus_teleport_mark == 0" ] },
         "text": "Learn Magus's Mark ( level 5 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_magus_teleport_mark_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_magus_ranged_increase", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_magus_ranged_increase == 0" ] },
         "text": "Learn Arrowflight ( level 5 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_magus_ranged_increase_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_magus_push_nearby_enemies_back", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_magus_push_nearby_enemies_back == 0" ] },
         "text": "Learn Repulsion Wave ( level 5 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_magus_push_nearby_enemies_back_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_storm_hammer", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_storm_hammer == 0" ] },
         "text": "Learn Call Stormhammer ( level 5 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_storm_hammer_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_stormfist", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_stormfist == 0" ] },
         "text": "Learn Stormfist ( level 5 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_stormfist_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_explosive_decompression", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_explosive_decompression == 0" ] },
         "text": "Learn Explosive Decompression ( level 5 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_explosive_decompression_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_shocking_dash", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_shocking_dash == 0" ] },
         "text": "Learn Shocking Dash ( level 5 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_shocking_dash_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_toxtricity", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_toxtricity == 0" ] },
         "text": "Learn Toxtricity ( level 5 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_toxtricity_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_electric_waves", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_electric_waves == 0" ] },
         "text": "Learn Electric Waves ( level 5 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_electric_waves_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_invisibility", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_invisibility == 0" ] },
         "text": "Learn Invisibility ( level 5 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_invisibility_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_mirror_image", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_mirror_image == 0" ] },
         "text": "Learn Mirror Image ( level 5 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_mirror_image_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_holographic_transposition", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_holographic_transposition == 0" ] },
         "text": "Learn Holographic Transposition ( level 5 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_holographic_transposition_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_summon_floating_disk", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_summon_floating_disk == 0" ] },
         "text": "Learn Summon Floating Disk ( level 5 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_summon_floating_disk_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_technomancer_knifeshot", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_technomancer_knifeshot == 0" ] },
         "text": "Learn Knifeshot ( level 5 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_technomancer_knifeshot_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_technomancer_recharge_vehicle", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_technomancer_recharge_vehicle == 0" ] },
         "text": "Learn Imbue with Lightning ( level 5 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_technomancer_recharge_vehicle_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_convert_sorcerer", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_convert_sorcerer == 0" ] },
         "text": "Learn Convert ( level 5 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_convert_sorcerer_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_animist_summon_decaying_boneclub", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_animist_summon_decaying_boneclub == 0" ] },
         "text": "Learn Decaying Boneclub ( level 4 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_animist_summon_decaying_boneclub_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_animist_luck_bone", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_animist_luck_bone == 0" ] },
         "text": "Learn Osseous Luck ( level 4 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_animist_luck_bone_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_animist_do_psionic_damage_to_head", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_animist_do_psionic_damage_to_head == 0" ] },
         "text": "Learn Mind Crush ( level 4 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_animist_do_psionic_damage_to_head_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_bio_grotesque", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_bio_grotesque == 0" ] },
         "text": "Learn Grotesque Enhancement ( level 4 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_bio_grotesque_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_biomancer_get_more_blood", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_biomancer_get_more_blood == 0" ] },
         "text": "Learn Carmine Infusion ( level 4 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_biomancer_get_more_blood_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_thought_shield", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_thought_shield == 0" ] },
         "text": "Learn Thought Shield ( level 4 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_thought_shield_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_classless_dispel_magic", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_classless_dispel_magic == 0" ] },
         "text": "Learn Dispel Magic ( level 4 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_classless_dispel_magic_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_druid_naturebow1", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_druid_naturebow1 == 0" ] },
         "text": "Learn Nature's Bow ( level 4 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_druid_naturebow1_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_purify_seed", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_purify_seed == 0" ] },
         "text": "Learn Purification Seed ( level 4 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_purify_seed_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_druid_healing_herb", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_druid_healing_herb == 0" ] },
         "text": "Learn Floral Healing ( level 4 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_druid_healing_herb_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_druid_bandage_heal", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_druid_bandage_heal == 0" ] },
         "text": "Learn Vegetative Poultice ( level 4 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_druid_bandage_heal_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_druid_summon_brambles", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_druid_summon_brambles == 0" ] },
         "text": "Learn Stranglethorns ( level 4 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_druid_summon_brambles_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_druid_breathing_underwater", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_druid_breathing_underwater == 0" ] },
         "text": "Learn Aquatic Mantle ( level 4 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_druid_breathing_underwater_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_ice_spike", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_ice_spike == 0" ] },
         "text": "Learn Ice Spike ( level 4 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_ice_spike_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_frost_armor", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_frost_armor == 0" ] },
         "text": "Learn Frost Armor ( level 4 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_frost_armor_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_kelvinist_flamebreath", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_kelvinist_flamebreath == 0" ] },
         "text": "Learn Flamebreath ( level 4 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_kelvinist_flamebreath_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_lightning_bolt", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_lightning_bolt == 0" ] },
         "text": "Learn Lightning Bolt ( level 4 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_lightning_bolt_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_holy_blade", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_holy_blade == 0" ] },
         "text": "Learn Mage Blade ( level 4 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_holy_blade_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_spirit_armor", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_spirit_armor == 0" ] },
         "text": "Learn Mage Armor ( level 4 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_spirit_armor_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_synaptic_stimulation", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_synaptic_stimulation == 0" ] },
         "text": "Learn Synaptic Stimulation ( level 4 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_synaptic_stimulation_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_technomancer_welder", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_technomancer_welder == 0" ] },
         "text": "Learn Voltaic Touch ( level 4 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_technomancer_welder_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_technomancer_far_sight", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_technomancer_far_sight == 0" ] },
         "text": "Learn Zoom Lens ( level 4 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_technomancer_far_sight_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_animist_summon_watcher", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_animist_summon_watcher == 0" ] },
         "text": "Learn Summon Watcher Spirit ( level 3 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_animist_summon_watcher_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_animist_cast_spells_when_silent", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_animist_cast_spells_when_silent == 0" ] },
         "text": "Learn The Inner Voice ( level 3 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_animist_cast_spells_when_silent_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_pain_split", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_pain_split == 0" ] },
         "text": "Learn Pain Split ( level 3 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_pain_split_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_bio_fleshpouch", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_bio_fleshpouch == 0" ] },
         "text": "Learn Flesh Pouch ( level 3 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_bio_fleshpouch_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_biomancer_coagulant_weave", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_biomancer_coagulant_weave == 0" ] },
         "text": "Learn Coagulant Weave ( level 3 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_biomancer_coagulant_weave_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_biomancer_caustic_aura", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_biomancer_caustic_aura == 0" ] },
         "text": "Learn Caustic Aura ( level 3 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_biomancer_caustic_aura_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_biomancer_swim_frog", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_biomancer_swim_frog == 0" ] },
         "text": "Learn Limbs of the Frog ( level 3 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_biomancer_swim_frog_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_biomancer_carrion_feast", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_biomancer_carrion_feast == 0" ] },
         "text": "Learn Carrion Feast ( level 3 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_biomancer_carrion_feast_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_biomancer_slow_bleeding", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_biomancer_slow_bleeding == 0" ] },
         "text": "Learn Halt Bleeding ( level 3 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_biomancer_slow_bleeding_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_biomancer_eat_tons_of_food", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_biomancer_eat_tons_of_food == 0" ] },
         "text": "Learn Gluttonous Consumption ( level 3 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_biomancer_eat_tons_of_food_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_protection_aura", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_protection_aura == 0" ] },
         "text": "Learn Aura of Protection ( level 3 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_protection_aura_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_sound_bomb", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_sound_bomb == 0" ] },
         "text": "Learn Sound Bomb ( level 3 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_sound_bomb_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_druid_veggrasp", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_druid_veggrasp == 0" ] },
         "text": "Learn Vegetative Grasp ( level 3 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_druid_veggrasp_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_druid_rootstrike", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_druid_rootstrike == 0" ] },
         "text": "Learn Root Strike ( level 3 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_druid_rootstrike_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_druid_harvest_hunter", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_druid_harvest_hunter == 0" ] },
         "text": "Learn Harvest of the Hunter ( level 3 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_druid_harvest_hunter_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_druid_bramble_spear", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_druid_bramble_spear == 0" ] },
         "text": "Learn Spear of Brambles ( level 3 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_druid_bramble_spear_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_druid_disinfectant", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_druid_disinfectant == 0" ] },
         "text": "Learn Wash the Wounds Clean ( level 3 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_druid_disinfectant_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_druid_water_walking", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_druid_water_walking == 0" ] },
         "text": "Learn Water Strider's Walk ( level 3 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_druid_water_walking_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_druid_bearmantle", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_druid_bearmantle == 0" ] },
         "text": "Learn Bearmantle ( level 3 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_druid_bearmantle_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_druid_goodberry", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_druid_goodberry == 0" ] },
         "text": "Learn Goodberry ( level 3 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_druid_goodberry_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_seismic_stomp", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_seismic_stomp == 0" ] },
         "text": "Learn Seismic Stomp ( level 3 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_seismic_stomp_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_eshaper_shardspray", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_eshaper_shardspray == 0" ] },
         "text": "Learn Shardspray ( level 3 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_eshaper_shardspray_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_move_earth", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_move_earth == 0" ] },
         "text": "Learn Move Earth ( level 3 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_move_earth_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_clairvoyance", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_clairvoyance == 0" ] },
         "text": "Learn Clairvoyance ( level 3 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_clairvoyance_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_earthshaper_stoneskin", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_earthshaper_stoneskin == 0" ] },
         "text": "Learn Stoneskin ( level 3 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_earthshaper_stoneskin_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_earthshaper_pillar", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_earthshaper_pillar == 0" ] },
         "text": "Learn Pillar of Stone ( level 3 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_earthshaper_pillar_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_eshaper_spawn_tools", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_eshaper_spawn_tools == 0" ] },
         "text": "Learn Utility Molding ( level 3 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_eshaper_spawn_tools_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_earthshaper_danger_sense", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_earthshaper_danger_sense == 0" ] },
         "text": "Learn Tremorsense ( level 3 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_earthshaper_danger_sense_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_earthshaper_fortitude_of_stone", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_earthshaper_fortitude_of_stone == 0" ] },
         "text": "Learn Stones' Fortitude ( level 3 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_earthshaper_fortitude_of_stone_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_earthshaper_harden_earth", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_earthshaper_harden_earth == 0" ] },
         "text": "Learn Harden Earth ( level 3 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_earthshaper_harden_earth_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_earthshaper_repair_metal_stone", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_earthshaper_repair_metal_stone == 0" ] },
         "text": "Learn Fault-Mending Chant ( level 3 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_earthshaper_repair_metal_stone_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_point_flare", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_point_flare == 0" ] },
         "text": "Learn Point Flare ( level 3 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_point_flare_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_burning_hands", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_burning_hands == 0" ] },
         "text": "Learn Burning Hands ( level 3 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_burning_hands_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_frost_spray", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_frost_spray == 0" ] },
         "text": "Learn Frost Spray ( level 3 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_frost_spray_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_glide_ice", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_glide_ice == 0" ] },
         "text": "Learn Glide on Ice ( level 3 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_glide_ice_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_ice_shield", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_ice_shield == 0" ] },
         "text": "Learn Ice Shield ( level 3 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_ice_shield_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_kelvinist_summon_flamesword", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_kelvinist_summon_flamesword == 0" ] },
         "text": "Learn Flamesword ( level 3 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_kelvinist_summon_flamesword_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_kelvinist_anti_cold", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_kelvinist_anti_cold == 0" ] },
         "text": "Learn Cloak of Warmth ( level 3 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_kelvinist_anti_cold_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_kelvinist_anti_heat", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_kelvinist_anti_heat == 0" ] },
         "text": "Learn Cloak of Chill ( level 3 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_kelvinist_anti_heat_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_kelvinist_persuasion_spell", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_kelvinist_persuasion_spell == 0" ] },
         "text": "Learn Flames of Passion ( level 3 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_kelvinist_persuasion_spell_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_phase_door", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_phase_door == 0" ] },
         "text": "Learn Phase Door ( level 3 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_phase_door_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_magus_force_jar", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_magus_force_jar == 0" ] },
         "text": "Learn Jar of Force ( level 3 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_magus_force_jar_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_magus_summon_impact_sling", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_magus_summon_impact_sling == 0" ] },
         "text": "Learn Impact Sling ( level 3 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_magus_summon_impact_sling_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_magus_slowfall", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_magus_slowfall == 0" ] },
         "text": "Learn Slowfall ( level 3 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_magus_slowfall_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_magus_spiderclimb", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_magus_spiderclimb == 0" ] },
         "text": "Learn Spider Climb ( level 3 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_magus_spiderclimb_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_jolt", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_jolt == 0" ] },
         "text": "Learn Jolt ( level 3 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_jolt_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_windstrike", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_windstrike == 0" ] },
         "text": "Learn Windstrike ( level 3 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_windstrike_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_windrun", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_windrun == 0" ] },
         "text": "Learn Windrunning ( level 3 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_windrun_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_stormshaper_repelling_arc", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_stormshaper_repelling_arc == 0" ] },
         "text": "Learn Repelling Arc ( level 3 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_stormshaper_repelling_arc_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_air_bubble", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_air_bubble == 0" ] },
         "text": "Learn Air Bubble ( level 3 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_air_bubble_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_electric_eye", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_electric_eye == 0" ] },
         "text": "Learn Electric Eye ( level 3 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_electric_eye_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_stormshaper_cloak_of_fog", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_stormshaper_cloak_of_fog == 0" ] },
         "text": "Learn Cloak of Fog ( level 3 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_stormshaper_cloak_of_fog_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_quantum_tunnel_lesser", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_quantum_tunnel_lesser == 0" ] },
         "text": "Learn Lesser Quantum Tunnel ( level 3 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_quantum_tunnel_lesser_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_knock", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_knock == 0" ] },
         "text": "Learn Knock ( level 3 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_knock_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_technomancer_gain_electronics_computer_spell", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_technomancer_gain_electronics_computer_spell == 0" ] },
         "text": "Learn Machine Mind ( level 3 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_technomancer_gain_electronics_computer_spell_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_technomancer_pain_ignore", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_technomancer_pain_ignore == 0" ] },
         "text": "Learn The Body Mechanical ( level 3 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_technomancer_pain_ignore_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_smite", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_smite == 0" ] },
         "text": "Learn Smite ( level 2 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_smite_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_animist_sense_outsiders", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_animist_sense_outsiders == 0" ] },
         "text": "Learn Sense Outsiders ( level 2 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_animist_sense_outsiders_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_pertifying_touch", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_pertifying_touch == 0" ] },
         "text": "Learn Petrifying Touch ( level 2 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_pertifying_touch_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_reactive_armor", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_reactive_armor == 0" ] },
         "text": "Learn Reactive Armor ( level 2 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_reactive_armor_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_lightning_blast", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_lightning_blast == 0" ] },
         "text": "Learn Lightning Blast ( level 2 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_lightning_blast_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_bless", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_bless == 0" ] },
         "text": "Learn Bless ( level 2 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_bless_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_laze", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_laze == 0" ] },
         "text": "Learn Laze ( level 2 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_laze_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_x_ray", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_x_ray == 0" ] },
         "text": "Learn X-ray Vision ( level 2 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_x-ray_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_summon_undead", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_summon_undead == 0" ] },
         "text": "Learn Summon Undead ( level 1 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_summon_undead_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_necrotic_gaze", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_necrotic_gaze == 0" ] },
         "text": "Learn Necrotic Gaze ( level 1 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_necrotic_gaze_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_disruption_bolt", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_disruption_bolt == 0" ] },
         "text": "Learn Disruption Bolt ( level 1 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_disruption_bolt_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_summon_wisps", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_summon_wisps == 0" ] },
         "text": "Learn Ignus Fatuus ( level 1 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_summon_wisps_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_bleed", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_bleed == 0" ] },
         "text": "Learn Bleed ( level 1 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_bleed_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_animist_detect_wizards", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_animist_detect_wizards == 0" ] },
         "text": "Learn Witchsight ( level 1 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_animist_detect_wizards_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_light_healing", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_light_healing == 0" ] },
         "text": "Learn Knit the Rent Flesh ( level 1 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_light_healing_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_bio_acidicspray", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_bio_acidicspray == 0" ] },
         "text": "Learn Acidic Spray ( level 1 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_bio_acidicspray_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_biomancer_paralytic_dart", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_biomancer_paralytic_dart == 0" ] },
         "text": "Learn Paralytic Dart ( level 1 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_biomancer_paralytic_dart_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_biomancer_visceral_projection", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_biomancer_visceral_projection == 0" ] },
         "text": "Learn Visceral Projection ( level 1 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_biomancer_visceral_projection_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_biomancer_cure_disease_minor", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_biomancer_cure_disease_minor == 0" ] },
         "text": "Learn Purgation of Maladies ( level 1 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_biomancer_cure_disease_minor_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_crystallize_mana", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_crystallize_mana == 0" ] },
         "text": "Learn Crystallize Mana ( level 1 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_crystallize_mana_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_blinding_flash", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_blinding_flash == 0" ] },
         "text": "Learn Blinding Flash ( level 1 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_blinding_flash_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_ethereal_grasp", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_ethereal_grasp == 0" ] },
         "text": "Learn Ethereal Grasp ( level 1 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_ethereal_grasp_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_classless_clean_clothing_and_self", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_classless_clean_clothing_and_self == 0" ] },
         "text": "Learn Freshen Up ( level 1 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_classless_clean_clothing_and_self_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_classless_restore_crystal_mana", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_classless_restore_crystal_mana == 0" ] },
         "text": "Learn Mana Extraction ( level 1 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_classless_restore_crystal_mana_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_druid_tornskin", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_druid_tornskin == 0" ] },
         "text": "Learn Tornskin ( level 1 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_druid_tornskin_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_druid_growth", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_druid_growth == 0" ] },
         "text": "Learn Seed of Growth ( level 1 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_druid_growth_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_druid_anti_heat", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_druid_anti_heat == 0" ] },
         "text": "Learn Water's Cooling Touch ( level 1 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_druid_anti_heat_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_druid_traverse_the_wilds", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_druid_traverse_the_wilds == 0" ] },
         "text": "Learn Traverse the Wilds ( level 1 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_druid_traverse_the_wilds_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_stonefist", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_stonefist == 0" ] },
         "text": "Learn Stonefist ( level 1 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_stonefist_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_eshaper_piercing_bolt", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_eshaper_piercing_bolt == 0" ] },
         "text": "Learn Piercing Bolt ( level 1 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_eshaper_piercing_bolt_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_earthshaper_boulder", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_earthshaper_boulder == 0" ] },
         "text": "Learn Summon Boulder ( level 1 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_earthshaper_boulder_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_earthshaper_turning_of_earth", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_earthshaper_turning_of_earth == 0" ] },
         "text": "Learn The Turning of the Earth ( level 1 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_earthshaper_turning_of_earth_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_kelvinist_firebolt", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_kelvinist_firebolt == 0" ] },
         "text": "Learn Firebolt ( level 1 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_kelvinist_firebolt_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_magus_stop_attack_shield", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_magus_stop_attack_shield == 0" ] },
         "text": "Learn Mageshield ( level 1 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_magus_stop_attack_shield_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_magus_far_hand_pull", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_magus_far_hand_pull == 0" ] },
         "text": "Learn Sorcerer's Hand ( level 1 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_magus_far_hand_pull_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_magus_light_target", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_magus_light_target == 0" ] },
         "text": "Learn Faerie Fire ( level 1 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_magus_light_target_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_stormshaper_wall_of_fog", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_stormshaper_wall_of_fog == 0" ] },
         "text": "Learn Wall of Fog ( level 1 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_stormshaper_wall_of_fog_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_stormshaper_cloak_of_frog", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_stormshaper_cloak_of_frog == 0" ] },
         "text": "Learn Cloak of Frog ( level 1 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_stormshaper_cloak_of_frog_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_stormshaper_loud_voice_spell", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_stormshaper_loud_voice_spell == 0" ] },
         "text": "Learn Thundering Voice ( level 1 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_stormshaper_loud_voice_spell_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_create_atomic_lamp", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_create_atomic_lamp == 0" ] },
         "text": "Learn Lamp ( level 1 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_create_atomic_lamp_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_technomancer_conjure_radio", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_technomancer_conjure_radio == 0" ] },
         "text": "Learn Speak through the Aether ( level 1 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_technomancer_conjure_radio_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_create_atomic_light", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_create_atomic_light == 0" ] },
         "text": "Learn Magical Light ( level 0 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_create_atomic_light_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_classless_watch_spell", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_classless_watch_spell == 0" ] },
         "text": "Learn Knowing the Day and the Hour ( level 0 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_classless_watch_spell_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_classless_easy_sleep_spell", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_classless_easy_sleep_spell == 0" ] },
         "text": "Learn Peaceful Rest ( level 0 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_classless_easy_sleep_spell_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_druid_woodshaft", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_druid_woodshaft == 0" ] },
         "text": "Learn Wooden Shaft ( level 0 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_druid_woodshaft_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_summon_cats", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_summon_cats == 0" ] },
         "text": "Learn Bag of Cats ( level 0 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_summon_cats_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_eshaper_rockbolt", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_eshaper_rockbolt == 0" ] },
         "text": "Learn Rockbolt ( level 0 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_eshaper_rockbolt_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_create_lighter", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_create_lighter == 0" ] },
         "text": "Learn Finger Firelighter ( level 0 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_create_lighter_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_chilling_touch", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_chilling_touch == 0" ] },
         "text": "Learn Chilling Touch ( level 0 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_chilling_touch_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_kelvinist_heat_food", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_kelvinist_heat_food == 0" ] },
         "text": "Learn Baking Hands ( level 0 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_kelvinist_heat_food_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_shadow_field", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_shadow_field == 0" ] },
         "text": "Learn Shadow Field ( level 0 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_shadow_field_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_magic_missile", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_magic_missile == 0" ] },
         "text": "Learn Magic Missile ( level 0 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_magic_missile_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_shocking_lash", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_shocking_lash == 0" ] },
         "text": "Learn Shocking Lash ( level 0 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_shocking_lash_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_electric_arts", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_electric_arts == 0" ] },
         "text": "Learn Electric Arts ( level 0 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_electric_arts_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_taze", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_taze == 0" ] },
         "text": "Learn Taze ( level 0 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_taze_at_level_7"
       },
       {
-        "condition": { "math": [ "u_used_spell_slot_for_create_rune_sorcerer", "==", "0" ] },
+        "condition": { "math": [ "u_used_spell_slot_for_create_rune_sorcerer == 0" ] },
         "text": "Learn Counterfeit Rune ( level 0 )",
         "topic": "TALK_SORCERER_LEARN_SPELL_create_rune_sorcerer_at_level_7"
       }

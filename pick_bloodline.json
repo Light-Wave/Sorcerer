@@ -21,7 +21,7 @@
         "effect": [
           { "u_add_trait": "SORCERER" },
           { "run_eocs": "EOC_level_up_sorcerer" },
-          { "math": [ "u_available_favourite_spells", "=", "1" ] },
+          { "math": [ "u_available_favourite_spells = 1" ] },
           { "u_add_var": "power_source", "value": "intelligence" },
           { "u_add_var": "bloodline", "value": "STANDARD" }
         ]

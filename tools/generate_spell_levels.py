@@ -200,7 +200,7 @@ def write_learn_spell(level):
         "type": "talk_topic",
         "id": "TALK_SORCERER_LEARN_SPELL_" + str( level ),
         "dynamic_line": "<u_val:sorcerer_level_" + str( level ) + "_spells_known> / <u_val:sorcerer_level_" + str( level ) + "_spells_known_slots> level " + str( level ) + " spells known.",
-        "speaker_effect": { "effect": { "math": [ "curent_spell_slot", "=", str( level ) ] } },
+        "speaker_effect": { "effect": { "math": [ "curent_spell_slot = "+str( level ) ] } },
         "responses": [
             { "text": "Go Back.", "topic": "TALK_SORCERER_MENU_MAIN" },
             { "text": "Quit.", "topic": "TALK_DONE" }
@@ -210,7 +210,7 @@ def write_learn_spell(level):
     for spell in spell_data:
         if int(spell["level"]) <= level:
             response = {
-            "condition": { "math": [ "u_used_spell_slot_for_" + spell["safe_id"], "==", "0" ] },
+            "condition": { "math": [ "u_used_spell_slot_for_" + spell["safe_id"]+ " == 0" ] },
             "text": "Learn " + spell["name"] + " ( level "+ str(spell["level"]) + " )",
             "topic": "TALK_SORCERER_LEARN_SPELL_" + spell["id"] + "_at_level_" + str( level )
             }
@@ -224,7 +224,7 @@ def write_learn_spell(level):
                     "text": "Select Spell.",
                     "topic": "TALK_SORCERER_MENU_MAIN",
                     "effect": [
-                      { "math": [ "u_spell_level('" + spell["id"] + "')", "=", "u_current_sorcerer_level" ] },
+                      { "math": [ "u_spell_level('" + spell["id"] + "') = u_current_sorcerer_level" ] },
                       { "math": [ "u_used_spell_slot_for_"+spell["safe_id"], "=", str( max( level, 0.5 ) ) ] },
                       { "math": [ "u_sorcerer_level_"+str(level)+"_spells_known", "++" ] },
                     ]
@@ -255,13 +255,13 @@ def write_forget_spell():
         }
     for spell in spell_data:
         response = {
-            "condition": { "math": [ "u_used_spell_slot_for_"+spell["safe_id"], ">", "0" ] },
+            "condition": { "math": [ "u_used_spell_slot_for_"+spell["safe_id"]+" > 0" ] },
             "text": "Forget " + spell["name"] + " ( level <u_val:used_spell_slot_for_" + spell["safe_id"] + "> )",
             "topic": "TALK_SORCERER_MENU_MAIN",
             "effect": [
-                { "math": [ "u_spell_level('" + spell["id"] + "')", "=", "-1" ] },
+                { "math": [ "u_spell_level('" + spell["id"] + "') = -1" ] },
                 { "run_eocs": "EOC_sorcerer_forget_spell_refund_slots", "variables": { "forgotten_spell_level": { "u_val": "used_spell_slot_for_"+spell["safe_id"] } } },
-                { "math": [ "u_used_spell_slot_for_"+spell["safe_id"], "=", "0" ] },
+                { "math": [ "u_used_spell_slot_for_"+spell["safe_id"]+" = 0" ] },
                 { "math": [ "u_sorcerer_forget_spell_charge", "--" ] }
             ]
         }
@@ -288,11 +288,11 @@ def write_pick_favourite_spell():
     for spell in spell_data:
         if spell["level"] <= 1:
             response = {
-                "condition": { "math": [ "u_used_spell_slot_for_"+spell["safe_id"], ">", "0" ] },
+                "condition": { "math": [ "u_used_spell_slot_for_"+spell["safe_id"]+" > 0" ] },
                 "text": "Pick " + spell["name"] + " ( level <u_val:used_spell_slot_for_" + spell["safe_id"] + "> )",
                 "topic": "TALK_SORCERER_MENU_MAIN",
                 "effect": [
-                    { "math": [ "u_spell_level('" + spell["id"] + "')", "=", "max(3, u_spell_level('" + spell["id"] + "') )" ] },
+                    { "math": [ "u_spell_level('" + spell["id"] + "') = max(3, u_spell_level('" + spell["id"] + "') )" ] },
                     { "math": [ "u_available_favourite_spells", "--" ] }
                 ]
             }
@@ -315,8 +315,8 @@ def write_level_up_spells():
         effect = {
             "run_eocs": {
               "id": "sorcerer_level_up_"+spell["safe_id"],
-              "condition": { "math": [ "u_used_spell_slot_for_"+spell["safe_id"], ">", "0" ] },
-              "effect": [ { "math": [ "u_spell_level('" + spell["id"] + "')", "=", "max(u_current_sorcerer_level, u_spell_level('" + spell["id"] + "') )" ] } ]
+              "condition": { "math": [ "u_used_spell_slot_for_"+spell["safe_id"]+" > 0" ] },
+              "effect": [ { "math": [ "u_spell_level('" + spell["id"] + "') = max(u_current_sorcerer_level, u_spell_level('" + spell["id"] + "') )" ] } ]
             }
         }
         main_topic["effect"].append(effect)
