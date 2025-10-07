@@ -231,8 +231,10 @@ def write_learn_spell(level):
                 spell["id"] +
                 "_at_level_" +
                 str(level),
-                "dynamic_line": spell["name"] + ": " + spell["description"],
-                "//~": "",
+                "dynamic_line": {
+                    "str": spell["name"] + ": " + spell["description"],
+                    "//~": ""
+                },
                 "responses": [
                     {
                         "text": "Select Spell.",
@@ -266,7 +268,7 @@ def write_learn_spell(level):
                 ],
             }
             if "NO_I18N" in spell and spell["NO_I18N"] is True:
-                new_other_topic["//~"] = "NO_I18N"
+                new_other_topic["dynamic_line"]["//~"] = "NO_I18N"
             all_topics.append(new_other_topic)
     all_topics.append(main_topic)
     path = "../generated_code/learn_spell"
