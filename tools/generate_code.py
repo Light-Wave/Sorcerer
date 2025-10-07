@@ -226,7 +226,7 @@ def write_learn_spell(level):
                     "effect": [
                       { "math": [ "u_spell_level('" + spell["id"] + "') = u_current_sorcerer_level" ] },
                       { "math": [ "u_used_spell_slot_for_"+spell["safe_id"], "=", str( max( level, 0.5 ) ) ] },
-                      { "math": [ "u_sorcerer_level_"+str(level)+"_spells_known", "++" ] },
+                      { "math": [ "u_sorcerer_level_"+str(level)+"_spells_known++" ] },
                     ]
                   },
                   { "text": "Go Back.", "topic": "TALK_SORCERER_MENU_MAIN" },
@@ -262,7 +262,7 @@ def write_forget_spell():
                 { "math": [ "u_spell_level('" + spell["id"] + "') = -1" ] },
                 { "run_eocs": "EOC_sorcerer_forget_spell_refund_slots", "variables": { "forgotten_spell_level": { "u_val": "used_spell_slot_for_"+spell["safe_id"] } } },
                 { "math": [ "u_used_spell_slot_for_"+spell["safe_id"]+" = 0" ] },
-                { "math": [ "u_sorcerer_forget_spell_charge", "--" ] }
+                { "math": [ "u_sorcerer_forget_spell_charge--" ] }
             ]
         }
         main_topic["responses"].append(response)
@@ -293,7 +293,7 @@ def write_pick_favourite_spell():
                 "topic": "TALK_SORCERER_MENU_MAIN",
                 "effect": [
                     { "math": [ "u_spell_level('" + spell["id"] + "') = max(3, u_spell_level('" + spell["id"] + "') )" ] },
-                    { "math": [ "u_available_favourite_spells", "--" ] }
+                    { "math": [ "u_available_favourite_spells--" ] }
                 ]
             }
             main_topic["responses"].append(response)
