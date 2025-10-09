@@ -1,8 +1,9 @@
 import os
 import json
 
-# If you want to run this script you will likely need to edit this path
-Magiclysm_path = "../../../data/mods/Magiclysm"
+# If you want to run this script you might need to edit this path
+# The way this file handles paths might not work on systems other than Windows.
+Magiclysm_path = "../../Magiclysm"
 
 tier_0_scroll_list = []
 tier_1_scroll_list = []
@@ -188,19 +189,16 @@ def merge_spell_data():
 
 
 # Writes the dialogue used to select spells to learn
-def write_learn_spell(level):
+def write_learn_spell():
     main_topic = {
         "type": "talk_topic",
-        "id": "TALK_SORCERER_LEARN_SPELL_" + str(level),
-        "dynamic_line": "<u_val:sorcerer_level_" +
-        str(level) +
-        "_spells_known> / <u_val:sorcerer_level_" +
-        str(level) +
-        "_spells_known_slots> level " +
-        str(level) +
+        "id": "TALK_SORCERER_LEARN_SPELL_X",
+        "dynamic_line": "<u_val:sorcerer_level_x_spells_known>" +
+        " / " +
+        "<u_val:sorcerer_level_x_spells_known_slots>" +
+        " level " +
+        "<u_val:picked_level>" +
         " spells known.",
-        "speaker_effect": {"effect": {"math": ["curent_spell_slot = " +
-                                               str(level)]}},
         "responses": [
             {"text": "Go Back.", "topic": "TALK_SORCERER_MENU_MAIN"},
             {"text": "Quit.", "topic": "TALK_DONE"},
@@ -208,74 +206,69 @@ def write_learn_spell(level):
     }
     all_topics = []
     for spell in spell_data:
-        if int(spell["level"]) <= level:
-            response = {
-                "condition": {
-                    "math": ["u_used_spell_slot_for_" + spell["safe_id"] +
-                             " == 0"]
+        response = {
+            "condition": {
+                "and": [ {"math": ["u_used_spell_slot_for_"
+                                    + spell["safe_id"] +
+                                    " == 0"]},
+                                    "u_val:picked_level <= " +
+                                    str(spell["level"]) ]
+            },
+            "text": "Learn " +
+            spell["name"] +
+            " ( level " +
+            str(spell["level"]) +
+            " )",
+            "topic": "TALK_SORCERER_LEARN_SPELL_" +
+            spell["id"]
+        }
+        main_topic["responses"].append(response)
+        new_other_topic = {
+            "type": "talk_topic",
+            "id": "TALK_SORCERER_LEARN_SPELL_" +
+            spell["id"],
+            "dynamic_line": {
+                "str": spell["name"] + ": " + spell["description"],
+                "//~": ""
+            },
+            "responses": [
+                {
+                    "text": "Select Spell.",
+                    "topic": "TALK_SORCERER_MENU_MAIN",
+                    "effect": [
+                        {
+                            "math": [
+                                "u_spell_level('" +
+                                spell["id"] +
+                                "') = u_current_sorcerer_level"
+                            ]
+                        },
+                        {
+                            "math": [
+                                "u_used_spell_slot_for_" +
+                                spell["safe_id"] +
+                                " = " +
+                                "u_val:picked_level",
+                            ]
+                        },
+                        {
+                            "run_eocs": "EOC_incremnet_sorcerer_known_spells"
+                        },
+                    ],
                 },
-                "text": "Learn " +
-                spell["name"] +
-                " ( level " +
-                str(spell["level"]) +
-                " )",
-                "topic": "TALK_SORCERER_LEARN_SPELL_" +
-                spell["id"] +
-                "_at_level_" +
-                str(level),
-            }
-            main_topic["responses"].append(response)
-            new_other_topic = {
-                "type": "talk_topic",
-                "id": "TALK_SORCERER_LEARN_SPELL_" +
-                spell["id"] +
-                "_at_level_" +
-                str(level),
-                "dynamic_line": {
-                    "str": spell["name"] + ": " + spell["description"],
-                    "//~": ""
-                },
-                "responses": [
-                    {
-                        "text": "Select Spell.",
-                        "topic": "TALK_SORCERER_MENU_MAIN",
-                        "effect": [
-                            {
-                                "math": [
-                                    "u_spell_level('" +
-                                    spell["id"] +
-                                    "') = u_current_sorcerer_level"
-                                ]
-                            },
-                            {
-                                "math": [
-                                    "u_used_spell_slot_for_" +
-                                    spell["safe_id"],
-                                    "=",
-                                    str(max(level, 0.5)),
-                                ]
-                            },
-                            {
-                                "math": [
-                                    "u_sorcerer_level_" + str(level) +
-                                    "_spells_known++"
-                                ]
-                            },
-                        ],
-                    },
-                    {"text": "Go Back.", "topic": "TALK_SORCERER_MENU_MAIN"},
-                    {"text": "Quit.", "topic": "TALK_DONE"},
-                ],
-            }
-            if "NO_I18N" in spell and spell["NO_I18N"] is True:
-                new_other_topic["dynamic_line"]["//~"] = "NO_I18N"
-            all_topics.append(new_other_topic)
+                {"text": "Go Back.", "topic": "TALK_SORCERER_MENU_MAIN"},
+                {"text": "Quit.", "topic": "TALK_DONE"},
+            ],
+        }
+        if "NO_I18N" in spell and spell["NO_I18N"] is True:
+            new_other_topic["dynamic_line"]["//~"] = "NO_I18N"
+        all_topics.append(new_other_topic)
     all_topics.append(main_topic)
     path = "../generated_code/learn_spell"
     isExist = os.path.exists(path)
     if not isExist:
         os.makedirs(path)
-    path += "/learn_spells_level_" + str(level) + ".json"
+    path += "/learn_spells.json"
     with open(path, mode="wt") as f:
         f.write(json.dumps(all_topics, indent=2))
 
@@ -433,8 +426,7 @@ merge_spell_data()
 spell_data = sorted(spell_data, key=lambda x: x["level"], reverse=True)
 
 
-for number in range(0, 10):
-    write_learn_spell(number)
+write_learn_spell()
 
 write_forget_spell()
 write_level_up_spells()
