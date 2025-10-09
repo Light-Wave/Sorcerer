@@ -3,7 +3,7 @@ import json
 
 # If you want to run this script you might need to edit this path
 # The way this file handles paths might not work on systems other than Windows.
-Magiclysm_path = "../../Magiclysm"
+Magiclysm_path = "../../../data/mods/Magiclysm"
 
 tier_0_scroll_list = []
 tier_1_scroll_list = []
@@ -192,7 +192,7 @@ def merge_spell_data():
 def write_learn_spell():
     main_topic = {
         "type": "talk_topic",
-        "id": "TALK_SORCERER_LEARN_SPELL_X",
+        "id": "TALK_SORCERER_LEARN_SPELL",
         "dynamic_line": "<u_val:sorcerer_level_x_spells_known>" +
         " / " +
         "<u_val:sorcerer_level_x_spells_known_slots>" +
@@ -208,11 +208,10 @@ def write_learn_spell():
     for spell in spell_data:
         response = {
             "condition": {
-                "and": [ {"math": ["u_used_spell_slot_for_"
-                                    + spell["safe_id"] +
-                                    " == 0"]},
-                                    "u_val:picked_level <= " +
-                                    str(spell["level"]) ]
+                "and": [{"math": ["u_used_spell_slot_for_" +
+                                  spell["safe_id"] +
+                                  " == 0"]}, {"math": ["u_picked_level >= " +
+                                                       str(spell["level"])]}]
             },
             "text": "Learn " +
             spell["name"] +
@@ -248,7 +247,7 @@ def write_learn_spell():
                                 "u_used_spell_slot_for_" +
                                 spell["safe_id"] +
                                 " = " +
-                                "u_val:picked_level",
+                                "u_picked_level",
                             ]
                         },
                         {
